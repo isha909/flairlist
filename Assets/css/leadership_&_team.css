@@ -1,0 +1,777 @@
+
+/* ---------- Shared section title (left aligned) ---------- */
+.section-title.left {
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 28px;
+}
+
+/* ---------- HERO ---------- */
+.founder-hero {
+  padding: 100px 0 60px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(120deg, #051c4f, #0a2c85 60%, #0d3499);
+}
+.founder-hero-container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.founder-hero small {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #b9c8f2;
+  margin-bottom: 18px;
+}
+.founder-hero h1 {
+  font-size: clamp(44px, 6vw, 64px);
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+.founder-hero p {
+  font-size: 25px;
+  color: #dbe2f6;
+}
+
+/* ---------- INTRO (photo + bio) ---------- */
+.founder-intro {
+  padding: 70px 70px;
+}
+.founder-intro-grid {
+  display: grid;
+  grid-template-columns: 610px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+.founder-photo {
+  margin-left: 60px;
+}
+.founder-photo img {
+  width: 60%;
+  border-radius: 0;
+  display: block;
+  object-fit: contain;
+  aspect-ratio: auto;
+  box-shadow: none;
+}
+.founder-bio {
+  margin-left: -80px;
+}
+.founder-bio p {
+  font-size: 21px;
+  line-height: 1.7;
+  color: var(--primary-blue);
+  margin-bottom: 26px;
+  font-size: 20px;
+  max-width: 680px;
+}
+
+/* ---------- A LEADER WITH A GLOBAL PERSPECTIVE ---------- */
+.global-perspective {
+  padding: 90px 0 0;
+}
+.section-title.left {
+  font-size: 44px;
+  text-align: left;
+  margin-bottom: 36px;
+}
+.perspective-lead {
+  padding-left: 310px;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.65;
+  color: var(--primary-blue);
+  max-width: 1200px;
+  margin-bottom: 70px;
+}
+.perspective-lead strong {
+  color: var(--primary-blue);
+}
+.perspective-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-bottom: 50px;
+  border-top: 2px solid var(--border-grid);
+  border-bottom: 2px solid var(--border-grid);
+  border-left: 2px solid var(--border-grid);
+  border-right: 2px solid var(--border-grid);
+}
+.perspective-card {
+  background: transparent;
+  border-radius: 0;
+  padding: 40px 44px;
+  box-shadow: none;
+}
+.perspective-card + .perspective-card {
+  border-left: 2px solid var(--border-grid);
+}
+.perspective-card h4 {
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--primary-blue);
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+.perspective-card p {
+  font-size: 17px;
+  color: black;
+  line-height: 1.6;
+}
+.perspective-note {
+  font-size: 21px;
+  line-height: 1.75;
+  color: var(--primary-blue);
+  max-width: 1000px;
+  padding: 10px 0 80px;
+  padding-left: 200px;
+}
+.perspective-note strong {
+  color: var(--primary-blue);
+}
+/* ---------- A JOURNEY OF AMBITION ---------- */
+.journey {
+  padding: 60px 0 100px;
+}
+.journey .section-title.left {
+  font-size: 44px;
+  margin-bottom: 32px;
+}
+.journey-text {
+    padding-left: 230px;
+  font-size: 21px;
+  line-height: 1.65;
+  color: var(--primary-blue);
+  max-width: none;
+  margin-bottom: 26px;
+}
+.journey-text strong {
+  color: var(--primary-blue);
+}
+
+.author-card {
+  background: var(--surface-soft);
+  border-left: 3px solid var(--primary-blue);
+  border-radius: 0;
+  padding: 16px 28px;
+  max-width: 850px;
+  margin-top: 30px;
+  margin-left: 230px;
+  padding-top: 40px;
+  font-size: 20px;
+}
+.author-card small {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 1.4px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 8px;
+
+}
+.author-card h3 {
+  font-size: 20px;
+  color: var(--primary-blue);
+  margin-bottom: 8px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+.author-card p {
+  font-size: 20px;
+  padding-top: 20px;
+  color: black;
+  line-height: 1.5;
+  margin: 0;
+}
+/* ---------- WHAT SETS HIS LEADERSHIP APART ---------- */
+.leadership-apart {
+  padding: 110px 0;
+  text-align: left;
+  
+}
+.apart-list {
+  border-top: 2px solid var(--border-grid);
+  border-right: 2px solid var(--border-grid);
+  border-left: 2px solid var(--border-grid);
+  border-bottom: 2px solid var(--border-grid);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(8, 43, 128, 0.08);
+  overflow: hidden;
+}
+.apart-item {
+  padding: 42px 46px;
+}
+.apart-item + .apart-item {
+  border-top: 2px solid var(--border-grid);
+  border-right: 2px solid var(--border-grid);
+  border-left: 2px solid var(--border-grid);
+  border-bottom: 2px solid var(--border-grid);
+  color: black;
+}
+.apart-item h4 {
+  font-size: 22px;
+  color: var(--primary-blue);
+  margin-bottom: 14px;
+  text-align: left;
+}
+.apart-item > p {
+  font-size: 17px;
+  color: black;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.apart-item .check-list {
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.apart-item .check-list li {
+  font-size: 15px;
+  color: var(--primary-blue);
+}
+
+/* ---------- IMPACT BEYOND BORDERS ---------- */
+.impact {
+  padding: 90px 0 110px;
+  text-align: center;
+}
+.impact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.impact .section-title.left {
+  font-size: 44px;
+  font-weight: 800;
+  padding-right: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.impact-lead {
+    padding-right: 470px;
+  font-size: 20px;
+  color: var(--primary-blue);
+  margin-bottom: 36px;
+  text-align: center;
+}
+.impact-list {
+  gap: 28px;
+  margin-bottom: 56px;
+  max-width: 900px;
+  padding-right: 30px;
+  text-align: left;
+  color: black;
+}
+.impact-list.check-list li,
+ul.impact-list li {
+  font-size: 18px;
+  color: #000 !important;
+  padding-left: 30px;
+}
+.impact-quote {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(8, 43, 128, 0.06);
+  border-radius: 10px;
+  padding: 38px 42px;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  max-width: 900px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* ---------- LEADING TODAY. BUILDING FOR TOMORROW ---------- */
+.leading-today {
+  background: var(--primary-blue);
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding: 100px 0;
+  text-align: center;
+}
+.leading-today-container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.leading-today h2 {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+.leading-today > .leading-today-container > p {
+  font-size: 19px;
+  color: #dbe2f6;
+  margin-bottom: 36px;
+}
+.traits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.trait-pill {
+  border: 1px solid #ffffff40;
+  background: #ffffff10;
+  padding: 14px 26px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.leading-note {
+  font-size: 18px;
+  color: #dbe2f6;
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.leading-note strong {
+  color: #fff;
+}
+
+/* ---------- CONNECT WITH SHUBHAM ---------- */
+.connect {
+  padding: 90px 0 100px;
+}
+.connect-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.connect-copy h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 18px;
+  line-height: 1.2;
+  padding-left: 140px;
+}
+.connect-copy > p {
+  font-size: 17px;
+  color: black;
+  max-width: 650px;
+  padding-left: 140px;
+}
+.connect-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.connect-details {
+  background: #fff;
+  border: 1px solid var(--border-grid);
+  border-radius: 4px;
+  padding: 0 20px;
+}
+.connect-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 0;
+}
+.connect-row + .connect-row {
+  border-top: 1px solid var(--border-grid);
+}
+.connect-row small {
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  font-weight: 800;
+  color: var(--primary-blue);
+}
+.connect-row a {
+  font-size: 16px;
+  color: var(--primary-blue);
+  font-weight: 500;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1000px) {
+  .founder-intro {
+    padding: 60px 24px;
+  }
+  .founder-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .founder-photo {
+    margin-left: 0;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .founder-photo img {
+    width: 100%;
+  }
+  .founder-bio {
+    margin-left: 0;
+  }
+
+  .perspective-lead {
+    padding-left: 0;
+    max-width: 100%;
+    text-align: left;
+  }
+  .perspective-grid {
+    grid-template-columns: 1fr;
+  }
+  .perspective-card + .perspective-card {
+    border-left: none;
+    border-top: 2px solid var(--border-grid);
+  }
+  .perspective-note {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .journey-text {
+    padding-left: 0;
+  }
+  .author-card {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .impact .section-title.left {
+    padding-right: 0;
+  }
+  .impact-lead {
+    padding-right: 0;
+  }
+  .impact-list {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .connect-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .connect-copy h2,
+  .connect-copy > p {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .founder-hero {
+    padding: 70px 0 40px;
+  }
+  .section-title.left {
+    font-size: 30px;
+  }
+
+  .perspective-card {
+    padding: 28px 24px;
+  }
+  .perspective-lead,
+  .perspective-note {
+    font-size: 17px;
+  }
+
+  .journey-text {
+    font-size: 17px;
+  }
+  .author-card {
+    padding: 20px 22px;
+  }
+  .author-card p {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+
+  .apart-item {
+    padding: 28px 22px;
+  }
+
+  .impact-list {
+    text-align: left;
+  }
+  .impact-quote {
+    padding: 26px 24px;
+    font-size: 18px;
+  }
+
+  .leading-today h2 {
+    font-size: 30px;
+  }
+  .trait-pill {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .connect-details {
+    padding: 0 16px;
+  }
+  .connect-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .connect-actions .btn {
+    text-align: center;
+  }
+}
+
+
+/* =========================================
+   EXECUTIVE TEAM PAGE (team.html)
+========================================= */
+
+/* ---------- HERO ---------- */
+.team-hero {
+  padding: 90px 0 70px;
+  text-align: center;
+  color: #fff;
+  
+  background: linear-gradient(120deg, #051c4f, #0a2c85 60%, #0d3499);
+}
+.team-hero-container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.team-hero h1 {
+    font-size: 28px;
+  font-size: clamp(42px, 5vw, 52px);
+  margin-bottom: 16px;
+}
+.team-hero p {
+  font-size: 20px;
+  color: #dbe2f6;
+}
+.team-hero .hero-icon {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: -4px;
+  margin-left: 6px;
+  width: 22px;
+  height: 22px;
+}
+.team-hero .hero-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- INTRO STATEMENT ---------- */
+.team-intro {
+  padding: 70px 0;
+  text-align: center;
+}
+.team-intro-text {
+  max-width: 820px;
+  margin: 0 auto;
+  font-size: 19px;
+  line-height: 1.7;
+  color: var(--primary-blue);
+}
+
+/* ---------- MEMBER CARDS ---------- */
+.team-members {
+  padding: 110px 0 130px;
+}
+.team-members .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.member-card {
+  background: #fff;
+  max-width: 1600px;
+  border-radius: 12px;
+  padding: 50px 54px;
+  box-shadow: 0 2px 12px rgba(8, 43, 128, 0.06);
+}
+.member-card small {
+  display: block;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 6px;
+}
+.member-card h3 {
+  font-size: 28px;
+  color: var(--primary-blue);
+  margin-bottom: 18px;
+}
+.member-card blockquote {
+  background: var(--surface-soft);
+  border-left: 3px solid var(--primary-blue);
+  margin: 0 0 20px;
+  padding: 14px 20px;
+  font-style: italic;
+  font-size: 15px;
+  color: #5b6b8c;
+}
+.member-card > p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 22px;
+}
+.member-card h4 {
+  font-size: 15px;
+  color: var(--primary-blue);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.member-card .plain-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.member-card .plain-list li {
+  font-size: 15px;
+  color: #333;
+}
+
+/* ---------- OUR COLLECTIVE STRENGTH ---------- */
+/* ---------- OUR COLLECTIVE STRENGTH ---------- */
+.collective-strength {
+  padding: 90px 0 60px;
+  text-align: center;
+}
+.collective-strength h2 {
+  font-size: 34px;
+  color: var(--primary-blue);
+  margin-bottom: 14px;
+}
+.collective-strength > .container > p {
+  font-size: 16px;
+  color: var(--text-body);
+  margin-bottom: 34px;
+}
+.strength-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.strength-pill {
+  background: var(--primary-blue);
+  color: #fff;
+  padding: 20px 32px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(8, 43, 128, 0.15);
+}
+
+/* ---------- STRUCTURED OUTCOMES QUOTE ---------- */
+.team-quote {
+  padding: 50px 0 90px;
+  text-align: center;
+}
+.team-quote p {
+  max-width: 780px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(8, 43, 128, 0.06);
+  border-radius: 10px;
+  padding: 40px 44px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  line-height: 1.5;
+}
+/* ---------- WHY THIS MATTERS TO YOU ---------- */
+.why-matters {
+  background: var(--primary-blue);
+  color: #fff;
+  padding: 90px 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.why-matters h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+}
+.why-card {
+  background: #ffffff14;
+  border-radius: 14px;
+  padding: 46px 30px;
+}
+.why-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.why-card p {
+  font-size: 19px;
+  font-weight: 700;
+}
+.why-note {
+  font-size: 19px;
+  color: #dbe2f6;
+  margin-bottom: 44px;
+}
+.why-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.why-actions .btn {
+  padding: 16px 30px;
+  font-size: 16px;
+}
+.why-actions .btn-solid-blue {
+  background: #fff;
+  color: var(--primary-blue);
+}
+.why-actions .btn-solid-blue:hover {
+  background: #edf3ff;
+  opacity: 1;
+}
+/* ---------- RESPONSIVE ADDITIONS: TEAM PAGE ---------- */
+@media (max-width: 1000px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .member-card {
+    padding: 28px 24px;
+  }
+  .team-hero h1 {
+    font-size: 32px;
+  }
+  .collective-strength h2,
+  .why-matters h2 {
+    font-size: 26px;
+  }
+  .team-quote p {
+    padding: 20px 22px;
+    font-size: 15px;
+  }
+}

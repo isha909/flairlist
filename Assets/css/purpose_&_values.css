@@ -1,0 +1,1064 @@
+
+/* =========================================
+   HERO
+========================================= */
+.mission-hero {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  background:
+   linear-gradient(90deg, #031d68ef, #082b80a8),
+    url("../Assets/misson_hero.png")
+      center/cover no-repeat;
+}
+.mission-hero-container {
+  padding: 60px 0;
+}
+.mission-hero h1 {
+  font-size: clamp(54px, 6vw, 78px);
+  letter-spacing: -2px;
+  margin-bottom: 22px;
+}
+.mission-hero p {
+  font-size: 20px;
+  color: #e4e9f7;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   WHY WE EXIST
+========================================= */
+.why-exist {
+  padding: 130px 0;
+}
+.why-exist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.why-image img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+.why-copy small {
+  font-size: 13px;
+  letter-spacing: 1.8px;
+  font-weight: 800;
+  color: var(--primary-blue);
+}
+.why-copy > p {
+  font-size: 20px;
+  color: var(--primary-blue);
+  margin: 16px 0 36px;
+  max-width: 560px;
+}
+.statement-card {
+  border-left: 6px solid var(--primary-blue);
+  background: var(--surface-soft);
+  border-radius: 18px 18px 18px 18px;
+  padding: 40px 40px;
+}
+.statement-card h2 {
+  font-size: 36px;
+  margin-bottom: 26px;
+}
+.statement-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 34px;
+  box-shadow: 0 2px 12px rgba(8, 43, 128, 0.08);
+}
+.statement-box p {
+  font-size: 19px;
+  line-height: 1.7;
+}
+.statement-card em {
+  display: block;
+  margin-top: 24px;
+  font-size: 15px;
+  color: var(--text-body);
+}
+
+/* =========================================
+   SHARED
+========================================= */
+.soft {
+  background: var(--surface-soft);
+}
+.section-title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 64px;
+}
+
+/* =========================================
+   FOCUS AREAS
+========================================= */
+.focus {
+  padding: 120px 0;
+}
+.focus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 2200px;
+}
+.focus-card {
+  position: relative;
+  background: #fff;
+  border-radius: 18px;
+  padding: 48px 72px 54px 20px;
+  box-shadow: 0 4px 18px rgba(8, 43, 128, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.focus-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(8, 43, 128, 0.12);
+}
+.focus-number {
+  position: absolute;
+  top: -28px;
+  left: 60px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  font-weight: 700;
+}
+.focus-card h3 {
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+.focus-card > p {
+  font-size: 19px;
+  color: black;
+  margin-bottom: 28px;
+}
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.check-list li {
+  position: relative;
+  padding-left: 36px;
+  font-size: 18px;
+  color: black;
+}
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 18px;
+}
+.focus-card em {
+  display: block;
+  padding-top: 22px;
+  margin-top: 4px;
+  border-top: 1px solid var(--border-grid);
+  font-size: 16px;
+  color: var(--text-body);
+}
+
+/* =========================================
+   DAILY WORK
+========================================= */
+.daily-work {
+  padding: 110px 0;
+  text-align: left;
+  font-size: 20px;
+}
+.daily-work .section-title {
+  text-align: left;
+  padding-left: 200px;
+  margin-bottom: 50px;
+}
+.daily-list {
+  max-width: 620px;
+  margin: 0 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.daily-list li {
+  font-size: 19px;
+  font-weight: 200;
+  color: black;
+  text-align: left;
+  padding-left: 60px;
+}
+.daily-note {
+  margin-top: 44px;
+  margin-left: 200px;
+  max-width: 720px;
+  font-size: 17px;
+  color: black;
+  padding-left: 100px;
+}
+
+/* =========================================
+   AVOID / IMPACT NOTES
+========================================= */
+.notes-section {
+  padding: 110px 100px;
+}
+.notes {
+  width: min(1500px, calc(100% - 48px));
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+}
+.notes > div {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(8, 43, 128, 0.08);
+  padding: 64px 68px;
+}
+.notes > div + div {
+  border-left: none;
+}
+.notes h3 {
+  font-size: 27px;
+  margin-bottom: 28px;
+  color: var(--primary-blue);
+}
+.notes ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+.notes p {
+  font-size: 18px;
+  color: black;
+  padding-left: 0;
+  position: relative;
+}
+.notes li {
+  font-size: 18px;
+  color: black;
+  list-style: none;
+}
+.notes-strong {
+  font-size: 17px;
+  font-weight: 700;
+  color: black;
+  padding-top: 50px;
+}
+/* =========================================
+   FINAL THOUGHT
+========================================= */
+.final-thought {
+  
+  background: var(--primary-blue);
+  color: #fff;
+  padding: 120px 0 80px;
+  margin-bottom: 56px;
+  text-align: center;
+}
+.final-thought-container {
+  max-width: 940px;
+}
+.final-thought h2 {
+  font-size: 56px;
+  margin-bottom: 36px;
+}
+.final-thought > .final-thought-container > p {
+  font-size: 23px;
+  color: #dbe2f6;
+  margin-bottom: 12px;
+}
+.final-lead {
+  margin-top: 38px;
+  font-weight: 600;
+  font-size: 23px;
+}
+.final-quote {
+font-family: Bricolage Grotesque,Inter,sans-serif;
+  font-size: 32px;
+  margin: 18px 0 54px;
+}
+.final-actions {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-outline {
+  border: 1px solid #ffffff55;
+  color: #fff;
+}
+.btn-outline:hover {
+  background: #ffffff15;
+  transform: translateY(-2px);
+}
+.btn-solid {
+  background: #fff;
+  color: var(--primary-blue);
+}
+.btn-solid:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+.btn-outline-filled {
+  background: var(--primary-blue);
+  border: 1px solid #ffffff80;
+  color: #fff;
+}
+.btn-outline-filled:hover {
+  background: #ffffff15;
+  transform: translateY(-2px);
+}
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 1000px) {
+  .nav-links,
+  .search-box,
+  .country {
+    display: none;
+  }
+  .why-exist-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .notes {
+    grid-template-columns: 1fr;
+  }
+  .notes > div + div {
+    border-left: 0;
+    border-top: 1px solid var(--border-grid);
+  }
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 44px;
+  }
+
+  .daily-work .section-title {
+    padding-left: 0;
+    text-align: center;
+  }
+  .daily-list {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .daily-list li {
+    padding-left: 30px;
+    text-align: left;
+  }
+  .daily-note {
+    margin-left: 0;
+    padding-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .final-thought h2 {
+    font-size: 40px;
+  }
+  .final-quote {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mission-hero h1 {
+    font-size: 40px;
+  }
+  .focus-card {
+    padding: 44px 28px 32px;
+  }
+  .focus-number {
+    left: 28px;
+  }
+  .notes > div {
+    padding: 36px 30px;
+  }
+  .legal {
+    justify-content: flex-start;
+  }
+
+  
+
+  .mission-hero-container {
+    padding: 40px 0;
+  }
+  .mission-hero p {
+    font-size: 17px;
+  }
+
+  .why-copy > p {
+    font-size: 17px;
+  }
+  .statement-card {
+    padding: 28px 24px;
+  }
+  .statement-card h2 {
+    font-size: 26px;
+  }
+  .statement-box {
+    padding: 24px 22px;
+  }
+  .statement-box p {
+    font-size: 16px;
+  }
+
+  .focus-card h3 {
+    font-size: 24px;
+  }
+  .focus-card > p,
+  .check-list li {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .daily-work {
+    padding: 70px 0;
+    font-size: 17px;
+  }
+  .daily-list li {
+    font-size: 16px;
+  }
+  .daily-note {
+    font-size: 15px;
+  }
+
+  .notes-section {
+    padding: 70px 20px;
+  }
+  .notes h3 {
+    font-size: 22px;
+  }
+  .notes li,
+  .notes p {
+    font-size: 15px;
+  }
+
+  .final-thought {
+    padding: 70px 0 50px;
+  }
+  .final-thought h2 {
+    font-size: 30px;
+  }
+  .final-quote {
+    font-size: 20px;
+  }
+  .final-lead {
+    font-size: 18px;
+  }
+  .final-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .final-actions .btn {
+    text-align: center;
+  }
+}
+
+/* ---------- Hero image override for Vision ---------- */
+.vision-hero {
+  background:
+    linear-gradient(90deg, #0a1f6bcc, #0a2c8fb8),
+    url(../Assets/vision_hero.png)
+      center/cover no-repeat;
+}
+.vision-hero p {
+  font-size: 27px;
+  max-width: 820px;
+}
+.hero-globe {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: -3px;
+  margin-left: 4px;
+}
+
+/* ---------- Belief / Core Vision ---------- */
+.vision-belief {
+  background: var(--primary-blue);
+  color: #fff;
+  padding: 110px 0 130px;
+}
+.vision-belief-container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+.belief-intro {
+  font-size: 21px;
+  line-height: 1.75;
+  color: #e4e9f7;
+  text-align: left;
+  margin-bottom: 46px;
+}
+.belief-quote {
+  background: var(--surface-soft);
+  border-radius: 16px;
+  padding: 44px 50px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 28px rgba(3, 15, 60, 0.25);
+}
+.belief-quote p {
+  background: #fff;
+  border-radius: 10px;
+  padding: 36px 40px;
+  box-shadow: 0 2px 12px rgba(8, 43, 128, 0.1);
+  color: var(--primary-blue);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+}
+.core-vision-card {
+  background: var(--surface-soft);
+  border-radius: 16px;
+  padding: 30px 30px 38px 36px;
+  color: var(--primary-blue);
+}
+.core-vision-card h2 {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+.core-vision-lead {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+.core-vision-card .check-list {
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.core-vision-card .check-list li {
+  font-size: 17px;
+  color: var(--primary-blue);
+}
+.core-vision-card em {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--primary-blue);
+
+}
+
+/* ---------- What We Are Building ---------- */
+.building {
+  padding: 80px 0;
+  text-align: center;
+}
+.building .container {
+  width: min(1500px, calc(100% - 48px));
+}
+.building-lead {
+  font-size: 20px;
+  color: var(--primary-blue);
+  max-width: 640px;
+  margin: 0 auto 60px;
+  line-height: 1.7;
+}
+.building-lead strong {
+  color: var(--primary-blue);
+}
+.building-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  margin-bottom: 50px;
+}
+.building-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 32px;
+  text-align: left;
+  box-shadow: 0 6px 22px rgba(8, 43, 128, 0.09);
+  min-height: auto;
+}
+.building-card h3 {
+  font-size: 26px;
+  color: var(--primary-blue);
+  margin-bottom: 26px;
+  text-align: justify;
+}
+.building-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.building-card li {
+  font-size: 17px;
+  color: #000;
+  text-align: justify;
+}
+.building-note {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 36px;
+  box-shadow: 0 2px 12px rgba(8, 43, 128, 0.06);
+}
+.building-note p {
+  font-size: 20px;
+  color: black;
+}
+/* ---------- Vision Dimensions (dark) ---------- */
+.dimensions {
+  background:
+    linear-gradient(160deg, #020a24ee, #0a2263dd 55%, #0c2c85dd),
+    url(../Assets/vision_key.jpeg) center/cover no-repeat;
+  padding: 130px 0;
+}
+.section-title.light {
+  color: #fff;
+}
+.dimensions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.dimension-card {
+  background: #ffffff0f;
+  border: 1px solid #ffffff20;
+  border-radius: 18px;
+  padding: 46px 50px;
+  color: #fff;
+}
+.dimension-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  color: #fff;
+  margin-bottom: 22px;
+}
+.dimension-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.dimension-card h3 {
+  font-size: 25px;
+  margin-bottom: 14px;
+}
+.dimension-card > p {
+  font-size: 17px;
+  color: #d7def0;
+  margin-bottom: 20px;
+}
+.dimension-sub {
+  font-size: 16px;
+  color: #d7def0;
+  margin: 20px 0 16px;
+}
+.check-list.light {
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.check-list.light li {
+  color: #fff;
+  font-size: 16px;
+}
+.check-list.light li {
+  padding-left: 26px;
+}
+.check-list.light li::before {
+  content: "•";
+  color: #8bb0ff;
+  font-size: 22px;
+  line-height: 1;
+  top: -2px;
+}
+.check-list.light.cross-list li::before {
+  content: "•";
+  color: #8bb0ff;
+}
+.dimension-card em {
+  display: block;
+  font-size: 15px;
+  color: #b9c6ea;
+}
+
+/* ---------- Guiding Principles ---------- */
+.principles {
+  background: var(--primary-blue);
+  padding: 110px 0 130px;
+  color: #fff;
+  text-align: center;
+}
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+  margin-bottom: 44px;
+}
+.principle-card {
+  background: #ffffff12;
+  border: 1px solid #ffffff20;
+  border-radius: 16px;
+  padding: 44px 26px;
+}
+.principle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.principle-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.principle-card p {
+  font-size: 17px;
+  font-weight: 600;
+}
+.principles-note {
+  font-size: 16px;
+  font-weight: 600;
+  color: #dbe2f6;
+}
+
+/* ---------- The Future ---------- */
+.future {
+  padding: 120px 0;
+  background: #fff;
+}
+.future-card {
+  max-width: 780px;
+  margin: 0 auto;
+  background: var(--surface-soft);
+  border-radius: 18px;
+  padding: 56px 64px;
+}
+.future-card h2 {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+.future-lead {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+.future-card .check-list {
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.future-card .check-list li {
+  font-size: 17px;
+}
+.future-card em {
+  font-size: 15px;
+  color: var(--text-body);
+}
+.future-card em strong {
+  color: var(--primary-blue);
+}
+
+/* ---------- Final Thought (light variant) ---------- */
+.vision-final {
+  padding: 130px 0;
+  text-align: center;
+}
+.vision-final-container {
+  max-width: 780px;
+}
+.vision-final h2 {
+  font-size: 46px;
+  color: var(--primary-blue);
+  margin-bottom: 26px;
+}
+.vision-final-lead {
+  font-size: 22px;
+  color: var(--primary-blue);
+  margin-bottom: 36px;
+}
+.vision-final-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 18px rgba(8, 43, 128, 0.08);
+  margin-bottom: 25px;
+}
+.vision-final-box p {
+  font-size: 20px;
+  font-weight: 550;
+  color: var(--primary-blue);
+}
+.vision-final-quote {
+  font-style: italic;
+  font-size: 18px;
+  padding: 30px 10px;
+  color: var(--text-body);
+  margin-bottom: 44px;
+}
+.btn-outline-blue {
+  border: 2px solid var(--primary-blue-dark);
+  color: var(--primary-blue);
+  background: #f1f7ff;
+}
+.btn-outline-blue:hover {
+  background: var(--surface-soft);
+  transform: translateY(-2px);
+}
+.btn-solid-blue {
+  background: var(--primary-blue);
+  color: #fff;
+}
+.btn-solid-blue:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* ---------- Vision page responsive ---------- */
+@media (max-width: 1000px) {
+  .building-grid {
+    grid-template-columns: 1fr;
+  }
+  .dimensions-grid {
+    grid-template-columns: 1fr;
+  }
+  .principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .belief-quote,
+  .core-vision-card,
+  .future-card {
+    padding: 34px 26px;
+  }
+  .dimension-card {
+    padding: 34px 26px;
+  }
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================================
+   =========================================================
+   VALUES CSS
+   Styles specific to values.html (Values page).
+   Reuses the same tokens as Mission/Vision above
+   (--primary-blue, --primary-blue-dark, --text-body,
+   --surface-soft, --border-grid, --font-heading, --font-body).
+   Shared classes reused from Mission/Vision: .mission-hero,
+   .container, .section-title, .check-list, .soft,
+   .final-thought, .final-actions, .btn, .btn-outline, .btn-solid
+   =========================================================
+   ========================================================= */
+
+/* ---------- Hero override for Values ---------- */
+.values-hero {
+  background: linear-gradient(160deg, #020a24, #0a2263 55%, #0c2c85);
+}
+
+/* ---------- How We Operate ---------- */
+.values-intro {
+  padding: 110px 0 130px;
+}
+.values-intro-container {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: left;
+}
+.values-intro small {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 1.8px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 18px;
+}
+.values-intro p {
+  font-size: 20px;
+  color: var(--primary-blue);
+  margin-bottom: 18px;
+}
+.values-intro p strong {
+  color: var(--primary-blue);
+}
+
+/* ---------- Value Cards ---------- */
+.values-list {
+  padding: 90px 0 120px;
+}
+.values-list .container {
+  width: min(1320px, calc(100% - 68px));
+}
+.value-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.value-card {
+  position: relative;
+  background: #fff;
+  border-left: 5px solid var(--primary-blue);
+  border-radius: 12px;
+  padding: 48px 70px 40px 52px;
+  box-shadow: 0 4px 18px rgba(8, 43, 128, 0.08);
+}
+.value-number {
+  position: absolute;
+  top: -20px;
+  right: 34px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(8, 43, 128, 0.25);
+  border: 3px solid #fff;
+}
+.value-card h3 {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-right: 50px;
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+.value-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  color: var(--primary-blue);
+  flex-shrink: 0;
+}
+.value-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.value-card > p {
+  font-size: 17px;
+  color: black;
+  margin-bottom: 26px;
+}
+.value-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border-grid);
+  margin-bottom: 18px;
+}
+.value-card ul li {
+  font-size: 17px;
+  color: black;
+}
+.value-card em {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  color: #9aa5c2;
+}
+
+/* ---------- What These Values Mean in Reality ---------- */
+.reality {
+  padding: 100px 0;
+}
+.reality .container {
+  width: min(1320px, calc(100% - 48px));
+}
+.reality-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+}
+.reality-copy {
+  background: var(--surface-soft);
+  border-radius: 16px;
+  padding: 60px 56px 70px;
+  justify-content: center;
+}
+.reality-copy .check-list {
+  gap: 28px;
+  margin-bottom: 46px;
+}
+.reality-copy .check-list li {
+  font-size: 19px;
+  line-height: 1.5;
+  padding-left: 34px;
+  color: black;
+}
+.reality-copy .check-list li::before {
+  font-size: 19px;
+  top: 1px;
+}
+.reality-note {
+  font-size: 17px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+.reality-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 3.4;
+}
+
+/* ---------- Values page responsive ---------- */
+@media (max-width: 1000px) {
+  .reality-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .values-list {
+    padding: 60px 0 80px;
+  }
+  .value-card {
+    padding: 34px 28px 26px;
+  }
+  .value-number {
+  top: -18px;
+  right: 22px;
+}
+  .reality-copy {
+    padding: 34px 26px;
+  }
+}

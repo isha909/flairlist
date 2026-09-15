@@ -1,0 +1,324 @@
+
+/* ---------- HERO ---------- */
+.contact-hero {
+  background: linear-gradient(120deg, #051c4f, #0a2c85 60%, #0d3499);
+  color: #fff;
+  padding: 90px 0;
+}
+.contact-hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 70px;
+  align-items: start;
+}
+.contact-hero-copy small {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1.6px;
+  font-weight: 800;
+  color: #a9bcf0;
+  margin-bottom: 16px;
+}
+.contact-hero-copy h1 {
+  font-size: clamp(38px, 5vw, 50px);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.contact-hero-copy h1 u {
+  text-decoration: none;
+}
+.contact-hero-copy > p {
+  font-size: 16px;
+  color: #cdd7f5;
+  max-width: 520px;
+  margin-bottom: 44px;
+}
+
+.query-topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+}
+.query-topic {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 1px solid #ffffff1a;
+}
+.query-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.query-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.query-topic h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.query-topic p {
+  font-size: 13.5px;
+  color: #aebbe6;
+}
+
+/* ---------- QUERY CARD ---------- */
+.query-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 36px 38px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 0 0 auto;
+  color: var(--text-body);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+.query-card > small.prefer-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #8a8f9c;
+  margin-bottom: 8px;
+  padding-top: 24px;
+  margin-top: 6px;
+  border-top: 1px solid #e3e8f2;
+}
+.query-card h3 {
+  font-size: 26px;
+  color: var(--primary-blue);
+  margin-bottom: 14px;
+}
+.query-card > p {
+  font-size: 15px;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.magic-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+  padding: 20px 20px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  position: relative;
+  border: 1px solid #4a6fe0;
+  border-radius: 8px;
+  background: linear-gradient(120deg, #0a2c85, #163f9e, #0a2c85);
+  box-shadow:
+    0 0 0 1px #ffffff20,
+    0 0 45px 8px rgba(30, 70, 200, 0.65);
+  overflow: hidden;
+}
+.magic-form-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shineSweep 2.8s ease-in-out infinite;
+}
+@keyframes shineSweep {
+  0% {
+    left: -60%;
+  }
+  55% {
+    left: 130%;
+  }
+  100% {
+    left: 130%;
+  }
+}
+.magic-form-btn:hover {
+  box-shadow:
+    0 0 0 1px #ffffff40,
+    0 0 55px 10px rgba(30, 70, 200, 0.8);
+  transform: translateY(-2px);
+}
+.magic-form-btn span,
+.magic-form-btn svg {
+  position: relative;
+  z-index: 1;
+}
+
+.magic-form-arrow {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.prefer-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #8a8f9c;
+  margin-bottom: 8px;
+  padding-top: 24px;
+  margin-top: 6px;
+  border-top: 1px solid #e3e8f2;
+}
+.query-email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+.query-icon-small {
+  display: inline-flex;
+  width: 15px;
+  height: 15px;
+}
+.query-icon-small svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--primary-blue);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- CONTACT CARDS ---------- */
+.contact-cards {
+  padding: 90px 0;
+  margin-bottom: 40px;
+}
+
+.contact-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.contact-card {
+  flex: 0 1 300px;
+  border: 1px solid #e7ebf3;
+  border-radius: 12px;
+  padding: 22px 24px;
+  box-shadow: 0 4px 16px rgba(8, 43, 128, 0.05);
+}
+.contact-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: var(--primary-blue);
+  margin-bottom: 12px;
+}
+.contact-card-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--primary-blue);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.contact-card-icon.icon-filled {
+  width: 32px;
+  height: 32px;
+  background: var(--primary-blue);
+  border-radius: 8px;
+  padding: 7px;
+}
+.contact-card-icon.icon-filled svg {
+  stroke: #fff;
+}
+.contact-card small {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: #8a93ac;
+  margin-bottom: 6px;
+}
+.contact-card a {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 6px;
+}
+.contact-card p {
+  font-size: 13px;
+  color: #8a93ac;
+}
+
+/* ---------- TAGLINE STRIP ---------- */
+.contact-tagline {
+  background-color:#051c4f;
+  color: #fff;
+  padding: 46px 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.contact-tagline em {
+  display: block;
+  font-size: 14px;
+  color: #cdd7f5;
+  margin-bottom: 6px;
+}
+.contact-tagline p {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1000px) {
+  .contact-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+  .contact-cards-grid {
+  flex-direction: column;
+}
+.contact-card {
+  flex-basis: auto;
+}
+}
+@media (max-width: 600px) {
+  .contact-hero {
+    padding: 60px 0;
+  }
+  .contact-hero-copy h1 {
+    font-size: 32px;
+  }
+  .query-topics {
+    grid-template-columns: 1fr;
+  }
+  .query-card {
+    padding: 28px 24px;
+  }
+}

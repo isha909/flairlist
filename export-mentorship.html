@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Export Mentorship Program | FlairList Global</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Assets/css/style.css?v=2.0">
+  <link rel="stylesheet" href="./Assets/css/export-mentorship.css?v=2.0">
+</head>
+<body>
+
+
+    <!-- ===================== FLAIRLIST NAVBAR ===================== -->
+    <header class="navbar" id="siteNavbar">
+      <div class="navbar-container">
+        <div class="nav-left">
+          <!-- LOGO -->
+          <a href="./index.html" class="logo" aria-label="FlairList Global Home">
+            <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
+          </a>
+
+          <!-- MAIN NAVIGATION -->
+          <nav class="nav-links" aria-label="Main Navigation">
+            <div class="nav-dropdown" data-menu="who">
+              <button
+                type="button"
+                class="nav-link dropdown-trigger"
+                aria-expanded="false"
+              >
+                <span>Who We Are</span>
+                <span class="dropdown-arrow">▼</span>
+              </button>
+            </div>
+
+            <div class="nav-dropdown" data-menu="what">
+              <button
+                type="button"
+                class="nav-link dropdown-trigger"
+                aria-expanded="false"
+              >
+                <span>What We Do</span>
+                <span class="dropdown-arrow">▼</span>
+              </button>
+            </div>
+
+            <a href="./career.html" class="nav-link">Careers</a>
+            <a href="./investor.html" class="nav-link">Investors</a>
+          </nav>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="nav-right">
+          <form class="search-box" id="navbarSearch">
+            <input type="search" placeholder="Search..." aria-label="Search" />
+            <button type="submit" class="search-button" aria-label="Search">
+              ⌕
+            </button>
+          </form>
+
+         <!-- COUNTRY / LANGUAGE SELECTOR -->
+<div class="country-selector">
+    <button class="country-btn" type="button" aria-expanded="false">
+        <span id="selectedCountry">India</span>
+        <svg _ngcontent-ng-c1672362817="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="app-icon" width="24" height="24"><path _ngcontent-ng-c1672362817="" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E4E3DE" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter"></path></svg>
+    </button>
+
+    <div class="country-dropdown" id="countryDropdown">
+
+        <button type="button" data-lang="en" data-country="India">
+            India
+        </button>
+
+        <button type="button" data-lang="ar" data-country="United Arab Emirates">
+            United Arab Emirates
+        </button>
+
+        <button type="button" data-lang="en" data-country="United States">
+            United States
+        </button>
+
+        <button type="button" data-lang="zh-CN" data-country="China">
+            China
+        </button>
+
+        <button type="button" data-lang="nl" data-country="Netherlands">
+            Netherlands
+        </button>
+
+        <button type="button" data-lang="en" data-country="United Kingdom">
+            United Kingdom
+        </button>
+
+        <button type="button" data-lang="en" data-country="Singapore">
+            Singapore
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Saudi Arabia">
+            Saudi Arabia
+        </button>
+
+        <button type="button" data-lang="bn" data-country="Bangladesh">
+            Bangladesh
+        </button>
+
+        <button type="button" data-lang="de" data-country="Germany">
+            Germany
+        </button>
+
+        <button type="button" data-lang="it" data-country="Italy">
+            Italy
+        </button>
+
+        <button type="button" data-lang="ja" data-country="Japan">
+            Japan
+        </button>
+
+        <button type="button" data-lang="ko" data-country="South Korea">
+            South Korea
+        </button>
+
+        <button type="button" data-lang="ms" data-country="Malaysia">
+            Malaysia
+        </button>
+
+        <button type="button" data-lang="th" data-country="Thailand">
+            Thailand
+        </button>
+
+        <button type="button" data-lang="id" data-country="Indonesia">
+            Indonesia
+        </button>
+
+        <button type="button" data-lang="vi" data-country="Vietnam">
+            Vietnam
+        </button>
+
+        <button type="button" data-lang="en" data-country="Philippines">
+            Philippines
+        </button>
+
+        <button type="button" data-lang="en" data-country="Australia">
+            Australia
+        </button>
+
+        <button type="button" data-lang="en" data-country="New Zealand">
+            New Zealand
+        </button>
+
+        <button type="button" data-lang="fr" data-country="France">
+            France
+        </button>
+
+        <button type="button" data-lang="es" data-country="Spain">
+            Spain
+        </button>
+
+        <button type="button" data-lang="fr" data-country="Belgium">
+            Belgium
+        </button>
+
+        <button type="button" data-lang="de" data-country="Switzerland">
+            Switzerland
+        </button>
+
+        <button type="button" data-lang="pl" data-country="Poland">
+            Poland
+        </button>
+
+        <button type="button" data-lang="de" data-country="Austria">
+            Austria
+        </button>
+
+        <button type="button" data-lang="en" data-country="Ireland">
+            Ireland
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Qatar">
+            Qatar
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Kuwait">
+            Kuwait
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Oman">
+            Oman
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Bahrain">
+            Bahrain
+        </button>
+
+        <button type="button" data-lang="he" data-country="Israel">
+            Israel
+        </button>
+
+        <button type="button" data-lang="tr" data-country="Turkey">
+            Turkey
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Iraq">
+            Iraq
+        </button>
+
+        <button type="button" data-lang="en" data-country="South Africa">
+            South Africa
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Egypt">
+            Egypt
+        </button>
+
+        <button type="button" data-lang="en" data-country="Nigeria">
+            Nigeria
+        </button>
+
+        <button type="button" data-lang="en" data-country="Kenya">
+            Kenya
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Morocco">
+            Morocco
+        </button>
+
+        <button type="button" data-lang="en" data-country="Canada">
+            Canada
+        </button>
+
+        <button type="button" data-lang="pt" data-country="Brazil">
+            Brazil
+        </button>
+
+        <button type="button" data-lang="es" data-country="Argentina">
+            Argentina
+        </button>
+
+        <button type="button" data-lang="es" data-country="Chile">
+            Chile
+        </button>
+
+        <button type="button" data-lang="es" data-country="Colombia">
+            Colombia
+        </button>
+
+        <button type="button" data-lang="es" data-country="Peru">
+            Peru
+        </button>
+
+        <button type="button" data-lang="ne" data-country="Nepal">
+            Nepal
+        </button>
+
+        <button type="button" data-lang="si" data-country="Sri Lanka">
+            Sri Lanka
+        </button>
+
+        <button type="button" data-lang="ur" data-country="Pakistan">
+            Pakistan
+        </button>
+
+    </div>
+</div>
+
+          <a href="#" class="magic-button">Magic Form</a>
+        </div>
+      </div>
+
+      <!-- ==========================================================
+       MEGA MENU
+       Top navigation opens on CLICK.
+       Sidebar content changes on HOVER.
+      =========================================================== -->
+
+      <div class="mega-menu" id="megaMenu" aria-hidden="true">
+        <!-- ===================== WHO WE ARE ===================== -->
+        <section class="mega-content" id="whoMenu">
+          <aside class="mega-sidebar">
+            <button
+              type="button"
+              class="mega-side-item active"
+              data-content="purpose"
+            >
+              <span>Purpose &amp; Values</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="leadership"
+            >
+              <span>Leadership &amp; Team</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="press">
+              <span>Press Room</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="contact">
+              <span>Contact Us</span>
+            </button>
+          </aside>
+
+          <div class="mega-main">
+            <div class="mega-panel active" data-panel="purpose">
+              <h3>Purpose &amp; Values</h3>
+              <a href="./mission.html">Mission</a>
+              <a href="./vision.html">Vision</a>
+              <a href="./values.html">Values</a>
+            </div>
+
+            <div class="mega-panel" data-panel="leadership">
+              <h3>Leadership &amp; Team</h3>
+              <a href="#">Shubham Bibave - Founder &amp; CEO</a>
+              <a href="#">Executive Team</a>
+            </div>
+
+            <div class="mega-panel" data-panel="press">
+              <h3>Press Room</h3>
+              <a href="#">Zee Business</a>
+              <a href="#">Business Standard</a>
+              <a href="#">Republic News</a>
+              <a href="#">ANI News</a>
+              <a href="#">ABP Live</a>
+            </div>
+
+            <div class="mega-panel" data-panel="contact">
+              <h3>Contact Us</h3>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================== WHAT WE DO ===================== -->
+        <section class="mega-content" id="whatMenu">
+          <!-- LEVEL 1 -->
+          <aside class="mega-sidebar">
+            <button
+              type="button"
+              class="mega-side-item active"
+              data-content="services"
+            >
+              <span>Services</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item has-arrow"
+              data-content="import"
+            >
+              <span>Global Import-Export</span>
+              <span class="side-arrow">›</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="supply">
+              <span>Supply Chain &amp;<br />Distribution</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item has-arrow"
+              data-content="workforce"
+            >
+              <span>Workforce Mobility</span>
+              <span class="side-arrow">›</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="industries"
+            >
+              <span>Industries</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="subsidiaries"
+            >
+              <span>Subsidiaries</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="cases">
+              <span>Case Studies</span>
+            </button>
+          </aside>
+
+          <!-- LEVEL 2 / CONTENT -->
+          <div class="mega-main">
+            <!-- SERVICES -->
+            <div class="mega-panel active" data-panel="services">
+              <h3>Services</h3>
+              <a href="./expert-business-consultancy.html">Expert Business Consultation</a>
+              <a href="./export-consultation.html">Export Consultation</a>
+              <a href="./export-mentorship.html">Export Mentorship</a>
+              <a href="./exclusive-business-growth-partnership.html">Exclusive Partnership</a>
+            </div>
+
+            <!-- GLOBAL IMPORT-EXPORT -->
+            <div class="mega-panel nested-panel" data-panel="import">
+              <div class="nested-sidebar">
+                <button
+                  type="button"
+                  class="nested-side-item active"
+                  data-nested="countries"
+                >
+                  <span>Countries</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="products"
+                >
+                  <span>Products</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="partners"
+                >
+                  <span>Partners</span>
+                  <span>›</span>
+                </button>
+              </div>
+
+              <div class="nested-main">
+                <div class="nested-panel active" data-nested-panel="countries">
+                  <h3>Countries</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="#">India</a>
+                      <a href="#">UAE</a>
+                      <a href="#">Vietnam</a>
+                      <a href="#">UK</a>
+                      <a href="#">Netherlands</a>
+                    </div>
+                    <div>
+                      <a href="#">USA</a>
+                      <a href="#">Russia</a>
+                      <a href="#">Kenya</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="products">
+                  <h3>Products</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="#">Agri Commodities</a>
+                      <a href="#">Petrochemicals &amp; Energy Products</a>
+                      <a href="#">Metals &amp; Minerals</a>
+                      <a href="#">FMCG &amp; Food Products</a>
+                      <a href="#">Industrial Raw Materials</a>
+                    </div>
+                    <div>
+                      <a href="#">Apparel &amp; Textiles</a>
+                      <a href="#">Gems &amp; Jewellery</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="partners">
+                  <h3>Partners</h3>
+                  <a href="#">Partner with us</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUPPLY CHAIN -->
+            <div class="mega-panel" data-panel="supply">
+              <h3>Supply Chain &amp; Distribution</h3>
+
+              <div class="mega-columns two">
+                <div>
+                  <a href="#">Farmer / Manufacturer</a>
+                  <a href="#">Local Trader</a>
+                  <a href="#">Exporter</a>
+                  <a href="#">CHA</a>
+                  <a href="#">Freight Forwarder</a>
+                </div>
+                <div>
+                  <a href="#">Importer</a>
+                  <a href="#">Distributor</a>
+                  <a href="#">Retailer</a>
+                  <a href="#">Buyer</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- WORKFORCE MOBILITY -->
+            <div class="mega-panel nested-panel" data-panel="workforce">
+              <div class="nested-sidebar">
+                <button
+                  type="button"
+                  class="nested-side-item active"
+                  data-nested="programs"
+                >
+                  <span>Programs</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="deployment"
+                >
+                  <span>Deployment</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="partner-workforce"
+                >
+                  <span>Partner with us</span>
+                </button>
+              </div>
+
+              <div class="nested-main">
+                <div class="nested-panel active" data-nested-panel="programs">
+                  <h3>Programs</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="#">Farmer / Manufacturer</a>
+                      <a href="#">Local Trader</a>
+                      <a href="#">Exporter</a>
+                      <a href="#">CHA</a>
+                      <a href="#">Freight Forwarder</a>
+                    </div>
+                    <div>
+                      <a href="#">Importer</a>
+                      <a href="#">Distributor</a>
+                      <a href="#">Retailer</a>
+                      <a href="#">Buyer</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="deployment">
+                  <h3>Deployment</h3>
+                  <a href="#">Workforce Deployment</a>
+                  <a href="#">International Deployment</a>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="partner-workforce">
+                  <h3>Partner with us</h3>
+                  <a href="#">Partner with us</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- INDUSTRIES -->
+            <div class="mega-panel" data-panel="industries">
+              <h3>Industries</h3>
+
+              <div class="industries-grid">
+                <div>
+                  <a href="#">Finance</a>
+                  <a href="#">Real Estate &amp; Infrastructure</a>
+                  <a href="#">Energy, Power &amp; Sustainability</a>
+                  <a href="#">Petrochemicals &amp; Oil</a>
+                  <a href="#">Manufacturing</a>
+                </div>
+
+                <div>
+                  <a href="#">Logistics &amp; Supply Chain</a>
+                  <a href="#">IT &amp; SaaS</a>
+                  <a href="#">E-Commerce</a>
+                  <a href="#">Media &amp; Entertainment</a>
+                  <a href="#">Education &amp; Consulting</a>
+                </div>
+
+                <div>
+                  <a href="#">Health &amp; Wellness</a>
+                  <a href="#">Hospitality</a>
+                  <a href="#">Aviation</a>
+                  <a href="#">Agriculture</a>
+                  <a href="#">Gems &amp; Jewellery</a>
+                </div>
+
+                <div>
+                  <a href="#">Apparel</a>
+                  <a href="#">F&amp;B (Food &amp; Beverage)</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUBSIDIARIES -->
+            <div class="mega-panel" data-panel="subsidiaries">
+              <h3>Subsidiaries</h3>
+              <a href="#">FlairJets</a>
+              <a href="#">FlairStudios</a>
+              <a href="#">FlairCapital</a>
+              <a href="#">FlairNutrition</a>
+              <a href="#">FlairLiving</a>
+            </div>
+
+            <!-- CASE STUDIES -->
+            <div class="mega-panel" data-panel="cases">
+              <h3>Case Studies</h3>
+              <a href="#">Case Studies</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+
+<main>
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="eyebrow light">EXPORT MENTORSHIP</p>
+      <h1>Export Mentorship Program</h1>
+      <p>Build the right export strategy. Find the right market. Reach the right buyer.</p>
+      <p class="hero-small">“Learn. Execute. Grow internationally.”</p>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="container intro-grid">
+      <div>
+        <p class="eyebrow">EXPORT MENTORSHIP PROGRAM</p>
+        <h2>Get guided support to build and grow your export business with clarity and confidence.</h2>
+        <p class="lead">The Export Mentorship Program gives you structured guidance across the key stages of international business development.</p>
+        <div class="notice">
+          <strong>The program helps you:</strong>
+          <ul>
+            <li>Understand your export opportunity</li>
+            <li>Choose the right markets</li>
+            <li>Develop a buyer strategy</li>
+            <li>Build an actionable export plan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="intro-image"></div>
+    </div>
+  </section>
+
+  <section class="section blue-soft">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">PROGRAM OVERVIEW</p>
+        <h2>Who Is This Mentorship For?</h2>
+        <p>For businesses that want ongoing direction while building their international growth journey.</p>
+      </div>
+
+      <div class="audience-grid">
+        <div>First-time exporters</div>
+        <div>Existing exporters looking to grow</div>
+        <div>Businesses entering new international markets</div>
+        <div>Product businesses seeking international buyers</div>
+      </div>
+
+      <div class="feature-list">
+        <div>Businesses that need an experienced outside perspective</div>
+        <div>Founders who want support while executing their export plan</div>
+        <div>Teams that need accountability and structured guidance</div>
+        <div>Businesses looking for long-term export growth</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">OUR APPROACH</p>
+        <h2>Why FlairList Global Export Mentorship?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="bullet-card">
+          <h3>Practical mentorship</h3>
+          <ul>
+            <li>Business-focused guidance</li>
+            <li>International market perspective</li>
+            <li>Product and buyer strategy</li>
+            <li>Execution-oriented support</li>
+          </ul>
+        </div>
+        <div class="why-metrics">
+          <div><strong>1:1</strong><span>Mentorship Support</span></div>
+          <div><strong>12 Weeks</strong><span>Structured Journey</span></div>
+          <div><strong>Market</strong><span>Buyer &amp; Strategy Focus</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section blue-soft">
+    <div class="container">
+      <div class="section-heading left">
+        <p class="eyebrow green">MENTORSHIP FRAMEWORK</p>
+        <h2>The Mentorship Structure</h2>
+        <p>A step-by-step framework designed to move your business from export questions to confident execution.</p>
+      </div>
+
+      <div class="framework">
+        <article class="framework-card">
+          <span class="step">01</span>
+          <div><h3>Business &amp; Export Foundation</h3><p>Understand the business, product, objectives and current export position.</p></div>
+          <ul><li>Business assessment</li><li>Product understanding</li><li>Export objectives</li><li>Readiness gaps</li></ul>
+        </article>
+
+        <article class="framework-card">
+          <span class="step">02</span>
+          <div><h3>Market Selection</h3><p>Identify and prioritise markets where your product has a meaningful opportunity.</p></div>
+          <ul><li>Market research</li><li>Demand indicators</li><li>Competition</li><li>Market prioritisation</li></ul>
+        </article>
+
+        <article class="framework-card">
+          <span class="step">03</span>
+          <div><h3>Product-Market Fit</h3><p>Align your product with market expectations, positioning and requirements.</p></div>
+          <ul><li>Product positioning</li><li>Market requirements</li><li>Pricing considerations</li><li>Product adaptation</li></ul>
+        </article>
+
+        <article class="framework-card">
+          <span class="step">04</span>
+          <div><h3>Buyer Identification</h3><p>Build a practical approach to identifying, qualifying and approaching international buyers.</p></div>
+          <ul><li>Buyer segments</li><li>Buyer profiles</li><li>Qualification criteria</li><li>Outreach approach</li></ul>
+        </article>
+
+        <article class="framework-card wide">
+          <span class="step">05</span>
+          <div><h3>Buyer Outreach &amp; Sales Process</h3><p>Develop the communication and sales process needed to convert international opportunities.</p></div>
+          <div class="mini-columns">
+            <ul><li>Outreach planning</li><li>Communication</li><li>Follow-up</li></ul>
+            <ul><li>Lead qualification</li><li>Negotiation</li><li>Conversion priorities</li></ul>
+          </div>
+        </article>
+
+        <article class="framework-card">
+          <span class="step">06</span>
+          <div><h3>Export Execution</h3><p>Translate the strategy into a focused action plan and measurable execution.</p></div>
+          <ul><li>Execution priorities</li><li>Action planning</li><li>Progress review</li><li>Next steps</li></ul>
+        </article>
+
+        <article class="framework-card">
+          <span class="step">07</span>
+          <div><h3>Growth &amp; Scale</h3><p>Build the foundation for repeatable international growth.</p></div>
+          <div class="mini-columns">
+            <ul><li>Growth opportunities</li><li>Market expansion</li></ul>
+            <ul><li>Buyer development</li><li>Long-term priorities</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="container">
+      <div class="section-heading left">
+        <p class="eyebrow">MENTORSHIP TOPICS</p>
+        <h2>Mentorship Topics Covered</h2>
+      </div>
+      <div class="topics">
+        <span>Export readiness</span><span>Market research</span><span>Market selection</span>
+        <span>Product positioning</span><span>Buyer identification</span><span>Buyer outreach</span>
+        <span>Export sales</span><span>Pricing strategy</span><span>Negotiation</span>
+        <span>Execution planning</span><span>Market expansion</span><span>Growth strategy</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section blue-soft">
+    <div class="container">
+      <div class="section-heading left">
+        <p class="eyebrow">12-WEEK JOURNEY</p>
+        <h2>12-Week Structured Mentorship Journey</h2>
+        <p>A guided progression from foundation to international execution.</p>
+      </div>
+      <div class="journey-grid">
+        <div class="journey-card"><span>01–04</span><h3>Foundation &amp; Market</h3><ul><li>Business assessment</li><li>Export readiness</li><li>Market selection</li><li>Opportunity mapping</li></ul></div>
+        <div class="journey-card"><span>05–08</span><h3>Product &amp; Buyer</h3><ul><li>Product-market fit</li><li>Buyer identification</li><li>Buyer qualification</li><li>Outreach strategy</li></ul></div>
+        <div class="journey-card"><span>09–12</span><h3>Execution &amp; Growth</h3><ul><li>Sales process</li><li>Execution plan</li><li>Progress review</li><li>Growth priorities</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="container narrow center">
+      <h2>Why This Mentorship Is Different</h2>
+      <p class="sub">The focus is on guided implementation, not passive information.</p>
+      <div class="different-grid">
+        <div><strong>Not just advice</strong><span>Structured guidance connected to your business.</span></div>
+        <div><strong>Not just research</strong><span>Insights translated into decisions and actions.</span></div>
+        <div><strong>Not just a course</strong><span>Ongoing mentorship and accountability.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section blue-soft">
+    <div class="container narrow center">
+      <h2>Mentorship Outcomes</h2>
+      <p class="sub">By the end of the journey, you should have a clearer export direction and a practical execution plan.</p>
+      <div class="outcomes">
+        <span>Clear export roadmap</span><span>Priority target markets</span><span>Product-market direction</span>
+        <span>Buyer strategy</span><span>Execution priorities</span><span>Growth direction</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="investment">
+    <div class="container investment-inner">
+      <div>
+        <p class="eyebrow light">PROGRAM VALUE</p>
+        <h2>Investment &amp; Value</h2>
+        <div class="price-table">
+          <div><span>Export Foundation</span><b>₹20,000</b></div>
+          <div><span>Market Strategy</span><b>₹20,000</b></div>
+          <div><span>Buyer Strategy</span><b>₹20,000</b></div>
+          <div><span>Execution Mentorship</span><b>₹20,000</b></div>
+          <div class="total"><span>Total Program Value</span><b>₹1,00,000</b></div>
+        </div>
+      </div>
+      <div class="price-box">
+        <span>Program Investment</span>
+        <strong>₹1,00,000</strong>
+        <p>Structured mentorship for building a stronger export business.</p>
+        <a href="#start" class="primary-btn">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="container narrow center">
+      <h2>Final Word</h2>
+      <p class="sub">International growth becomes easier when you have the right strategy, guidance and accountability.</p>
+      <div class="final-box">Build your export business with clarity, confidence and a structured plan.</div>
+    </div>
+  </section>
+
+  <section class="section white" id="start">
+    <div class="container narrow">
+      <div class="get-started">
+        <p class="eyebrow">NEXT STEP</p>
+        <h2>Start Your Export Journey</h2>
+        <p>Tell us about your business and your export goals.</p>
+        <form class="consult-form">
+          <label>Name<input type="text" placeholder="Your name"></label>
+          <label>Business / Company<input type="text" placeholder="Company name"></label>
+          <label>Email<input type="email" placeholder="Your email"></label>
+          <label>Phone<input type="tel" placeholder="Your phone number"></label>
+          <label class="full">Tell us about your export requirement<textarea rows="4" placeholder="Briefly describe your requirement"></textarea></label>
+          <button class="primary-btn" type="submit">Start Your Journey</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+      <footer class="site-footer">
+        <div class="footer-container">
+          <!-- =================================
+             COLUMN 1
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>Who We Are</h3>
+
+            <a href="#">Mission</a>
+            <a href="#">Vision</a>
+            <a href="#">Values</a>
+            <a href="#">Founder &amp; CEO</a>
+            <a href="#">Leadership &amp; Team</a>
+            <a href="#">Press Room</a>
+          </div>
+
+          <!-- =================================
+             COLUMN 2
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>What We Do</h3>
+
+            <a href="#" class="footer-bold"> Services </a>
+
+            <a href="#"> Expert Business Consultation </a>
+
+            <a href="#"> Export Consultation </a>
+
+            <a href="#"> Export Mentorship </a>
+
+            <a href="#"> Exclusive Partnership </a>
+
+            <a href="#" class="footer-bold"> Global Import-Export </a>
+
+            <a href="#"> Countries </a>
+
+            <a href="#"> Products </a>
+
+            <a href="#"> Partner With Us </a>
+          </div>
+
+          <!-- =================================
+             COLUMN 3
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>More</h3>
+
+            <a href="#" class="footer-bold"> Supply Chain &amp; Workforce </a>
+
+            <a href="#"> Supply Chain &amp; Distribution </a>
+
+            <a href="#"> Workforce Programs </a>
+
+            <a href="#"> Deployment </a>
+
+            <a href="#" class="footer-bold"> Explore </a>
+
+            <a href="#"> Industries </a>
+
+            <a href="#"> Case Studies </a>
+          </div>
+
+          <!-- =================================
+             COLUMN 4
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>Opportunities</h3>
+
+            <a href="#"> Careers </a>
+
+            <a href="#"> Investors </a>
+
+            <a href="#"> Contact Us </a>
+
+            <h4 class="footer-follow-title">Follow Us</h4>
+
+            <a href="#" class="social-link">
+              <span class="social-icon"> ◎ </span>
+
+              @theshubhambibave
+            </a>
+
+            <a href="#" class="social-link">
+              <span class="social-icon"> ◎ </span>
+
+              @flairlist
+            </a>
+          </div>
+
+          <!-- =================================
+             COLUMN 5
+        ================================== -->
+
+          <div class="footer-column footer-connect">
+            <h3>Let's Connect</h3>
+
+            <div class="footer-contact">
+              <strong> ✉ Email: </strong>
+
+              <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
+            </div>
+
+            <div class="footer-contact">
+              <strong> ◎ Website: </strong>
+
+              <a href="https://www.flairlist.com/"> FlairList.com </a>
+            </div>
+
+            <a href="#" class="footer-button"> Get in Touch </a>
+          </div>
+        </div>
+
+        <!-- =====================================
+         FOOTER BOTTOM
+    ====================================== -->
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>2026 FlairList Global. All rights reserved.</p>
+
+            <p class="footer-tagline">
+              "Building what global business runs on."
+            </p>
+          </div>
+
+          <nav class="footer-legal">
+            <a href="#"> Terms of Use </a>
+
+            <a href="#"> Privacy Policy </a>
+
+            <a href="#"> Refund Policy </a>
+
+            <a href="#"> Cancellation Policy </a>
+
+            <a href="#"> Cookies </a>
+          </nav>
+        </div>
+      </footer>
+
+
+</body>
+</html>

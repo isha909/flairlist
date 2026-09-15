@@ -1,0 +1,1612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlairList Global</title>
+
+    <!-- Inter Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./Assets/css/style.css?v=2.0" />
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- ========================================
+         NAVIGATION
+    ========================================= -->
+
+    <!-- ===================== FLAIRLIST NAVBAR ===================== -->
+    <header class="navbar" id="siteNavbar">
+      <div class="navbar-container">
+        <div class="nav-left">
+          <!-- LOGO -->
+          <a href="#" class="logo" aria-label="FlairList Global Home">
+            <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
+          </a>
+
+          <!-- MAIN NAVIGATION -->
+          <nav class="nav-links" aria-label="Main Navigation">
+            <div class="nav-dropdown" data-menu="who">
+              <button
+                type="button"
+                class="nav-link dropdown-trigger"
+                aria-expanded="false"
+              >
+                <span>Who We Are</span>
+                <span class="dropdown-arrow">▼</span>
+              </button>
+            </div>
+
+            <div class="nav-dropdown" data-menu="what">
+              <button
+                type="button"
+                class="nav-link dropdown-trigger"
+                aria-expanded="false"
+              >
+                <span>What We Do</span>
+                <span class="dropdown-arrow">▼</span>
+              </button>
+            </div>
+
+            <a href="./career.html" class="nav-link">Careers</a>
+            <a href="./investor.html" class="nav-link">Investors</a>
+          </nav>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="nav-right">
+          <form class="search-box" id="navbarSearch">
+            <input type="search" placeholder="Search..." aria-label="Search" />
+            <button type="submit" class="search-button" aria-label="Search">
+              ⌕
+            </button>
+          </form>
+
+         <!-- COUNTRY / LANGUAGE SELECTOR -->
+<div class="country-selector">
+    <button class="country-btn" type="button" aria-expanded="false">
+        <span id="selectedCountry">India</span>
+        <svg _ngcontent-ng-c1672362817="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="app-icon" width="24" height="24"><path _ngcontent-ng-c1672362817="" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E4E3DE" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter"></path></svg>
+    </button>
+
+    <div class="country-dropdown" id="countryDropdown">
+
+        <button type="button" data-lang="en" data-country="India">
+            India
+        </button>
+
+        <button type="button" data-lang="ar" data-country="United Arab Emirates">
+            United Arab Emirates
+        </button>
+
+        <button type="button" data-lang="en" data-country="United States">
+            United States
+        </button>
+
+        <button type="button" data-lang="zh-CN" data-country="China">
+            China
+        </button>
+
+        <button type="button" data-lang="nl" data-country="Netherlands">
+            Netherlands
+        </button>
+
+        <button type="button" data-lang="en" data-country="United Kingdom">
+            United Kingdom
+        </button>
+
+        <button type="button" data-lang="en" data-country="Singapore">
+            Singapore
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Saudi Arabia">
+            Saudi Arabia
+        </button>
+
+        <button type="button" data-lang="bn" data-country="Bangladesh">
+            Bangladesh
+        </button>
+
+        <button type="button" data-lang="de" data-country="Germany">
+            Germany
+        </button>
+
+        <button type="button" data-lang="it" data-country="Italy">
+            Italy
+        </button>
+
+        <button type="button" data-lang="ja" data-country="Japan">
+            Japan
+        </button>
+
+        <button type="button" data-lang="ko" data-country="South Korea">
+            South Korea
+        </button>
+
+        <button type="button" data-lang="ms" data-country="Malaysia">
+            Malaysia
+        </button>
+
+        <button type="button" data-lang="th" data-country="Thailand">
+            Thailand
+        </button>
+
+        <button type="button" data-lang="id" data-country="Indonesia">
+            Indonesia
+        </button>
+
+        <button type="button" data-lang="vi" data-country="Vietnam">
+            Vietnam
+        </button>
+
+        <button type="button" data-lang="en" data-country="Philippines">
+            Philippines
+        </button>
+
+        <button type="button" data-lang="en" data-country="Australia">
+            Australia
+        </button>
+
+        <button type="button" data-lang="en" data-country="New Zealand">
+            New Zealand
+        </button>
+
+        <button type="button" data-lang="fr" data-country="France">
+            France
+        </button>
+
+        <button type="button" data-lang="es" data-country="Spain">
+            Spain
+        </button>
+
+        <button type="button" data-lang="fr" data-country="Belgium">
+            Belgium
+        </button>
+
+        <button type="button" data-lang="de" data-country="Switzerland">
+            Switzerland
+        </button>
+
+        <button type="button" data-lang="pl" data-country="Poland">
+            Poland
+        </button>
+
+        <button type="button" data-lang="de" data-country="Austria">
+            Austria
+        </button>
+
+        <button type="button" data-lang="en" data-country="Ireland">
+            Ireland
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Qatar">
+            Qatar
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Kuwait">
+            Kuwait
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Oman">
+            Oman
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Bahrain">
+            Bahrain
+        </button>
+
+        <button type="button" data-lang="he" data-country="Israel">
+            Israel
+        </button>
+
+        <button type="button" data-lang="tr" data-country="Turkey">
+            Turkey
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Iraq">
+            Iraq
+        </button>
+
+        <button type="button" data-lang="en" data-country="South Africa">
+            South Africa
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Egypt">
+            Egypt
+        </button>
+
+        <button type="button" data-lang="en" data-country="Nigeria">
+            Nigeria
+        </button>
+
+        <button type="button" data-lang="en" data-country="Kenya">
+            Kenya
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Morocco">
+            Morocco
+        </button>
+
+        <button type="button" data-lang="en" data-country="Canada">
+            Canada
+        </button>
+
+        <button type="button" data-lang="pt" data-country="Brazil">
+            Brazil
+        </button>
+
+        <button type="button" data-lang="es" data-country="Argentina">
+            Argentina
+        </button>
+
+        <button type="button" data-lang="es" data-country="Chile">
+            Chile
+        </button>
+
+        <button type="button" data-lang="es" data-country="Colombia">
+            Colombia
+        </button>
+
+        <button type="button" data-lang="es" data-country="Peru">
+            Peru
+        </button>
+
+        <button type="button" data-lang="ne" data-country="Nepal">
+            Nepal
+        </button>
+
+        <button type="button" data-lang="si" data-country="Sri Lanka">
+            Sri Lanka
+        </button>
+
+        <button type="button" data-lang="ur" data-country="Pakistan">
+            Pakistan
+        </button>
+
+    </div>
+</div>
+
+          <a href="#" class="magic-button">Magic Form</a>
+        </div>
+      </div>
+
+      <!-- ==========================================================
+       MEGA MENU
+       Top navigation opens on CLICK.
+       Sidebar content changes on HOVER.
+      =========================================================== -->
+
+      <div class="mega-menu" id="megaMenu" aria-hidden="true">
+        <!-- ===================== WHO WE ARE ===================== -->
+        <section class="mega-content" id="whoMenu">
+          <aside class="mega-sidebar">
+            <button
+              type="button"
+              class="mega-side-item active"
+              data-content="purpose"
+            >
+              <span>Purpose &amp; Values</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="leadership"
+            >
+              <span>Leadership &amp; Team</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="press">
+              <span>Press Room</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="contact">
+              <span>Contact Us</span>
+            </button>
+          </aside>
+
+          <div class="mega-main">
+            <div class="mega-panel active" data-panel="purpose">
+              <h3>Purpose &amp; Values</h3>
+              <a href="./mission.html">Mission</a>
+              <a href="./vision.html">Vision</a>
+              <a href="./values.html">Values</a>
+            </div>
+
+            <div class="mega-panel" data-panel="leadership">
+              <h3>Leadership &amp; Team</h3>
+              <a href="#">Shubham Bibave - Founder &amp; CEO</a>
+              <a href="#">Executive Team</a>
+            </div>
+
+            <div class="mega-panel" data-panel="press">
+              <h3>Press Room</h3>
+              <a href="#">Zee Business</a>
+              <a href="#">Business Standard</a>
+              <a href="#">Republic News</a>
+              <a href="#">ANI News</a>
+              <a href="#">ABP Live</a>
+            </div>
+
+            <div class="mega-panel" data-panel="contact">
+              <h3>Contact Us</h3>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================== WHAT WE DO ===================== -->
+        <section class="mega-content" id="whatMenu">
+          <!-- LEVEL 1 -->
+          <aside class="mega-sidebar">
+            <button
+              type="button"
+              class="mega-side-item active"
+              data-content="services"
+            >
+              <span>Services</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item has-arrow"
+              data-content="import"
+            >
+              <span>Global Import-Export</span>
+              <span class="side-arrow">›</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="supply">
+              <span>Supply Chain &amp;<br />Distribution</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item has-arrow"
+              data-content="workforce"
+            >
+              <span>Workforce Mobility</span>
+              <span class="side-arrow">›</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="industries"
+            >
+              <span>Industries</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="subsidiaries"
+            >
+              <span>Subsidiaries</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="cases">
+              <span>Case Studies</span>
+            </button>
+          </aside>
+
+          <!-- LEVEL 2 / CONTENT -->
+          <div class="mega-main">
+            <!-- SERVICES -->
+            <div class="mega-panel active" data-panel="services">
+              <h3>Services</h3>
+              <a href="./expert-business-consultancy.html">Expert Business Consultation</a>
+              <a href="./export-consultation.html">Export Consultation</a>
+              <a href="./export-mentorship.html">Export Mentorship</a>
+              <a href="./exclusive-business-growth-partnership.html">Exclusive Partnership</a>
+            </div>
+
+            <!-- GLOBAL IMPORT-EXPORT -->
+            <div class="mega-panel nested-panel" data-panel="import">
+              <div class="nested-sidebar">
+                <button
+                  type="button"
+                  class="nested-side-item active"
+                  data-nested="countries"
+                >
+                  <span>Countries</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="products"
+                >
+                  <span>Products</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="partners"
+                >
+                  <span>Partners</span>
+                  <span>›</span>
+                </button>
+              </div>
+
+              <div class="nested-main">
+                <div class="nested-panel active" data-nested-panel="countries">
+                  <h3>Countries</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="#">India</a>
+                      <a href="#">UAE</a>
+                      <a href="#">Vietnam</a>
+                      <a href="#">UK</a>
+                      <a href="#">Netherlands</a>
+                    </div>
+                    <div>
+                      <a href="#">USA</a>
+                      <a href="#">Russia</a>
+                      <a href="#">Kenya</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="products">
+                  <h3>Products</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="#">Agri Commodities</a>
+                      <a href="#">Petrochemicals &amp; Energy Products</a>
+                      <a href="#">Metals &amp; Minerals</a>
+                      <a href="#">FMCG &amp; Food Products</a>
+                      <a href="#">Industrial Raw Materials</a>
+                    </div>
+                    <div>
+                      <a href="#">Apparel &amp; Textiles</a>
+                      <a href="#">Gems &amp; Jewellery</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="partners">
+                  <h3>Partners</h3>
+                  <a href="#">Partner with us</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUPPLY CHAIN -->
+            <div class="mega-panel" data-panel="supply">
+              <h3>Supply Chain &amp; Distribution</h3>
+
+              <div class="mega-columns two">
+                <div>
+                  <a href="#">Farmer / Manufacturer</a>
+                  <a href="#">Local Trader</a>
+                  <a href="#">Exporter</a>
+                  <a href="#">CHA</a>
+                  <a href="#">Freight Forwarder</a>
+                </div>
+                <div>
+                  <a href="#">Importer</a>
+                  <a href="#">Distributor</a>
+                  <a href="#">Retailer</a>
+                  <a href="#">Buyer</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- WORKFORCE MOBILITY -->
+            <div class="mega-panel nested-panel" data-panel="workforce">
+              <div class="nested-sidebar">
+                <button
+                  type="button"
+                  class="nested-side-item active"
+                  data-nested="programs"
+                >
+                  <span>Programs</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="deployment"
+                >
+                  <span>Deployment</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="partner-workforce"
+                >
+                  <span>Partner with us</span>
+                </button>
+              </div>
+
+              <div class="nested-main">
+                <div class="nested-panel active" data-nested-panel="programs">
+                  <h3>Programs</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="#">Farmer / Manufacturer</a>
+                      <a href="#">Local Trader</a>
+                      <a href="#">Exporter</a>
+                      <a href="#">CHA</a>
+                      <a href="#">Freight Forwarder</a>
+                    </div>
+                    <div>
+                      <a href="#">Importer</a>
+                      <a href="#">Distributor</a>
+                      <a href="#">Retailer</a>
+                      <a href="#">Buyer</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="deployment">
+                  <h3>Deployment</h3>
+                  <a href="#">Workforce Deployment</a>
+                  <a href="#">International Deployment</a>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="partner-workforce">
+                  <h3>Partner with us</h3>
+                  <a href="#">Partner with us</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- INDUSTRIES -->
+            <div class="mega-panel" data-panel="industries">
+              <h3>Industries</h3>
+
+              <div class="industries-grid">
+                <div>
+                  <a href="#">Finance</a>
+                  <a href="#">Real Estate &amp; Infrastructure</a>
+                  <a href="#">Energy, Power &amp; Sustainability</a>
+                  <a href="#">Petrochemicals &amp; Oil</a>
+                  <a href="#">Manufacturing</a>
+                </div>
+
+                <div>
+                  <a href="#">Logistics &amp; Supply Chain</a>
+                  <a href="#">IT &amp; SaaS</a>
+                  <a href="#">E-Commerce</a>
+                  <a href="#">Media &amp; Entertainment</a>
+                  <a href="#">Education &amp; Consulting</a>
+                </div>
+
+                <div>
+                  <a href="#">Health &amp; Wellness</a>
+                  <a href="#">Hospitality</a>
+                  <a href="#">Aviation</a>
+                  <a href="#">Agriculture</a>
+                  <a href="#">Gems &amp; Jewellery</a>
+                </div>
+
+                <div>
+                  <a href="#">Apparel</a>
+                  <a href="#">F&amp;B (Food &amp; Beverage)</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUBSIDIARIES -->
+            <div class="mega-panel" data-panel="subsidiaries">
+              <h3>Subsidiaries</h3>
+              <a href="#">FlairJets</a>
+              <a href="#">FlairStudios</a>
+              <a href="#">FlairCapital</a>
+              <a href="#">FlairNutrition</a>
+              <a href="#">FlairLiving</a>
+            </div>
+
+            <!-- CASE STUDIES -->
+            <div class="mega-panel" data-panel="cases">
+              <h3>Case Studies</h3>
+              <a href="#">Case Studies</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <!-- ========================================
+         HERO
+    ======================================== -->
+
+    <main>
+      <section class="hero">
+        <!-- =====================================
+         MAIN HERO
+    ====================================== -->
+
+        <div class="hero-container">
+          <!-- LEFT CONTENT -->
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Building the<br />
+              Backbone of Global<br />
+              Business Execution
+            </h1>
+
+            <p class="hero-description">
+              At FlairList Global, we don't operate like a typical consulting
+              firm, trading company, or training institute. We are building a
+              globally connected execution ecosystem that brings together
+              businesses, trade &amp; supply chains, talent &amp; workforce
+              mobility, and markets &amp; capital — all under one disciplined,
+              execution-first system.
+            </p>
+
+            <a href="#" class="hero-button">
+              <span>Magic Form</span>
+              <span class="arrow">»</span>
+            </a>
+          </div>
+
+          <!-- RIGHT IMAGE COLLAGE -->
+          <div class="hero-visual">
+            <div class="image-grid">
+              <div class="image-card">
+                <img
+                  src="./Assets/img/Image_1.png"
+                  alt="Cargo containers and cranes at a shipping port"
+                />
+              </div>
+
+              <div class="image-card">
+                <img src="./Assets/img/image_2.png" alt="Dubai city skyline" />
+              </div>
+
+              <div class="image-card">
+                <img
+                  src="./Assets/img/image_5.png"
+                  alt="Business professionals meeting"
+                />
+              </div>
+
+              <div class="image-card">
+                <img
+                  src="./Assets/img/image_4.png"
+                  alt="Business owner in a store"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====================================
+         HERO STATS
+    ====================================== -->
+
+        <div class="hero-stats">
+          <div class="stats-container">
+            <!-- STAT 1 -->
+            <div class="stat-item">
+              <div class="stat-number">8+</div>
+
+              <div class="stat-label">COUNTRIES ACTIVE</div>
+            </div>
+
+            <!-- DIVIDER -->
+            <span class="stat-divider"></span>
+
+            <!-- STAT 2 -->
+            <div class="stat-item">
+              <div class="stat-number">15+</div>
+
+              <div class="stat-label">INDUSTRY SECTORS</div>
+            </div>
+
+            <!-- DIVIDER -->
+            <span class="stat-divider"></span>
+
+            <!-- STAT 3 -->
+            <div class="stat-item">
+              <div class="stat-number">5</div>
+
+              <div class="stat-label">ACTIVE SUBSIDIARIES</div>
+            </div>
+
+            <!-- DIVIDER -->
+            <span class="stat-divider"></span>
+
+            <!-- STAT 4 -->
+            <div class="stat-item">
+              <div class="stat-number stat-text">End-to-End</div>
+
+              <div class="stat-label">SUPPLY CHAIN COVERAGE</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     WHAT WE DO
+========================================= -->
+
+      <section class="what-we-do">
+        <div class="what-we-do-container">
+          <h2 class="what-we-do-title">What We Do — In One Line</h2>
+
+          <p class="what-we-do-description">
+            We structure, execute, and scale businesses across domestic and
+            international markets
+            <br />
+            — with accountability, not assumptions.
+          </p>
+        </div>
+      </section>
+
+      <!-- =========================================
+     WHY FLAIRLIST GLOBAL EXISTS
+========================================= -->
+
+      <section class="why-flairlist">
+        <div class="why-flairlist-container">
+          <!-- SECTION INTRO -->
+          <div class="why-flairlist-header">
+            <h2 class="why-flairlist-title">Why FlairList Global Exists</h2>
+
+            <p class="why-flairlist-description">
+              Across industries and borders, businesses struggle not due to lack
+              of opportunity, but due to fragmented systems and poor execution.
+              FlairList Global exists to remove chaos and replace it with
+              structure.
+            </p>
+          </div>
+
+          <!-- PROBLEM CARDS -->
+          <div class="problem-grid">
+            <!-- CARD 1 -->
+            <article class="problem-card">
+              <div class="problem-icon">
+                <!-- Lightning -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M13.2 2L5 13h5.8L10.2 22 19 10.5h-5.6L13.2 2Z" />
+                </svg>
+              </div>
+
+              <h3>
+                Fragmented<br />
+                Supply Chains
+              </h3>
+
+              <p>
+                We connect the dots between farmers, traders, exporters,
+                logistics, and buyers into one unified system.
+              </p>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="problem-card">
+              <div class="problem-icon">
+                <!-- Eye -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z" />
+
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+
+              <h3>
+                Poor Execution<br />
+                Visibility
+              </h3>
+
+              <p>
+                We bring transparency and control to every step of business
+                execution, domestic and international.
+              </p>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="problem-card">
+              <div class="problem-icon">
+                <!-- Chat -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M3 4h15a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-6 4v-4H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"
+                  />
+
+                  <path d="M8 20h10a2 2 0 0 0 2-2v-5" />
+                </svg>
+              </div>
+
+              <h3>Unreliable Partners</h3>
+
+              <p>
+                We build verified ecosystems of buyers, suppliers, and service
+                providers you can trust.
+              </p>
+            </article>
+
+            <!-- CARD 4 -->
+            <article class="problem-card">
+              <div class="problem-icon">
+                <!-- People -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="9" cy="8" r="3" />
+
+                  <circle cx="17" cy="9" r="2.5" />
+
+                  <path d="M3 20c0-3.3 2.7-5 6-5s6 1.7 6 5" />
+
+                  <path d="M14 15c.8-.6 1.8-1 3-1 2.8 0 4.5 1.5 4.5 4" />
+                </svg>
+              </div>
+
+              <h3>Talent Gaps</h3>
+
+              <p>
+                We train professionals who understand the whole system, not just
+                one role, creating execution-ready talent.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     OUR CORE PILLARS
+========================================= -->
+
+      <section class="core-pillars">
+        <div class="core-pillars-container">
+          <!-- SECTION TITLE -->
+          <h2 class="core-pillars-title">Our Core Pillars</h2>
+
+          <!-- PILLARS GRID -->
+          <div class="pillars-grid">
+            <!-- PILLAR 1 -->
+            <article class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+
+                  <path d="M3.5 8.5h5l1.5 2-1 2H6l-2 3" />
+
+                  <path d="M14 3.5l1 4 3 1.5" />
+
+                  <path d="M14 12h4l2.5 3" />
+
+                  <path d="M10 16l2 1.5-.5 3" />
+                </svg>
+              </div>
+
+              <h3 class="pillar-title">
+                Global Trade &amp;<br />
+                Industry Execution
+              </h3>
+
+              <div class="pillar-text">
+                <p>
+                  We actively operate and facilitate trade across Agriculture,
+                  Manufacturing, Petrochemicals &amp; Energy, FMCG, Apparel,
+                  Gems &amp; Jewellery, Logistics, Aviation, Hospitality, and
+                  more.
+                </p>
+
+                <p>
+                  Domestic strength + international reach allows us to build
+                  repeatable, compliant, and scalable trade flows.
+                </p>
+              </div>
+            </article>
+
+            <!-- PILLAR 2 -->
+            <article class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3a6 6 0 0 0-3 11.2V17h6v-2.8A6 6 0 0 0 12 3Z" />
+
+                  <path d="M9 20h6" />
+
+                  <path d="M10 17h4" />
+                </svg>
+              </div>
+
+              <h3 class="pillar-title">
+                Business Consulting<br />
+                That Executes
+              </h3>
+
+              <div class="pillar-text">
+                <p>
+                  We don't give advice and disappear. We diagnose structural
+                  issues, build growth systems, stay involved during execution,
+                  and track outcomes, not effort.
+                </p>
+
+                <p>
+                  From sales and pricing to market entry and scaling —
+                  consulting here means control, not confusion.
+                </p>
+              </div>
+            </article>
+
+            <!-- PILLAR 3 -->
+            <article class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <!-- Center person -->
+                  <circle cx="12" cy="8" r="3" />
+
+                  <path d="M6.5 19c0-3.2 2.2-5 5.5-5s5.5 1.8 5.5 5" />
+
+                  <!-- Left person -->
+                  <circle cx="4.5" cy="10" r="2" />
+
+                  <path d="M1.5 18c0-2.2 1.2-3.5 3-3.5" />
+
+                  <!-- Right person -->
+                  <circle cx="19.5" cy="10" r="2" />
+
+                  <path d="M22.5 18c0-2.2-1.2-3.5-3-3.5" />
+                </svg>
+              </div>
+
+              <h3 class="pillar-title">
+                Workforce Mobility<br />
+                &amp; Talent Ecosystem
+              </h3>
+
+              <div class="pillar-text">
+                <p>
+                  We prepare people to operate across the entire supply chain —
+                  from Farmer/Manufacturer to Trader/Exporter, CHA/Freight
+                  Forwarder, to Importer/Distributor and Buyer.
+                </p>
+
+                <p>
+                  Talent trained inside our ecosystem understands how the whole
+                  system works, not just one role.
+                </p>
+              </div>
+            </article>
+
+            <!-- PILLAR 4 -->
+            <article class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 4h13a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"
+                  />
+
+                  <path d="M9 20h10a2 2 0 0 0 2-2v-7" />
+                </svg>
+              </div>
+
+              <h3 class="pillar-title">
+                Partnerships Across<br />
+                the Value Chain
+              </h3>
+
+              <div class="pillar-text">
+                <p>
+                  We partner with businesses, governments, institutions, global
+                  trade entities, and investors. These are long-term,
+                  execution-driven partnerships, not transactional engagements.
+                </p>
+
+                <p>
+                  Our partnerships create sustainable value, not quick wins.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     DOMESTIC + INTERNATIONAL
+========================================= -->
+
+      <section class="global-presence">
+        <!-- Background overlay -->
+        <div class="global-presence-overlay"></div>
+
+        <div class="global-presence-container">
+          <!-- SECTION TITLE -->
+
+          <h2 class="global-presence-title">
+            Domestic + International — By Design
+          </h2>
+
+          <!-- CONTENT CARDS -->
+
+          <div class="presence-grid">
+            <!-- =================================
+                 INDIA CARD
+            ================================== -->
+
+            <article class="presence-card">
+              <div class="presence-card-header">
+                <div class="presence-icon">
+                  <!-- Location Pin -->
+
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s7-7.1 7-12a7 7 0 1 0-14 0c0 4.9 7 12 7 12Z"
+                    />
+
+                    <circle cx="12" cy="9" r="2.2" />
+                  </svg>
+                </div>
+
+                <h3>India</h3>
+              </div>
+
+              <p class="presence-description">
+                Production, talent, execution depth. Our strong domestic base
+                enables global reach.
+              </p>
+
+              <ul class="presence-list">
+                <li>
+                  <span class="bullet"></span>
+                  Deep market understanding
+                </li>
+
+                <li>
+                  <span class="bullet"></span>
+                  Extensive supplier networks
+                </li>
+
+                <li>
+                  <span class="bullet"></span>
+                  Talent development programs
+                </li>
+
+                <li>
+                  <span class="bullet"></span>
+                  Operational excellence
+                </li>
+              </ul>
+            </article>
+
+            <!-- =================================
+                 GLOBAL PRESENCE CARD
+            ================================== -->
+
+            <article class="presence-card">
+              <div class="presence-card-header">
+                <div class="presence-icon">
+                  <!-- Globe -->
+
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" />
+
+                    <path d="M3 12h18" />
+
+                    <path d="M12 3c2.2 2.4 3.5 5.4 3.5 9s-1.3 6.6-3.5 9" />
+
+                    <path d="M12 3c-2.2 2.4-3.5 5.4-3.5 9s1.3 6.6 3.5 9" />
+                  </svg>
+                </div>
+
+                <h3>Global Presence</h3>
+              </div>
+
+              <p class="presence-description">
+                UAE, Europe, USA, Asia &amp; Africa — trade hubs, markets,
+                expansion corridors.
+              </p>
+
+              <ul class="presence-list">
+                <li>
+                  <span class="bullet"></span>
+                  International buyer access
+                </li>
+
+                <li>
+                  <span class="bullet"></span>
+                  Cross-border execution
+                </li>
+
+                <li>
+                  <span class="bullet"></span>
+                  Market intelligence
+                </li>
+
+                <li>
+                  <span class="bullet"></span>
+                  Two-way trade flows
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     LEADERSHIP SECTION
+========================================= -->
+
+      <section class="leadership-section">
+        <div class="leadership-container">
+          <h2 class="leadership-title">
+            Leadership That Builds, Not Broadcasts
+          </h2>
+
+          <p class="leadership-description">
+            Our leadership team is execution-led, not presentation-led. From the
+            Founder &amp; CEO to operations, finance, sales, and client success
+            — every leader is accountable for real outcomes.
+          </p>
+
+          <a href="#" class="leadership-button"> Meet Our Team </a>
+        </div>
+      </section>
+
+      <!-- =========================================
+     WHO WE WORK WITH
+========================================= -->
+
+      <section class="audience-section">
+        <div class="audience-container">
+          <!-- =====================================
+             WHO WE WORK WITH
+        ====================================== -->
+
+          <article class="audience-card audience-card-large">
+            <h2 class="audience-title">Who We Work With</h2>
+
+            <div class="audience-list">
+              <!-- ITEM 1 -->
+              <div class="audience-item audience-positive">
+                <div class="audience-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+
+                    <path d="M7 12.5l3.2 3L17 9" />
+                  </svg>
+                </div>
+
+                <span> Businesses serious about scaling </span>
+              </div>
+
+              <!-- ITEM 2 -->
+              <div class="audience-item audience-positive">
+                <div class="audience-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+
+                    <path d="M7 12.5l3.2 3L17 9" />
+                  </svg>
+                </div>
+
+                <span> Exporters, importers &amp; manufacturers </span>
+              </div>
+
+              <!-- ITEM 3 -->
+              <div class="audience-item audience-positive">
+                <div class="audience-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+
+                    <path d="M7 12.5l3.2 3L17 9" />
+                  </svg>
+                </div>
+
+                <span> Institutions seeking employable talent </span>
+              </div>
+
+              <!-- ITEM 4 -->
+              <div class="audience-item audience-positive">
+                <div class="audience-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+
+                    <path d="M7 12.5l3.2 3L17 9" />
+                  </svg>
+                </div>
+
+                <span> Governments focused on trade &amp; skills </span>
+              </div>
+
+              <!-- ITEM 5 -->
+              <div class="audience-item audience-positive">
+                <div class="audience-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+
+                    <path d="M7 12.5l3.2 3L17 9" />
+                  </svg>
+                </div>
+
+                <span> Investors with long-term vision </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- =====================================
+             NOT FOR
+        ====================================== -->
+
+          <article class="audience-card audience-card-small">
+            <h2 class="audience-title">Not For:</h2>
+
+            <div class="audience-list">
+              <!-- ITEM 1 -->
+              <div class="audience-item audience-negative">
+                <div class="audience-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <!-- Shield -->
+                    <path
+                      d="M12 3l8 3v5c0 5.2-3.4 8.8-8 10-4.6-1.2-8-4.8-8-10V6l8-3Z"
+                    />
+
+                    <path d="M12 7v9" />
+                  </svg>
+                </div>
+
+                <span> Shortcuts </span>
+              </div>
+
+              <!-- ITEM 2 -->
+              <div class="audience-item audience-negative">
+                <div class="audience-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 3l8 3v5c0 5.2-3.4 8.8-8 10-4.6-1.2-8-4.8-8-10V6l8-3Z"
+                    />
+
+                    <path d="M12 7v9" />
+                  </svg>
+                </div>
+
+                <span> Hype-driven growth </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================================
+     OUR BELIEF
+========================================= -->
+
+      <section class="belief-section">
+        <div class="belief-container">
+          <h2 class="belief-title">Our Belief</h2>
+
+          <div class="belief-grid">
+            <!-- BELIEF 1 -->
+            <article class="belief-card">
+              <div class="belief-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="4" y="3" width="16" height="18" rx="2" />
+
+                  <path d="M8 16v-4" />
+                  <path d="M12 16V8" />
+                  <path d="M16 16v-6" />
+                </svg>
+              </div>
+
+              <p class="belief-text">
+                Trade should be
+                <strong>structured,</strong><br />
+                <strong>not risky</strong>
+              </p>
+            </article>
+
+            <!-- BELIEF 2 -->
+            <article class="belief-card">
+              <div class="belief-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 17l6-6 4 4 7-8" />
+
+                  <path d="M16 7h5v5" />
+                </svg>
+              </div>
+
+              <p class="belief-text">
+                Growth should be
+                <strong>repeatable,</strong><br />
+                <strong>not accidental</strong>
+              </p>
+            </article>
+
+            <!-- BELIEF 3 -->
+            <article class="belief-card">
+              <div class="belief-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="7" r="3" />
+
+                  <path d="M6 20c0-3.5 2.4-5.5 6-5.5s6 2 6 5.5" />
+
+                  <circle cx="5" cy="9" r="2" />
+
+                  <circle cx="19" cy="9" r="2" />
+                </svg>
+              </div>
+
+              <p class="belief-text">
+                Talent should be
+                <strong>prepared,</strong><br />
+                <strong>not exploited</strong>
+              </p>
+            </article>
+
+            <!-- BELIEF 4 -->
+            <article class="belief-card">
+              <div class="belief-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 4h13a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"
+                  />
+
+                  <path d="M9 20h10a2 2 0 0 0 2-2v-7" />
+                </svg>
+              </div>
+
+              <p class="belief-text">
+                Partnerships should be
+                <strong>long-term,</strong><br />
+                <strong>not opportunistic</strong>
+              </p>
+            </article>
+          </div>
+
+          <p class="belief-footer">
+            That belief shapes every decision we make.
+          </p>
+        </div>
+      </section>
+
+      <!-- =========================================
+     VISION / MISSION / VALUES
+========================================= -->
+
+      <section class="vmv-section">
+        <div class="vmv-container">
+          <h2 class="vmv-title">Vision. Mission. Values.</h2>
+
+          <p class="vmv-description">
+            We are guided by a Vision to build a trusted global execution
+            ecosystem, a Mission to simplify and execute global business
+            responsibly, and Values rooted in integrity, discipline, and
+            long-term thinking.
+          </p>
+
+          <p class="vmv-highlight">
+            These are not statements — they are operating rules.
+          </p>
+
+          <div class="vmv-buttons">
+            <a href="#" class="vmv-button"> Our Vision </a>
+
+            <a href="#" class="vmv-button"> Our Mission </a>
+
+            <a href="#" class="vmv-button"> Our Values </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     START A CONVERSATION
+========================================= -->
+
+      <section class="conversation-section">
+        <div class="conversation-card">
+          <h2 class="conversation-title">Start a Conversation</h2>
+
+          <p class="conversation-description">
+            Whether you are a business owner, trade professional, partner,
+            institution, investor, or someone building a serious career —
+            there's a place for you in this ecosystem, if you value execution.
+          </p>
+
+          <!-- CONTACT DETAILS -->
+
+          <div class="contact-details">
+            <!-- EMAIL -->
+
+            <div class="contact-row">
+              <span class="contact-label"> EMAIL </span>
+
+              <a href="mailto:hello@flairlist.com" class="contact-value">
+                hello@flairlist.com
+              </a>
+            </div>
+
+            <!-- WEBSITE -->
+
+            <div class="contact-row">
+              <span class="contact-label"> WEBSITE </span>
+
+              <a href="https://www.flairlist.com/" class="contact-value">
+                flairlist.com
+              </a>
+            </div>
+
+            <!-- INSTAGRAM -->
+
+            <div class="contact-row">
+              <span class="contact-label"> INSTAGRAM </span>
+
+              <div class="contact-value instagram-links">
+                <a href="#"> @flairlist </a>
+
+                <span>|</span>
+
+                <a href="#"> @theshubhambibave </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="conversation-button"> Get in Touch </a>
+        </div>
+      </section>
+
+      <!-- =========================================
+     TAGLINE STRIP
+========================================= -->
+
+      <section class="tagline-strip">
+        <p>"Building what global business runs on."</p>
+      </section>
+
+      <!-- =========================================
+     FOOTER
+========================================= -->
+
+      <footer class="site-footer">
+        <div class="footer-container">
+          <!-- =================================
+             COLUMN 1
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>Who We Are</h3>
+
+            <a href="#">Mission</a>
+            <a href="#">Vision</a>
+            <a href="#">Values</a>
+            <a href="#">Founder &amp; CEO</a>
+            <a href="#">Leadership &amp; Team</a>
+            <a href="#">Press Room</a>
+          </div>
+
+          <!-- =================================
+             COLUMN 2
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>What We Do</h3>
+
+            <a href="#" class="footer-bold"> Services </a>
+
+            <a href="#"> Expert Business Consultation </a>
+
+            <a href="#"> Export Consultation </a>
+
+            <a href="#"> Export Mentorship </a>
+
+            <a href="#"> Exclusive Partnership </a>
+
+            <a href="#" class="footer-bold"> Global Import-Export </a>
+
+            <a href="#"> Countries </a>
+
+            <a href="#"> Products </a>
+
+            <a href="#"> Partner With Us </a>
+          </div>
+
+          <!-- =================================
+             COLUMN 3
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>More</h3>
+
+            <a href="#" class="footer-bold"> Supply Chain &amp; Workforce </a>
+
+            <a href="#"> Supply Chain &amp; Distribution </a>
+
+            <a href="#"> Workforce Programs </a>
+
+            <a href="#"> Deployment </a>
+
+            <a href="#" class="footer-bold"> Explore </a>
+
+            <a href="#"> Industries </a>
+
+            <a href="#"> Case Studies </a>
+          </div>
+
+          <!-- =================================
+             COLUMN 4
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>Opportunities</h3>
+
+            <a href="#"> Careers </a>
+
+            <a href="#"> Investors </a>
+
+            <a href="#"> Contact Us </a>
+
+            <h4 class="footer-follow-title">Follow Us</h4>
+
+            <a href="#" class="social-link">
+              <span class="social-icon"> ◎ </span>
+
+              @theshubhambibave
+            </a>
+
+            <a href="#" class="social-link">
+              <span class="social-icon"> ◎ </span>
+
+              @flairlist
+            </a>
+          </div>
+
+          <!-- =================================
+             COLUMN 5
+        ================================== -->
+
+          <div class="footer-column footer-connect">
+            <h3>Let's Connect</h3>
+
+            <div class="footer-contact">
+              <strong> ✉ Email: </strong>
+
+              <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
+            </div>
+
+            <div class="footer-contact">
+              <strong> ◎ Website: </strong>
+
+              <a href="https://www.flairlist.com/"> FlairList.com </a>
+            </div>
+
+            <a href="#" class="footer-button"> Get in Touch </a>
+          </div>
+        </div>
+
+        <!-- =====================================
+         FOOTER BOTTOM
+    ====================================== -->
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>2026 FlairList Global. All rights reserved.</p>
+
+            <p class="footer-tagline">
+              "Building what global business runs on."
+            </p>
+          </div>
+
+          <nav class="footer-legal">
+            <a href="#"> Terms of Use </a>
+
+            <a href="#"> Privacy Policy </a>
+
+            <a href="#"> Refund Policy </a>
+
+            <a href="#"> Cancellation Policy </a>
+
+            <a href="#"> Cookies </a>
+          </nav>
+        </div>
+      </footer>
+    </main>
+
+    <div id="google_translate_element"></div>
+
+
+    <script src="./Assets/script.js"></script>
+  </body>
+</html>
