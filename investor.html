@@ -909,54 +909,6 @@
         </div>
       </footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const triggers = document.querySelectorAll(".dropdown-trigger"),
-          mega = document.getElementById("megaMenu"),
-          who = document.getElementById("whoMenu"),
-          what = document.getElementById("whatMenu");
-        let active = null;
-        triggers.forEach((t) =>
-          t.addEventListener("click", (e) => {
-            e.stopPropagation();
-            const name = t.closest(".nav-dropdown").dataset.menu;
-            if (active === name && mega.classList.contains("open"))
-              return close();
-            triggers.forEach((x) => x.classList.remove("active"));
-            t.classList.add("active");
-            who.classList.toggle("active", name === "who");
-            what.classList.toggle("active", name === "what");
-            mega.classList.add("open");
-            active = name;
-          }),
-        );
-        document.querySelectorAll(".mega-content").forEach((menu) => {
-          const items = menu.querySelectorAll(".mega-item"),
-            panels = menu.querySelectorAll(".panel");
-          items.forEach((i) =>
-            i.addEventListener("click", () => {
-              items.forEach((x) => x.classList.remove("active"));
-              panels.forEach((x) => x.classList.remove("active"));
-              i.classList.add("active");
-              const p = menu.querySelector(
-                '[data-panel="' + i.dataset.content + '"]',
-              );
-              if (p) p.classList.add("active");
-            }),
-          );
-        });
-        function close() {
-          mega.classList.remove("open");
-          triggers.forEach((x) => x.classList.remove("active"));
-          active = null;
-        }
-        document.addEventListener("click", (e) => {
-          if (!e.target.closest(".navbar")) close();
-        });
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") close();
-        });
-      });
-    </script>
+    <script src="./Assets/js/script.js"></script>
   </body>
 </html>

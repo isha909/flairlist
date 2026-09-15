@@ -283,3 +283,61 @@
   font-size: 9px;
   font-weight: 700;
 }
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 1000px) {
+  .four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fit {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .fit > div + div {
+    border-left: 0;
+    border-top: 1px solid #082b8022;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+  .attention h2,
+  .different h2,
+  .say h2,
+  .who h2,
+  .right h2,
+  .talk-card h2 {
+    font-size: 22px;
+  }
+  .four {
+    grid-template-columns: 1fr;
+  }
+  .talk-card {
+    padding: 30px 22px;
+  }
+  .contact div {
+    flex-wrap: wrap;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .attention,
+  .say,
+  .different,
+  .who,
+  .talk {
+    padding: 40px 0;
+  }
+  .right {
+    padding: 40px 0;
+  }
+  .light-cards article {
+    padding: 12px;
+  }
+}

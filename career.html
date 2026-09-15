@@ -19,7 +19,7 @@
       <div class="navbar-container">
         <div class="nav-left">
           <!-- LOGO -->
-          <a href="#" class="logo" aria-label="FlairList Global Home">
+          <a href="./index.html" class="logo" aria-label="FlairList Global Home">
             <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
           </a>
 
@@ -988,55 +988,6 @@
         </div>
       </footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const t = document.querySelectorAll(".dropdown-trigger"),
-          m = document.getElementById("megaMenu"),
-          w = document.getElementById("whoMenu"),
-          x = document.getElementById("whatMenu");
-        let a = null;
-        function close() {
-          m.classList.remove("open");
-          t.forEach((e) => e.classList.remove("active"));
-          a = null;
-        }
-        t.forEach(
-          (e) =>
-            (e.onclick = (v) => {
-              v.stopPropagation();
-              let n = e.closest(".nav-dropdown").dataset.menu;
-              if (a === n && m.classList.contains("open")) return close();
-              t.forEach((q) => q.classList.remove("active"));
-              e.classList.add("active");
-              w.classList.toggle("active", n === "who");
-              x.classList.toggle("active", n === "what");
-              m.classList.add("open");
-              a = n;
-            }),
-        );
-        document.querySelectorAll(".mega-content").forEach((menu) => {
-          let items = menu.querySelectorAll(".mega-side-item"),
-            panels = menu.querySelectorAll(".mega-panel");
-          items.forEach(
-            (i) =>
-              (i.onclick = () => {
-                items.forEach((q) => q.classList.remove("active"));
-                panels.forEach((q) => q.classList.remove("active"));
-                i.classList.add("active");
-                let p = menu.querySelector(
-                  '[data-panel="' + i.dataset.content + '"]',
-                );
-                if (p) p.classList.add("active");
-              }),
-          );
-        });
-        document.addEventListener("click", (e) => {
-          if (!e.target.closest(".navbar")) close();
-        });
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") close();
-        });
-      });
-    </script>
+<script src="./Assets/js/script.js"></script>
   </body>
 </html>

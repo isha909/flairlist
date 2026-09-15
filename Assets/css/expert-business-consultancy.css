@@ -639,3 +639,34 @@ li {
   color: #fff;
   padding: 12px 28px;
 }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .two-col,
+  .receive-grid,
+  .audience-grid,
+  .strategy-grid,
+  .strategy-bottom,
+  .changes,
+  .change-list,
+  .investment-inner {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 36px 0;
+  }
+  .hero {
+    min-height: 420px;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .mini-actions {
+    flex-wrap: wrap;
+  }
+}
