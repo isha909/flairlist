@@ -37,54 +37,61 @@
 
 /* ---------- INTRO (photo + bio) ---------- */
 .founder-intro {
-  padding: 70px 70px;
+  padding: 70px 0;
 }
 .founder-intro-grid {
+  width: min(1200px, calc(100% - 68px));
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 610px 1fr;
-  gap: 14px;
+  grid-template-columns: 380px 1fr;
+  gap: 50px;
   align-items: start;
 }
 .founder-photo {
-  margin-left: 60px;
+  margin-left: 0;
 }
 .founder-photo img {
-  width: 60%;
-  border-radius: 0;
+  width: 100%;
+  border-radius: 12px;
   display: block;
-  object-fit: contain;
-  aspect-ratio: auto;
-  box-shadow: none;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+  box-shadow: 0 4px 18px rgba(8, 43, 128, 0.1);
 }
 .founder-bio {
-  margin-left: -80px;
+  margin-left: 0;
 }
 .founder-bio p {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.7;
   color: var(--primary-blue);
-  margin-bottom: 26px;
-  font-size: 20px;
+  margin-bottom: 22px;
   max-width: 680px;
 }
 
 /* ---------- A LEADER WITH A GLOBAL PERSPECTIVE ---------- */
 .global-perspective {
-  padding: 90px 0 0;
+  padding: 70px 0;
+}
+.global-perspective .container,
+.journey .container,
+.leadership-apart .container {
+  width: min(1200px, calc(100% - 68px));
+  margin: 0 auto;
 }
 .section-title.left {
-  font-size: 44px;
+  font-size: 36px;
   text-align: left;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 .perspective-lead {
-  padding-left: 310px;
-  font-size: 20px;
-  text-align: justify;
+  padding-left: 0;
+  font-size: 18px;
+  text-align: left;
   line-height: 1.65;
   color: var(--primary-blue);
-  max-width: 1200px;
-  margin-bottom: 70px;
+  max-width: 900px;
+  margin-bottom: 44px;
 }
 .perspective-lead strong {
   color: var(--primary-blue);
@@ -122,31 +129,31 @@
   line-height: 1.6;
 }
 .perspective-note {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.75;
   color: var(--primary-blue);
-  max-width: 1000px;
-  padding: 10px 0 80px;
-  padding-left: 200px;
+  max-width: 900px;
+  padding: 10px 0 60px;
+  padding-left: 0;
 }
 .perspective-note strong {
   color: var(--primary-blue);
 }
 /* ---------- A JOURNEY OF AMBITION ---------- */
 .journey {
-  padding: 60px 0 100px;
+  padding: 60px 0 70px;
 }
 .journey .section-title.left {
-  font-size: 44px;
-  margin-bottom: 32px;
+  font-size: 36px;
+  margin-bottom: 24px;
 }
 .journey-text {
-    padding-left: 230px;
-  font-size: 21px;
+  padding-left: 0;
+  font-size: 18px;
   line-height: 1.65;
   color: var(--primary-blue);
-  max-width: none;
-  margin-bottom: 26px;
+  max-width: 900px;
+  margin-bottom: 22px;
 }
 .journey-text strong {
   color: var(--primary-blue);
@@ -156,12 +163,11 @@
   background: var(--surface-soft);
   border-left: 3px solid var(--primary-blue);
   border-radius: 0;
-  padding: 16px 28px;
+  padding: 28px 32px;
   max-width: 850px;
-  margin-top: 30px;
-  margin-left: 230px;
-  padding-top: 40px;
-  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 0;
+  font-size: 18px;
 }
 .author-card small {
   display: block;
@@ -188,9 +194,8 @@
 }
 /* ---------- WHAT SETS HIS LEADERSHIP APART ---------- */
 .leadership-apart {
-  padding: 110px 0;
+  padding: 70px 0;
   text-align: left;
-  
 }
 .apart-list {
   border-top: 2px solid var(--border-grid);
@@ -236,33 +241,33 @@
 
 /* ---------- IMPACT BEYOND BORDERS ---------- */
 .impact {
-  padding: 90px 0 110px;
-  text-align: center;
+  padding: 70px 0;
+  text-align: left;
 }
 .impact .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: min(900px, calc(100% - 68px));
+  margin: 0 auto;
+  display: block;
 }
 .impact .section-title.left {
-  font-size: 44px;
+  font-size: 36px;
   font-weight: 800;
-  padding-right: 300px;
-  margin-bottom: 20px;
-  text-align: center;
+  padding-right: 0;
+  margin-bottom: 16px;
+  text-align: left;
 }
 .impact-lead {
-    padding-right: 470px;
-  font-size: 20px;
+  padding-right: 0;
+  font-size: 18px;
   color: var(--primary-blue);
-  margin-bottom: 36px;
-  text-align: center;
+  margin-bottom: 24px;
+  text-align: left;
 }
 .impact-list {
-  gap: 28px;
-  margin-bottom: 56px;
-  max-width: 900px;
-  padding-right: 30px;
+  gap: 16px;
+  margin-bottom: 36px;
+  max-width: none;
+  padding-right: 0;
   text-align: left;
   color: black;
 }
@@ -276,22 +281,20 @@ ul.impact-list li {
   background: #fff;
   box-shadow: 0 2px 12px rgba(8, 43, 128, 0.06);
   border-radius: 10px;
-  padding: 38px 42px;
-  font-size: 21px;
+  padding: 32px 36px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--primary-blue);
   max-width: 900px;
   line-height: 1.6;
-  text-align: justify;
+  text-align: left;
 }
 
 /* ---------- LEADING TODAY. BUILDING FOR TOMORROW ---------- */
 .leading-today {
   background: var(--primary-blue);
   color: #fff;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding: 100px 0;
+  padding: 70px 0;
   text-align: center;
 }
 .leading-today-container {
@@ -335,28 +338,32 @@ ul.impact-list li {
 
 /* ---------- CONNECT WITH SHUBHAM ---------- */
 .connect {
-  padding: 90px 0 100px;
+  padding: 70px 0 80px;
+}
+.connect .container {
+  width: min(1100px, calc(100% - 68px));
+  margin: 0 auto;
 }
 .connect-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 60px;
   align-items: center;
-  margin-bottom: 56px;
+  margin-bottom: 44px;
 }
 .connect-copy h2 {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 800;
   color: var(--primary-blue);
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   line-height: 1.2;
-  padding-left: 140px;
+  padding-left: 0;
 }
 .connect-copy > p {
-  font-size: 17px;
+  font-size: 16px;
   color: black;
   max-width: 650px;
-  padding-left: 140px;
+  padding-left: 0;
 }
 .connect-actions {
   display: flex;
@@ -577,31 +584,32 @@ ul.impact-list li {
 
 /* ---------- MEMBER CARDS ---------- */
 .team-members {
-  padding: 110px 0 130px;
+  padding: 70px 0 80px;
 }
 .team-members .container {
+  width: min(1100px, calc(100% - 68px));
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 22px;
 }
 .member-card {
   background: #fff;
-  max-width: 1600px;
   border-radius: 12px;
-  padding: 50px 54px;
+  padding: 36px 40px;
   box-shadow: 0 2px 12px rgba(8, 43, 128, 0.06);
 }
 .member-card small {
   display: block;
-  font-size: 21px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--primary-blue);
   margin-bottom: 6px;
 }
 .member-card h3 {
-  font-size: 28px;
+  font-size: 24px;
   color: var(--primary-blue);
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 .member-card blockquote {
   background: var(--surface-soft);
@@ -609,17 +617,17 @@ ul.impact-list li {
   margin: 0 0 20px;
   padding: 14px 20px;
   font-style: italic;
-  font-size: 15px;
+  font-size: 18px;
   color: #5b6b8c;
 }
 .member-card > p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.7;
   color: #333;
   margin-bottom: 22px;
 }
 .member-card h4 {
-  font-size: 15px;
+  font-size: 20px;
   color: var(--primary-blue);
   margin-bottom: 12px;
   font-weight: 700;
@@ -633,14 +641,13 @@ ul.impact-list li {
   gap: 2px;
 }
 .member-card .plain-list li {
-  font-size: 15px;
+  font-size: 18px;
   color: #333;
 }
 
 /* ---------- OUR COLLECTIVE STRENGTH ---------- */
-/* ---------- OUR COLLECTIVE STRENGTH ---------- */
 .collective-strength {
-  padding: 90px 0 60px;
+  padding: 60px 0 40px;
   text-align: center;
 }
 .collective-strength h2 {
@@ -649,7 +656,7 @@ ul.impact-list li {
   margin-bottom: 14px;
 }
 .collective-strength > .container > p {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text-body);
   margin-bottom: 34px;
 }
@@ -675,7 +682,7 @@ ul.impact-list li {
 
 /* ---------- STRUCTURED OUTCOMES QUOTE ---------- */
 .team-quote {
-  padding: 50px 0 90px;
+  padding: 40px 0 60px;
   text-align: center;
 }
 .team-quote p {

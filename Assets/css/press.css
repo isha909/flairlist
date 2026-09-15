@@ -122,7 +122,7 @@
   margin-bottom: 14px;
 }
 .coverage-source {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   color: var(--primary-blue);
 }
@@ -137,13 +137,13 @@
   white-space: nowrap;
 }
 .coverage-body h3 {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.4;
   color: var(--primary-blue);
   margin-bottom: 12px;
 }
 .coverage-body p {
-  font-size: 13.5px;
+  font-size: 15px;
   line-height: 1.6;
   color: #6b7690;
   margin-bottom: 18px;
