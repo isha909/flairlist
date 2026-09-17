@@ -1,0 +1,780 @@
+/* ==========================================================
+   INDUSTRIES — SHARED PAGE STYLES
+   Used by finance.html and every future industry page
+   (logistics.html, retail.html, manufacturing.html, etc.)
+   Built on top of the shared design tokens in style.css
+   (--primary-blue, --primary-blue-dark, --text-heading,
+   --text-body, --surface-soft, --surface-white, --border-grid,
+   --radius-sm, --radius-md, --shadow-card, --font-heading,
+   --font-body, --transition-fast)
+   ========================================================== */
+
+/* ---------- SHARED CONTAINER / SECTION RHYTHM ---------- */
+
+.ind-container {
+  width: min(1180px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+.ind-narrow {
+  max-width: 800px;
+}
+
+.ind-section {
+  padding: 72px 0;
+}
+
+.ind-white {
+  background: var(--surface-white);
+}
+
+.ind-blue-soft {
+  background: var(--surface-soft);
+}
+
+.ind-section p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-heading);
+  margin-bottom: 0;
+}
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.ind-hero {
+  padding: 90px 0 64px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(120deg, #051c4f, #0a2c85 60%, #0d3499);
+}
+
+.ind-hero-container {
+  max-width: 760px;
+}
+
+.ind-eyebrow {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9db4f0;
+  margin-bottom: 20px;
+}
+
+.ind-hero h1 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(46px, 6vw, 72px);
+  line-height: 1.1;
+  margin-bottom: 22px;
+}
+
+.ind-hero-tagline {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #e4e9f7;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ==========================================================
+   ROLE CARDS (Domestic / International, and reusable
+   for any future two-up or three-up "role" comparison block)
+   ========================================================== */
+
+.ind-role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.ind-role-card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-grid);
+  box-shadow: var(--shadow-card);
+  padding: 32px 34px;
+}
+
+.ind-role-heading {
+  margin-bottom: 22px;
+}
+
+.ind-role-tag {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-body);
+  background: var(--surface-soft);
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  margin-bottom: 12px;
+}
+
+.ind-role-heading h2 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--primary-blue);
+  line-height: 1.4;
+}
+
+.ind-dot-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ind-dot-list li {
+  position: relative;
+  padding: 14px 0 14px 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-heading);
+  border-bottom: 1px solid var(--border-grid);
+}
+
+.ind-dot-list li:first-child {
+  padding-top: 0;
+}
+
+.ind-dot-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.ind-dot-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+}
+
+.ind-dot-list li:first-child::before {
+  top: 8px;
+}
+
+/* ==========================================================
+   QUOTE CALLOUT
+   ========================================================== */
+
+.ind-quote {
+  background: var(--surface-soft);
+  border-left: 4px solid var(--primary-blue);
+  border-radius: var(--radius-sm);
+  padding: 28px 32px;
+  margin: 0 0 32px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--primary-blue);
+}
+
+/* ==========================================================
+   CTA BUTTONS
+   ========================================================== */
+
+.ind-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.ind-btn {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14.5px;
+  padding: 15px 30px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  text-align: center;
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ind-btn-solid {
+  background: var(--primary-blue);
+  color: #fff;
+  border: 1px solid var(--primary-blue);
+}
+
+.ind-btn-solid:hover {
+  background: var(--primary-blue-dark);
+  border-color: var(--primary-blue-dark);
+}
+
+.ind-btn-outline {
+  background: transparent;
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+}
+
+.ind-btn-outline:hover {
+  background: var(--surface-soft);
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 1023px) {
+  .ind-role-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .ind-hero {
+    padding: 68px 0 48px;
+  }
+
+  .ind-section {
+    padding: 52px 0;
+  }
+
+  .ind-role-card {
+    padding: 26px 24px;
+  }
+
+  .ind-quote {
+    font-size: 17px;
+    padding: 22px 24px;
+  }
+
+  .ind-cta-row {
+    flex-direction: column;
+  }
+
+  .ind-btn {
+    width: 100%;
+  }
+}
+
+/* ==========================================================
+   INDUSTRIES — SHARED PAGE STYLES
+   Used by finance.html and every future industry page
+   (logistics.html, retail.html, manufacturing.html, etc.)
+   Built on top of the shared design tokens in style.css
+   (--primary-blue, --primary-blue-dark, --text-heading,
+   --text-body, --surface-soft, --surface-white, --border-grid,
+   --radius-sm, --radius-md, --shadow-card, --font-heading,
+   --font-body, --transition-fast)
+   ========================================================== */
+
+/* ---------- SHARED CONTAINER / SECTION RHYTHM ---------- */
+
+.ind-container {
+  width: min(1180px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+.ind-narrow {
+  max-width: 800px;
+}
+
+.ind-section {
+  padding: 72px 0;
+}
+
+.ind-white {
+  background: var(--surface-white);
+}
+
+.ind-blue-soft {
+  background: var(--surface-soft);
+}
+
+.ind-section p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-heading);
+  margin-bottom: 0;
+}
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.ind-hero {
+  padding: 90px 0 64px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(120deg, #051c4f, #0a2c85 60%, #0d3499);
+}
+
+.ind-hero-container {
+  max-width: 760px;
+}
+
+.ind-eyebrow {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9db4f0;
+  margin-bottom: 20px;
+}
+
+.ind-hero h1 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(46px, 6vw, 72px);
+  line-height: 1.1;
+  margin-bottom: 22px;
+}
+
+.ind-hero-tagline {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #e4e9f7;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ==========================================================
+   ROLE CARDS (Domestic / International, and reusable
+   for any future two-up or three-up "role" comparison block)
+   ========================================================== */
+
+.ind-role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.ind-role-card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-grid);
+  box-shadow: var(--shadow-card);
+  padding: 32px 34px;
+}
+
+.ind-role-heading {
+  margin-bottom: 22px;
+}
+
+.ind-role-tag {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-body);
+  background: var(--surface-soft);
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  margin-bottom: 12px;
+}
+
+.ind-role-heading h2 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--primary-blue);
+  line-height: 1.4;
+}
+
+.ind-dot-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ind-dot-list li {
+  position: relative;
+  padding: 14px 0 14px 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-heading);
+  border-bottom: 1px solid var(--border-grid);
+}
+
+.ind-dot-list li:first-child {
+  padding-top: 0;
+}
+
+.ind-dot-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.ind-dot-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+}
+
+.ind-dot-list li:first-child::before {
+  top: 8px;
+}
+
+/* ==========================================================
+   QUOTE CALLOUT
+   ========================================================== */
+
+.ind-quote {
+  background: var(--surface-soft);
+  border-left: 4px solid var(--primary-blue);
+  border-radius: var(--radius-sm);
+  padding: 28px 32px;
+  margin: 0 0 32px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--primary-blue);
+}
+
+/* ==========================================================
+   CTA BUTTONS
+   ========================================================== */
+
+.ind-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.ind-btn {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14.5px;
+  padding: 15px 30px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  text-align: center;
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ind-btn-solid {
+  background: var(--primary-blue);
+  color: #fff;
+  border: 1px solid var(--primary-blue);
+}
+
+.ind-btn-solid:hover {
+  background: var(--primary-blue-dark);
+  border-color: var(--primary-blue-dark);
+}
+
+.ind-btn-outline {
+  background: transparent;
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+}
+
+.ind-btn-outline:hover {
+  background: var(--surface-soft);
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 1023px) {
+  .ind-role-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .ind-hero {
+    padding: 68px 0 48px;
+  }
+
+  .ind-section {
+    padding: 52px 0;
+  }
+
+  .ind-role-card {
+    padding: 26px 24px;
+  }
+
+  .ind-quote {
+    font-size: 17px;
+    padding: 22px 24px;
+  }
+
+  .ind-cta-row {
+    flex-direction: column;
+  }
+
+  .ind-btn {
+    width: 100%;
+  }
+}
+
+
+/* ==========================================================
+   INDUSTRIES — SHARED PAGE STYLES
+   Used by finance.html and every future industry page
+   (logistics.html, retail.html, manufacturing.html, etc.)
+   Built on top of the shared design tokens in style.css
+   (--primary-blue, --primary-blue-dark, --text-heading,
+   --text-body, --surface-soft, --surface-white, --border-grid,
+   --radius-sm, --radius-md, --shadow-card, --font-heading,
+   --font-body, --transition-fast)
+   ========================================================== */
+
+/* ---------- SHARED CONTAINER / SECTION RHYTHM ---------- */
+
+.ind-container {
+  width: min(1180px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+.ind-narrow {
+  max-width: 800px;
+}
+
+.ind-section {
+  padding: 72px 0;
+}
+
+.ind-white {
+  background: var(--surface-white);
+}
+
+.ind-blue-soft {
+  background: var(--surface-soft);
+}
+
+.ind-section p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-heading);
+  margin-bottom: 0;
+}
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.ind-hero {
+  padding: 90px 0 64px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(120deg, #051c4f, #0a2c85 60%, #0d3499);
+}
+
+.ind-hero-container {
+  max-width: 760px;
+}
+
+.ind-eyebrow {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9db4f0;
+  margin-bottom: 20px;
+}
+
+.ind-hero h1 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(46px, 6vw, 72px);
+  line-height: 1.1;
+  margin-bottom: 22px;
+}
+
+.ind-hero-tagline {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #e4e9f7;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ==========================================================
+   ROLE CARDS (Domestic / International, and reusable
+   for any future two-up or three-up "role" comparison block)
+   ========================================================== */
+
+.ind-role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.ind-role-card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-grid);
+  box-shadow: var(--shadow-card);
+  padding: 32px 34px;
+}
+
+.ind-role-heading {
+  margin-bottom: 22px;
+}
+
+.ind-role-tag {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-body);
+  background: var(--surface-soft);
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  margin-bottom: 12px;
+}
+
+.ind-role-heading h2 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--primary-blue);
+  line-height: 1.4;
+}
+
+.ind-dot-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ind-dot-list li {
+  position: relative;
+  padding: 14px 0 14px 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-heading);
+  border-bottom: 1px solid var(--border-grid);
+}
+
+.ind-dot-list li:first-child {
+  padding-top: 0;
+}
+
+.ind-dot-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.ind-dot-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+}
+
+.ind-dot-list li:first-child::before {
+  top: 8px;
+}
+
+/* ==========================================================
+   QUOTE CALLOUT
+   ========================================================== */
+
+.ind-quote {
+  background: var(--surface-soft);
+  border-left: 4px solid var(--primary-blue);
+  border-radius: var(--radius-sm);
+  padding: 28px 32px;
+  margin: 0 0 32px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--primary-blue);
+}
+
+/* ==========================================================
+   CTA BUTTONS
+   ========================================================== */
+
+.ind-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.ind-btn {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14.5px;
+  padding: 15px 30px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  text-align: center;
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ind-btn-solid {
+  background: var(--primary-blue);
+  color: #fff;
+  border: 1px solid var(--primary-blue);
+}
+
+.ind-btn-solid:hover {
+  background: var(--primary-blue-dark);
+  border-color: var(--primary-blue-dark);
+}
+
+.ind-btn-outline {
+  background: transparent;
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+}
+
+.ind-btn-outline:hover {
+  background: var(--surface-soft);
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 1023px) {
+  .ind-role-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .ind-hero {
+    padding: 68px 0 48px;
+  }
+
+  .ind-section {
+    padding: 52px 0;
+  }
+
+  .ind-role-card {
+    padding: 26px 24px;
+  }
+
+  .ind-quote {
+    font-size: 17px;
+    padding: 22px 24px;
+  }
+
+  .ind-cta-row {
+    flex-direction: column;
+  }
+
+  .ind-btn {
+    width: 100%;
+  }
+}

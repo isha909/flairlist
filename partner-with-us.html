@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deployment | FlairList Global</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Assets/css/style.css?v=2.0">
+  <link rel="stylesheet" href="./Assets/css/deployment.css">
+  <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
+</head>
+<body>
+
+
+    <!-- ===================== FLAIRLIST NAVBAR ===================== -->
+    <header class="navbar" id="siteNavbar">
+      <div class="navbar-container">
+        <div class="nav-left">
+          <!-- LOGO -->
+          <a href="./index.html" class="logo" aria-label="FlairList Global Home">
+            <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
+          </a>
+
+          <!-- MAIN NAVIGATION -->
+          <nav class="nav-links" aria-label="Main Navigation">
+            <div class="nav-dropdown" data-menu="who">
+              <button
+                type="button"
+                class="nav-link dropdown-trigger"
+                aria-expanded="false"
+              >
+                <span>Who We Are</span>
+                <span class="dropdown-arrow">▼</span>
+              </button>
+            </div>
+
+            <div class="nav-dropdown" data-menu="what">
+              <button
+                type="button"
+                class="nav-link dropdown-trigger"
+                aria-expanded="false"
+              >
+                <span>What We Do</span>
+                <span class="dropdown-arrow">▼</span>
+              </button>
+            </div>
+
+            <a href="./career.html" class="nav-link">Careers</a>
+            <a href="./investor.html" class="nav-link">Investors</a>
+          </nav>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="nav-right">
+          <form class="search-box" id="navbarSearch">
+            <input type="search" placeholder="Search..." aria-label="Search" />
+            <button type="submit" class="search-button" aria-label="Search">
+              ⌕
+            </button>
+          </form>
+
+         <!-- COUNTRY / LANGUAGE SELECTOR -->
+<div class="country-selector">
+    <button class="country-btn" type="button" aria-expanded="false">
+        <span id="selectedCountry">India</span>
+        <svg _ngcontent-ng-c1672362817="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="app-icon" width="24" height="24"><path _ngcontent-ng-c1672362817="" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E4E3DE" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter"></path></svg>
+    </button>
+
+    <div class="country-dropdown" id="countryDropdown">
+
+        <button type="button" data-lang="en" data-country="India">
+            India
+        </button>
+
+        <button type="button" data-lang="ar" data-country="United Arab Emirates">
+            United Arab Emirates
+        </button>
+
+        <button type="button" data-lang="en" data-country="United States">
+            United States
+        </button>
+
+        <button type="button" data-lang="zh-CN" data-country="China">
+            China
+        </button>
+
+        <button type="button" data-lang="nl" data-country="Netherlands">
+            Netherlands
+        </button>
+
+        <button type="button" data-lang="en" data-country="United Kingdom">
+            United Kingdom
+        </button>
+
+        <button type="button" data-lang="en" data-country="Singapore">
+            Singapore
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Saudi Arabia">
+            Saudi Arabia
+        </button>
+
+        <button type="button" data-lang="bn" data-country="Bangladesh">
+            Bangladesh
+        </button>
+
+        <button type="button" data-lang="de" data-country="Germany">
+            Germany
+        </button>
+
+        <button type="button" data-lang="it" data-country="Italy">
+            Italy
+        </button>
+
+        <button type="button" data-lang="ja" data-country="Japan">
+            Japan
+        </button>
+
+        <button type="button" data-lang="ko" data-country="South Korea">
+            South Korea
+        </button>
+
+        <button type="button" data-lang="ms" data-country="Malaysia">
+            Malaysia
+        </button>
+
+        <button type="button" data-lang="th" data-country="Thailand">
+            Thailand
+        </button>
+
+        <button type="button" data-lang="id" data-country="Indonesia">
+            Indonesia
+        </button>
+
+        <button type="button" data-lang="vi" data-country="Vietnam">
+            Vietnam
+        </button>
+
+        <button type="button" data-lang="en" data-country="Philippines">
+            Philippines
+        </button>
+
+        <button type="button" data-lang="en" data-country="Australia">
+            Australia
+        </button>
+
+        <button type="button" data-lang="en" data-country="New Zealand">
+            New Zealand
+        </button>
+
+        <button type="button" data-lang="fr" data-country="France">
+            France
+        </button>
+
+        <button type="button" data-lang="es" data-country="Spain">
+            Spain
+        </button>
+
+        <button type="button" data-lang="fr" data-country="Belgium">
+            Belgium
+        </button>
+
+        <button type="button" data-lang="de" data-country="Switzerland">
+            Switzerland
+        </button>
+
+        <button type="button" data-lang="pl" data-country="Poland">
+            Poland
+        </button>
+
+        <button type="button" data-lang="de" data-country="Austria">
+            Austria
+        </button>
+
+        <button type="button" data-lang="en" data-country="Ireland">
+            Ireland
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Qatar">
+            Qatar
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Kuwait">
+            Kuwait
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Oman">
+            Oman
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Bahrain">
+            Bahrain
+        </button>
+
+        <button type="button" data-lang="he" data-country="Israel">
+            Israel
+        </button>
+
+        <button type="button" data-lang="tr" data-country="Turkey">
+            Turkey
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Iraq">
+            Iraq
+        </button>
+
+        <button type="button" data-lang="en" data-country="South Africa">
+            South Africa
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Egypt">
+            Egypt
+        </button>
+
+        <button type="button" data-lang="en" data-country="Nigeria">
+            Nigeria
+        </button>
+
+        <button type="button" data-lang="en" data-country="Kenya">
+            Kenya
+        </button>
+
+        <button type="button" data-lang="ar" data-country="Morocco">
+            Morocco
+        </button>
+
+        <button type="button" data-lang="en" data-country="Canada">
+            Canada
+        </button>
+
+        <button type="button" data-lang="pt" data-country="Brazil">
+            Brazil
+        </button>
+
+        <button type="button" data-lang="es" data-country="Argentina">
+            Argentina
+        </button>
+
+        <button type="button" data-lang="es" data-country="Chile">
+            Chile
+        </button>
+
+        <button type="button" data-lang="es" data-country="Colombia">
+            Colombia
+        </button>
+
+        <button type="button" data-lang="es" data-country="Peru">
+            Peru
+        </button>
+
+        <button type="button" data-lang="ne" data-country="Nepal">
+            Nepal
+        </button>
+
+        <button type="button" data-lang="si" data-country="Sri Lanka">
+            Sri Lanka
+        </button>
+
+        <button type="button" data-lang="ur" data-country="Pakistan">
+            Pakistan
+        </button>
+
+    </div>
+</div>
+
+          <a href="#" class="magic-button">Magic Form</a>
+        </div>
+      </div>
+
+      <!-- ==========================================================
+       MEGA MENU
+       Top navigation opens on CLICK.
+       Sidebar content changes on HOVER.
+      =========================================================== -->
+
+      <div class="mega-menu" id="megaMenu" aria-hidden="true">
+        <!-- ===================== WHO WE ARE ===================== -->
+        <section class="mega-content" id="whoMenu">
+          <aside class="mega-sidebar">
+            <button
+              type="button"
+              class="mega-side-item active"
+              data-content="purpose"
+            >
+              <span>Purpose &amp; Values</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="leadership"
+            >
+              <span>Leadership &amp; Team</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="press">
+              <span>Press Room</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="contact">
+              <span>Contact Us</span>
+            </button>
+          </aside>
+
+          <div class="mega-main">
+            <div class="mega-panel active" data-panel="purpose">
+              <h3>Purpose &amp; Values</h3>
+              <a href="./mission.html">Mission</a>
+              <a href="./vision.html">Vision</a>
+              <a href="./values.html">Values</a>
+            </div>
+
+            <div class="mega-panel" data-panel="leadership">
+              <h3>Leadership &amp; Team</h3>
+              <a href="./founder.html">Shubham Bibave - Founder &amp; CEO</a>
+              <a href="./team.html">Executive Team</a>
+            </div>
+
+            <div class="mega-panel" data-panel="press">
+              <h3>Press Room</h3>
+              <a href="./press_room.html">Zee Business</a>
+              <a href="./press_room.html">Business Standard</a>
+              <a href="./press_room.html">Republic News</a>
+              <a href="./press_room.html">ANI News</a>
+              <a href="./press_room.html">ABP Live</a>
+            </div>
+
+            <div class="mega-panel" data-panel="contact">
+              <h3>Contact Us</h3>
+              <a href="./contact.html">Contact Us</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================== WHAT WE DO ===================== -->
+        <section class="mega-content" id="whatMenu">
+          <!-- LEVEL 1 -->
+          <aside class="mega-sidebar">
+            <button
+              type="button"
+              class="mega-side-item active"
+              data-content="services"
+            >
+              <span>Services</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item has-arrow"
+              data-content="import"
+            >
+              <span>Global Import-Export</span>
+              <span class="side-arrow">›</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="supply">
+              <span>Supply Chain &amp;<br />Distribution</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item has-arrow"
+              data-content="workforce"
+            >
+              <span>Workforce Mobility</span>
+              <span class="side-arrow">›</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="industries"
+            >
+              <span>Industries</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="subsidiaries"
+            >
+              <span>Subsidiaries</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="cases">
+              <span>Case Studies</span>
+            </button>
+          </aside>
+
+          <!-- LEVEL 2 / CONTENT -->
+          <div class="mega-main">
+            <!-- SERVICES -->
+            <div class="mega-panel active" data-panel="services">
+              <h3>Services</h3>
+              <a href="./expert-business-consultancy.html">Expert Business Consultation</a>
+              <a href="./export-consultation.html">Export Consultation</a>
+              <a href="./export-mentorship.html">Export Mentorship</a>
+              <a href="./exclusive-business-growth-partnership.html">Exclusive Partnership</a>
+            </div>
+
+            <!-- GLOBAL IMPORT-EXPORT -->
+            <div class="mega-panel nested-panel" data-panel="import">
+              <div class="nested-sidebar">
+                <button
+                  type="button"
+                  class="nested-side-item active"
+                  data-nested="countries"
+                >
+                  <span>Countries</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="products"
+                >
+                  <span>Products</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="partners"
+                >
+                  <span>Partners</span>
+                  <span>›</span>
+                </button>
+              </div>
+
+              <div class="nested-main">
+                <div class="nested-panel active" data-nested-panel="countries">
+                  <h3>Countries</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="#">India</a>
+                      <a href="#">UAE</a>
+                      <a href="#">Vietnam</a>
+                      <a href="#">UK</a>
+                      <a href="#">Netherlands</a>
+                    </div>
+                    <div>
+                      <a href="#">USA</a>
+                      <a href="#">Russia</a>
+                      <a href="#">Kenya</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="products">
+                  <h3>Products</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="#">Agri Commodities</a>
+                      <a href="#">Petrochemicals &amp; Energy Products</a>
+                      <a href="#">Metals &amp; Minerals</a>
+                      <a href="#">FMCG &amp; Food Products</a>
+                      <a href="#">Industrial Raw Materials</a>
+                    </div>
+                    <div>
+                      <a href="#">Apparel &amp; Textiles</a>
+                      <a href="#">Gems &amp; Jewellery</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="partners">
+                  <h3>Partners</h3>
+                  <a href="#">Partner with us</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUPPLY CHAIN -->
+            <div class="mega-panel" data-panel="supply">
+              <h3>Supply Chain &amp; Distribution</h3>
+
+              <div class="mega-columns two">
+                <div>
+                  <a href="#">Farmer / Manufacturer</a>
+                  <a href="#">Local Trader</a>
+                  <a href="#">Exporter</a>
+                  <a href="#">CHA</a>
+                  <a href="#">Freight Forwarder</a>
+                </div>
+                <div>
+                  <a href="#">Importer</a>
+                  <a href="#">Distributor</a>
+                  <a href="#">Retailer</a>
+                  <a href="#">Buyer</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- WORKFORCE MOBILITY -->
+            <div class="mega-panel nested-panel" data-panel="workforce">
+              <div class="nested-sidebar">
+                <button
+                  type="button"
+                  class="nested-side-item active"
+                  data-nested="programs"
+                >
+                  <span>Programs</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="deployment"
+                >
+                  <span>Deployment</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="partner-workforce"
+                >
+                  <span>Partner with us</span>
+                </button>
+              </div>
+
+              <div class="nested-main">
+                <div class="nested-panel active" data-nested-panel="programs">
+                  <h3>Programs</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="./workforce-mobility.html#farmer-manufacturer">Farmer / Manufacturer</a>
+                      <a href="./workforce-mobility.html#local-trader">Local Trader</a>
+                      <a href="./workforce-mobility.html#exporter">Exporter</a>
+                      <a href="./workforce-mobility.html#cha">CHA</a>
+                      <a href="./workforce-mobility.html#freight-forwarder">Freight Forwarder</a>
+                    </div>
+                    <div>
+                      <a href="./workforce-mobility.html#importer">Importer</a>
+                      <a href="./workforce-mobility.html#distributor">Distributor</a>
+                      <a href="./workforce-mobility.html#retailer">Retailer</a>
+                      <a href="./workforce-mobility.html#buyer">Buyer</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="deployment">
+                  <h3>Deployment</h3>
+                  <a href="#">Workforce Deployment</a>
+                  <a href="#">International Deployment</a>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="partner-workforce">
+                  <h3>Partner with us</h3>
+                  <a href="#">Partner with us</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- INDUSTRIES -->
+            <div class="mega-panel" data-panel="industries">
+              <h3>Industries</h3>
+
+              <div class="industries-grid">
+                <div>
+                  <a href="#">Finance</a>
+                  <a href="#">Real Estate &amp; Infrastructure</a>
+                  <a href="#">Energy, Power &amp; Sustainability</a>
+                  <a href="#">Petrochemicals &amp; Oil</a>
+                  <a href="#">Manufacturing</a>
+                </div>
+
+                <div>
+                  <a href="#">Logistics &amp; Supply Chain</a>
+                  <a href="#">IT &amp; SaaS</a>
+                  <a href="#">E-Commerce</a>
+                  <a href="#">Media &amp; Entertainment</a>
+                  <a href="#">Education &amp; Consulting</a>
+                </div>
+
+                <div>
+                  <a href="#">Health &amp; Wellness</a>
+                  <a href="#">Hospitality</a>
+                  <a href="#">Aviation</a>
+                  <a href="#">Agriculture</a>
+                  <a href="#">Gems &amp; Jewellery</a>
+                </div>
+
+                <div>
+                  <a href="#">Apparel</a>
+                  <a href="#">F&amp;B (Food &amp; Beverage)</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUBSIDIARIES -->
+            <div class="mega-panel" data-panel="subsidiaries">
+              <h3>Subsidiaries</h3>
+              <a href="#">FlairJets</a>
+              <a href="#">FlairStudios</a>
+              <a href="#">FlairCapital</a>
+              <a href="#">FlairNutrition</a>
+              <a href="#">FlairLiving</a>
+            </div>
+
+            <!-- CASE STUDIES -->
+            <div class="mega-panel" data-panel="cases">
+              <h3>Case Studies</h3>
+              <a href="#">Case Studies</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+
+<main class="partner-main">
+    <section class="hero-section hero-partner text-center">
+        <div class="page-container">
+            <h5 class="hero-subtitle">PARTNER WITH US</h5>
+            <h1 class="hero-title">Workforce Mobility Partnerships for Skilled Supply Chain Talent</h1>
+            <p class="hero-text mt-20">At FlairList Global, Workforce Mobility is not a classroom initiative &mdash; it is a live talent pipeline built directly from real trade operations.</p>
+        </div>
+    </section>
+    <section class="intro-section">
+        <div class="page-container partner-intro-box">
+            <p>We invite private companies, governments, and educational institutions to partner with us if you are looking to hire, deploy, or develop skilled manpower across the global supply chain ecosystem.</p>
+            <p class="mt-20">We don't send resumes.</p>
+            <p class="mt-20">We supply trained, role-ready operators who understand how the supply chain actually works.</p>
+        </div>
+    </section>
+    <section class="light-bg">
+        <div class="page-container">
+            <h2 class="section-title">Why This Partnership Exists</h2>
+            <p class="section-desc">Across the world, organisations face the same problem:</p>
+            <ul class="dash-list">
+                <li>&ndash; Plenty of candidates</li>
+                <li>&ndash; Very few execution-ready professionals</li>
+            </ul>
+            <p class="section-desc mt-30">Most hiring challenges are not about numbers. They are about capability, reliability, and adaptability.</p>
+            <p class="section-desc">Our Workforce Mobility programs were built to solve exactly that gap.</p>
+        </div>
+    </section>
+    <section>
+        <div class="page-container">
+            <h2 class="section-title">What Makes FlairList Global a Reliable Workforce Partner</h2>
+            <ul class="dash-list">
+                <li>&ndash; We operate inside real trade and logistics businesses</li>
+                <li>&ndash; Our training is shaped by live operational requirements</li>
+                <li>&ndash; Candidates are evaluated on execution, not theory</li>
+                <li>&ndash; We deploy talent only where they can realistically perform</li>
+            </ul>
+            <p class="section-desc mt-30">This makes our workforce job-ready, process-aware, and accountable from Day 1.</p>
+        </div>
+    </section>
+    <section class="light-bg">
+        <div class="page-container">
+            <h2 class="section-title">Who Can Partner With Us</h2>
+            <p class="section-desc">We actively collaborate with the following entities globally:</p>
+            <div class="cards-grid-3 mt-30">
+                <div class="white-box partner-card">
+                    <div class="card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg></div>
+                    <h3 class="card-title">Private Companies</h3>
+                    <p class="card-subtitle">Trade, Logistics, Manufacturing, Retail, Distribution, Energy, FMCG</p>
+                    <div class="split-col mt-30">
+                        <div class="col">
+                            <h4 class="card-small-title">YOUR CHALLENGES</h4>
+                            <ul class="dash-list small-text">
+                                <li>&ndash; Fresh hires lack real-world understanding</li>
+                                <li>&ndash; High onboarding time &amp; operational errors</li>
+                                <li>&ndash; Frequent attrition due to role mismatch</li>
+                                <li>&ndash; Compliance &amp; execution risks</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h4 class="card-small-title">HOW WE HELP</h4>
+                            <p class="small-text mb-10">Pre-trained, role-specific talent. Candidates already understand:</p>
+                            <ul class="dash-list small-text">
+                                <li>&ndash; Export-Import operations</li>
+                                <li>&ndash; Logistics &amp; documentation</li>
+                                <li>&ndash; Compliance workflows</li>
+                                <li>&ndash; Buyer-supplier coordination</li>
+                            </ul>
+                            <ul class="dash-list small-text mt-20">
+                                <li>&ndash; Reduced training cost &amp; faster productivity</li>
+                                <li>&ndash; Better role fit &rarr; lower attrition</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-bottom mt-30">
+                        <h4 class="card-small-title">ROLES YOU CAN HIRE FOR</h4>
+                        <div class="tags-row outline-tags">
+                            <span class="tag outline">Export / Import Operations</span>
+                            <span class="tag outline">Logistics &amp; Freight</span>
+                            <span class="tag outline">CHA &amp; Documentation</span>
+                            <span class="tag outline">Procurement &amp; Buyer</span>
+                            <span class="tag outline">Distribution &amp; Retail</span>
+                        </div>
+                        <p class="card-note mt-30"><em>You don't train from zero. You onboard ready operators.</em></p>
+                    </div>
+                </div>
+
+                <div class="white-box partner-card">
+                    <div class="card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg></div>
+                    <h3 class="card-title">Governments &amp; Public Institutions</h3>
+                    <p class="card-subtitle">Skill missions, employment programs, trade facilitation bodies</p>
+                    <div class="split-col mt-30">
+                        <div class="col">
+                            <h4 class="card-small-title">YOUR CHALLENGES</h4>
+                            <ul class="dash-list small-text">
+                                <li>&ndash; Skill programs disconnected from industry</li>
+                                <li>&ndash; Low placement sustainability</li>
+                                <li>&ndash; Limited international mobility exposure</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h4 class="card-small-title">HOW WE HELP</h4>
+                            <ul class="dash-list small-text">
+                                <li>&ndash; Industry-aligned curriculum</li>
+                                <li>&ndash; Real supply chain role mapping</li>
+                                <li>&ndash; Domestic + international deployment pathways</li>
+                                <li>&ndash; Support for regulated overseas mobility</li>
+                                <li>&ndash; Measurable employment outcomes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-bottom mt-30">
+                        <p class="card-note"><em>We help convert skill development into employability, not just certification.</em></p>
+                    </div>
+                </div>
+
+                <div class="white-box partner-card">
+                    <div class="card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+                    <h3 class="card-title">Colleges &amp; Educational Institutions</h3>
+                    <p class="card-subtitle">Universities, trade schools, vocational institutes</p>
+                    <div class="split-col mt-30">
+                        <div class="col">
+                            <h4 class="card-small-title">YOUR CHALLENGES</h4>
+                            <ul class="dash-list small-text">
+                                <li>&ndash; Graduates lack practical exposure</li>
+                                <li>&ndash; Poor industry alignment</li>
+                                <li>&ndash; Limited placement credibility</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h4 class="card-small-title">HOW WE HELP</h4>
+                            <ul class="dash-list small-text">
+                                <li>&ndash; Plug-in workforce mobility modules</li>
+                                <li>&ndash; Guest lectures &amp; trade exposure sessions</li>
+                                <li>&ndash; Role-based specialisation tracks</li>
+                                <li>&ndash; Placement collaboration &amp; industry access</li>
+                                <li>&ndash; Clear career pathways for students</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-bottom mt-30">
+                        <h4 class="card-small-title">YOUR INSTITUTION GAINS</h4>
+                        <div class="tags-row solid-tags">
+                            <span class="tag solid">Higher placement relevance</span>
+                            <span class="tag solid">Stronger industry credibility</span>
+                            <span class="tag solid">Global exposure pathways</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="page-container">
+            <h2 class="section-title">What Kind of Talent We Offer</h2>
+            <p class="section-desc">Our trained workforce spans end-to-end supply chain roles, including:</p>
+            <ul class="dash-list">
+                <li>&ndash; Farmer / Manufacturer Operations Support</li>
+                <li>&ndash; Local Trading &amp; Aggregation Roles</li>
+                <li>&ndash; Export Operations &amp; Coordination</li>
+                <li>&ndash; CHA &amp; Compliance Support</li>
+                <li>&ndash; Freight Forwarding &amp; Logistics Planning</li>
+                <li>&ndash; Import &amp; Procurement Operations</li>
+                <li>&ndash; Distribution &amp; Channel Management</li>
+                <li>&ndash; Retail Operations &amp; Inventory Planning</li>
+                <li>&ndash; Buyer / Sourcing &amp; Procurement Roles</li>
+            </ul>
+            <p class="section-desc mt-30">Each candidate:</p>
+            <ul class="dash-list">
+                <li>&ndash; Understands how their role fits into the full chain</li>
+                <li>&ndash; Is trained on real scenarios, not simulations</li>
+                <li>&ndash; Is evaluated for professional discipline &amp; reliability</li>
+            </ul>
+        </div>
+    </section>
+    <section class="light-bg">
+        <div class="page-container">
+            <h2 class="section-title">How Our Workforce Partnership Model Works</h2>
+            <div class="steps-list mt-40">
+                <div class="white-box py-small mb-20 outline-box">
+                    <span class="step-badge">1 REQUIREMENT UNDERSTANDING</span>
+                    <p class="mt-20">We study role scope, skill expectations, operational environment, and location &amp; compliance needs.</p>
+                </div>
+                <div class="white-box py-small mb-20 outline-box">
+                    <span class="step-badge">2 CANDIDATE MATCHING</span>
+                    <p class="mt-20">We shortlist candidates based on role-specific competence, execution mindset, and cultural &amp; operational fit.</p>
+                    <p class="mt-10">No mass forwarding. Only relevant profiles.</p>
+                </div>
+                <div class="white-box py-small mb-20 outline-box">
+                    <span class="step-badge">3 EMPLOYER SELECTION</span>
+                    <p class="mt-20">Final selection is always done by the hiring company / authority / institution. We do not force-fit placements.</p>
+                </div>
+                <div class="white-box py-small mb-20 outline-box">
+                    <span class="step-badge">4 POST-SELECTION SUPPORT</span>
+                    <p class="mt-20">For candidates who are selected, we assist with onboarding coordination. Where applicable, we support mobility documentation, visa process coordination, and initial accommodation guidance.</p>
+                    <p class="mt-10">All international movement remains subject to legal and regulatory approvals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="page-container">
+            <h2 class="section-title">Problems This Partnership Solves</h2>
+            <ul class="dash-list">
+                <li>&ndash; Reduces onboarding failures</li>
+                <li>&ndash; Improves first-year retention</li>
+                <li>&ndash; Cuts training &amp; error costs</li>
+                <li>&ndash; Provides global-ready talent</li>
+                <li>&ndash; Builds long-term workforce pipelines</li>
+            </ul>
+            <p class="section-desc mt-30">You don't just hire talent. You build a reliable manpower ecosystem.</p>
+        </div>
+    </section>
+    <section class="light-bg">
+        <div class="page-container">
+            <h2 class="section-title">Why Global Partners Choose FlairList Global</h2>
+            <ul class="dash-list">
+                <li>&ndash; Active trade &amp; logistics operations</li>
+                <li>&ndash; Domestic + international exposure</li>
+                <li>&ndash; Role-specific, execution-first training</li>
+                <li>&ndash; Ethical &amp; transparent mobility practices</li>
+                <li>&ndash; Clear boundaries (no false promises)</li>
+                <li>&ndash; Long-term partnership mindset</li>
+            </ul>
+            <p class="section-desc mt-30">We protect our partners' reputation as much as our own.</p>
+        </div>
+    </section>
+    <section class="text-center">
+        <div class="page-container">
+            <h2 class="section-title text-center">Let's Build the Workforce That Global Trade Needs</h2>
+            <p class="section-desc mx-auto max-w-800 text-center">If you are a company struggling with skilled manpower, a government body seeking employable outcomes, or an institution wanting real industry relevance &mdash; let's partner.</p>
+            <div class="white-box contact-box outline-box mt-40">
+                <h2 class="section-title text-center">Get in Touch</h2>
+                <p class="section-desc text-center">Global trade doesn't run on degrees. It runs on people who can execute. We train them. We evaluate them. We connect them &mdash; responsibly. That's Workforce Mobility with Accountability.</p>
+                <div class="contact-info">
+                    <div class="contact-row"><span class="contact-label">EMAIL</span><a href="mailto:hello@flairlist.com" class="contact-val">hello@flairlist.com</a></div>
+                    <hr>
+                    <div class="contact-row"><span class="contact-label">WEBSITE</span><a href="https://flairlist.com" class="contact-val">flairlist.com</a></div>
+                    <hr>
+                    <div class="contact-row"><span class="contact-label">INSTAGRAM</span><span class="contact-val">@flairlist | @theshubhambibave</span></div>
+                </div>
+                <div class="text-center mt-30"><a href="#" class="btn-primary">Partner With Us</a></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+      <footer class="site-footer">
+        <div class="footer-container">
+          <!-- =================================
+             COLUMN 1
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>Who We Are</h3>
+
+            <a href="#">Mission</a>
+            <a href="#">Vision</a>
+            <a href="#">Values</a>
+            <a href="#">Founder &amp; CEO</a>
+            <a href="#">Leadership &amp; Team</a>
+            <a href="#">Press Room</a>
+          </div>
+
+          <!-- =================================
+             COLUMN 2
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>What We Do</h3>
+
+            <a href="#" class="footer-bold"> Services </a>
+
+            <a href="#"> Expert Business Consultation </a>
+
+            <a href="#"> Export Consultation </a>
+
+            <a href="#"> Export Mentorship </a>
+
+            <a href="#"> Exclusive Partnership </a>
+
+            <a href="#" class="footer-bold"> Global Import-Export </a>
+
+            <a href="#"> Countries </a>
+
+            <a href="#"> Products </a>
+
+            <a href="#"> Partner With Us </a>
+          </div>
+
+          <!-- =================================
+             COLUMN 3
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>More</h3>
+
+            <a href="#" class="footer-bold"> Supply Chain &amp; Workforce </a>
+
+            <a href="#"> Supply Chain &amp; Distribution </a>
+
+            <a href="./workforce-mobility.html"> Workforce Programs </a>
+
+            <a href="#"> Deployment </a>
+
+            <a href="#" class="footer-bold"> Explore </a>
+
+            <a href="#"> Industries </a>
+
+            <a href="#"> Case Studies </a>
+          </div>
+
+          <!-- =================================
+             COLUMN 4
+        ================================== -->
+
+          <div class="footer-column">
+            <h3>Opportunities</h3>
+
+            <a href="#"> Careers </a>
+
+            <a href="#"> Investors </a>
+
+            <a href="#"> Contact Us </a>
+
+            <h4 class="footer-follow-title">Follow Us</h4>
+
+            <a href="#" class="social-link">
+              <span class="social-icon"> ◎ </span>
+
+              @theshubhambibave
+            </a>
+
+            <a href="#" class="social-link">
+              <span class="social-icon"> ◎ </span>
+
+              @flairlist
+            </a>
+          </div>
+
+          <!-- =================================
+             COLUMN 5
+        ================================== -->
+
+          <div class="footer-column footer-connect">
+            <h3>Let's Connect</h3>
+
+            <div class="footer-contact">
+              <strong> ✉ Email: </strong>
+
+              <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
+            </div>
+
+            <div class="footer-contact">
+              <strong> ◎ Website: </strong>
+
+              <a href="https://www.flairlist.com/"> FlairList.com </a>
+            </div>
+
+            <a href="#" class="footer-button"> Get in Touch </a>
+          </div>
+        </div>
+
+        <!-- =====================================
+         FOOTER BOTTOM
+    ====================================== -->
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>2026 FlairList Global. All rights reserved.</p>
+
+            <p class="footer-tagline">
+              "Building what global business runs on."
+            </p>
+          </div>
+
+          <nav class="footer-legal">
+            <a href="#"> Terms of Use </a>
+
+            <a href="#"> Privacy Policy </a>
+
+            <a href="#"> Refund Policy </a>
+
+            <a href="#"> Cancellation Policy </a>
+
+            <a href="#"> Cookies </a>
+          </nav>
+        </div>
+      </footer>
+
+<script src="./Assets/js/script.js?v=2.0"></script>0
+</body>
+</html>
