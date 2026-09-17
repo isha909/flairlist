@@ -607,7 +607,7 @@ label {
   line-height: 1.4;
 }
 
-.mega-panel > a,
+.mega-panel a,
 .nested-panel a {
   display: block;
   margin-bottom: 20px;
@@ -739,7 +739,7 @@ label {
 
 .nested-side-item span:last-child {
   color: var(--arrow);
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .nested-side-item:hover span:last-child,

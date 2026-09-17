@@ -1,0 +1,564 @@
+:root {
+  --primary-blue: #082b80;
+  --primary-blue-dark: #062568;
+  --text-heading: #082b80;
+  --text-body: #6b7a99;
+  --surface-white: #ffffff;
+  --surface-soft: #f1f7ff;
+  --border-grid: rgba(8, 43, 128, 0.1);
+  --radius-md: 12px;
+}
+
+.countries-page * {
+  box-sizing: border-box;
+}
+
+.countries-page .container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/* ---------- HERO ---------- */
+.countries-hero {
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 90px;
+  text-align: center;
+  color: #fff;
+  background:
+   linear-gradient(90deg, #031d68ef, #082b80a8),
+    url("../img/countries.jpg")
+      center/cover no-repeat;
+}
+.countries-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 46px 46px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.countries-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+.countries-hero small {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #a9bcf0;
+  margin-bottom: 18px;
+}
+.countries-hero h1 {
+  font-size: clamp(34px, 4.5vw, 50px);
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+.countries-hero p {
+  font-size: 18px;
+  color: #dbe2f6;
+}
+
+/* ---------- INTRO ---------- */
+.countries-intro {
+  padding: 80px 0;
+}
+.countries-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.countries-intro-copy p {
+  font-size: 22px;
+  line-height: 1.7;
+  color: var(--primary-blue);
+  margin-bottom: 20px;
+}
+.countries-intro-note {
+  background: var(--surface-soft);
+  border-left: 3px solid var(--primary-blue);
+  border-radius: 4px;
+  padding: 20px 24px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-body);
+  margin-top: 24px;
+}
+.countries-intro-map {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  background: #e8e6dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.countries-intro-map img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- COUNTRIES OVERVIEW / PILLS ---------- */
+.countries-overview {
+  background: var(--surface-soft);
+  padding: 70px 0 60px;
+}
+.countries-overview h2 {
+  font-size: 34px;
+  color: var(--text-heading);
+  margin-bottom: 12px;
+}
+.countries-overview > .container > p {
+  font-size: 18px;
+  color: var(--text-body);
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+.country-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.country-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid var(--border-grid);
+  border-radius: 24px;
+  padding: 9px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+.country-pill .flag-code {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  letter-spacing: 0.5px;
+}
+
+/* ---------- COUNTRY DETAIL SECTIONS ---------- */
+.country-section {
+  padding: 60px 0;
+}
+.country-section.alt {
+  background: var(--surface-soft);
+}
+.country-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.country-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.country-code {
+  font-size: 30px;
+  font-weight: 800;
+  color: #1a2233;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+.country-heading h3 {
+  font-size: 26px;
+  color: var(--text-heading);
+  margin-bottom: 4px;
+}
+.country-tag {
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: #8a93ac;
+  text-transform: uppercase;
+}
+.country-desc {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+.country-note {
+  border-left: 2px solid var(--border-grid);
+  padding-left: 18px;
+  font-size: 17px;
+  font-style: italic;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+.country-role-label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.country-role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.country-role-list div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border-left: 3px solid var(--primary-blue);
+  border-radius: 6px;
+  padding: 14px 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-blue);
+  box-shadow: 0 2px 8px rgba(8, 43, 128, 0.05);
+}
+.country-section.alt .country-role-list div {
+  background: #f6f9ff;
+}
+.country-role-list .arrow {
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+
+/* ---------- ADDITIONAL MARKETS ---------- */
+.additional-markets {
+  padding: 80px 0 60px;
+}
+.additional-markets h2 {
+  font-size: 32px;
+  color: var(--text-heading);
+  margin-bottom: 12px;
+}
+.additional-markets > .container > p {
+  font-size: 18px;
+  color: var(--text-body);
+  max-width: 800px;
+  margin-bottom: 26px;
+}
+.market-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.market-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--surface-soft);
+  border-radius: 20px;
+  padding: 9px 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+.market-pill .flag-code {
+  font-size: 11px;
+  font-weight: 800;
+  background: var(--surface-soft);
+}
+.additional-markets .fine-note {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-body);
+}
+
+/* ---------- WHAT WE ACTUALLY DO ---------- */
+.what-we-do {
+  background: var(--surface-soft);
+  padding: 70px 0;
+}
+.what-we-do-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.what-we-do h2 {
+  font-size: 32px;
+  color: var(--text-heading);
+  margin-bottom: 8px;
+}
+.what-we-do-sub {
+  font-size: 18px;
+  color: var(--text-body);
+  margin-bottom: 24px;
+}
+.what-we-do-quote {
+  background: #fff;
+  border-left: 3px solid var(--primary-blue);
+  border-radius: 8px;
+  padding: 24px 28px;
+  font-style: italic;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.8;
+}
+.capabilities-label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.capabilities-grid div {
+  background: #fff;
+  border-left: 3px solid var(--primary-blue);
+  border-radius: 6px;
+  padding: 14px 18px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-blue);
+  box-shadow: 0 2px 8px rgba(8, 43, 128, 0.05);
+}
+.what-we-do-note {
+  text-align: center;
+  border-top: 1px solid var(--border-grid);
+  padding: 15px;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--text-body);
+}
+
+/* ---------- WHY GLOBAL CLIENTS TRUST ---------- */
+.trust-section {
+  background: linear-gradient(160deg, #051c4f, #0a2c85 60%, #0d3499);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+.trust-section h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.trust-card {
+  background: #ffffff10;
+  border-radius: 10px;
+  padding: 22px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.trust-card .check {
+  color: #7fd8a0;
+}
+.trust-section .fine {
+  border-top: 1px solid #ffffff25;
+  padding-top: 30px;
+  font-size: 15px;
+  font-style: italic;
+  color: #c7d1f0;
+  margin-bottom: 10px;
+}
+.trust-section .bold {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* ---------- WHO WE WORK WITH ---------- */
+.work-with {
+  padding: 80px 0;
+}
+.work-with h2 {
+  font-size: 32px;
+  color: var(--text-heading);
+  margin-bottom: 30px;
+}
+.work-with-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.work-with-pills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.work-with-pill {
+  background: var(--surface-soft);
+  border-radius: 8px;
+  padding: 16px 18px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+.work-with-pill.wide {
+  grid-column: 1 / -1;
+}
+.work-with-callout {
+  background: var(--surface-soft);
+  border-radius: var(--radius-md);
+  padding: 30px 32px;
+}
+.work-with-callout p:first-child {
+  font-size: 17px;
+  color: var(--text-body);
+  margin-bottom: 8px;
+}
+.work-with-callout p.bold {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--text-heading);
+}
+
+/* ---------- OUR PHILOSOPHY ---------- */
+.philosophy {
+  background: var(--surface-soft);
+  padding: 80px 0;
+  text-align: center;
+}
+.philosophy h2 {
+  font-size: 28px;
+  color: var(--text-heading);
+  margin-bottom: 30px;
+}
+.philosophy-card {
+  background: #fff;
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+  padding: 44px 40px;
+  box-shadow: 0 4px 18px rgba(8, 43, 128, 0.06);
+}
+.philosophy-card p {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--text-body);
+  line-height: 1.7;
+}
+.philosophy-card p.bold {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  color: var(--text-heading);
+  margin-top: 16px;
+}
+
+/* ---------- FINAL CTA ---------- */
+.countries-cta {
+  padding: 90px 0;
+  text-align: center;
+}
+.countries-cta-card {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid var(--border-grid);
+  border-radius: var(--radius-md);
+  padding: 50px 44px;
+}
+.countries-cta h2 {
+  font-size: 40px;
+  color: var(--text-heading);
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+.countries-cta > .countries-cta-card > p {
+  font-size: 18px;
+  color: var(--text-body);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.countries-cta-details {
+  border-top: 1px solid var(--border-grid);
+  margin-bottom: 30px;
+}
+.countries-cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-grid);
+  text-align: left;
+}
+.countries-cta-row span.label {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--text-body);
+  text-transform: uppercase;
+}
+.countries-cta-row span.value {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+.countries-cta .btn-solid-blue {
+  display: inline-block;
+  background: var(--primary-blue);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.countries-cta .btn-solid-blue:hover {
+  background: var(--primary-blue-dark);
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 900px) {
+  .countries-intro-grid,
+  .country-grid,
+  .what-we-do-grid,
+  .work-with-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+  .work-with-pills {
+    grid-template-columns: 1fr;
+  }
+  .work-with-pill.wide {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .countries-hero {
+    padding: 70px 0 60px;
+  }
+  .countries-cta-card {
+    padding: 34px 24px;
+  }
+  .countries-cta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

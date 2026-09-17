@@ -1,0 +1,502 @@
+:root {
+  --primary-blue: #082b80;
+  --primary-blue-dark: #062568;
+  --text-heading: #082b80;
+  --text-body: #6b7a99;
+  --surface-white: #ffffff;
+  --surface-soft: #f1f7ff;
+  --border-grid: rgba(8, 43, 128, 0.1);
+  --radius-md: 12px;
+}
+
+/* ============ RESET & BASE ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-body);
+  background: var(--surface-white);
+  line-height: 1.65;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ============ HERO ============ */
+.hero-import {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 70px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+.hero-label {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #b9c8f0;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  font-size: 58px;
+  font-weight: 700;
+  width: 980px;
+  margin: 0 auto 14px auto;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #c9d4ef;
+}
+
+/* ============ INTRO ============ */
+.intro-section {
+  padding: 70px 60px;
+  background: var(--surface-white);
+}
+
+.intro-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.intro-text p {
+  font-size: 22px;
+  color: var(--text-body);
+  margin-bottom: 16px;
+}
+
+.intro-image img {
+  border-radius: var(--radius-md);
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ============ GENERIC SECTION ============ */
+.section {
+  padding: 80px 60px;
+}
+
+.bg-white {
+  background: var(--surface-white);
+}
+
+.bg-soft {
+  background: var(--surface-soft);
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-heading);
+  max-width: 1180px;
+  margin: 0 auto 12px auto;
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+.section-sub {
+  font-size: 20px;
+  color: var(--text-body);
+  max-width: 1180px;
+  margin: 0 auto 34px auto;
+}
+
+.italic-note {
+  text-align: center;
+  font-style: italic;
+  color: var(--text-body);
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+/* ============ GRID BOXES (challenges / who it's for) ============ */
+.grid-2 {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.grid-box {
+  border: 1px solid var(--border-grid);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  font-size: 20px;
+  color: var(--text-heading);
+  font-weight: 600;
+  background: var(--surface-white);
+}
+
+.grid-box.full-width {
+  grid-column: 1 / -1;
+}
+
+.list-box {
+  font-weight: 400;
+}
+
+.list-box .dash-list li {
+  color: var(--text-body);
+}
+
+.muted-box {
+  background: var(--surface-soft);
+  border-style: dashed;
+}
+
+.col-heading.muted {
+  color: var(--text-body);
+}
+
+/* ============ PHILOSOPHY / MODEL CARD ============ */
+.philosophy-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--surface-soft);
+  border: 1px solid var(--border-grid);
+  border-radius: var(--radius-md);
+  padding: 36px 40px;
+}
+
+.philosophy-quote {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text-heading);
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.col-heading {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 12px;
+}
+
+.col-heading.spaced {
+  margin-top: 26px;
+}
+
+.flow-line{
+  font-size: 18px;
+}
+
+.arrow-list li {
+  font-size: 20px;
+  color: var(--text-body);
+  margin-bottom: 10px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.arrow-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue);
+}
+
+.support-closing {
+  font-size: 16px;
+  color: var(--text-body);
+  margin-top: 18px;
+}
+
+.dash-list li {
+  position: relative;
+  font-size: 18px;
+  color: var(--text-body);
+  padding-left: 16px;
+  margin-bottom: 10px;
+}
+
+.dash-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--text-body);
+}
+
+.trust-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ============ PILLS ============ */
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  background: var(--primary-blue);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* ============ SUPPORT GRID (how we help freight forwarders) ============ */
+.support-grid {
+  gap: 24px;
+}
+
+.support-box {
+  border: 1px solid var(--border-grid);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  background: var(--surface-white);
+}
+
+.support-icon {
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.support-box.full-width {
+  grid-column: 1 / -1;
+}
+
+.support-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 6px;
+}
+
+.support-tag {
+  font-size: 20px;
+  color: var(--text-body);
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.support-lead {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin: 14px 0 10px 0;
+}
+
+.outcome-note {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-body);
+  margin-top: 14px;
+}
+
+/* ============ EARLIER VS NOW COMPARISON ============ */
+.compare-grid {
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.compare-box {
+  background: var(--surface-white);
+  border: 1px solid var(--border-grid);
+  border-radius: var(--radius-md);
+  padding: 26px 30px;
+  border-top: 3px solid var(--border-grid);
+}
+
+.compare-before {
+  border-top-color: #d9536a;
+}
+
+.compare-after {
+  border-top-color: #2e9e6b;
+}
+
+.compare-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 16px;
+}
+
+.plain-list li {
+  font-size: 18px;
+  color: var(--text-body);
+  margin-bottom: 8px;
+}
+
+/* ============ OUR BELIEF ============ */
+.belief-section {
+  display: flex;
+  justify-content: center;
+}
+
+.belief-card {
+  max-width: 700px;
+  width: 100%;
+  background: var(--surface-soft);
+  border: 1px solid var(--border-grid);
+  border-radius: var(--radius-md);
+  padding: 40px;
+  text-align: center;
+}
+
+.belief-bold {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 6px;
+}
+
+.belief-sub {
+  font-size: 18px;
+  color: var(--text-body);
+  margin: 16px 0 26px 0;
+}
+
+.belief-chain {
+  font-size: 18px;
+  color: var(--text-body);
+  margin-bottom: 18px;
+}
+
+.belief-quote {
+  font-size: 16px;
+  color: var(--text-body);
+  margin-top: 14px;
+}
+
+/* ============ CTA ============ */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 90px 60px;
+  margin-bottom: 25px;
+}
+
+.cta-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.cta-desc {
+  font-size: 18px;
+  color: #c9d4ef;
+  max-width: 620px;
+  margin: 0 auto 40px auto;
+}
+
+.cta-contact {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.cta-label {
+  display: block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #94a6d6;
+  margin-bottom: 6px;
+}
+
+.cta-value {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #ffffff;
+  color: var(--primary-blue-dark);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 14px 34px;
+  border-radius: 6px;
+  transition: opacity 0.2s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.85;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+  .intro-grid,
+  .compare-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-box.full-width {
+    grid-column: auto;
+  }
+
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .support-box.full-width {
+    grid-column: auto;
+  }
+
+  .hero {
+    padding: 50px 24px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .section,
+  .intro-section,
+  .cta-section {
+    padding: 50px 24px;
+  }
+
+  .cta-contact {
+    gap: 30px;
+  }
+}

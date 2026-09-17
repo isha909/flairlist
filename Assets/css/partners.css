@@ -1,0 +1,617 @@
+/* =========================================================
+   BUILD PROFITABLE, SCALABLE GLOBAL TRADE — TOGETHER (PARTNER)
+   Page-only styles — header, navbar, and footer styles are
+   NOT included here (use the site's existing style.css for those).
+   ========================================================= */
+
+:root {
+  --primary-blue: #082b80;
+  --primary-blue-dark: #062568;
+  --text-heading: #082b80;
+  --text-body: #6b7a99;
+  --surface-white: #ffffff;
+  --surface-soft: #f1f7ff;
+  --border-grid: rgba(8, 43, 128, 0.1);
+  --radius-md: 12px;
+}
+
+.partner-page * {
+  box-sizing: border-box;
+}
+
+.partner-page .container {
+  width: min(1400px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* ---------- HERO ---------- */
+.partner-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0;
+  color: #fff;
+  background:
+   linear-gradient(90deg, #031d68ef, #082b80a8),
+    url("../img/countries.jpg")
+      center/cover no-repeat;
+}
+.partner-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 46px 46px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.partner-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+}
+.partner-hero small {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1.6px;
+  font-weight: 800;
+  color: #a9bcf0;
+  margin-bottom: 18px;
+}
+.partner-hero h1 {
+  font-size: clamp(40px, 6vw, 52px);
+  line-height: 1.2;
+  margin-bottom: 22px;
+}
+.partner-hero p {
+  font-size: 20px;
+  color: #dbe2f6;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* ---------- WHY PARTNER ---------- */
+.why-partner {
+  padding: 80px 0 60px;
+}
+.why-partner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.why-partner h2 {
+  font-size: 34px;
+  color: var(--text-heading);
+  margin-bottom: 18px;
+  line-height: 1.25;
+}
+.why-partner-copy p {
+  font-size: 22px;
+  color: var(--text-body);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.why-partner-copy p strong {
+  color: #1a2233;
+}
+.why-partner-img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: linear-gradient(135deg, #c98a4b, #7a5230);
+}
+.why-partner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.access-label {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--text-body);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.access-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 30px;
+}
+.access-card {
+  background: var(--surface-soft);
+  border-radius: 8px;
+  padding: 20px 18px;
+}
+.access-card .dash {
+  display: block;
+  width: 22px;
+  height: 3px;
+  background: var(--primary-blue);
+  border-radius: 2px;
+  margin-bottom: 14px;
+}
+.access-card p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a2233;
+  line-height: 1.4;
+}
+.why-partner-quote {
+  background: var(--surface-soft);
+  border-left: 3px solid var(--primary-blue);
+  border-radius: 4px;
+  padding: 24px 28px;
+}
+.why-partner-quote p {
+  font-size: 20px;
+  color: #1a2233;
+  margin-bottom: 6px;
+}
+
+/* ---------- WHO CAN PARTNER ---------- */
+.who-partner {
+  background: var(--surface-soft);
+  padding: 80px 0 70px;
+}
+.who-partner > .container > h2 {
+  font-size: 34px;
+  color: var(--text-heading);
+  margin-bottom: 12px;
+}
+.who-partner > .container > p {
+  font-size: 20px;
+  color: var(--text-body);
+  max-width: 800px;
+  margin-bottom: 34px;
+}
+.partner-type-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.partner-type-card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: 36px 40px;
+  box-shadow: 0 2px 12px rgba(8, 43, 128, 0.06);
+}
+.partner-type-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-grid);
+  margin-bottom: 20px;
+}
+.partner-type-num {
+  font-size: 34px;
+  font-weight: 800;
+  color: #d7deec;
+  line-height: 2.5;
+}
+.partner-type-head h3 {
+  font-size: 26px;
+  color: var(--text-heading);
+  margin-bottom: 4px;
+}
+.partner-type-head span {
+  font-size: 19px;
+  color: var(--text-body);
+}
+.partner-type-italic {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--text-body);
+  margin-bottom: 16px;
+}
+.partner-type-sub-label {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.dash-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.dash-list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 20px;
+  color: #333;
+}
+.dash-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: #9aa5c0;
+}
+.contribute-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-grid);
+  margin-bottom: 20px;
+}
+.partner-result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-grid);
+}
+.partner-result .tag {
+  background: var(--surface-soft);
+  color: var(--text-body);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.partner-result p {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+/* ---------- WHAT MAKES US A STRONG TRADE PARTNER ---------- */
+.strong-partner {
+  padding: 80px 0;
+}
+.strong-partner h2 {
+  font-size: 32px;
+  color: var(--text-heading);
+  margin-bottom: 34px;
+}
+.strong-partner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.strong-card {
+  background: var(--surface-soft);
+  border-radius: 10px;
+  padding: 24px 26px;
+}
+.strong-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #d7e0f5;
+  color: var(--primary-blue);
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.strong-card h3 {
+  font-size: 22px;
+  color: var(--text-heading);
+  margin-bottom: 8px;
+}
+.strong-card p {
+  font-size: 17px;
+  color: var(--text-body);
+  line-height: 1.5;
+}
+
+/* ---------- WHAT WE LOOK FOR IN A PARTNER ---------- */
+.look-for {
+  background: var(--surface-soft);
+  padding: 80px 0;
+}
+.look-for h2 {
+  font-size: 32px;
+  color: var(--text-heading);
+  margin-bottom: 10px;
+}
+.look-for-sub {
+  font-size: 20px;
+  color: var(--text-body);
+  margin-bottom: 30px;
+}
+.look-for-label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--text-body);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.look-for-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.look-for-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px 22px;
+  box-shadow: 0 2px 10px rgba(8, 43, 128, 0.05);
+}
+.look-for-card .dash {
+  display: block;
+  width: 22px;
+  height: 3px;
+  background: var(--primary-blue);
+  border-radius: 2px;
+  margin-bottom: 14px;
+}
+.look-for-card h3 {
+  font-size: 22px;
+  color: var(--text-heading);
+  margin-bottom: 12px;
+}
+
+/* ---------- PARTNERSHIP MODELS WE OFFER ---------- */
+.models-section {
+  padding: 80px 0;
+}
+.models-section h2 {
+  font-size: 32px;
+  color: var(--text-heading);
+  margin-bottom: 10px;
+}
+.models-sub {
+  font-size: 22px;
+  color: var(--text-body);
+  margin-bottom: 34px;
+}
+.models-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.models-list {
+  display: flex;
+  flex-direction: column;
+}
+.models-list div {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-grid);
+}
+.models-list span.num {
+  font-size: 18px;
+  font-weight: 800;
+  color: #b7c0dc;
+}
+.models-list span.label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a2233;
+}
+.models-doc-box {
+  background: var(--surface-soft);
+  border-radius: var(--radius-md);
+  padding: 28px 30px;
+}
+.models-doc-box .label-top {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* ---------- HOW HIGHLIGHTED PARTNERSHIPS ACTUALLY WORK ---------- */
+.how-works {
+  background: var(--surface-soft);
+  padding: 80px 0;
+}
+.how-works h2 {
+  font-size: 32px;
+  color: var(--text-heading);
+  margin-bottom: 40px;
+}
+.steps-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 140px;
+}
+.step-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+.step-item p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.4;
+}
+.step-connector {
+  flex: 1;
+  height: 1px;
+  background: var(--border-grid);
+  margin-top: 22px;
+}
+.how-works-note {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+/* ---------- WHY PARTNERS STAY ---------- */
+.why-stay {
+  padding: 80px 0;
+}
+.why-stay h2 {
+  font-size: 32px;
+  color: var(--text-heading);
+  margin-bottom: 24px;
+}
+.why-stay-list {
+  max-width: 620px;
+  margin-bottom: 30px;
+}
+.why-stay-list div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-grid);
+  font-size: 19px;
+  font-weight: 600;
+  color: #1a2233;
+}
+.why-stay-list .check {
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+.why-stay-note {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+/* ---------- FINAL CTA ---------- */
+.partner-cta {
+  background: var(--surface-soft);
+  padding: 60px 0 90px;
+  text-align: center;
+}
+.partner-cta-card {
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid var(--border-grid);
+  background-color: #fff;
+  border-radius: var(--radius-md);
+  padding: 50px 44px;
+}
+.partner-cta h2 {
+  font-size: 32px;
+  color: var(--text-heading);
+  margin-bottom: 20px;
+}
+.partner-cta-lines p {
+  font-size: 18px;
+  color: var(--text-body);
+  line-height: 1.8;
+}
+.partner-cta-details {
+  border-top: 1px solid var(--border-grid);
+  margin: 30px 0;
+}
+.partner-cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-grid);
+  text-align: left;
+}
+.partner-cta-row span.label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--text-body);
+  text-transform: uppercase;
+}
+.partner-cta-row span.value {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+.partner-cta .btn-solid-blue {
+  display: inline-block;
+  background: var(--primary-blue);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.partner-cta .btn-solid-blue:hover {
+  background: var(--primary-blue-dark);
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 900px) {
+  .why-partner-grid,
+  .models-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .access-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contribute-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .strong-partner-grid,
+  .look-for-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .steps-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  .step-connector {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .partner-hero {
+    padding: 60px 0;
+  }
+  .access-grid,
+  .strong-partner-grid,
+  .look-for-grid {
+    grid-template-columns: 1fr;
+  }
+  .partner-type-card {
+    padding: 26px 22px;
+  }
+  .partner-cta-card {
+    padding: 34px 24px;
+  }
+  .partner-cta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
