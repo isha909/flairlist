@@ -8,7 +8,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 30px;
 }
 
 .container.narrow {
@@ -20,7 +20,7 @@
 }
 
 .section {
-  padding: 72px 0;
+  padding: 74px 0;
 }
 
 .section.white {
@@ -77,7 +77,7 @@
 /* ---------- Hero ---------- */
 .wf-hero {
   position: relative;
-  min-height: 320px;
+  min-height: 390px;
   display: flex;
   align-items: center;
   padding: 64px 0;
@@ -128,12 +128,12 @@
 .intro-grid p {
   font-size: 15px;
   line-height: 1.75;
-  color: #2b3a55;
+  color: black;
   margin: 0 0 14px;
 }
 
 .intro-grid p strong {
-  color: var(--text-heading);
+  color: black;
 }
 
 .wf-intro-image {

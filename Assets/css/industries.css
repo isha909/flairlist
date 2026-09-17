@@ -44,14 +44,14 @@
    ========================================================== */
 
 .ind-hero {
-  padding: 90px 0 64px;
+  padding: 100px 0 74px;
   text-align: center;
   color: #fff;
   background: linear-gradient(120deg, #051c4f, #0a2c85 60%, #0d3499);
 }
 
 .ind-hero-container {
-  max-width: 760px;
+  max-width: 1040px; /* was 920px */
 }
 
 .ind-eyebrow {
@@ -67,8 +67,9 @@
 .ind-hero h1 {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: clamp(46px, 6vw, 72px);
-  line-height: 1.1;
+  font-size: clamp(32px, 4vw, 56px); /* was clamp(46px, 6vw, 72px) */
+  line-height: 1.15;
+  white-space: nowrap; /* new — forces one line */
   margin-bottom: 22px;
 }
 
@@ -100,11 +101,15 @@
 }
 
 .ind-role-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 22px;
 }
 
 .ind-role-tag {
   display: inline-block;
+  flex-shrink: 0;
   font-size: 10.5px;
   font-weight: 800;
   letter-spacing: 0.8px;
@@ -113,7 +118,7 @@
   background: var(--surface-soft);
   border-radius: var(--radius-sm);
   padding: 5px 10px;
-  margin-bottom: 12px;
+  /* margin-bottom removed — no longer needed since it's not stacking */
 }
 
 .ind-role-heading h2 {
@@ -187,10 +192,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  max-width: 100%;   /* new — extra guard */
 }
 
 .ind-btn {
   display: inline-block;
+  box-sizing: border-box;   /* new — padding now counts inside width:100% instead of adding to it */
   font-weight: 700;
   font-size: 14.5px;
   padding: 15px 30px;
@@ -233,7 +240,7 @@
 
 @media (max-width: 700px) {
   .ind-hero {
-    padding: 68px 0 48px;
+    padding: 78px 0 58px;
   }
 
   .ind-section {
@@ -255,6 +262,7 @@
 
   .ind-btn {
     width: 100%;
+    padding: 15px 30px;
   }
 }
 
@@ -304,14 +312,14 @@
    ========================================================== */
 
 .ind-hero {
-  padding: 90px 0 64px;
+  padding: 100px 0 74px;
   text-align: center;
   color: #fff;
   background: linear-gradient(120deg, #051c4f, #0a2c85 60%, #0d3499);
 }
 
 .ind-hero-container {
-  max-width: 760px;
+  max-width: 1040px; /* was 920px */
 }
 
 .ind-eyebrow {
@@ -327,8 +335,9 @@
 .ind-hero h1 {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: clamp(46px, 6vw, 72px);
-  line-height: 1.1;
+  font-size: clamp(32px, 4vw, 56px); /* was clamp(46px, 6vw, 72px) */
+  line-height: 1.15;
+  white-space: nowrap; /* new — forces one line */
   margin-bottom: 22px;
 }
 
@@ -360,11 +369,15 @@
 }
 
 .ind-role-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 22px;
 }
 
 .ind-role-tag {
   display: inline-block;
+  flex-shrink: 0;
   font-size: 10.5px;
   font-weight: 800;
   letter-spacing: 0.8px;
@@ -373,8 +386,9 @@
   background: var(--surface-soft);
   border-radius: var(--radius-sm);
   padding: 5px 10px;
-  margin-bottom: 12px;
+  /* margin-bottom removed — no longer needed since it's not stacking */
 }
+
 
 .ind-role-heading h2 {
   font-family: var(--font-heading);
@@ -447,10 +461,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  max-width: 100%;   /* new — extra guard */
 }
 
 .ind-btn {
   display: inline-block;
+  box-sizing: border-box;   /* new — padding now counts inside width:100% instead of adding to it */
   font-weight: 700;
   font-size: 14.5px;
   padding: 15px 30px;
@@ -493,7 +509,7 @@
 
 @media (max-width: 700px) {
   .ind-hero {
-    padding: 68px 0 48px;
+    padding: 78px 0 58px;
   }
 
   .ind-section {
@@ -515,6 +531,7 @@
 
   .ind-btn {
     width: 100%;
+    padding: 15px 30px;
   }
 }
 
@@ -565,14 +582,14 @@
    ========================================================== */
 
 .ind-hero {
-  padding: 90px 0 64px;
+  padding: 100px 0 74px;
   text-align: center;
   color: #fff;
   background: linear-gradient(120deg, #051c4f, #0a2c85 60%, #0d3499);
 }
 
 .ind-hero-container {
-  max-width: 760px;
+  max-width: 1040px; /* was 920px */
 }
 
 .ind-eyebrow {
@@ -588,8 +605,9 @@
 .ind-hero h1 {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: clamp(46px, 6vw, 72px);
-  line-height: 1.1;
+  font-size: clamp(32px, 4vw, 56px); /* was clamp(46px, 6vw, 72px) */
+  line-height: 1.15;
+  white-space: nowrap; /* new — forces one line */
   margin-bottom: 22px;
 }
 
@@ -621,11 +639,15 @@
 }
 
 .ind-role-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 22px;
 }
 
 .ind-role-tag {
   display: inline-block;
+  flex-shrink: 0;
   font-size: 10.5px;
   font-weight: 800;
   letter-spacing: 0.8px;
@@ -634,7 +656,7 @@
   background: var(--surface-soft);
   border-radius: var(--radius-sm);
   padding: 5px 10px;
-  margin-bottom: 12px;
+  /* margin-bottom removed — no longer needed since it's not stacking */
 }
 
 .ind-role-heading h2 {
@@ -708,10 +730,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  max-width: 100%;   /* new — extra guard */
 }
 
 .ind-btn {
   display: inline-block;
+  box-sizing: border-box;   /* new — padding now counts inside width:100% instead of adding to it */
   font-weight: 700;
   font-size: 14.5px;
   padding: 15px 30px;
@@ -750,11 +774,15 @@
   .ind-role-grid {
     grid-template-columns: 1fr;
   }
+  .ind-hero h1 {
+  white-space: normal;
+  font-size: clamp(30px, 8vw, 42px);
+}
 }
 
 @media (max-width: 700px) {
   .ind-hero {
-    padding: 68px 0 48px;
+    padding: 78px 0 58px;
   }
 
   .ind-section {
@@ -776,5 +804,6 @@
 
   .ind-btn {
     width: 100%;
+    padding: 15px 30px;
   }
 }

@@ -50,6 +50,8 @@
 html,
 body {
   font-family: var(--font-body);
+  overflow-x: hidden;  /* new — safety net */
+  max-width: 100%;      /* new */
 }
 
 body {
@@ -316,13 +318,11 @@ label {
 ========================================== */
 
 .country-dropdown {
-  position: absolute;
-
-  /* Image 1 style */
+    position: absolute;
   top: calc(100% + 10px);
-  right: -20px;
-
+  right: 0;
   width: 300px;
+  max-width: calc(100vw - 32px); /* new — keeps it inside viewport on narrow screens */
   height: 400px;
 
   background: #08382B;
