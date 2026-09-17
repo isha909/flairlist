@@ -1,7 +1,7 @@
 
 /* ---------- HERO ---------- */
 .contact-hero {
-  background: linear-gradient(120deg, #051c4f, #0a2c85 60%, #0d3499);
+  background: linear-gradient(120deg, #04261D, #08382B 60%, #0c4d3b);
   color: #fff;
   padding: 70px 0;
 }
@@ -18,7 +18,7 @@
   font-size: 13px;
   letter-spacing: 1.6px;
   font-weight: 800;
-  color: #a9bcf0;
+  color: #00E676;
   margin-bottom: 16px;
 }
 .contact-hero-copy h1 {
@@ -31,7 +31,7 @@
 }
 .contact-hero-copy > p {
   font-size: 18px;
-  color: #cdd7f5;
+  color: #a7f3d0;
   max-width: 520px;
   margin-bottom: 44px;
 }
@@ -46,7 +46,7 @@
   gap: 16px;
   align-items: flex-start;
   padding: 20px 0;
-  border-bottom: 1px solid #ffffff1a;
+  border-bottom: 1px solid rgba(0, 230, 118, 0.15);
 }
 .query-icon {
   display: inline-flex;
@@ -74,7 +74,7 @@
 }
 .query-topic p {
   font-size: 16px;
-  color: #aebbe6;
+  color: #A7F3D0;
 }
 
 /* ---------- QUERY CARD ---------- */
@@ -93,11 +93,11 @@
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: 700;
-  color: #8a8f9c;
+  color: #3D5E52;
   margin-bottom: 8px;
   padding-top: 24px;
   margin-top: 6px;
-  border-top: 1px solid #e3e8f2;
+  border-top: 1px solid rgba(0, 230, 118, 0.15);
 }
 .query-card h3 {
   font-size: 26px;
@@ -121,12 +121,13 @@
   font-size: 18px;
   margin-bottom: 30px;
   position: relative;
-  border: 1px solid #4a6fe0;
+  border: 1px solid #00E676;
   border-radius: 8px;
-  background: linear-gradient(120deg, #0a2c85, #163f9e, #0a2c85);
+  background: linear-gradient(120deg, #00E676, #00F078, #00E676);
+  color: #04261D;
   box-shadow:
     0 0 0 1px #ffffff20,
-    0 0 45px 8px rgba(30, 70, 200, 0.65);
+    0 0 45px 8px rgba(0, 230, 118, 0.55);
   overflow: hidden;
 }
 .magic-form-btn::before {
@@ -159,7 +160,7 @@
 .magic-form-btn:hover {
   box-shadow:
     0 0 0 1px #ffffff40,
-    0 0 55px 10px rgba(30, 70, 200, 0.8);
+    0 0 55px 10px rgba(0, 230, 118, 0.75);
   transform: translateY(-2px);
 }
 .magic-form-btn span,
@@ -172,7 +173,7 @@
   width: 18px;
   height: 18px;
   fill: none;
-  stroke: #fff;
+  stroke: #04261D;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -182,11 +183,11 @@
   font-size: 11px;
   letter-spacing: 1px;
   font-weight: 700;
-  color: #8a8f9c;
+  color: #3D5E52;
   margin-bottom: 8px;
   padding-top: 24px;
   margin-top: 6px;
-  border-top: 1px solid #e3e8f2;
+  border-top: 1px solid rgba(0, 230, 118, 0.15);
 }
 .query-email {
   display: flex;
@@ -227,10 +228,10 @@
 
 .contact-card {
   flex: 0 1 300px;
-  border: 1px solid #e7ebf3;
+  border: 1px solid rgba(0, 230, 118, 0.15);
   border-radius: 12px;
   padding: 22px 24px;
-  box-shadow: 0 4px 16px rgba(8, 43, 128, 0.05);
+  box-shadow: 0 4px 16px rgba(4, 38, 29, 0.05);
 }
 .contact-card-icon {
   display: inline-flex;
@@ -265,7 +266,7 @@
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 800;
-  color: #8a93ac;
+  color: #3D5E52;
   margin-bottom: 6px;
 }
 .contact-card a {
@@ -277,12 +278,12 @@
 }
 .contact-card p {
   font-size: 16px;
-  color: #8a93ac;
+  color: #3D5E52;
 }
 
 /* ---------- TAGLINE STRIP ---------- */
 .contact-tagline {
-  background-color:#051c4f;
+  background-color:#04261D;
   color: #fff;
   padding: 40px 0;
   margin-bottom: 40px;
@@ -295,7 +296,7 @@
 .contact-tagline em {
   display: block;
   font-size: 20 px;
-  color: #cdd7f5;
+  color: #a7f3d0;
   margin-bottom: 6px;
 }
 .contact-tagline p {

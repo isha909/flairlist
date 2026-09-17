@@ -91,7 +91,7 @@
   align-items: center;
   padding: 64px 0;
   background:
-    linear-gradient(rgba(6, 25, 90, 0.72), rgba(6, 25, 90, 0.72)),
+    linear-gradient(rgba(4, 38, 29, 0.78), rgba(4, 38, 29, 0.78)),
     url("../img/workforce_hero.png") center/cover no-repeat;
   background-color: var(--primary-blue-dark);
 }
@@ -103,7 +103,7 @@
 }
 
 .wf-hero .eyebrow.light {
-  color: #cfd9f7;
+  color: #a7f3d0;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -123,7 +123,7 @@
 }
 
 .wf-hero .hero-small {
-  color: #e3e8fb;
+  color: #A7F3D0;
   font-size: 16px;
   margin: 0;
   padding-top: 5px;
@@ -140,13 +140,13 @@
 .intro-grid p {
   font-size: 18px;
   line-height: 1.75;
-  color: black;
+  color: #04261D;
   margin: 0 0 14px;
   padding-right: 100px;
 }
 
 .intro-grid p {
-  color: black
+  color: #3D5E52
 }
 
 .wf-intro-image {
@@ -176,14 +176,14 @@
   margin-bottom: 10px;
   font-size: 15px;
   line-height: 1.6;
-  color: black
+  color: #3D5E52
 }
 
 .dash-list li::before {
   content: "\2013";
   position: absolute;
   left: 0;
-  color: black;
+  color: #04261D;
 }
 
 .arrow-list li::before {
@@ -219,7 +219,7 @@
 /* "What Is Workforce Mobility" section — centered + blue text */
 .wf-intro-blue {
   text-align: justify;
-  color: black;
+  color: #04261D;
 }
 
 .wf-intro-blue .section-heading.left {
@@ -228,7 +228,7 @@
 
 .wf-intro-blue .lead,
 .wf-intro-blue .arrow-list {
-  color: black;
+  color: #04261D;
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
@@ -236,11 +236,11 @@
 
 .wf-intro-blue .arrow-list li {
   text-align: left;
-  color: black;
+  color: #04261D;
 }
 
 .wf-intro-blue .arrow-list li::before {
-  color: black;
+  color: #04261D;
 }
 
 .wf-intro-blue .divider {
@@ -255,7 +255,7 @@
 }
 
 .wf-who-for {
-  background-color: #cfd9f7;
+  background-color: #a7f3d0;
 }
 
 /* ---------- Built for / Not suited for cards ---------- */
@@ -319,7 +319,7 @@
 
 .context-line {
   font-size: 15px;
-  color: #2b3a55;
+  color: #04261D;
   margin-top: 12px;
 }
 
@@ -342,7 +342,7 @@
 
 .quote-card p {
   font-size: 15px;
-  color: #2b3a55;
+  color: #04261D;
   margin: 0 0 12px;
 }
 
@@ -356,7 +356,7 @@
 
 .phase-tag {
   display: inline-block;
-  background: #dde6fb;
+  background: #F0FDF4;
   color: var(--primary-blue);
   font-size: 11px;
   font-weight: 700;
@@ -500,7 +500,7 @@
 
 .final-tagline {
   font-size: 14px;
-  color: #2b3a55;
+  color: #04261D;
   margin: 0 0 14px;
 }
 

@@ -52,7 +52,7 @@
   padding-left: 22px;
   font-size: 15.5px;
   line-height: 1.6;
-  color: #46577a;
+  color: #a7f3d0;
   margin-bottom: 14px;
 }
 
@@ -63,7 +63,7 @@
   content: "–";
   position: absolute;
   left: 0;
-  color: #9fb0cc;
+  color: #00E676;
 }
 
 /* ---------- HERO ---------- */
@@ -75,7 +75,7 @@
   color: #fff;
   padding: 90px 0;
   background:
-    linear-gradient(90deg, rgba(4, 26, 84, 0.93), rgba(6, 38, 111, 0.82)),
+    linear-gradient(90deg, rgba(4, 38, 29, 0.93), rgba(8, 56, 43, 0.82)),
     url("../img/exclusive-partnership.png") center/cover no-repeat;
 }
 
@@ -155,7 +155,7 @@
   padding: 26px 30px;
   font-size: 15.5px;
   line-height: 1.75;
-  color: #3d5079;
+  color: #00E676;
 }
 
 .quote-box strong {
@@ -166,7 +166,7 @@
   margin-bottom: 6px;
 }
 
-.quote-box p { color: #52658c; margin: 6px 0 0; font-size: 15.5px; }
+.quote-box p { color: #3D5E52; margin: 6px 0 0; font-size: 15.5px; }
 
 /* pill row — the fixed 40x60 box was clipping these */
 .mini-actions {
@@ -244,7 +244,7 @@
   padding: 6px 0 6px 28px;
   font-size: 15px;
   font-weight: 400;
-  color: #3d5079;
+  color: #00E676;
 }
 
 .bullet-row span::before {
@@ -444,8 +444,8 @@
 .primary-btn {
   display: inline-block;
   border: 0;
-  background: #fff;
-  color: var(--navy);
+  background: #00E676;
+  color: #04261D;
   padding: 16px 30px;
   border-radius: var(--radius-xs);
   font-weight: 700;
@@ -594,8 +594,8 @@
   box-sizing: border-box;
   font-size: 15px;
   color: var(--navy);
-  background: #fbfcfe;
-  border: 1px solid #dde6f4;
+  background: #F0FDF4;
+  border: 1px solid #A7F3D0;
   border-radius: var(--radius-sm);
   padding: 13px 14px;
   margin-top: 10px;
@@ -606,7 +606,7 @@
 .consult-form input:focus,
 .consult-form textarea:focus {
   border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(8, 43, 128, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 230, 118, 0.15);
 }
 
 .consult-form .full { grid-column: 1 / -1; }

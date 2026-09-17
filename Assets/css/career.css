@@ -1,11 +1,11 @@
 :root {
-  --primary-blue: #082b80;
-  --primary-blue-dark: #062568;
-  --text-heading: #082b80;
-  --text-body: #6b7a99;
+  --primary-blue: #04261D;
+  --primary-blue-dark: #04261D;
+  --text-heading: #04261D;
+  --text-body: #3D5E52;
   --surface-white: #ffffff;
-  --surface-soft: #f1f7ff;
-  --border-grid: rgba(8, 43, 128, 0.1);
+  --surface-soft: #F0FDF4;
+  --border-grid: rgba(0, 230, 118, 0.15);
   --radius-md: 12px;
 }
 
@@ -45,7 +45,7 @@ img {
   align-items: center;
   justify-content: center;
   background:
-    linear-gradient(90deg, rgba(3,30,97,.96), rgba(6,38,111,.76)),
+    linear-gradient(90deg, rgba(4, 38, 29, 0.96), rgba(8, 56, 43, 0.76)),
     url("../img/career.jpg") center/cover no-repeat;
   color: #fff;
   background-size: cover;
@@ -65,7 +65,7 @@ img {
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 600;
-  color: #b9c8f0;
+  color: #00E676;
   margin-bottom: 16px;
 }
 
@@ -79,14 +79,14 @@ img {
 
 .hero-desc {
   font-size: 18px;
-  color: #d7deef;
+  color: #a7f3d0;
   margin-bottom: 24px;
 }
 
 .hero-italic {
   font-style: italic;
   font-size: 18px;
-  color: #c9d4ef;
+  color: #a7f3d0;
   margin-top: 22px;
 }
 
@@ -413,7 +413,7 @@ img {
 
 .quote-card {
   background: var(--surface-soft);
-  border-left: 4px solid var(--primary-blue);
+  border-left: 4px solid #00E676;
   border-radius: var(--radius-md);
   padding: 34px 30px;
 }
@@ -451,11 +451,10 @@ img {
 
 /* ============ CTA / HOW TO APPLY ============ */
 .cta-section {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+  background: linear-gradient(135deg, #04261D 0%, #08382B 100%);
   color: #ffffff;
   text-align: center;
   padding: 90px 60px;
-  margin-bottom: 25px;
 }
 
 .cta-title {
@@ -466,7 +465,7 @@ img {
 
 .cta-desc {
   font-size: 20px;
-  color: #c9d4ef;
+  color: #a7f3d0;
   margin-bottom: 18px;
 }
 
@@ -495,14 +494,14 @@ img {
 
 .cta-footer-line {
   font-size: 18px;
-  color: #c9d4ef;
+  color: #a7f3d0;
   margin-top: 10px;
 }
 
 .cta-footer-italic {
   font-style: italic;
   font-size: 18px;
-  color: #c9d4ef;
+  color: #a7f3d0;
   margin-top: 6px;
 }
 

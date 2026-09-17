@@ -1,11 +1,11 @@
 :root {
-  --primary-blue: #082b80;
-  --primary-blue-dark: #062568;
-  --text-heading: #082b80;
-  --text-body: #6b7a99;
+  --primary-blue: #04261D;
+  --primary-blue-dark: #04261D;
+  --text-heading: #04261D;
+  --text-body: #3D5E52;
   --surface-white: #ffffff;
-  --surface-soft: #f1f7ff;
-  --border-grid: rgba(8, 43, 128, 0.1);
+  --surface-soft: #F0FDF4;
+  --border-grid: rgba(0, 230, 118, 0.15);
   --radius-md: 12px;
 }
 
@@ -27,7 +27,7 @@
   text-align: center;
   color: #fff;
   background:
-   linear-gradient(90deg, #031d68ef, #082b80a8),
+   linear-gradient(90deg, #04261def, #08382ba8),
     url("../img/products.jpg")
       center/cover no-repeat;
 }
@@ -51,7 +51,7 @@
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 800;
-  color: #a9bcf0;
+  color: #00E676;
   margin-bottom: 18px;
 }
 .products-hero h1 {
@@ -61,7 +61,7 @@
 }
 .products-hero p {
   font-size: 18px;
-  color: #dbe2f6;
+  color: #a7f3d0;
 }
 
 /* ---------- INTRO ---------- */
@@ -87,7 +87,7 @@
 .products-intro-note > p.lead {
   text-align: left;
   font-size: 20px;
-  color: #1a2233;
+  color: #04261D;
   font-weight: 600;
   margin-bottom: 18px;
 }
@@ -179,12 +179,12 @@
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: 800;
-  color: #8a93ac;
+  color: #3D5E52;
   text-transform: uppercase;
 }
 .industry-desc {
   font-size: 22px;
-  color: #333;
+  color: #3D5E52;
   line-height: 1.6;
   margin-bottom: 18px;
 }
@@ -226,10 +226,10 @@
   font-weight: 600;
   line-height: 1.4;
   color: var(--primary-blue);
-  box-shadow: 0 2px 8px rgba(8, 43, 128, 0.05);
+  box-shadow: 0 2px 8px rgba(4, 38, 29, 0.05);
 }
 .industry-section.alt .industry-list div {
-  background: #f6f9ff;
+  background: #F0FDF4;
 }
 .industry-list .arrow {
   color: var(--primary-blue);
@@ -304,9 +304,9 @@
   padding: 24px 28px;
   font-style: italic;
   font-size: 18px;
-  color: #333;
+  color: #3D5E52;
   line-height: 1.8;
-  box-shadow: 0 2px 10px rgba(8, 43, 128, 0.05);
+  box-shadow: 0 2px 10px rgba(4, 38, 29, 0.05);
 }
 .framework-label {
   font-size: 14px;
@@ -341,7 +341,7 @@
   font-size: 12px;
   font-weight: 800;
   flex-shrink: 0;
-  box-shadow: 0 1px 4px rgba(8, 43, 128, 0.15);
+  box-shadow: 0 1px 4px rgba(0, 230, 118, 0.15);
 }
 .framework-item span.label {
   font-size: 16px;
@@ -361,7 +361,7 @@
 
 /* ---------- WHY GLOBAL CLIENTS TRUST ---------- */
 .trust-section {
-  background: linear-gradient(160deg, #051c4f, #0a2c85 60%, #0d3499);
+  background: linear-gradient(160deg, #04261D, #08382B 60%, #0c4d3b);
   color: #fff;
   padding: 80px 0;
   text-align: center;
@@ -388,14 +388,14 @@
   justify-content: center;
 }
 .trust-card .check {
-  color: #7fd8a0;
+  color: #00E676;
 }
 .trust-section .fine {
   border-top: 1px solid #ffffff25;
   padding-top: 30px;
   font-size: 18px;
   font-style: italic;
-  color: #c7d1f0;
+  color: #a7f3d0;
   margin-bottom: 10px;
 }
 .trust-section .bold {
@@ -467,7 +467,7 @@
   margin: 0 auto;
   border-radius: var(--radius-md);
   padding: 44px 40px;
-  box-shadow: 0 4px 18px rgba(8, 43, 128, 0.06);
+  box-shadow: 0 4px 18px rgba(4, 38, 29, 0.06);
 }
 .philosophy-card p {
   font-size: 20px;

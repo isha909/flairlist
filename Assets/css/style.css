@@ -4,23 +4,36 @@
            DESIGN TOKENS
 ========================================= */
 :root {
-  --primary-blue: #082b80;
-  --primary-blue-dark: #062568;
+  --primary-blue: #04261D;
+  --primary-blue-dark: #04261D;
+  --primary-green: #00E676;
+  --primary-green-hover: #00C853;
+
+  --navy: #04261D;
+  --navy-dark: #04261D;
+  --navy-deep: #04261D;
+  --blue-soft: #F0FDF4;
+  --line: rgba(0, 230, 118, 0.15);
+  --muted: #3D5E52;
+  --sidebar-blue: #08382B;
+  --active-blue: #08382B;
+  --arrow: #00E676;
+  --mega-text: #A7F3D0;
 
   --text-primary: #ffffff;
-  --text-heading: #082b80;
-  --text-body: #6b7a99;
+  --text-heading: #04261D;
+  --text-body: #3D5E52;
 
   --surface-white: #ffffff;
-  --surface-soft: #f1f7ff;
+  --surface-soft: #F0FDF4;
 
-  --border-grid: rgba(8, 43, 128, 0.1);
+  --border-grid: rgba(0, 230, 118, 0.12);
 
   --radius-xs: 4px;
   --radius-sm: 6px;
   --radius-md: 12px;
 
-  --shadow-card: 0 2px 4px rgba(4, 35, 115, 0.06);
+  --shadow-card: 0 2px 4px rgba(4, 38, 29, 0.06);
 
   --transition-fast: 200ms ease;
   --transition-normal: 250ms ease;
@@ -312,9 +325,9 @@ label {
   width: 300px;
   height: 400px;
 
-  background: #08256f;
+  background: #08382B;
 
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(0, 230, 118, 0.2);
   border-radius: 2px;
 
   padding: 10px 0;
@@ -406,7 +419,7 @@ label {
   width: 6px;
   height: 6px;
 
-  background: #fff;
+  background: #00E676;
 
   border-radius: 50%;
 
@@ -454,8 +467,8 @@ label {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  background: #fff;
-  color: var(--primary-blue);
+  background: #00E676;
+  color: #04261D;
   font-family: inherit;
   font-size: 15px;
   font-weight: 700;
@@ -467,7 +480,7 @@ label {
 }
 
 .magic-button:hover {
-  background: #edf3ff;
+  background: #00C853;
   transform: translateY(-1px);
 }
 
@@ -546,7 +559,7 @@ label {
 
 .mega-side-item.active {
   font-weight: 600;
-  border-left-color: #fff;
+  border-left-color: #00E676;
 }
 
 .mega-side-item.has-arrow .side-arrow {
@@ -623,7 +636,7 @@ label {
 
 .mega-panel > a:hover,
 .nested-panel a:hover {
-  color: #fff;
+  color: #00E676;
   transform: translateX(3px);
 }
 
@@ -681,7 +694,7 @@ label {
   margin: -38px 0 -38px -55px;
   padding-top: 38px;
   border-right: 1px solid rgba(255, 255, 255, 0.13);
-  background: #082b80;
+  background: #08382B;
 }
 
 .nested-panel {
@@ -712,7 +725,7 @@ label {
   border: 0;
   border-left: 3px solid transparent;
   background: transparent;
-  color: #d7def0;
+  color: #A7F3D0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -728,12 +741,12 @@ label {
 
 .nested-side-item:hover,
 .nested-side-item.active {
-  background: #1b3269;
-  color: #fff;
+  background: #08382B;
+  color: #00E676;
 }
 
 .nested-side-item.active {
-  border-left-color: #fff;
+  border-left-color: #00E676;
   font-weight: 600;
 }
 
@@ -744,7 +757,7 @@ label {
 
 .nested-side-item:hover span:last-child,
 .nested-side-item.active span:last-child {
-  color: #fff;
+  color: #00E676;
 }
 
 /* ==========================================================
@@ -775,7 +788,7 @@ label {
 }
 
 .industries-grid a:hover {
-  color: #fff;
+  color: #00E676;
   transform: translateX(3px);
 }
 
@@ -954,9 +967,9 @@ label {
   gap: 15px;
   border: none;
   border-radius: 5px;
-  background: var(--primary-blue);
+  background: #00E676;
   text-decoration: none;
-  color: white;
+  color: #04261D;
 
   font-size: 20px;
   font-weight: 700;
@@ -970,11 +983,11 @@ label {
 }
 
 .hero-button:hover {
-  background: var(--primary-blue-dark);
+  background: #00C853;
 
   transform: translateY(-2px);
 
-  box-shadow: 0 8px 20px rgba(8, 43, 128, 0.18);
+  box-shadow: 0 8px 20px rgba(0, 230, 118, 0.25);
 }
 
 .hero-button:active {
@@ -982,7 +995,7 @@ label {
 }
 
 .hero-button:focus-visible {
-  outline: 3px solid var(--primary-blue);
+  outline: 3px solid #00E676;
   outline-offset: 4px;
 }
 
@@ -1017,7 +1030,7 @@ label {
 
   border-radius: 15px;
 
-  background: #e8eef7;
+  background: #F0FDF4;
 
   box-shadow: var(--shadow-card);
 
@@ -1214,7 +1227,7 @@ label {
 }
 
 :focus-visible {
-  outline: 3px solid var(--primary-blue);
+  outline: 3px solid #00E676;
   outline-offset: 3px;
 }
 
@@ -1269,11 +1282,11 @@ label {
 .hero-stats {
   width: 100%;
 
-  background: rgba(241, 247, 255, 0.9);
+  background: rgba(240, 253, 244, 0.9);
 
-  border-top: 1px solid rgba(8, 43, 128, 0.04);
+  border-top: 1px solid rgba(4, 38, 29, 0.04);
 
-  border-bottom: 1px solid rgba(8, 43, 128, 0.04);
+  border-bottom: 1px solid rgba(4, 38, 29, 0.04);
 }
 
 /* Stats container */
@@ -1322,7 +1335,7 @@ label {
 /* Number */
 
 .stat-number {
-  color: #082b80;
+  color: #04261D;
 
   font-size: 27px;
 
@@ -1346,7 +1359,7 @@ label {
 /* Label */
 
 .stat-label {
-  color: #65789e;
+  color: #3D5E52;
 
   font-size: 14px;
 
@@ -1366,7 +1379,7 @@ label {
 
   height: 40px;
 
-  background: rgba(8, 43, 128, 0.15);
+  background: rgba(0, 230, 118, 0.15);
 
   justify-self: center;
 }
@@ -1386,7 +1399,7 @@ label {
 
   justify-content: center;
 
-  background: #082b80;
+  background: #04261D;
 
   color: #ffffff;
 
@@ -1653,9 +1666,9 @@ label {
 .why-flairlist {
   width: 100%;
 
-  background: #f1f7ff;
+  background: #F0FDF4;
 
-  color: #082b80;
+  color: #04261D;
 
   padding: 65px 0 54px;
 }
@@ -1687,7 +1700,7 @@ label {
 .why-flairlist-title {
   margin: 0 0 25px;
 
-  color: #082b80;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -1707,7 +1720,7 @@ label {
 
   margin: 0 auto;
 
-  color: #60779f;
+  color: #3D5E52;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -1749,11 +1762,11 @@ label {
 
   background: #ffffff;
 
-  border: 1px solid rgba(8, 43, 128, 0.07);
+  border: 1px solid rgba(4, 38, 29, 0.07);
 
   border-radius: 12px;
 
-  box-shadow: 0 5px 16px rgba(8, 43, 128, 0.08);
+  box-shadow: 0 5px 16px rgba(4, 38, 29, 0.08);
 
   transition:
     transform 250ms ease,
@@ -1767,7 +1780,7 @@ label {
 .problem-card:hover {
   transform: translateY(-5px);
 
-  box-shadow: 0 12px 28px rgba(8, 43, 128, 0.12);
+  box-shadow: 0 12px 28px rgba(4, 38, 29, 0.12);
 }
 
 /* =========================================
@@ -1785,7 +1798,7 @@ label {
   align-items: center;
   justify-content: center;
 
-  color: #082b80;
+  color: #04261D;
 }
 
 /* SVG */
@@ -1794,9 +1807,9 @@ label {
   width: 43px;
   height: 43px;
 
-  fill: #082b80;
+  fill: #00E676;
 
-  stroke: #082b80;
+  stroke: #00E676;
 
   stroke-width: 1.4;
 
@@ -1818,7 +1831,7 @@ label {
 .problem-card h3 {
   margin: 0 0 21px;
 
-  color: #082b80;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -1838,7 +1851,7 @@ label {
 .problem-card p {
   margin: 0;
 
-  color: #0b1630;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -1856,7 +1869,7 @@ label {
 ========================================= */
 
 .problem-card:focus-within {
-  outline: 3px solid #082b80;
+  outline: 3px solid #00E676;
 
   outline-offset: 4px;
 }
@@ -1989,12 +2002,10 @@ label {
 
 .core-pillars {
   width: 100%;
-
   background: #ffffff;
-
   padding: 8px 0 75px;
-
-  color: #082b80;
+  padding-top: 80px;
+  color: #04261D;
 }
 
 /* =========================================
@@ -2016,7 +2027,7 @@ label {
 
   text-align: center;
 
-  color: #082b80;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -2062,7 +2073,7 @@ label {
 
   background: #ffffff;
 
-  border: 1px solid #dfe6f1;
+  border: 1px solid rgba(0, 230, 118, 0.15);
 
   border-radius: 5px;
 
@@ -2077,9 +2088,9 @@ label {
 .pillar-card:hover {
   transform: translateY(-4px);
 
-  border-color: rgba(8, 43, 128, 0.2);
+  border-color: rgba(0, 230, 118, 0.2);
 
-  box-shadow: 0 10px 25px rgba(8, 43, 128, 0.08);
+  box-shadow: 0 10px 25px rgba(4, 38, 29, 0.08);
 }
 
 /* =========================================
@@ -2097,7 +2108,7 @@ label {
   align-items: center;
   justify-content: center;
 
-  color: #082b80;
+  color: #04261D;
 }
 
 /* SVG */
@@ -2108,7 +2119,7 @@ label {
 
   fill: none;
 
-  stroke: #082b80;
+  stroke: #00E676;
 
   stroke-width: 2;
 
@@ -2132,7 +2143,7 @@ label {
 
   margin: 0 0 23px;
 
-  color: #082b80;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -2158,7 +2169,7 @@ label {
 .pillar-text p {
   margin: 0 0 22px;
 
-  color: #63799f;
+  color: #3D5E52;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -2182,7 +2193,7 @@ label {
 ========================================= */
 
 .pillar-card:focus-within {
-  outline: 3px solid #082b80;
+  outline: 3px solid #00E676;
 
   outline-offset: 4px;
 }
@@ -2322,7 +2333,7 @@ label {
 
   overflow: hidden;
 
-  background-color: #082b80;
+  background-color: #04261D;
 
   /*
         Replace this URL with your actual
@@ -2349,9 +2360,9 @@ label {
 
   background: linear-gradient(
     90deg,
-    rgba(3, 23, 72, 0.94) 0%,
-    rgba(8, 43, 128, 0.86) 45%,
-    rgba(8, 43, 128, 0.82) 100%
+    rgba(4, 38, 29, 0.94) 0%,
+    rgba(8, 56, 43, 0.86) 45%,
+    rgba(8, 56, 43, 0.82) 100%
   );
 
   z-index: 1;
@@ -2416,9 +2427,9 @@ label {
 
   padding: 39px 38px 43px;
 
-  background: rgba(15, 50, 120, 0.3);
+  background: rgba(0, 230, 118, 0.1);
 
-  border: 1px solid rgba(190, 211, 255, 0.25);
+  border: 1px solid rgba(0, 230, 118, 0.25);
 
   border-radius: 8px;
 
@@ -2435,9 +2446,9 @@ label {
 /* Hover */
 
 .presence-card:hover {
-  background: rgba(20, 60, 135, 0.42);
+  background: rgba(0, 230, 118, 0.18);
 
-  border-color: rgba(220, 231, 255, 0.4);
+  border-color: rgba(0, 230, 118, 0.4);
 
   transform: translateY(-3px);
 }
@@ -2583,7 +2594,7 @@ label {
 
   border-radius: 50%;
 
-  background: #b9c8e8;
+  background: #00E676;
 }
 
 /* =========================================
@@ -2610,7 +2621,7 @@ label {
 
   background: #ffffff;
 
-  color: #082b80;
+  color: #04261D;
 }
 
 /* Container */
@@ -2630,7 +2641,7 @@ label {
 .leadership-title {
   margin: 0 0 25px;
 
-  color: #082b80;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -2650,7 +2661,7 @@ label {
 
   margin: 0 auto;
 
-  color: #60779f;
+  color: #3D5E52;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -2678,7 +2689,7 @@ label {
 
   border-radius: 5px;
 
-  background: #082b80;
+  background: #04261D;
 
   color: #ffffff;
 
@@ -2695,15 +2706,15 @@ label {
 }
 
 .leadership-button:hover {
-  background: #062568;
+  background: #04261D;
 
   transform: translateY(-2px);
 
-  box-shadow: 0 8px 20px rgba(8, 43, 128, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 230, 118, 0.15);
 }
 
 .leadership-button:focus-visible {
-  outline: 3px solid #082b80;
+  outline: 3px solid #00E676;
   outline-offset: 4px;
 }
 
@@ -2714,7 +2725,7 @@ label {
 .audience-section {
   width: 100%;
 
-  background: #f1f7ff;
+  background: #F0FDF4;
 
   padding: 82px 0 120px;
 }
@@ -2746,11 +2757,11 @@ label {
 .audience-card {
   background: #ffffff;
 
-  border: 1px solid rgba(8, 43, 128, 0.08);
+  border: 1px solid rgba(4, 38, 29, 0.08);
 
   border-radius: 9px;
 
-  box-shadow: 0 4px 12px rgba(8, 43, 128, 0.07);
+  box-shadow: 0 4px 12px rgba(4, 38, 29, 0.07);
 
   padding: 48px 48px;
 }
@@ -2776,7 +2787,7 @@ label {
 
   text-align: center;
 
-  color: #082b80;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -2836,7 +2847,7 @@ label {
 .audience-positive {
   border-left-color: #45b85a;
 
-  color: #082b80;
+  color: #04261D;
 }
 
 /* =========================================
@@ -2846,7 +2857,7 @@ label {
 .audience-negative {
   border-left-color: #ff3333;
 
-  color: #082b80;
+  color: #04261D;
 }
 
 /* =========================================
@@ -2988,7 +2999,7 @@ label {
 
   padding: 70px 0 95px;
 
-  color: #082b80;
+  color: #04261D;
 }
 
 /* =========================================
@@ -3010,7 +3021,7 @@ label {
 .belief-title {
   margin: 0;
 
-  color: #082b80;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -3056,11 +3067,11 @@ label {
 
   background: #ffffff;
 
-  border: 1px solid #dfe6f1;
+  border: 1px solid rgba(0, 230, 118, 0.15);
 
   border-radius: 5px;
 
-  box-shadow: 0 3px 10px rgba(8, 43, 128, 0.04);
+  box-shadow: 0 3px 10px rgba(4, 38, 29, 0.04);
 
   transition:
     transform 250ms ease,
@@ -3070,7 +3081,7 @@ label {
 .belief-card:hover {
   transform: translateY(-4px);
 
-  box-shadow: 0 10px 22px rgba(8, 43, 128, 0.08);
+  box-shadow: 0 10px 22px rgba(4, 38, 29, 0.08);
 }
 
 /* =========================================
@@ -3095,7 +3106,7 @@ label {
 
   fill: none;
 
-  stroke: #082b80;
+  stroke: #00E676;
 
   stroke-width: 2;
 
@@ -3111,7 +3122,7 @@ label {
 .belief-text {
   margin: 0;
 
-  color: #101b31;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -3125,7 +3136,7 @@ label {
 }
 
 .belief-text strong {
-  color: #101b31;
+  color: #04261D;
 
   font-weight: 700;
 }
@@ -3137,7 +3148,7 @@ label {
 .belief-footer {
   margin: 65px 0 0;
 
-  color: #60779f;
+  color: #3D5E52;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -3250,7 +3261,7 @@ label {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: #082b80;
+  background: #04261D;
   color: #ffffff;
 }
 
@@ -3332,13 +3343,13 @@ label {
 
   justify-content: center;
 
-  border: 2px solid #d7dce8;
+  border: 2px solid rgba(0, 230, 118, 0.2);
 
   border-radius: 5px;
 
   background: #ffffff;
 
-  color: #082b80;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -3355,7 +3366,7 @@ label {
 }
 
 .vmv-button:hover {
-  background: #f1f7ff;
+  background: #F0FDF4;
 
   transform: translateY(-2px);
 
@@ -3437,11 +3448,11 @@ label {
 
   background: #ffffff;
 
-  border: 1px solid #dce3ed;
+  border: 1px solid rgba(0, 230, 118, 0.15);
 
   border-radius: 9px;
 
-  box-shadow: 0 3px 10px rgba(8, 43, 128, 0.04);
+  box-shadow: 0 3px 10px rgba(4, 38, 29, 0.04);
 }
 
 /* Title */
@@ -3449,7 +3460,7 @@ label {
 .conversation-title {
   margin: 0 0 26px;
 
-  color: #082b80;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -3469,7 +3480,7 @@ label {
 
   margin: 0 auto;
 
-  color: #60779f;
+  color: #3D5E52;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -3487,7 +3498,7 @@ label {
 
   margin: 42px auto 0;
 
-  border: 1px solid #dce3ed;
+  border: 1px solid rgba(0, 230, 118, 0.15);
 
   text-align: left;
 }
@@ -3507,7 +3518,7 @@ label {
 
   padding: 0 29px;
 
-  border-bottom: 1px solid #dce3ed;
+  border-bottom: 1px solid rgba(0, 230, 118, 0.15);
 }
 
 .contact-row:last-child {
@@ -3517,7 +3528,7 @@ label {
 /* Label */
 
 .contact-label {
-  color: #082b80;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -3531,7 +3542,7 @@ label {
 /* Value */
 
 .contact-value {
-  color: #082b80;
+  color: #04261D;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -3557,7 +3568,7 @@ label {
 }
 
 .instagram-links a {
-  color: #082b80;
+  color: #04261D;
 
   text-decoration: none;
 }
@@ -3583,7 +3594,7 @@ label {
 
   border-radius: 5px;
 
-  background: #082b80;
+  background: #04261D;
 
   color: #ffffff;
 
@@ -3603,11 +3614,11 @@ label {
 .conversation-button:hover {
   transform: translateY(-2px);
 
-  box-shadow: 0 8px 20px rgba(8, 43, 128, 0.18);
+  box-shadow: 0 8px 20px rgba(0, 230, 118, 0.18);
 }
 
 .conversation-button:focus-visible {
-  outline: 3px solid #082b80;
+  outline: 3px solid #00E676;
 
   outline-offset: 4px;
 }
@@ -3627,7 +3638,7 @@ label {
 
   justify-content: center;
 
-  background: #082b80;
+  background: #04261D;
 
   color: #ffffff;
 }
@@ -3669,7 +3680,7 @@ label {
 .site-footer {
   width: 100%;
 
-  background: #082b80;
+  background: #04261D;
 
   color: #ffffff;
 
@@ -3850,11 +3861,11 @@ label {
 
   justify-content: center;
 
-  background: #ffffff;
+  background: #00E676;
 
   border-radius: 5px;
 
-  color: #082b80 !important;
+  color: #04261D !important;
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
@@ -3866,17 +3877,18 @@ label {
 
   transition:
     transform 200ms ease,
+    background 200ms ease,
     box-shadow 200ms ease;
 }
 
 .footer-button:hover {
   transform: translateY(-2px);
-
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: #00C853;
+  box-shadow: 0 8px 20px rgba(0, 230, 118, 0.25);
 }
 
 .footer-button:focus-visible {
-  outline: 3px solid #ffffff;
+  outline: 3px solid #00E676;
 
   outline-offset: 4px;
 }
@@ -3910,7 +3922,7 @@ label {
 .footer-bottom-left p {
   margin: 0 0 20px;
 
-  color: #c8d5ee;
+  color: #a7f3d0;
 
   font-size: 17px;
 
@@ -3922,7 +3934,7 @@ label {
 
   font-style: italic;
 
-  color: #c8d5ee;
+  color: #a7f3d0;
 }
 
 /* =========================================
@@ -3942,7 +3954,7 @@ label {
 }
 
 .footer-legal a {
-  color: #c8d5ee;
+  color: #a7f3d0;
 
   font-size: 16px;
 
@@ -3952,7 +3964,7 @@ label {
 }
 
 .footer-legal a:hover {
-  color: #ffffff;
+  color: #00E676;
 }
 
 /* =========================================

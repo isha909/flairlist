@@ -1,11 +1,11 @@
 :root {
-  --primary-blue: #082b80;
-  --primary-blue-dark: #062568;
-  --text-heading: #082b80;
-  --text-body: #6b7a99;
+  --primary-blue: #04261D;
+  --primary-blue-dark: #04261D;
+  --text-heading: #04261D;
+  --text-body: #3D5E52;
   --surface-white: #ffffff;
-  --surface-soft: #f1f7ff;
-  --border-grid: rgba(8, 43, 128, 0.1);
+  --surface-soft: #F0FDF4;
+  --border-grid: rgba(0, 230, 118, 0.15);
   --radius-md: 12px;
 }
 
@@ -38,7 +38,7 @@ img {
 
 /* ============ HERO ============ */
 .hero-buyer {
-  background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue-dark) 100%);
+  background: linear-gradient(135deg, #04261D 0%, #08382B 100%);
   color: #ffffff;
   text-align: center;
   padding: 70px 30px;
@@ -53,7 +53,7 @@ img {
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 600;
-  color: #b9c8f0;
+  color: #00E676;
   margin-bottom: 16px;
 }
 
@@ -68,7 +68,7 @@ img {
 
 .hero-subtitle {
   font-size: 18px;
-  color: #c9d4ef;
+  color: #a7f3d0;
 }
 
 /* ============ INTRO ============ */
@@ -215,7 +215,7 @@ img {
   content: "→";
   position: absolute;
   left: 0;
-  color: var(--primary-blue);
+  color: #00E676;
 }
 
 .support-closing {
@@ -252,8 +252,8 @@ img {
 }
 
 .pill {
-  background: var(--primary-blue);
-  color: #ffffff;
+  background: #04261D;
+  color: #00E676;
   font-size: 18px;
   font-weight: 600;
   padding: 8px 16px;
@@ -333,7 +333,7 @@ img {
 }
 
 .compare-after {
-  border-top-color: #2e9e6b;
+  border-top-color: #00E676;
 }
 
 .compare-box h3 {
@@ -410,11 +410,10 @@ img {
 
 /* ============ CTA ============ */
 .cta-section {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+  background: linear-gradient(135deg, #04261D 0%, #08382B 100%);
   color: #ffffff;
   text-align: center;
   padding: 90px 60px;
-  margin-bottom: 25px;
 }
 
 .cta-title {
@@ -425,7 +424,7 @@ img {
 
 .cta-desc {
   font-size: 18px;
-  color: #c9d4ef;
+  color: #a7f3d0;
   max-width: 620px;
   margin: 0 auto 40px auto;
 }
@@ -442,7 +441,7 @@ img {
   display: block;
   font-size: 16px;
   letter-spacing: 1px;
-  color: #94a6d6;
+  color: #00E676;
   margin-bottom: 6px;
 }
 
@@ -455,8 +454,8 @@ img {
 
 .cta-button {
   display: inline-block;
-  background: #ffffff;
-  color: var(--primary-blue-dark);
+  background: #00E676;
+  color: #04261D;
   font-weight: 700;
   font-size: 16px;
   padding: 14px 34px;

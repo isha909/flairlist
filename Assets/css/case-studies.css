@@ -14,19 +14,19 @@ a {
 
 /* ============ COLOR VARIABLES ============ */
 :root {
-  --navy-dark: #082b80;
-  --navy:#062568;
-  --blue-accent: #1e3a8a;
-  --blue-light-bg: #eaf1fb;
-  --blue-lighter-bg: #f3f7fd;
-  --text-dark: #1b2a4b;
-  --text-muted: #5b6b8c;
-  --check-color: #2d5bd7;
-  --text-heading: #082b80;
-  --text-body: #6b7a99;
+  --navy-dark: #04261D;
+  --navy: #04261D;
+  --blue-accent: #00E676;
+  --blue-light-bg: #F0FDF4;
+  --blue-lighter-bg: #F0FDF4;
+  --text-dark: #04261D;
+  --text-muted: #3D5E52;
+  --check-color: #00E676;
+  --text-heading: #04261D;
+  --text-body: #3D5E52;
   --surface-white: #ffffff;
-  --surface-soft: #f1f7ff;
-  --border-grid: rgba(8, 43, 128, 0.1);
+  --surface-soft: #F0FDF4;
+  --border-grid: rgba(0, 230, 118, 0.15);
   --radius-md: 12px;
 }
 
@@ -37,7 +37,7 @@ a {
   display: flex;
   align-items: center;
   background:
-   linear-gradient(90deg, #031d68ef, #082b80a8),
+   linear-gradient(90deg, #04261def, #08382ba8),
     url("../img/case-studies.jpg")
       center/cover no-repeat;
   background-size: cover;
@@ -62,7 +62,7 @@ a {
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: 600;
-  color: #9db4e8;
+  color: #00E676;
   margin-bottom: 18px;
 }
 
@@ -76,15 +76,15 @@ a {
 
 .hero-desc {
   font-size: 20px;
-  color: #d7deef;
+  color: #a7f3d0;
   max-width: 560px;
 }
 
 /* ============ INTRO NOTE ============ */
 .intro-note {
-  background: #f6f8fc;
-  border-top: 1px solid #e3e9f5;
-  border-bottom: 1px solid #e3e9f5;
+  background: #F0FDF4;
+  border-top: 1px solid #A7F3D0;
+  border-bottom: 1px solid #A7F3D0;
   padding: 26px 60px;
   text-align: center;
 }
@@ -128,7 +128,7 @@ a {
 .case-number {
   font-size: 24px;
   font-weight: 700;
-  color: #9aa8c9;
+  color: #00E676;
   line-height: 2;
 }
 
@@ -162,7 +162,7 @@ a {
   background: #ffffff;
   border-radius: 10px;
   padding: 24px;
-  box-shadow: 0 1px 3px rgba(20, 30, 70, 0.06);
+  box-shadow: 0 1px 3px rgba(4, 38, 29, 0.06);
 }
 
 .bg-light .case-col {
@@ -249,7 +249,7 @@ a {
 .reflect-card {
   flex: 1 1 280px;
   background: var(--blue-lighter-bg);
-  border: 1px solid #e1e9f8;
+  border: 1px solid #A7F3D0;
   border-radius: 8px;
   padding: 26px 20px;
   font-size: 18px;
@@ -264,11 +264,10 @@ a {
 
 /* ============ CTA SECTION ============ */
 .cta-section {
-  background: #031d68ef;
+  background: #04261D;
   color: #ffffff;
   text-align: center;
   padding: 90px 60px;
-  margin-bottom: 40px;
 }
 
 .cta-section h2 {
@@ -280,15 +279,15 @@ a {
 .cta-email,
 .cta-website {
   font-size: 18px;
-  color: #c9d4ef;
+  color: #a7f3d0;
   margin-bottom: 4px;
 }
 
 .cta-button {
   display: inline-block;
   margin-top: 26px;
-  background: #ffffff;
-  color: var(--navy-dark);
+  background: #00E676;
+  color: #04261D;
   font-weight: 700;
   font-size: 16px;
   padding: 14px 34px;
@@ -303,7 +302,7 @@ a {
 .cta-quote {
   margin-top: 30px;
   font-size: 18px;
-  color: #aeb9dc;
+  color: #A7F3D0;
 }
 
 /* ============ RESPONSIVE ============ */

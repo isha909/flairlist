@@ -1,11 +1,11 @@
 :root {
-  --primary-blue: #082b80;
-  --primary-blue-dark: #062568;
-  --text-heading: #082b80;
-  --text-body: #6b7a99;
+  --primary-blue: #04261D;
+  --primary-blue-dark: #04261D;
+  --text-heading: #04261D;
+  --text-body: #3D5E52;
   --surface-white: #ffffff;
-  --surface-soft: #f1f7ff;
-  --border-grid: rgba(8, 43, 128, 0.1);
+  --surface-soft: #F0FDF4;
+  --border-grid: rgba(0, 230, 118, 0.15);
   --radius-md: 12px;
 }
 
@@ -39,7 +39,7 @@ a {
   justify-content: center;
   align-items: center;
   background:
-    linear-gradient(90deg, rgba(3,30,97,.96), rgba(6,38,111,.76)),
+    linear-gradient(90deg, rgba(4, 38, 29, 0.96), rgba(8, 56, 43, 0.76)),
     url("../img/investor.jpg") center/cover no-repeat;
   overflow: hidden;
 }
@@ -56,7 +56,7 @@ a {
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 600;
-  color: #b9c8f0;
+  color: #00E676;
   margin-bottom: 16px;
 }
 
@@ -69,14 +69,14 @@ a {
 
 .hero-desc {
   font-size: 20px;
-  color: #d7deef;
+  color: #a7f3d0;
   margin-bottom: 16px;
 }
 
 .hero-italic {
   font-style: italic;
   font-size: 18px;
-  color: #c9d4ef;
+  color: #a7f3d0;
   margin-top: 10px;
 }
 
@@ -166,7 +166,7 @@ a {
 }
 
 .dark-card {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+  background: linear-gradient(135deg, #04261D 0%, #08382B 100%);
   border-radius: var(--radius-md);
   padding: 26px 22px;
   color: #ffffff;
@@ -175,7 +175,7 @@ a {
 .dark-card-number {
   display: block;
   font-size: 22px;
-  color: #9db4e8;
+  color: #00E676;
   margin-bottom: 12px;
 }
 
@@ -216,7 +216,7 @@ a {
 }
 
 .dash-line-list.dark li::before {
-  color: #b9c8f0;
+  color: #00E676;
 }
 
 /* ============ DIFFERENTIATION CARDS ============ */
@@ -315,7 +315,7 @@ a {
 
 /* ============ DARK SECTION ============ */
 .dark-section {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+  background: linear-gradient(135deg, #04261D 0%, #08382B 100%);
   padding: 90px 60px;
   text-align: center;
 }

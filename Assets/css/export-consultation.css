@@ -10,14 +10,14 @@
   color:var(--navy);font-size:16px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px
 }
 .eyebrow.light{color:#fff}
-.eyebrow.green{color:#3ba65b}
+.eyebrow.green{color:#00E676}
 
 /* HERO */
 .hero{
   min-height:530px;
   display:flex;align-items:center;text-align:center;color:#fff;
   background:
-    linear-gradient(90deg,rgba(3,30,97,.96),rgba(6,38,111,.76)),
+    linear-gradient(90deg,rgba(4, 38, 29, 0.96),rgba(8, 56, 43, 0.76)),
     url("../img/export-consultation-hero.png") center/cover no-repeat;
 }
 .hero-content{max-width:720px}
@@ -34,7 +34,7 @@
 }
 .intro h2{font-size:22px;margin-bottom:9px}
 .notice{
-  margin-top:16px;padding:13px 15px;background:#eef6ff;border-left:2px solid var(--navy);font-size:22px
+  margin-top:16px;padding:13px 15px;background:#F0FDF4;border-left:2px solid var(--navy);font-size:22px
 }
 .notice ul{margin:6px 0 0;padding-left:15px}
 .notice li{margin-bottom:3px}
@@ -52,11 +52,11 @@
   display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:15px
 }
 .audience-grid div{
-  background:#eef6ff;border:1px solid #dce9f7;padding:8px 11px;font-size:18px;font-weight:600
+  background:#F0FDF4;border:1px solid #A7F3D0;padding:8px 11px;font-size:18px;font-weight:600
 }
 .feature-list{background:#fff;border:1px solid var(--line);padding:13px}
 .feature-list div{
-  background:#eef6ff;padding:6px 9px;border-bottom:3px solid #fff;font-size:18px
+  background:#F0FDF4;padding:6px 9px;border-bottom:3px solid #fff;font-size:18px
 }
 .feature-list div:last-child{border:0}
 
@@ -64,10 +64,10 @@
 .why-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}
 .why-grid h2{margin-bottom:7px}
 .why-grid ul{padding-left:17px;margin:9px 0}
-.why-grid li{font-size:22px;margin-bottom:4px;color:#50617f}
+.why-grid li{font-size:22px;margin-bottom:4px;color:#3D5E52}
 .value-panel{display:grid;grid-template-columns:1fr 1fr;gap:7px}
 .value-panel>div:not(.mini-actions){
-  border:1px solid var(--line);background:#f8fbff;padding:12px;text-align:center
+  border:1px solid var(--line);background:#F0FDF4;padding:12px;text-align:center
 }
 .value-panel strong,.value-panel span{display:block}
 .value-panel strong{font-family:var(--heading);font-size:22px;color:var(--navy)}
@@ -82,9 +82,9 @@
 .info-card h3{font-size:24px;margin-bottom:7px}
 .info-card p{font-size:20px;color:var(--muted)}
 .info-card ul{margin:6px 0;padding-left:16px}
-.info-card li{font-size:20px;margin-bottom:3px;color:#50617f}
+.info-card li{font-size:20px;margin-bottom:3px;color:#3D5E52}
 .wide-callout{
-  margin-top:14px;border:1px solid var(--line);background:#f8fbff;padding:15px;text-align:center
+  margin-top:14px;border:1px solid var(--line);background:#F0FDF4;padding:15px;text-align:center
 }
 .wide-callout strong,.wide-callout span{display:block}
 .wide-callout strong{font-family:var(--heading);font-size:18px;color:var(--navy)}
@@ -124,7 +124,7 @@
 .final-feeling .sub{text-align:center;color:var(--muted);font-size:24px}
 .feeling-list{max-width:590px;margin:18px auto;text-align:left}
 .feeling-list div{
-  border-left:3px solid var(--navy);background:#f8fbff;padding:7px 11px;margin-bottom:4px;font-size:22px
+  border-left:3px solid var(--navy);background:#F0FDF4;padding:7px 11px;margin-bottom:4px;font-size:22px
 }
 .white-card{background:#fff;border:1px solid var(--line);padding:18px;border-radius:4px}
 .next-card{max-width:590px;margin:auto}
@@ -132,11 +132,11 @@
 .next-card p{font-size:22px;color:var(--muted);margin-top:5px}
 .mini-actions{display:flex;gap:6px;margin-top:11px}
 .mini-actions a{
-  background:var(--navy);color:#fff;padding:4px 8px;font-size:20px;border-radius:2px
+  background:#00E676;color:#04261D;padding:4px 8px;font-size:20px;border-radius:2px
 }
 
 /* INVESTMENT */
-.investment{background:var(--navy);color:#fff;padding:48px 0}
+.investment{background:#00E676;color:#04261D;padding:48px 0}
 .investment-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
 .investment h2{color:#fff;font-size:25px;margin-bottom:15px}
 .price-table{max-width:600px}
@@ -151,7 +151,7 @@
 .price-box strong{display:block;font-family:var(--heading);font-size:43px}
 .price-box p{font-size:14px;opacity:.8}
 .primary-btn{
-  display:inline-block;border:0;background:#fff;color:var(--navy);padding:9px 15px;border-radius:3px;font-weight:800;font-size:16px;cursor:pointer
+  display:inline-block;border:0;background:#00E676;color:#04261D;padding:9px 15px;border-radius:3px;font-weight:800;font-size:16px;cursor:pointer
 }
 
 /* FORM */
@@ -162,10 +162,10 @@
 }
 .consult-form label{font-size:18px;font-weight:700;color:var(--navy)}
 .consult-form input,.consult-form textarea{
-  display:block;width:100%;border:1px solid #d8e2ef;padding:8px;margin-top:4px;outline:0
+  display:block;width:100%;border:1px solid #A7F3D0;padding:8px;margin-top:4px;outline:0
 }
 .consult-form .full{grid-column:1/-1}
-.consult-form .primary-btn{grid-column:1/-1;justify-self:center;background:var(--navy);color:#fff}
+.consult-form .primary-btn{grid-column:1/-1;justify-self:center;background:#00E676;color:#04261D}
 
 /* RESPONSIVE */
 @media(max-width:1000px){
