@@ -50,8 +50,6 @@
 html,
 body {
   font-family: var(--font-body);
-  overflow-x: hidden;  /* new — safety net */
-  max-width: 100%;      /* new */
 }
 
 body {
@@ -318,11 +316,13 @@ label {
 ========================================== */
 
 .country-dropdown {
-    position: absolute;
+  position: absolute;
+
+  /* Image 1 style */
   top: calc(100% + 10px);
-  right: 0;
+  right: -20px;
+
   width: 300px;
-  max-width: calc(100vw - 32px); /* new — keeps it inside viewport on narrow screens */
   height: 400px;
 
   background: #08382B;
@@ -891,14 +891,10 @@ label {
 
   background-color: white;
 
-  /*
-                Grid background
-            */
-  background-image: url(./Assets/Square-VITEUDNP.png);
+  background-image: url(../img/home-hero.jpg);
 }
 
 /* Hero Container */
-
 .hero-container {
   width: min(1550px, calc(100% - 216px));
 
@@ -2340,7 +2336,7 @@ label {
         warehouse / port / logistics image.
     */
 
-  background-image: url("./supply-chain-DMVX5JBT.png");
+  background-image: url("../img/home-image.jpg");
 
   background-size: cover;
 
@@ -2703,6 +2699,8 @@ label {
     transform 200ms ease,
     background 200ms ease,
     box-shadow 200ms ease;
+
+  text-decoration: none;
 }
 
 .leadership-button:hover {

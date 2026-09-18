@@ -67,10 +67,12 @@
 }
 
 /* ---------- HERO ---------- */
-.hero {
+.hero-growth {
   min-height: 460px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   color: #fff;
   padding: 90px 0;
@@ -79,18 +81,18 @@
     url("../img/exclusive-partnership.png") center/cover no-repeat;
 }
 
-.hero-content { max-width: 1000px; margin-inline: auto; }
+.hero-content { max-width: 1200px; margin-inline: auto; }
 
 .hero h1 {
   color: #fff;
-  font-size: clamp(32px, 5.4vw, 62px);
+  font-size: 62px;
   line-height: 1.08;
   letter-spacing: -0.02em;
   margin-bottom: 20px;
 }
 
 .hero-content > p:not(.eyebrow):not(.hero-small) {
-  font-size: clamp(17px, 1.7vw, 22px);
+  font-size: 40px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.92);
 }
@@ -100,7 +102,7 @@
   margin-top: 26px;
   padding-left: 18px;
   border-left: 2px solid rgba(255, 255, 255, 0.45);
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
   opacity: 0.88;
   text-align: left;
