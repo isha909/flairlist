@@ -14,7 +14,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let activeMenu = null;
 
+  /* ==========================================================
+     FIXED NAVBAR ON SCROLL
+     ========================================================== */
 
+  const SCROLL_THRESHOLD = 10;
+
+  function handleNavbarScroll() {
+    if (window.scrollY > SCROLL_THRESHOLD) {
+      navbar.classList.add("navbar-fixed");
+    } else {
+      navbar.classList.remove("navbar-fixed");
+    }
+  }
+
+  // Run once on load in case the page is already scrolled (e.g. refresh mid-page)
+  handleNavbarScroll();
+
+  window.addEventListener("scroll", handleNavbarScroll, { passive: true });
   /* ==========================================================
      TOP NAVIGATION — CLICK
      ========================================================== */
