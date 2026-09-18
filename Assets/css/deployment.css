@@ -76,7 +76,7 @@ main section {
 
 /* ===== HERO SECTION ===== */
 .hero-section {
-  background-color: var(--primary-darker);
+  background: linear-gradient(120deg, #04261D 0%, #08382B 60%, #0C4D3B 100%);
   color: var(--white);
   padding: 110px 48px;
   text-align: center;

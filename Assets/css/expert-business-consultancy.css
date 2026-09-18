@@ -1,3 +1,7 @@
+:root {
+  --blue-line: var(--line, rgba(0, 230, 118, 0.15));
+}
+
 /* ================= COMMON SECTIONS ================= */
 
 .section {
@@ -127,6 +131,148 @@ li {
   font-weight: 700;
   padding: 7px 13px;
   border-radius: 4px;
+}
+
+/* ================= SHARED: TAGS / LABELS ================= */
+
+.tag-pill {
+  display: inline-block;
+  background: var(--blue-soft);
+  color: var(--navy);
+  border: 1px solid var(--blue-line);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.market-value {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.card-intro-note {
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.card-label {
+  display: block;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin: 10px 0 4px;
+}
+
+.mini-tag {
+  display: inline-block;
+  background: var(--blue-soft);
+  color: var(--navy);
+  border-radius: 4px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.card-note {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--blue-line);
+  color: var(--muted);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.deliverable-card .card-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.deliverable-card .market-value {
+  margin-bottom: 12px;
+}
+
+.deliverable-card ul li strong {
+  color: var(--navy);
+}
+
+.support-value {
+  text-align: center;
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.regular-price {
+  text-decoration: line-through;
+  opacity: .6;
+  font-size: 15px;
+  margin-right: 6px;
+}
+
+.gst-note {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: .85;
+}
+
+.total-value-note {
+  font-size: 15px;
+  opacity: .85;
+  max-width: 320px;
+  margin: 10px auto 22px;
+  text-align: center;
+}
+
+.contact-card {
+  max-width: 620px;
+  margin: 0 auto;
+  border: 1px solid var(--blue-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.contact-card .contact-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--blue-line);
+  font-size: 16px;
+}
+
+.contact-card .contact-row:last-child {
+  border-bottom: 0;
+}
+
+.contact-card .contact-row span:first-child {
+  color: var(--navy);
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.center-cta {
+  text-align: center;
+  margin-top: 24px;
 }
 
 /* ================= HERO ================= */
