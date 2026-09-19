@@ -70,7 +70,7 @@
 
 .ebc-subtitle {
   color: var(--ebc-muted);
-  font-size: 15px;
+  font-size: 20px;
   margin: -12px 0 24px;
 }
 
@@ -79,26 +79,26 @@
 }
 
 .ebc-lead {
-  font-size: 17px;
+  font-size: 22px;
   line-height: 1.75;
   color: var(--ebc-ink);
   margin-bottom: 20px;
 }
 
 .ebc-intro-text {
-  font-size: 16px;
+  font-size: 20px;
   color: var(--ebc-ink);
   margin-bottom: 14px;
 }
 
 .ebc-muted-text {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--ebc-muted);
   margin-bottom: 12px;
 }
 
 .ebc-small {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--ebc-ink);
   margin-bottom: 10px;
 }
@@ -106,7 +106,7 @@
 .ebc-center-note {
   text-align: center;
   color: var(--ebc-muted);
-  font-size: 14px;
+  font-size: 18px;
   font-style: italic;
   margin-top: 28px;
 }
@@ -137,7 +137,7 @@
 }
 
 .ebc-panel h3 {
-  font-size: 15.5px;
+  font-size: 22px;
   line-height: 1.35;
   color: var(--ebc-ink);
   margin-bottom: 6px;
@@ -165,7 +165,7 @@
 
 .ebc-label {
   display: block;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -175,7 +175,7 @@
 
 .ebc-pill {
   display: inline-block;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -211,7 +211,7 @@
 }
 
 .ebc-value {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--ebc-muted);
   margin: 0 0 6px;
 }
@@ -221,7 +221,7 @@
 }
 
 .ebc-tagline {
-  font-size: 14px;
+  font-size: 18px;
   font-style: italic;
   color: var(--ebc-muted);
 }
@@ -259,7 +259,7 @@
   position: relative;
   padding-left: 18px;
   margin-bottom: 8px;
-  font-size: 13.5px;
+  font-size: 18px;
   line-height: 1.55;
   color: var(--ebc-ink);
 }
@@ -341,7 +341,7 @@
 }
 
 .ebc-notice p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 8px;
 }
 
@@ -361,12 +361,12 @@
   border-left: 1px solid var(--ebc-line);
   padding: 6px 14px;
   margin-bottom: 6px;
-  font-size: 14px;
+  font-size: 18px;
   color: var(--ebc-ink);
 }
 
 .ebc-question {
-  font-size: 17px;
+  font-size: 19px;
   font-style: italic;
   line-height: 1.4;
   color: var(--ebc-ink);
@@ -389,7 +389,7 @@
 .ebc-chip-dark {
   background: var(--ebc-ink);
   color: #fff;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   padding: 7px 14px;
   border-radius: 4px;
@@ -409,7 +409,7 @@
   border-left: 3px solid var(--ebc-ink);
   border-radius: 6px;
   padding: 16px 18px;
-  font-size: 14.5px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -418,7 +418,7 @@
   border-left: 3px solid rgba(4, 38, 29, 0.18);
   padding: 10px 16px;
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 18px;
   font-style: italic;
 }
 
@@ -458,7 +458,7 @@
 
 .ebc-pillar strong {
   font-family: var(--font-heading, "Bricolage Grotesque"), sans-serif;
-  font-size: 14.5px;
+  font-size: 18px;
   line-height: 1.35;
   color: var(--ebc-ink);
 }
@@ -479,7 +479,7 @@
 }
 
 .ebc-outcome p {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--ebc-muted);
   margin-bottom: 6px;
 }
@@ -635,7 +635,7 @@
   position: relative;
   padding-left: 22px;
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 18px;
   color: var(--ebc-muted);
 }
 
@@ -756,7 +756,7 @@
 .ebc-price-note {
   max-width: 320px;
   margin: 0 auto 24px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -767,7 +767,7 @@
   display: inline-block;
   background: var(--ebc-ink);
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   padding: 13px 28px;
   border-radius: 4px;

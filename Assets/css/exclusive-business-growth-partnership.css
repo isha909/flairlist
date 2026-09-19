@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&display=swap");
 /* ---------- COMMON ---------- */
-.section { padding: 86px 0; }
+.section { padding: 86px 40px; }
 .white { background: #fff; }
 .blue-soft { background: var(--blue-soft); }
 
@@ -83,7 +83,7 @@
 
 .hero-content { max-width: 1200px; margin-inline: auto; }
 
-.hero h1 {
+.hero-growth h1 {
   color: #fff;
   font-size: 62px;
   line-height: 1.08;
@@ -647,7 +647,7 @@
   .metric-strip { grid-template-columns: 1fr; }
   .consult-form { grid-template-columns: 1fr; padding: 26px; }
   .consult-form .full { grid-column: auto; }
-  .hero { min-height: 340px; padding: 64px 0; }
+  .hero-growth { min-height: 340px; padding: 64px 0; }
 }
 
 @media (max-width: 480px) {
