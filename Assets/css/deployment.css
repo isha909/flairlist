@@ -3,16 +3,16 @@
    ===================================================== */
 
 :root {
-  --primary-dark: #082b80;        /* matches site --primary-blue */
-  --primary-darker: #001b54;
-  --secondary-blue: #062568;
-  --light-blue-bg: #eef4fc;       /* very light blue sections */
-  --text-dark: #0d1b3e;
-  --text-body: #4a5568;
+  --primary-dark: #04261D;        /* matches site --primary-blue */
+  --primary-darker: #08382B;
+  --secondary-blue: #08382B;
+  --light-blue-bg: #F0FDF4;       /* very light green sections */
+  --text-dark: #04261D;
+  --text-body: #3D5E52;
   --white: #ffffff;
   --pinkish-bg: #fff8f8;
-  --border-light: #e2e8f0;
-  --card-shadow: 0 1px 4px rgba(8, 43, 128, 0.08);
+  --border-light: #DCEEE4;
+  --card-shadow: 0 1px 4px rgba(4, 38, 29, 0.08);
 }
 
 /* ===== RESET / BASE ===== */
@@ -82,7 +82,7 @@ main section {
   text-align: center;
 }
 .hero-subtitle {
-  color: #8ab0f0;
+  color: #A7F3D0;
   font-size: 0.85rem;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -103,7 +103,7 @@ main section {
   font-size: 1.2rem;
   max-width: 680px;
   margin: 0 auto;
-  color: #c4d6f0;
+  color: #d6e9e0;
   font-weight: 400;
 }
 
@@ -114,12 +114,12 @@ main section {
 }
 .intro-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.1fr;
   gap: 80px;
   align-items: center;
 }
 .intro-text p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--text-body);
   margin-bottom: 18px;
   line-height: 1.75;
@@ -140,10 +140,10 @@ main section {
 }
 
 .light-blue-box {
-  background: #e8f0fb;
+  background: #E3F9EC;
   border-radius: 12px;
   padding: 30px 32px;
-  border: 1px solid #cddcf5;
+  border: 1px solid #BFE8CF;
 }
 
 .pinkish-box {
@@ -237,7 +237,7 @@ main section {
   /* Large faded number - 01, 02 */
   font-size: 3rem;
   font-weight: 800;
-  color: #d9e5f5;
+  color: #CDEEDD;
   margin-bottom: 14px;
   line-height: 1;
   font-family: 'Bricolage Grotesque', sans-serif;
@@ -295,8 +295,8 @@ main section {
   color: var(--text-dark);
 }
 .tag.solid {
-  background: #e6eff9;
-  border-color: #b0cce8;
+  background: #E1F7EC;
+  border-color: #8FDCB1;
   color: var(--primary-dark);
   font-weight: 600;
 }
@@ -314,8 +314,8 @@ main section {
 }
 /* Support cards are light-blue boxes */
 .support-card {
-  background: #e8f0fb;
-  border: 1px solid #cddcf5;
+  background: #E3F9EC;
+  border: 1px solid #BFE8CF;
   border-radius: 12px;
   padding: 28px 30px 30px;
 }
@@ -508,8 +508,8 @@ hr { border: 0; border-top: 1px solid var(--border-light); margin: 0; }
 
 /* ===== POST-DEPLOYMENT BOX ===== */
 .post-box {
-  background: #e8f0fb;
-  border: 1px solid #cddcf5;
+  background: #E3F9EC;
+  border: 1px solid #BFE8CF;
   border-radius: 12px;
   padding: 30px 36px;
 }

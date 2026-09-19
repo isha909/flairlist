@@ -90,7 +90,7 @@
   padding: 110px 0 84px;
   text-align: center;
   color: #fff;
-  background: #0a2c85;
+  background: #04261D;
   overflow: hidden,
 }
 
@@ -113,9 +113,9 @@
   inset: 0;
   background: linear-gradient(
     120deg,
-    rgba(5, 28, 79, 0.55) 0%,
-    rgba(10, 44, 133, 0.4) 60%,
-    rgba(13, 52, 153, 0.35) 100%
+    rgba(4, 38, 29, 0.55) 0%,
+    rgba(8, 56, 43, 0.4) 60%,
+    rgba(12, 77, 59, 0.35) 100%
   );
 }
 
@@ -134,7 +134,7 @@
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #9db4f0;
+  color: #A7F3D0;
   margin-bottom: 18px;
 }
 
@@ -148,7 +148,7 @@
 .pwu-hero p {
   font-size: 18.5px;
   line-height: 1.7;
-  color: #dbe2f6;
+  color: #d6e9e0;
   max-width: 640px;
   margin: 0 auto;
 }
