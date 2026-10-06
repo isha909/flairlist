@@ -31,7 +31,7 @@
 /* ---------- Layout helpers ---------- */
 
 .ebc-container {
-  width: min(1100px, 100% - 48px);
+  width: min(1400px, 100% - 48px);
   margin-inline: auto;
 }
 
@@ -79,7 +79,7 @@
 }
 
 .ebc-lead {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.75;
   color: var(--ebc-ink);
   margin-bottom: 20px;
@@ -137,7 +137,7 @@
 }
 
 .ebc-panel h3 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.35;
   color: var(--ebc-ink);
   margin-bottom: 6px;
@@ -165,7 +165,7 @@
 
 .ebc-label {
   display: block;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -259,7 +259,7 @@
   position: relative;
   padding-left: 18px;
   margin-bottom: 8px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.55;
   color: var(--ebc-ink);
 }
@@ -284,7 +284,7 @@
 
 .ebc-hero {
   position: relative;
-  min-height: 440px;
+  min-height: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -341,7 +341,7 @@
 }
 
 .ebc-notice p {
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 8px;
 }
 
@@ -353,24 +353,25 @@
 
 .ebc-symptoms {
   list-style: none;
-  margin: 0 0 22px;
+  margin: 0 0 30px;
   padding: 0;
 }
 
 .ebc-symptoms li {
-  border-left: 1px solid var(--ebc-line);
-  padding: 6px 14px;
-  margin-bottom: 6px;
-  font-size: 18px;
+  border-left: 2px solid var(--ebc-line);
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  font-size: 19px;
   color: var(--ebc-ink);
+  line-height: 1.4;
 }
 
 .ebc-question {
   font-size: 19px;
   font-style: italic;
-  line-height: 1.4;
+  line-height: 1.45;
   color: var(--ebc-ink);
-  margin: 6px 0 12px;
+  margin: 8px 0 18px;
 }
 
 .ebc-flow {
@@ -378,23 +379,23 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
-  margin-top: 18px;
+  margin-top: 28px;
 }
 
 .ebc-flow i {
   font-style: normal;
   color: var(--ebc-muted);
+  font-size: 20px;
 }
 
 .ebc-chip-dark {
   background: var(--ebc-ink);
   color: #fff;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
-  padding: 7px 14px;
+  padding: 12px 20px;
   border-radius: 4px;
 }
-
 /* ---------- Who this is for ---------- */
 
 .ebc-audience {
@@ -457,7 +458,7 @@
 }
 
 .ebc-pillar strong {
-  font-family: var(--font-heading, "Bricolage Grotesque"), sans-serif;
+  font-family: var(--font-heading, "Bricolage Grotesque 96pt ExtraBold", "Bricolage Grotesque"), sans-serif;
   font-size: 18px;
   line-height: 1.35;
   color: var(--ebc-ink);
@@ -537,24 +538,28 @@
 }
 
 .ebc-support .ebc-title {
-  max-width: 520px;
+  max-width: 700px;
   margin: 0 auto 10px;
 }
 
 .ebc-chips {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  max-width: 640px;
-  margin: 26px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 960px;
+  margin: 30px auto;
 }
 
 .ebc-chips span {
   background: #fff;
-  border-radius: 6px;
-  padding: 12px 22px;
-  font-size: 13.5px;
+  border-radius: 8px;
+  padding: 22px 28px;
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 16px;
   font-weight: 600;
   color: var(--ebc-ink);
   box-shadow: var(--ebc-shadow);
@@ -735,7 +740,7 @@
 
 .ebc-price-box strong {
   display: block;
-  font-family: var(--font-heading, "Bricolage Grotesque"), sans-serif;
+  font-family: var(--font-heading, "Bricolage Grotesque 96pt ExtraBold", "Bricolage Grotesque"), sans-serif;
   font-size: clamp(44px, 6vw, 58px);
   line-height: 1.1;
   color: #fff;

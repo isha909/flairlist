@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 /* =========================================
            DESIGN TOKENS
@@ -39,8 +40,8 @@
   --transition-normal: 250ms ease;
 
   /* Fonts */
-  --font-heading: "Bricolage Grotesque";
-  --font-body: "Inter";
+  --font-heading: "Bricolage Grotesque", sans-serif;
+  --font-body: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* =========================================
@@ -56,7 +57,7 @@ body {
   color: var(--text-heading);
   background: var(--surface-white);
   line-height: 1.7;
-  padding-top: 74px;
+  padding-top: 64px;
 }
 
 /* =========================================
@@ -100,7 +101,7 @@ label {
 
 .navbar {
   width: 100%;
-  height: 74px;
+  height: 64px;
   background: var(--primary-blue);
   color: var(--white);
   position: fixed;
@@ -111,7 +112,7 @@ label {
 }
 
 .navbar-container {
-  height: 74px;
+  height: 64px;
   padding: 0 28px;
   display: flex;
   align-items: center;
@@ -495,10 +496,10 @@ label {
 
 .mega-menu {
   position: absolute;
-  top: 74px;
+  top: 64px;
   left: 0;
   width: 100%;
-  min-height: 500px;
+  min-height: 300px;
   display: none;
   background: var(--primary-blue);
   color: #fff;
@@ -512,7 +513,7 @@ label {
 
 .mega-content {
   width: 100%;
-  min-height: 500px;
+  min-height: 300px;
   display: none;
   grid-template-columns: 325px minmax(0, 1fr);
 }
@@ -526,7 +527,7 @@ label {
    ========================================================== */
 
 .mega-sidebar {
-  min-height: 500px;
+  min-height: 300px;
   padding-top: 38px;
   background: var(--sidebar-blue);
 }
@@ -586,7 +587,7 @@ label {
 
 .mega-main {
   min-width: 0;
-  min-height: 500px;
+  min-height: 300px;
   padding: 38px 55px;
   background: var(--primary-blue);
 }
@@ -693,7 +694,7 @@ label {
 .nested-sidebar {
   width: 275px;
   min-width: 275px;
-  min-height: 500px;
+  min-height: 300px;
   margin: -38px 0 -38px -55px;
   padding-top: 38px;
   border-right: 1px solid rgba(255, 255, 255, 0.13);
@@ -713,7 +714,7 @@ label {
   padding: 0;
   margin: -38px -55px;
   width: calc(100% + 110px);
-  min-height: 500px;
+  min-height: 300px;
 }
 
 .nested-main {
@@ -883,7 +884,7 @@ label {
         ========================================= */
 
 .hero {
-  min-height: calc(100vh - 74px);
+  min-height: calc(100vh - 64px);
 
   position: relative;
 
@@ -940,37 +941,31 @@ label {
 
 .hero-description {
   max-width: 690px;
-
-  margin-bottom: 48px;
-
+  margin-bottom: 40px;
   color: var(--text-body);
-
-  font-size: 20px;
-
+  font-size: 17px;
   font-weight: 400;
-
-  line-height: 1.86;
-
+  line-height: 1.8;
   letter-spacing: -0.15px;
 }
 
 /* CTA */
 
 .hero-button {
-  min-width: 247px;
-  height: 68px;
-  padding: 0 38px;
+  min-width: 220px;
+  height: 58px;
+  padding: 0 32px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
   border: none;
   border-radius: 5px;
   background: #00E676;
   text-decoration: none;
   color: #04261D;
 
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 
   cursor: pointer;
@@ -1001,6 +996,10 @@ label {
 .arrow {
   font-size: 25px;
   line-height: 1;
+}
+
+.hero-button .arrow {
+  font-size: 22px;
 }
 
 /* =========================================
@@ -1120,7 +1119,7 @@ label {
   }
 
   .logo {
-    font-size: 23px;
+    font-size: 18px; font-family: Inter, sans-serif !important;
   }
 
   .nav-right {
@@ -1246,7 +1245,7 @@ label {
   /*
         Grid background
     */
-  background-image: url(./Square-VITEUDNP.png);
+  background-image: url(../Square-VITEUDNP.png);
 
   display: flex;
   flex-direction: column;
@@ -1390,7 +1389,7 @@ label {
 .what-we-do {
   width: 100%;
 
-  min-height: 498px;
+  min-height: 420px;
 
   display: flex;
 
@@ -1414,7 +1413,7 @@ label {
 
   margin: 0 auto;
 
-  padding-top: 125px;
+  padding-top: 100px;
 }
 
 /* Heading */
@@ -1442,7 +1441,7 @@ label {
 
   color: #ffffff;
 
-  font-size: 25px;
+  font-size: 20px;
 
   font-weight: 400;
 
@@ -1588,7 +1587,7 @@ label {
   }
 
   .stat-number {
-    font-size: 23px;
+    font-size: 18px; font-family: Inter, sans-serif !important;
   }
 
   .stat-number.stat-text {
@@ -1677,8 +1676,7 @@ label {
 ========================================= */
 
 .why-flairlist-container {
-  width: min(1550px, calc(100% - 216px));
-
+  width: min(1620px, calc(100% - 160px));
   margin: 0 auto;
 }
 
@@ -1721,9 +1719,7 @@ label {
 
   color: #3D5E52;
 
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 21px;
+  font-size: 20px;
 
   font-weight: 400;
 
@@ -1738,10 +1734,8 @@ label {
 
 .problem-grid {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
-  gap: 38px;
+  gap: 30px;
 }
 
 /* =========================================
@@ -1749,24 +1743,15 @@ label {
 ========================================= */
 
 .problem-card {
-  min-height: 445px;
-
-  padding: 57px 56px 48px;
-
+  min-height: 300px;
+  padding: 40px 36px 32px;
   display: flex;
-
   flex-direction: column;
-
   align-items: flex-start;
-
   background: #ffffff;
-
   border: 1px solid rgba(4, 38, 29, 0.07);
-
   border-radius: 12px;
-
   box-shadow: 0 5px 16px rgba(4, 38, 29, 0.08);
-
   transition:
     transform 250ms ease,
     box-shadow 250ms ease;
@@ -1828,18 +1813,12 @@ label {
 ========================================= */
 
 .problem-card h3 {
-  margin: 0 0 21px;
-
+  margin: 0 0 16px;
   color: #04261D;
-
   font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 27px;
-
+  font-size: 25px;
   font-weight: 600;
-
-  line-height: 1.45;
-
+  line-height: 1.35;
   letter-spacing: -0.8px;
 }
 
@@ -1849,17 +1828,10 @@ label {
 
 .problem-card p {
   margin: 0;
-
   color: #04261D;
-
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 19px;
-
+  font-size: 18px;
   font-weight: 400;
-
-  line-height: 1.7;
-
+  line-height: 1.6;
   letter-spacing: -0.15px;
 }
 
@@ -1887,7 +1859,7 @@ label {
   }
 
   .problem-card {
-    padding: 48px 40px 42px;
+    padding: 38px 32px 32px;
   }
 
   .problem-card h3 {
@@ -1913,7 +1885,7 @@ label {
   .problem-card {
     min-height: 390px;
 
-    padding: 42px 38px;
+    padding: 34px 30px;
   }
 
   .why-flairlist-description {
@@ -1959,7 +1931,7 @@ label {
   .problem-card {
     min-height: auto;
 
-    padding: 38px 30px;
+    padding: 30px 24px;
   }
 
   .problem-icon {
@@ -2058,9 +2030,9 @@ label {
 ========================================= */
 
 .pillar-card {
-  min-height: 680px;
+  min-height: 580px;
 
-  padding: 73px 52px 55px;
+  padding: 55px 42px 44px;
 
   display: flex;
 
@@ -2146,7 +2118,7 @@ label {
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
-  font-size: 27px;
+  font-size: 23px;
 
   font-weight: 600;
 
@@ -2170,9 +2142,7 @@ label {
 
   color: #3D5E52;
 
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 19px;
+  font-size: 15px;
 
   font-weight: 400;
 
@@ -2211,7 +2181,7 @@ label {
   }
 
   .pillar-card {
-    padding: 60px 38px 45px;
+    padding: 48px 30px 36px;
 
     min-height: 650px;
   }
@@ -2245,7 +2215,7 @@ label {
   .pillar-card {
     min-height: 550px;
 
-    padding: 50px 40px;
+    padding: 42px 32px;
   }
 }
 
@@ -2279,7 +2249,7 @@ label {
   .pillar-card {
     min-height: auto;
 
-    padding: 45px 28px;
+    padding: 36px 22px;
   }
 
   .pillar-icon {
@@ -2315,7 +2285,7 @@ label {
   }
 
   .pillar-title {
-    font-size: 23px;
+    font-size: 18px; font-family: Inter, sans-serif !important;
   }
 }
 
@@ -2328,7 +2298,7 @@ label {
 
   width: 100%;
 
-  min-height: 650px;
+  min-height: 450px;
 
   overflow: hidden;
 
@@ -2380,7 +2350,7 @@ label {
 
   margin: 0 auto;
 
-  padding: 85px 0 90px;
+  padding: 85px 0 60px;
 }
 
 /* =========================================
@@ -2422,7 +2392,7 @@ label {
 ========================================= */
 
 .presence-card {
-  min-height: 420px;
+  min-height: 250px;
 
   padding: 39px 38px 43px;
 
@@ -2510,7 +2480,7 @@ label {
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
-  font-size: 28px;
+  font-size: 24px;
 
   font-weight: 600;
 
@@ -2527,10 +2497,7 @@ label {
   margin: 0 0 30px;
 
   color: #ffffff;
-
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 20px;
+  font-size: 15px;
 
   font-weight: 400;
 
@@ -2570,9 +2537,7 @@ label {
 
   color: #ffffff;
 
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 18px;
+  font-size: 15px;
 
   font-weight: 400;
 
@@ -2644,7 +2609,7 @@ label {
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
-  font-size: clamp(42px, 3.2vw, 51px);
+  font-size: clamp(39px, 3.2vw, 48px);
 
   font-weight: 700;
 
@@ -2656,15 +2621,13 @@ label {
 /* Description */
 
 .leadership-description {
-  max-width: 1160px;
+  max-width: 950px;
 
   margin: 0 auto;
 
   color: #3D5E52;
 
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 21px;
+  font-size: 18px;
 
   font-weight: 400;
 
@@ -2679,7 +2642,7 @@ label {
   align-items: center;
   justify-content: center;
 
-  min-width: 217px;
+  min-width: 200px;
   height: 61px;
 
   margin-top: 43px;
@@ -2736,7 +2699,7 @@ label {
 ========================================= */
 
 .audience-container {
-  width: min(1550px, calc(100% - 216px));
+  width: min(1400px, calc(100% - 200px));
 
   margin: 0 auto;
 
@@ -2770,13 +2733,13 @@ label {
 /* Large card */
 
 .audience-card-large {
-  min-height: 622px;
+  min-height: 380px;
 }
 
 /* Small card */
 
 .audience-card-small {
-  min-height: 340px;
+  min-height: 180px;
 }
 
 /* =========================================
@@ -2810,7 +2773,7 @@ label {
 
   flex-direction: column;
 
-  gap: 19px;
+  gap: 16px;
 }
 
 /* =========================================
@@ -2818,22 +2781,19 @@ label {
 ========================================= */
 
 .audience-item {
-  min-height: 75px;
+  min-height: 30px;
 
   display: flex;
 
   align-items: center;
 
-  gap: 22px;
+  gap: 19px;
 
   padding: 12px 24px;
 
   border-left: 3px solid;
 
   border-radius: 7px;
-
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
   font-size: 19px;
 
   font-weight: 500;
@@ -2926,7 +2886,7 @@ label {
   }
 
   .audience-card {
-    padding: 42px 38px;
+    padding: 34px 30px;
   }
 
   .audience-item {
@@ -3008,7 +2968,7 @@ label {
 ========================================= */
 
 .belief-container {
-  width: min(1550px, calc(100% - 216px));
+  width: min(1450px, calc(100% - 200px));
 
   margin: 0 auto;
 
@@ -3030,7 +2990,7 @@ label {
 
   font-weight: 700;
 
-  line-height: 1.2;
+  line-height: 1;
 
   letter-spacing: -2px;
 }
@@ -3046,7 +3006,7 @@ label {
 
   grid-template-columns: repeat(4, 1fr);
 
-  gap: 38px;
+  gap: 35px;
 }
 
 /* =========================================
@@ -3054,7 +3014,7 @@ label {
 ========================================= */
 
 .belief-card {
-  min-height: 255px;
+  min-height: 200px;
 
   padding: 54px 35px 35px;
 
@@ -3124,10 +3084,7 @@ label {
   margin: 0;
 
   color: #04261D;
-
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 20px;
+  font-size: 17px;
 
   font-weight: 400;
 
@@ -3147,7 +3104,7 @@ label {
 ========================================= */
 
 .belief-footer {
-  margin: 65px 0 0;
+  margin: 45px 0 0;
 
   color: #3D5E52;
 
@@ -3258,7 +3215,7 @@ label {
 
 .vmv-section {
   width: 100%;
-  min-height: 665px;
+  min-height: 575px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -3288,13 +3245,10 @@ label {
 /* Description */
 
 .vmv-description {
-  max-width: 1120px;
+  max-width: 950px;
   margin: 0 auto;
   color: #ffffff;
-
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 21px;
+  font-size: 18px;
 
   font-weight: 400;
 
@@ -3307,12 +3261,9 @@ label {
   margin: 25px 0 0;
 
   color: #ffffff;
+  font-size: 18px;
 
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 22px;
-
-  font-weight: 700;
+  font-weight: 650;
 
   line-height: 1.5;
 }
@@ -3332,9 +3283,9 @@ label {
 }
 
 .vmv-button {
-  min-width: 172px;
+  min-width: 120px;
 
-  height: 61px;
+  height: 45px;
 
   padding: 0 28px;
 
@@ -3351,9 +3302,6 @@ label {
   background: #ffffff;
 
   color: #04261D;
-
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
   font-size: 18px;
 
   font-weight: 600;
@@ -3437,9 +3385,9 @@ label {
 /* Main card */
 
 .conversation-card {
-  width: min(975px, calc(100% - 50px));
+  width: min(900px, calc(100% - 40px));
 
-  min-height: 680px;
+  min-height: 400px;
 
   margin: 0 auto;
 
@@ -3449,7 +3397,7 @@ label {
 
   background: #ffffff;
 
-  border: 1px solid rgba(0, 230, 118, 0.15);
+  border: 2px solid rgba(0, 230, 118, 0.15);
 
   border-radius: 9px;
 
@@ -3465,9 +3413,9 @@ label {
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
-  font-size: 51px;
+  font-size: 43px;
 
-  font-weight: 700;
+  font-weight: 650;
 
   line-height: 1.2;
 
@@ -3477,15 +3425,13 @@ label {
 /* Description */
 
 .conversation-description {
-  max-width: 760px;
+  max-width: 600px;
 
   margin: 0 auto;
 
   color: #3D5E52;
 
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 20px;
+  font-size: 16px;
 
   line-height: 1.8;
 }
@@ -3495,7 +3441,7 @@ label {
 ========================================= */
 
 .contact-details {
-  width: min(635px, 100%);
+  width: min(500px, 100%);
 
   margin: 42px auto 0;
 
@@ -3507,7 +3453,7 @@ label {
 /* Contact row */
 
 .contact-row {
-  min-height: 76px;
+  min-height: 50px;
 
   display: flex;
 
@@ -3531,13 +3477,11 @@ label {
 .contact-label {
   color: #04261D;
 
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
+  font-size: 12px;
 
-  font-size: 16px;
+  font-weight: 500;
 
-  font-weight: 700;
-
-  letter-spacing: 1.3px;
+  letter-spacing: 1px;
 }
 
 /* Value */
@@ -3545,9 +3489,7 @@ label {
 .contact-value {
   color: #04261D;
 
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 18px;
+  font-size: 14px;
 
   font-weight: 400;
 
@@ -3585,11 +3527,11 @@ label {
 
   justify-content: center;
 
-  min-width: 187px;
+  min-width: 147px;
 
-  height: 60px;
+  height: 50px;
 
-  margin-top: 48px;
+  margin-top: 40px;
 
   padding: 0 30px;
 
@@ -3601,7 +3543,7 @@ label {
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
-  font-size: 18px;
+  font-size: 17px;
 
   font-weight: 600;
 
@@ -3631,7 +3573,7 @@ label {
 .tagline-strip {
   width: 100%;
 
-  min-height: 178px;
+  min-height: 148px;
 
   display: flex;
 
@@ -3651,7 +3593,7 @@ label {
 
   font-family: "Bricolage Grotesque", Inter, sans-serif;
 
-  font-size: 28px;
+  font-size: 25px;
 
   font-weight: 600;
 
@@ -3693,11 +3635,11 @@ label {
 ========================================= */
 
 .footer-container {
-  width: min(1550px, calc(100% - 216px));
+  width: min(1850px, calc(100% - 176px));
 
   margin: 0 auto;
 
-  padding: 73px 0 76px;
+  padding: 55px 0 55px;
 
   display: grid;
 
@@ -3708,7 +3650,7 @@ label {
     0.9fr
     1.1fr;
 
-  column-gap: 65px;
+  column-gap: 105px;
 }
 
 /* =========================================
@@ -3726,15 +3668,12 @@ label {
 /* Column heading */
 
 .footer-column h3 {
-  margin: 0 0 32px;
+    margin: 0 0 24px;
+    color: #ffffff;
+    font-family: Inter, sans-serif !important;
+    font-size: 18px;
 
-  color: #ffffff;
-
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 23px;
-
-  font-weight: 700;
+    font-weight: 700;
 
   line-height: 1.3;
 }
@@ -3742,15 +3681,12 @@ label {
 /* Links */
 
 .footer-column > a {
-  margin-bottom: 20px;
+    margin-bottom: 16px;
+    color: #ffffff;
+    font-family: Inter, sans-serif !important;
+    font-size: 16px;
 
-  color: #ffffff;
-
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 18px;
-
-  font-weight: 400;
+    font-weight: 400;
 
   line-height: 1.4;
 
@@ -3776,15 +3712,12 @@ label {
 ========================================= */
 
 .footer-follow-title {
-  margin: 18px 0 20px;
+    margin: 16px 0 16px;
+    color: #ffffff;
+    font-family: Inter, sans-serif !important;
+    font-size: 18px;
 
-  color: #ffffff;
-
-  font-family: "Bricolage Grotesque", Inter, sans-serif;
-
-  font-size: 19px;
-
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .social-link {
@@ -3826,19 +3759,15 @@ label {
 }
 
 .footer-contact strong {
-  color: #ffffff;
-
-  font-size: 18px;
-
-  font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .footer-contact a {
-  color: #ffffff;
-
-  font-size: 18px;
-
-  text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .footer-contact a:hover {
@@ -3903,7 +3832,7 @@ label {
 
   margin: 0 auto;
 
-  padding: 38px 0 48px;
+  padding: 30px 0 40px;
 
   border-top: 1px solid rgba(255, 255, 255, 0.16);
 
@@ -3921,13 +3850,10 @@ label {
 ========================================= */
 
 .footer-bottom-left p {
-  margin: 0 0 20px;
-
-  color: #a7f3d0;
-
-  font-size: 17px;
-
-  line-height: 1.4;
+    margin: 0 0 12px;
+    color: #a7f3d0;
+    font-size: 15px;
+    line-height: 1.4;
 }
 
 .footer-bottom-left .footer-tagline {
@@ -3955,13 +3881,10 @@ label {
 }
 
 .footer-legal a {
-  color: #a7f3d0;
-
-  font-size: 16px;
-
-  text-decoration: none;
-
-  white-space: nowrap;
+    color: #a7f3d0;
+    font-size: 15px;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .footer-legal a:hover {
@@ -3983,106 +3906,12 @@ label {
   }
 
   .footer-column > a {
-    font-size: 16px;
-  }
-
-  .footer-button {
-    width: 240px;
-  }
-}
-
-/* =========================================
-   FOOTER TABLET
-========================================= */
-
-@media (max-width: 1000px) {
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-
-    row-gap: 55px;
-  }
-
-  .footer-connect {
-    grid-column: span 2;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-  }
-
-  .footer-legal {
-    justify-content: flex-start;
-
-    gap: 18px 30px;
-  }
-}
-
-/* =========================================
-   FOOTER MOBILE
-========================================= */
-
-@media (max-width: 700px) {
-  .footer-container {
-    width: calc(100% - 36px);
-
-    grid-template-columns: 1fr;
-
-    padding: 55px 0 50px;
-
-    row-gap: 45px;
-  }
-
-  .footer-connect {
-    grid-column: auto;
-  }
-
-  .footer-column h3 {
-    font-size: 21px;
-
-    margin-bottom: 25px;
-  }
-
-  .footer-column > a {
-    font-size: 16px;
-
     margin-bottom: 16px;
-  }
+    color: #ffffff;
+    font-family: Inter, sans-serif !important;
+    font-size: 16px;
 
-  .footer-button {
-    width: 100%;
-
-    max-width: 283px;
-  }
-
-  .footer-bottom {
-    width: calc(100% - 36px);
-
-    padding: 30px 0 35px;
-  }
-
-  .footer-legal {
-    gap: 15px 25px;
-  }
-
-  .footer-legal a {
-    font-size: 14px;
-  }
-}
-
-
-/* =========================================
-   GLOBAL TYPOGRAPHY FIX
-   ========================================= */
-
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Bricolage Grotesque" !important;
-  font-weight: 700 !important;
+    font-weight: 700 !important; font-variation-settings: "opsz" 96 !important;
 }
 
 /* Body / normal content */
@@ -4096,11 +3925,316 @@ input,
 textarea,
 select,
 label {
-  font-family: "Inter", sans-serif !important;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
 /* Main hero heading */
 .hero-title {
   font-family: "Bricolage Grotesque"!important;
   font-weight: 700 !important;
+}
+
+
+
+
+/* Footer non-clickable section labels */
+.footer-label {
+  display: block;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: Inter, sans-serif !important;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: default;
+  text-decoration: none;
+}
+}
+
+
+/* =========================================
+   MOBILE FIXES (phones only, desktop unaffected)
+========================================= */
+@media (max-width: 700px) {
+
+  /* Stop the page from becoming wider than the screen */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Navbar: remove the extra 20px that pushes it sideways */
+  .navbar {
+    padding: 0;
+  }
+
+  /* Elements that were wider than the screen (width + padding) */
+    /* Elements that were wider than the screen (width + padding) */
+  .hero-button,
+  .stats-container,
+  .conversation-card,
+  .tagline-strip {
+    box-sizing: border-box;
+  }
+  /* Global Presence section */
+  .global-presence-container {
+    width: calc(100% - 36px);
+  }
+
+  .presence-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Contact card */
+  .conversation-card {
+    padding: 44px 22px 40px;
+  }
+
+  .contact-row {
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    padding: 12px 16px;
+  }
+
+  .contact-value {
+    overflow-wrap: anywhere;
+  }
+
+  /* Footer */
+  .footer-container,
+  .footer-bottom {
+    width: calc(100% - 36px);
+  }
+
+    .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 36px 20px;
+  }
+
+  .social-link {
+    overflow-wrap: anywhere;
+  }
+
+  .footer-column {
+    min-width: 0;
+  }
+
+  .footer-connect {
+    grid-column: 1 / -1;
+  }
+
+  .footer-button {
+    width: 100%;
+    max-width: 283px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-legal {
+    justify-content: flex-start;
+    gap: 12px 24px;
+  }
+
+  .footer-legal a {
+    white-space: normal;
+  }
+}
+
+/* =========================================
+   HAMBURGER MENU
+========================================= */
+
+/* Hidden on desktop */
+.nav-toggle,
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+
+  .navbar {
+    padding: 0;
+  }
+
+  /* Hamburger button */
+  .nav-toggle {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    margin-left: 4px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-shrink: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    border-radius: 2px;
+    background: #ffffff;
+    transition:
+      transform 200ms ease,
+      opacity 200ms ease;
+  }
+
+  .nav-toggle.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* Menu panel */
+  .mobile-menu {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 64px);
+    height: calc(100dvh - 64px);
+    padding: 8px 24px 40px;
+    box-sizing: border-box;
+    display: block;
+    overflow-y: auto;
+    background: #04261D;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 200ms ease,
+      visibility 200ms ease;
+    z-index: 5;
+  }
+
+  .mobile-menu.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Stop the page behind from scrolling while the menu is open */
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  /* Rows */
+  .mm-link,
+  .mm-toggle {
+    width: 100%;
+    padding: 16px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .mm-chevron {
+    width: 8px;
+    height: 8px;
+    margin: 0 6px 3px 12px;
+    flex-shrink: 0;
+    border-right: 2px solid #00E676;
+    border-bottom: 2px solid #00E676;
+    transform: rotate(45deg);
+    transition: transform 200ms ease;
+  }
+
+  .mm-group.open > .mm-toggle .mm-chevron {
+    transform: rotate(225deg);
+  }
+
+  /* Dropdown content */
+  .mm-body {
+    display: none;
+    padding: 2px 0 8px 14px;
+  }
+
+  .mm-group.open > .mm-body {
+    display: block;
+  }
+
+  .mm-body .mm-toggle {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .mm-body .mm-link {
+    padding: 11px 4px;
+    border-bottom: 0;
+    color: #A7F3D0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .mm-subtitle {
+    margin: 14px 0 2px 4px;
+    color: #00E676;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .mobile-menu {
+    top: 65px;
+    height: calc(100vh - 65px);
+    height: calc(100dvh - 65px);
+  }
+
+  /* Make room for the hamburger: keep the globe icon, hide the country name */
+  #selectedCountry {
+    display: none;
+  }
+
+  .nav-right {
+    gap: 6px;
+  }
+
+  .nav-toggle {
+    margin-left: 0;
+  }
+
+  /* Country list opens full width under the navbar instead of going off-screen */
+  .country-dropdown {
+    position: fixed;
+    top: 73px;
+    left: 18px;
+    right: 18px;
+    width: auto;
+    max-height: calc(100vh - 90px);
+  }
+}
+
+@media (max-width: 360px) {
+  .logo img {
+    width: 115px;
+  }
 }

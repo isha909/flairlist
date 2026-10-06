@@ -1,26 +1,30 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Supply Chain: Distributors | FlairList Global</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./Assets/css/style.css?v=3.0" />
-  <link rel="stylesheet" href="./Assets/css/distributor.css?v=3.0" />
-  <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
-</head>
-<body>
-  <!-- ===================== NAVBAR ===================== -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supply Chain: Distributors | FlairList Global</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/css/style.css?v=3.8" />
+    <link rel="stylesheet" href="./Assets/css/distributor.css?v=3.8" />
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- ===================== NAVBAR ===================== -->
     <header class="navbar" id="siteNavbar">
       <div class="navbar-container">
         <div class="nav-left">
           <!-- LOGO -->
-          <a href="./index.html" class="logo" aria-label="FlairList Global Home">
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="FlairList Global Home"
+          >
             <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
           </a>
 
@@ -62,211 +66,234 @@
             </button>
           </form>
 
-         <!-- COUNTRY / LANGUAGE SELECTOR -->
-<div class="country-selector">
-    <button class="country-btn" type="button" aria-expanded="false">
-        <span id="selectedCountry">India</span>
-        <svg _ngcontent-ng-c1672362817="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="app-icon" width="24" height="24"><path _ngcontent-ng-c1672362817="" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E4E3DE" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter"></path></svg>
-    </button>
+          <!-- COUNTRY / LANGUAGE SELECTOR -->
+          <div class="country-selector">
+            <button class="country-btn" type="button" aria-expanded="false">
+              <span id="selectedCountry">India</span>
+              <svg
+                _ngcontent-ng-c1672362817=""
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="app-icon"
+                width="24"
+                height="24"
+              >
+                <path
+                  _ngcontent-ng-c1672362817=""
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  fill="#E4E3DE"
+                  stroke="none"
+                  stroke-width="0"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+              </svg>
+            </button>
 
-    <div class="country-dropdown" id="countryDropdown">
+            <div class="country-dropdown" id="countryDropdown">
+              <button type="button" data-lang="en" data-country="India">
+                India
+              </button>
 
-        <button type="button" data-lang="en" data-country="India">
-            India
-        </button>
+              <button
+                type="button"
+                data-lang="ar"
+                data-country="United Arab Emirates"
+              >
+                United Arab Emirates
+              </button>
 
-        <button type="button" data-lang="ar" data-country="United Arab Emirates">
-            United Arab Emirates
-        </button>
+              <button type="button" data-lang="en" data-country="United States">
+                United States
+              </button>
 
-        <button type="button" data-lang="en" data-country="United States">
-            United States
-        </button>
+              <button type="button" data-lang="zh-CN" data-country="China">
+                China
+              </button>
 
-        <button type="button" data-lang="zh-CN" data-country="China">
-            China
-        </button>
+              <button type="button" data-lang="nl" data-country="Netherlands">
+                Netherlands
+              </button>
 
-        <button type="button" data-lang="nl" data-country="Netherlands">
-            Netherlands
-        </button>
+              <button
+                type="button"
+                data-lang="en"
+                data-country="United Kingdom"
+              >
+                United Kingdom
+              </button>
 
-        <button type="button" data-lang="en" data-country="United Kingdom">
-            United Kingdom
-        </button>
+              <button type="button" data-lang="en" data-country="Singapore">
+                Singapore
+              </button>
 
-        <button type="button" data-lang="en" data-country="Singapore">
-            Singapore
-        </button>
+              <button type="button" data-lang="ar" data-country="Saudi Arabia">
+                Saudi Arabia
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Saudi Arabia">
-            Saudi Arabia
-        </button>
+              <button type="button" data-lang="bn" data-country="Bangladesh">
+                Bangladesh
+              </button>
 
-        <button type="button" data-lang="bn" data-country="Bangladesh">
-            Bangladesh
-        </button>
+              <button type="button" data-lang="de" data-country="Germany">
+                Germany
+              </button>
 
-        <button type="button" data-lang="de" data-country="Germany">
-            Germany
-        </button>
+              <button type="button" data-lang="it" data-country="Italy">
+                Italy
+              </button>
 
-        <button type="button" data-lang="it" data-country="Italy">
-            Italy
-        </button>
+              <button type="button" data-lang="ja" data-country="Japan">
+                Japan
+              </button>
 
-        <button type="button" data-lang="ja" data-country="Japan">
-            Japan
-        </button>
+              <button type="button" data-lang="ko" data-country="South Korea">
+                South Korea
+              </button>
 
-        <button type="button" data-lang="ko" data-country="South Korea">
-            South Korea
-        </button>
+              <button type="button" data-lang="ms" data-country="Malaysia">
+                Malaysia
+              </button>
 
-        <button type="button" data-lang="ms" data-country="Malaysia">
-            Malaysia
-        </button>
+              <button type="button" data-lang="th" data-country="Thailand">
+                Thailand
+              </button>
 
-        <button type="button" data-lang="th" data-country="Thailand">
-            Thailand
-        </button>
+              <button type="button" data-lang="id" data-country="Indonesia">
+                Indonesia
+              </button>
 
-        <button type="button" data-lang="id" data-country="Indonesia">
-            Indonesia
-        </button>
+              <button type="button" data-lang="vi" data-country="Vietnam">
+                Vietnam
+              </button>
 
-        <button type="button" data-lang="vi" data-country="Vietnam">
-            Vietnam
-        </button>
+              <button type="button" data-lang="en" data-country="Philippines">
+                Philippines
+              </button>
 
-        <button type="button" data-lang="en" data-country="Philippines">
-            Philippines
-        </button>
+              <button type="button" data-lang="en" data-country="Australia">
+                Australia
+              </button>
 
-        <button type="button" data-lang="en" data-country="Australia">
-            Australia
-        </button>
+              <button type="button" data-lang="en" data-country="New Zealand">
+                New Zealand
+              </button>
 
-        <button type="button" data-lang="en" data-country="New Zealand">
-            New Zealand
-        </button>
+              <button type="button" data-lang="fr" data-country="France">
+                France
+              </button>
 
-        <button type="button" data-lang="fr" data-country="France">
-            France
-        </button>
+              <button type="button" data-lang="es" data-country="Spain">
+                Spain
+              </button>
 
-        <button type="button" data-lang="es" data-country="Spain">
-            Spain
-        </button>
+              <button type="button" data-lang="fr" data-country="Belgium">
+                Belgium
+              </button>
 
-        <button type="button" data-lang="fr" data-country="Belgium">
-            Belgium
-        </button>
+              <button type="button" data-lang="de" data-country="Switzerland">
+                Switzerland
+              </button>
 
-        <button type="button" data-lang="de" data-country="Switzerland">
-            Switzerland
-        </button>
+              <button type="button" data-lang="pl" data-country="Poland">
+                Poland
+              </button>
 
-        <button type="button" data-lang="pl" data-country="Poland">
-            Poland
-        </button>
+              <button type="button" data-lang="de" data-country="Austria">
+                Austria
+              </button>
 
-        <button type="button" data-lang="de" data-country="Austria">
-            Austria
-        </button>
+              <button type="button" data-lang="en" data-country="Ireland">
+                Ireland
+              </button>
 
-        <button type="button" data-lang="en" data-country="Ireland">
-            Ireland
-        </button>
+              <button type="button" data-lang="ar" data-country="Qatar">
+                Qatar
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Qatar">
-            Qatar
-        </button>
+              <button type="button" data-lang="ar" data-country="Kuwait">
+                Kuwait
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Kuwait">
-            Kuwait
-        </button>
+              <button type="button" data-lang="ar" data-country="Oman">
+                Oman
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Oman">
-            Oman
-        </button>
+              <button type="button" data-lang="ar" data-country="Bahrain">
+                Bahrain
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Bahrain">
-            Bahrain
-        </button>
+              <button type="button" data-lang="he" data-country="Israel">
+                Israel
+              </button>
 
-        <button type="button" data-lang="he" data-country="Israel">
-            Israel
-        </button>
+              <button type="button" data-lang="tr" data-country="Turkey">
+                Turkey
+              </button>
 
-        <button type="button" data-lang="tr" data-country="Turkey">
-            Turkey
-        </button>
+              <button type="button" data-lang="ar" data-country="Iraq">
+                Iraq
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Iraq">
-            Iraq
-        </button>
+              <button type="button" data-lang="en" data-country="South Africa">
+                South Africa
+              </button>
 
-        <button type="button" data-lang="en" data-country="South Africa">
-            South Africa
-        </button>
+              <button type="button" data-lang="ar" data-country="Egypt">
+                Egypt
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Egypt">
-            Egypt
-        </button>
+              <button type="button" data-lang="en" data-country="Nigeria">
+                Nigeria
+              </button>
 
-        <button type="button" data-lang="en" data-country="Nigeria">
-            Nigeria
-        </button>
+              <button type="button" data-lang="en" data-country="Kenya">
+                Kenya
+              </button>
 
-        <button type="button" data-lang="en" data-country="Kenya">
-            Kenya
-        </button>
+              <button type="button" data-lang="ar" data-country="Morocco">
+                Morocco
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Morocco">
-            Morocco
-        </button>
+              <button type="button" data-lang="en" data-country="Canada">
+                Canada
+              </button>
 
-        <button type="button" data-lang="en" data-country="Canada">
-            Canada
-        </button>
+              <button type="button" data-lang="pt" data-country="Brazil">
+                Brazil
+              </button>
 
-        <button type="button" data-lang="pt" data-country="Brazil">
-            Brazil
-        </button>
+              <button type="button" data-lang="es" data-country="Argentina">
+                Argentina
+              </button>
 
-        <button type="button" data-lang="es" data-country="Argentina">
-            Argentina
-        </button>
+              <button type="button" data-lang="es" data-country="Chile">
+                Chile
+              </button>
 
-        <button type="button" data-lang="es" data-country="Chile">
-            Chile
-        </button>
+              <button type="button" data-lang="es" data-country="Colombia">
+                Colombia
+              </button>
 
-        <button type="button" data-lang="es" data-country="Colombia">
-            Colombia
-        </button>
+              <button type="button" data-lang="es" data-country="Peru">
+                Peru
+              </button>
 
-        <button type="button" data-lang="es" data-country="Peru">
-            Peru
-        </button>
+              <button type="button" data-lang="ne" data-country="Nepal">
+                Nepal
+              </button>
 
-        <button type="button" data-lang="ne" data-country="Nepal">
-            Nepal
-        </button>
+              <button type="button" data-lang="si" data-country="Sri Lanka">
+                Sri Lanka
+              </button>
 
-        <button type="button" data-lang="si" data-country="Sri Lanka">
-            Sri Lanka
-        </button>
+              <button type="button" data-lang="ur" data-country="Pakistan">
+                Pakistan
+              </button>
+            </div>
+          </div>
 
-        <button type="button" data-lang="ur" data-country="Pakistan">
-            Pakistan
-        </button>
-
-    </div>
-</div>
-
-          <a href="#" class="magic-button">Magic Form</a>
+          <a href="./contact.html" class="magic-button">Magic Form</a>
         </div>
       </div>
 
@@ -395,10 +422,14 @@
             <!-- SERVICES -->
             <div class="mega-panel active" data-panel="services">
               <h3>Services</h3>
-              <a href="./expert-business-consultancy.html">Expert Business Consultation</a>
+              <a href="./expert-business-consultancy.html"
+                >Expert Business Consultation</a
+              >
               <a href="./export-consultation.html">Export Consultation</a>
               <a href="./export-mentorship.html">Export Mentorship</a>
-              <a href="./exclusive-business-growth-partnership.html">Exclusive Partnership</a>
+              <a href="./exclusive-business-growth-partnership.html"
+                >Exclusive Partnership</a
+              >
             </div>
 
             <!-- GLOBAL IMPORT-EXPORT -->
@@ -455,14 +486,24 @@
                   <h3>Products</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./AgriCommodities-products.html#agricommodities">Agri Commodities</a>
-                      <a href="./products.html#petrochemicals">Petrochemicals &amp; Energy Products</a>
+                      <a href="./AgriCommodities-products.html#agricommodities"
+                        >Agri Commodities</a
+                      >
+                      <a href="./products.html#petrochemicals"
+                        >Petrochemicals &amp; Energy Products</a
+                      >
                       <a href="./products.html#metals">Metals &amp; Minerals</a>
-                      <a href="./products.html#fmcg">FMCG &amp; Food Products</a>
-                      <a href="./products.html#raw-materials">Industrial Raw Materials</a>
+                      <a href="./products.html#fmcg"
+                        >FMCG &amp; Food Products</a
+                      >
+                      <a href="./products.html#raw-materials"
+                        >Industrial Raw Materials</a
+                      >
                     </div>
                     <div>
-                      <a href="./products.html#apparel">Apparel &amp; Textiles</a>
+                      <a href="./products.html#apparel"
+                        >Apparel &amp; Textiles</a
+                      >
                       <a href="./products.html#gems">Gems &amp; Jewellery</a>
                     </div>
                   </div>
@@ -530,15 +571,23 @@
                   <h3>Programs</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./workforce-mobility.html#farmer">Farmer / Manufacturer</a>
-                      <a href="./workforce-mobility.html#local-trader">Local Trader</a>
+                      <a href="./workforce-mobility.html#farmer"
+                        >Farmer / Manufacturer</a
+                      >
+                      <a href="./workforce-mobility.html#local-trader"
+                        >Local Trader</a
+                      >
                       <a href="./workforce-mobility.html#exporter">Exporter</a>
                       <a href="./workforce-mobility.html#cha">CHA</a>
-                      <a href="./workforce-mobility.html#freight-forwarder">Freight Forwarder</a>
+                      <a href="./workforce-mobility.html#freight-forwarder"
+                        >Freight Forwarder</a
+                      >
                     </div>
                     <div>
                       <a href="./workforce-mobility.html#importer">Importer</a>
-                      <a href="./workforce-mobility.html#distributor">Distributor</a>
+                      <a href="./workforce-mobility.html#distributor"
+                        >Distributor</a
+                      >
                       <a href="./workforce-mobility.html#retailer">Retailer</a>
                       <a href="./workforce-mobility.html#buyer">Buyer</a>
                     </div>
@@ -564,8 +613,12 @@
               <div class="industries-grid">
                 <div>
                   <a href="./finance.html">Finance</a>
-                  <a href="./real-estate.html">Real Estate &amp; Infrastructure</a>
-                  <a href="./energy-power.html">Energy, Power &amp; Sustainability</a>
+                  <a href="./real-estate.html"
+                    >Real Estate &amp; Infrastructure</a
+                  >
+                  <a href="./energy-power.html"
+                    >Energy, Power &amp; Sustainability</a
+                  >
                   <a href="./petrochemicals.html">Petrochemicals &amp; Oil</a>
                   <a href="./manufacturing.html">Manufacturing</a>
                 </div>
@@ -574,8 +627,12 @@
                   <a href="./logistics.html">Logistics &amp; Supply Chain</a>
                   <a href="./it-saas.html">IT &amp; SaaS</a>
                   <a href="./e-commerce.html">E-Commerce</a>
-                  <a href="./media-entertainment.html">Media &amp; Entertainment</a>
-                  <a href="./education-consulting.html">Education &amp; Consulting</a>
+                  <a href="./media-entertainment.html"
+                    >Media &amp; Entertainment</a
+                  >
+                  <a href="./education-consulting.html"
+                    >Education &amp; Consulting</a
+                  >
                 </div>
 
                 <div>
@@ -588,7 +645,9 @@
 
                 <div>
                   <a href="./apparel.html">Apparel</a>
-                  <a href="./food-beverage.html">F&amp;B (Food &amp; Beverage)</a>
+                  <a href="./food-beverage.html"
+                    >F&amp;B (Food &amp; Beverage)</a
+                  >
                 </div>
               </div>
             </div>
@@ -613,453 +672,524 @@
       </div>
     </header>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero-dis">
-    <p class="hero-label">SUPPLY CHAIN &amp; DISTRIBUTION</p>
-    <h1 class="hero-title">How We Partner With Distributors</h1>
-    <p class="hero-subtitle">Turning Imports Into Market Dominance — Acting as One Distribution Engine</p>
-  </section>
+    <!-- ================= HERO ================= -->
+    <section class="hero-dis">
+      <p class="hero-label">SUPPLY CHAIN &amp; DISTRIBUTION</p>
+      <h1 class="hero-title">How We Partner With Distributors</h1>
+      <p class="hero-subtitle">
+        Turning Imports Into Market Dominance — Acting as One Distribution
+        Engine
+      </p>
+    </section>
 
-  <!-- ================= INTRO ================= -->
-  <section class="intro-section">
-    <div class="intro-grid">
-      <div class="intro-text">
-        <p>At FlairList Global, we know that real money in trade is not made at the border.</p>
-        <p>It is made after the goods enter the market.</p>
-        <p>Distributors are not the last link in the chain.</p>
-        <p>They are the revenue engine that converts imports into consistent sales, cash flow, and brand presence.</p>
-        <p>That's why we don't treat distributors as downstream buyers.</p>
-        <p>We partner with them and operate as one integrated go-to-market system.</p>
+    <!-- ================= INTRO ================= -->
+    <section class="intro-section">
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p>
+            At FlairList Global, we know that real money in trade is not made at
+            the border.
+          </p>
+          <p>It is made after the goods enter the market.</p>
+          <p>Distributors are not the last link in the chain.</p>
+          <p>
+            They are the revenue engine that converts imports into consistent
+            sales, cash flow, and brand presence.
+          </p>
+          <p>That's why we don't treat distributors as downstream buyers.</p>
+          <p>
+            We partner with them and operate as one integrated go-to-market
+            system.
+          </p>
+        </div>
+        <div class="intro-image">
+          <img
+            src="./Assets/img/Global_distributor_network.png"
+            alt="Forklift moving pallets in a distribution warehouse"
+          />
+        </div>
       </div>
-      <div class="intro-image">
-        <img src="./Assets/img/Global_distributor_network.png" alt="Forklift moving pallets in a distribution warehouse">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ================= REAL PROBLEMS ================= -->
-  <section class="section bg-soft">
-    <h2 class="section-title">The Real Problems Distributors Face Today</h2>
-    <p class="section-sub">Across FMCG, commodities, industrial goods, and imported products, distributors face the same structural issues:</p>
+    <!-- ================= REAL PROBLEMS ================= -->
+    <section class="section bg-soft">
+      <h2 class="section-title">The Real Problems Distributors Face Today</h2>
+      <p class="section-sub">
+        Across FMCG, commodities, industrial goods, and imported products,
+        distributors face the same structural issues:
+      </p>
 
-    <div class="grid-2">
-      <div class="grid-box">Inconsistent supply from importers</div>
-      <div class="grid-box">Price instability and sudden cost changes</div>
-      <div class="grid-box">Poor demand forecasting</div>
-      <div class="grid-box">Inventory pile-ups or stock-outs</div>
-      <div class="grid-box">Weak brand support from suppliers</div>
-      <div class="grid-box">No exclusivity or territory clarity</div>
-      <div class="grid-box">Cash-flow pressure due to credit cycles</div>
-      <div class="grid-box">No visibility into upstream trade decisions</div>
-    </div>
-
-    <p class="italic-note">We exist to stabilise distribution economics and turn distributors into market leaders, not stock movers.</p>
-  </section>
-
-  <!-- ================= PHILOSOPHY ================= -->
-  <section class="section bg-white">
-    <h2 class="section-title center">Our Philosophy</h2>
-
-    <div class="philosophy-card">
-      <p class="philosophy-quote">"Distribution is a Strategy — Not Just Logistics"</p>
-      <p class="col-heading">Most distributors are forced to operate reactively:</p>
-      <p class="flow-line">Goods arrive → sell fast → manage cash → repeat</p>
-      <p class="col-heading">We convert this into:</p>
-      <p class="flow-line bold">Planned supply → controlled pricing → predictable demand → scalable distribution</p>
-      <p class="support-closing">That's how distributors move from volume chasing to market control.</p>
-    </div>
-  </section>
-
-  <!-- ================= HOW WE HELP DISTRIBUTORS ================= -->
-  <section class="section bg-soft">
-    <h2 class="section-title">How We Help Distributors (End-To-End Partnership)</h2>
-
-    <div class="grid-2 support-grid">
-      <div class="support-box">
-        <h3>1. Demand Planning &amp; Market Intelligence</h3>
-        <p class="support-tag">(Sell With Visibility, Not Guesswork)</p>
-        <p class="support-lead">WE SUPPORT DISTRIBUTORS WITH:</p>
-        <ul class="dash-list">
-          <li>Market demand forecasting</li>
-          <li>City-wise / region-wise consumption insights</li>
-          <li>Seasonal demand mapping</li>
-          <li>SKU-level investment planning</li>
-        </ul>
-        <p class="support-lead">THIS HELPS DISTRIBUTORS:</p>
-        <ul class="dash-list">
-          <li>Avoid over-stocking</li>
-          <li>Reduce dead inventory</li>
-          <li>Plan working capital intelligently</li>
-        </ul>
+      <div class="grid-2">
+        <div class="grid-box">Inconsistent supply from importers</div>
+        <div class="grid-box">Price instability and sudden cost changes</div>
+        <div class="grid-box">Poor demand forecasting</div>
+        <div class="grid-box">Inventory pile-ups or stock-outs</div>
+        <div class="grid-box">Weak brand support from suppliers</div>
+        <div class="grid-box">No exclusivity or territory clarity</div>
+        <div class="grid-box">Cash-flow pressure due to credit cycles</div>
+        <div class="grid-box">No visibility into upstream trade decisions</div>
       </div>
 
-      <div class="support-box">
-        <h3>2. Supply Continuity &amp; Import Alignment</h3>
-        <p class="support-lead">WE ALIGN CLOSELY WITH:</p>
+      <p class="italic-note">
+        We exist to stabilise distribution economics and turn distributors into
+        market leaders, not stock movers.
+      </p>
+    </section>
+
+    <!-- ================= PHILOSOPHY ================= -->
+    <section class="section bg-white">
+      <h2 class="section-title center">Our Philosophy</h2>
+
+      <div class="philosophy-card">
+        <p class="philosophy-quote">
+          "Distribution is a Strategy — Not Just Logistics"
+        </p>
+        <p class="col-heading">
+          Most distributors are forced to operate reactively:
+        </p>
+        <p class="flow-line">Goods arrive → sell fast → manage cash → repeat</p>
+        <p class="col-heading">We convert this into:</p>
+        <p class="flow-line bold">
+          Planned supply → controlled pricing → predictable demand → scalable
+          distribution
+        </p>
+        <p class="support-closing">
+          That's how distributors move from volume chasing to market control.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= HOW WE HELP DISTRIBUTORS ================= -->
+    <section class="section bg-soft">
+      <h2 class="section-title">
+        How We Help Distributors (End-To-End Partnership)
+      </h2>
+
+      <div class="grid-2 support-grid">
+        <div class="support-box">
+          <h3>1. Demand Planning &amp; Market Intelligence</h3>
+          <p class="support-tag">(Sell With Visibility, Not Guesswork)</p>
+          <p class="support-lead">WE SUPPORT DISTRIBUTORS WITH:</p>
+          <ul class="dash-list">
+            <li>Market demand forecasting</li>
+            <li>City-wise / region-wise consumption insights</li>
+            <li>Seasonal demand mapping</li>
+            <li>SKU-level investment planning</li>
+          </ul>
+          <p class="support-lead">THIS HELPS DISTRIBUTORS:</p>
+          <ul class="dash-list">
+            <li>Avoid over-stocking</li>
+            <li>Reduce dead inventory</li>
+            <li>Plan working capital intelligently</li>
+          </ul>
+        </div>
+
+        <div class="support-box">
+          <h3>2. Supply Continuity &amp; Import Alignment</h3>
+          <p class="support-lead">WE ALIGN CLOSELY WITH:</p>
+          <ul class="dash-list">
+            <li>Importers</li>
+            <li>Exporters</li>
+            <li>Freight &amp; CHA layers</li>
+          </ul>
+          <p class="support-lead">SO DISTRIBUTORS GET:</p>
+          <ul class="dash-list">
+            <li>Predictable supply cycles</li>
+            <li>Advance shipment visibility</li>
+            <li>Quantity &amp; pricing clarity before arrival</li>
+          </ul>
+          <p class="outcome-note">
+            No sudden shocks. No last-minute surprises.
+          </p>
+        </div>
+
+        <div class="support-box">
+          <h3>3. Pricing Control &amp; Margin Protection</h3>
+          <p class="support-lead">DISTRIBUTORS OFTEN LOSE MARGIN DUE TO:</p>
+          <ul class="dash-list">
+            <li>Unplanned imports</li>
+            <li>Dump pricing</li>
+            <li>Channel conflicts</li>
+          </ul>
+          <p class="support-lead">WE HELP STRUCTURE:</p>
+          <ul class="dash-list">
+            <li>Stable distribution pricing tiers</li>
+            <li>Territory-wise margin protection</li>
+            <li>Volume-linked incentives</li>
+            <li>Long-term pricing frameworks</li>
+          </ul>
+          <p class="outcome-note">
+            Distributors stop fighting price wars. They start winning pricing
+            points.
+          </p>
+        </div>
+
+        <div class="support-box">
+          <h3>4. Brand, Positioning &amp; Market Entry Support</h3>
+          <p class="support-lead">
+            WE ACT AS A BRAND-SIDE PARTNER FOR DISTRIBUTORS.
+          </p>
+          <p class="support-lead">Support includes:</p>
+          <ul class="dash-list">
+            <li>Product positioning strategy</li>
+            <li>Channel selection (retail, wholesale, institutional, B2B)</li>
+            <li>Packaging &amp; communication feedback from market</li>
+            <li>Brand-trust building for imported products</li>
+          </ul>
+          <p class="outcome-note">
+            This helps distributors: Push value, not just price. Build repeat
+            dealer confidence.
+          </p>
+        </div>
+
+        <div class="support-box">
+          <h3>5. Channel Development &amp; Expansion</h3>
+          <p class="support-lead">WE ASSIST DISTRIBUTORS IN:</p>
+          <ul class="dash-list">
+            <li>Dealer / sub-distributor onboarding</li>
+            <li>Institutional buyer access</li>
+            <li>B2B customer acquisition</li>
+            <li>Regional expansion planning</li>
+          </ul>
+          <p class="outcome-note">
+            Distributors don't remain local players. They become regional or
+            national partners.
+          </p>
+        </div>
+
+        <div class="support-box">
+          <h3>6. Credit Cycle &amp; Cash-Flow Discipline</h3>
+          <p class="support-lead">
+            CASH FLOW BREAKS DISTRIBUTORS — NOT LACK OF SALES.
+          </p>
+          <p class="support-lead">We help with:</p>
+          <ul class="dash-list">
+            <li>Credit period structuring</li>
+            <li>Buyer payment behaviour</li>
+            <li>Risk-based credit limits</li>
+            <li>Faster rotation strategies</li>
+          </ul>
+          <p class="outcome-note">
+            This improves: Liquidity, Stress, Ability to scale volumes.
+          </p>
+        </div>
+
+        <div class="support-box full-width">
+          <h3>7. Long-term Exclusivity &amp; Growth Alignment</h3>
+          <p class="support-lead">IN LONG-TERM PARTNERSHIPS, WE:</p>
+          <ul class="dash-list">
+            <li>Create territory-wise exclusivity models</li>
+            <li>Align distributor targets with supply planning</li>
+            <li>Protect distributor interests from parallel imports</li>
+            <li>Build joint expansion roadmaps</li>
+          </ul>
+          <p class="outcome-note">
+            Distributors stop being replaceable. They become strategic market
+            partners.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PARTNER MODEL ================= -->
+    <section class="section bg-white">
+      <h2 class="section-title center">
+        Acting as One: Our Distributor Partnership Model
+      </h2>
+
+      <div class="philosophy-card">
+        <p class="col-heading">In active partnerships, we:</p>
         <ul class="dash-list">
-          <li>Importers</li>
-          <li>Exporters</li>
-          <li>Freight &amp; CHA layers</li>
+          <li>Co-plan monthly &amp; quarterly sales cycles</li>
+          <li>Align imports with real market absorption</li>
+          <li>Stay involved till goods are sold, not just delivered</li>
+          <li>Correct strategy mid-cycle if market conditions shift</li>
         </ul>
-        <p class="support-lead">SO DISTRIBUTORS GET:</p>
+
+        <p class="col-heading spaced">In many cases, we also:</p>
         <ul class="dash-list">
-          <li>Predictable supply cycles</li>
-          <li>Advance shipment visibility</li>
-          <li>Quantity &amp; pricing clarity before arrival</li>
+          <li>Represent distributors in upstream negotiations</li>
+          <li>Support renegotiation of pricing or supply terms</li>
+          <li>Enable distributor participation in new product launches</li>
         </ul>
-        <p class="outcome-note">No sudden shocks. No last-minute surprises.</p>
+      </div>
+    </section>
+
+    <!-- ================= EARLIER VS NOW ================= -->
+    <section class="section bg-soft">
+      <h2 class="section-title">
+        How This Partnership Changes a Distributor's Reality
+      </h2>
+
+      <div class="compare-grid">
+        <div class="compare-box compare-before">
+          <h3>Earlier</h3>
+          <ul class="plain-list">
+            <li>Unpredictable supply</li>
+            <li>Thin margins</li>
+            <li>High inventory risk</li>
+            <li>Price pressure</li>
+          </ul>
+        </div>
+        <div class="compare-box compare-after">
+          <h3>With FlairList Global</h3>
+          <ul class="plain-list">
+            <li>Planned supply</li>
+            <li>Protected margins</li>
+            <li>Strong brand backing</li>
+            <li>Predictable growth</li>
+            <li>Market confidence</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="support-box">
-        <h3>3. Pricing Control &amp; Margin Protection</h3>
-        <p class="support-lead">DISTRIBUTORS OFTEN LOSE MARGIN DUE TO:</p>
-        <ul class="dash-list">
-          <li>Unplanned imports</li>
-          <li>Dump pricing</li>
-          <li>Channel conflicts</li>
-        </ul>
-        <p class="support-lead">WE HELP STRUCTURE:</p>
-        <ul class="dash-list">
-          <li>Stable distribution pricing tiers</li>
-          <li>Territory-wise margin protection</li>
-          <li>Volume-linked incentives</li>
-          <li>Long-term pricing frameworks</li>
-        </ul>
-        <p class="outcome-note">Distributors stop fighting price wars. They start winning pricing points.</p>
-      </div>
+      <p class="italic-note">
+        Distribution becomes a business system, not a survival game.
+      </p>
+    </section>
 
-      <div class="support-box">
-        <h3>4. Brand, Positioning &amp; Market Entry Support</h3>
-        <p class="support-lead">WE ACT AS A BRAND-SIDE PARTNER FOR DISTRIBUTORS.</p>
-        <p class="support-lead">Support includes:</p>
-        <ul class="dash-list">
-          <li>Product positioning strategy</li>
-          <li>Channel selection (retail, wholesale, institutional, B2B)</li>
-          <li>Packaging &amp; communication feedback from market</li>
-          <li>Brand-trust building for imported products</li>
-        </ul>
-        <p class="outcome-note">This helps distributors: Push value, not just price. Build repeat dealer confidence.</p>
-      </div>
+    <!-- ================= TRUST ================= -->
+    <section class="section bg-white">
+      <h2 class="section-title center">
+        Why Distributors Trust FlairList Global
+      </h2>
 
-      <div class="support-box">
-        <h3>5. Channel Development &amp; Expansion</h3>
-        <p class="support-lead">WE ASSIST DISTRIBUTORS IN:</p>
-        <ul class="dash-list">
-          <li>Dealer / sub-distributor onboarding</li>
-          <li>Institutional buyer access</li>
-          <li>B2B customer acquisition</li>
-          <li>Regional expansion planning</li>
-        </ul>
-        <p class="outcome-note">Distributors don't remain local players. They become regional or national partners.</p>
-      </div>
-
-      <div class="support-box">
-        <h3>6. Credit Cycle &amp; Cash-Flow Discipline</h3>
-        <p class="support-lead">CASH FLOW BREAKS DISTRIBUTORS — NOT LACK OF SALES.</p>
-        <p class="support-lead">We help with:</p>
-        <ul class="dash-list">
-          <li>Credit period structuring</li>
-          <li>Buyer payment behaviour</li>
-          <li>Risk-based credit limits</li>
-          <li>Faster rotation strategies</li>
-        </ul>
-        <p class="outcome-note">This improves: Liquidity, Stress, Ability to scale volumes.</p>
-      </div>
-
-      <div class="support-box full-width">
-        <h3>7. Long-term Exclusivity &amp; Growth Alignment</h3>
-        <p class="support-lead">IN LONG-TERM PARTNERSHIPS, WE:</p>
-        <ul class="dash-list">
-          <li>Create territory-wise exclusivity models</li>
-          <li>Align distributor targets with supply planning</li>
-          <li>Protect distributor interests from parallel imports</li>
-          <li>Build joint expansion roadmaps</li>
-        </ul>
-        <p class="outcome-note">Distributors stop being replaceable. They become strategic market partners.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= PARTNER MODEL ================= -->
-  <section class="section bg-white">
-    <h2 class="section-title center">Acting as One: Our Distributor Partnership Model</h2>
-
-    <div class="philosophy-card">
-      <p class="col-heading">In active partnerships, we:</p>
-      <ul class="dash-list">
-        <li>Co-plan monthly &amp; quarterly sales cycles</li>
-        <li>Align imports with real market absorption</li>
-        <li>Stay involved till goods are sold, not just delivered</li>
-        <li>Correct strategy mid-cycle if market conditions shift</li>
+      <ul class="dash-list trust-list">
+        <li>Strong control over supply and pricing</li>
+        <li>Deep understanding of local market realities</li>
+        <li>Multi-country import &amp; export experience</li>
+        <li>Multi-industry exposure</li>
+        <li>Execution-first mindset</li>
+        <li>One-point accountability</li>
       </ul>
 
-      <p class="col-heading spaced">In many cases, we also:</p>
-      <ul class="dash-list">
-        <li>Represent distributors in upstream negotiations</li>
-        <li>Support renegotiation of pricing or supply terms</li>
-        <li>Enable distributor participation in new product launches</li>
-      </ul>
-    </div>
-  </section>
+      <p class="italic-note">
+        We don't stop at port delivery.<br />We stay till product moves in the
+        market and cash cycles close.
+      </p>
+    </section>
 
-  <!-- ================= EARLIER VS NOW ================= -->
-  <section class="section bg-soft">
-    <h2 class="section-title">How This Partnership Changes a Distributor's Reality</h2>
+    <!-- ================= WHO IS IT FOR ================= -->
+    <section class="section bg-soft">
+      <h2 class="section-title center">Who This Partnership Is Ideal For</h2>
 
-    <div class="compare-grid">
-      <div class="compare-box compare-before">
-        <h3>Earlier</h3>
-        <ul class="plain-list">
-          <li>Unpredictable supply</li>
-          <li>Thin margins</li>
-          <li>High inventory risk</li>
-          <li>Price pressure</li>
+      <div class="grid-2 ideal-boxes">
+        <div class="grid-box list-box">
+          <p class="col-heading">THIS PARTNERSHIP IS IDEAL FOR:</p>
+          <ul class="dash-list">
+            <li>Import-linked distributors</li>
+            <li>FMCG &amp; commodity distributors</li>
+            <li>Industrial &amp; raw-material distributors</li>
+            <li>Businesses seeking territory leadership</li>
+            <li>Distributors ready to scale responsibly</li>
+          </ul>
+        </div>
+        <div class="grid-box list-box muted-box">
+          <p class="col-heading muted">NOT SUITED FOR:</p>
+          <ul class="dash-list">
+            <li>Not for price-only resellers</li>
+            <li>Not for short-term opportunistic trading</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OUR BELIEF ================= -->
+    <section class="section bg-white belief-section">
+      <div class="belief-card">
+        <h2 class="section-title center">Our Belief</h2>
+        <p class="belief-bold">Distributors are not middlemen.</p>
+        <p class="belief-bold">They are market makers.</p>
+        <p class="belief-sub">When distributors are strong:</p>
+        <ul class="belief-list">
+          <li>Brands grow</li>
+          <li>Volumes scale</li>
+          <li>Supply chains stabilise</li>
         </ul>
+        <p class="belief-quote">
+          <em>That's why we partner — and act as one.</em>
+        </p>
       </div>
-      <div class="compare-box compare-after">
-        <h3>With FlairList Global</h3>
-        <ul class="plain-list">
-          <li>Planned supply</li>
-          <li>Protected margins</li>
-          <li>Strong brand backing</li>
-          <li>Predictable growth</li>
-          <li>Market confidence</li>
-        </ul>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-section">
+      <h2 class="cta-title">Let's Build Distribution Power — Together</h2>
+      <p class="cta-desc">
+        Farmers produce. → Traders aggregate. → Exporters ship. → CHAs clear. →
+        Freight forwarders bring in. → Importers bring in. → Distributors
+        dominate markets.<br /><br />
+        We align them all — as one global growth system.<br />
+        That's not assistance.<br />
+        That's partnership.
+      </p>
+
+      <div class="cta-contact">
+        <div>
+          <span class="cta-label">EMAIL</span>
+          <span class="cta-value">hello@flairlist.com</span>
+        </div>
+        <div>
+          <span class="cta-label">WEBSITE</span>
+          <span class="cta-value">flairlist.com</span>
+        </div>
+        <div>
+          <span class="cta-label">INSTAGRAM</span>
+          <span class="cta-value">@flairlist | @thehustlehambleye</span>
+        </div>
       </div>
-    </div>
 
-    <p class="italic-note">Distribution becomes a business system, not a survival game.</p>
-  </section>
+      <a href="./contact.html" class="cta-button">Partner With Us</a>
+    </section>
 
-  <!-- ================= TRUST ================= -->
-  <section class="section bg-white">
-    <h2 class="section-title center">Why Distributors Trust FlairList Global</h2>
-
-    <ul class="dash-list trust-list">
-      <li>Strong control over supply and pricing</li>
-      <li>Deep understanding of local market realities</li>
-      <li>Multi-country import &amp; export experience</li>
-      <li>Multi-industry exposure</li>
-      <li>Execution-first mindset</li>
-      <li>One-point accountability</li>
-    </ul>
-
-    <p class="italic-note">We don't stop at port delivery.<br>We stay till product moves in the market and cash cycles close.</p>
-  </section>
-
-  <!-- ================= WHO IS IT FOR ================= -->
-  <section class="section bg-soft">
-    <h2 class="section-title center">Who This Partnership Is Ideal For</h2>
-
-    <div class="grid-2 ideal-boxes">
-      <div class="grid-box list-box">
-        <p class="col-heading">THIS PARTNERSHIP IS IDEAL FOR:</p>
-        <ul class="dash-list">
-          <li>Import-linked distributors</li>
-          <li>FMCG &amp; commodity distributors</li>
-          <li>Industrial &amp; raw-material distributors</li>
-          <li>Businesses seeking territory leadership</li>
-          <li>Distributors ready to scale responsibly</li>
-        </ul>
-      </div>
-      <div class="grid-box list-box muted-box">
-        <p class="col-heading muted">NOT SUITED FOR:</p>
-        <ul class="dash-list">
-          <li>Not for price-only resellers</li>
-          <li>Not for short-term opportunistic trading</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= OUR BELIEF ================= -->
-  <section class="section bg-white belief-section">
-    <div class="belief-card">
-      <h2 class="section-title center">Our Belief</h2>
-      <p class="belief-bold">Distributors are not middlemen.</p>
-      <p class="belief-bold">They are market makers.</p>
-      <p class="belief-sub">When distributors are strong:</p>
-      <ul class="belief-list">
-        <li>Brands grow</li>
-        <li>Volumes scale</li>
-        <li>Supply chains stabilise</li>
-      </ul>
-      <p class="belief-quote"><em>That's why we partner — and act as one.</em></p>
-    </div>
-  </section>
-
-  <!-- ================= CTA ================= -->
-  <section class="cta-section">
-    <h2 class="cta-title">Let's Build Distribution Power — Together</h2>
-    <p class="cta-desc">
-      Farmers produce. → Traders aggregate. → Exporters ship. → CHAs clear. → Freight forwarders bring in. → Importers bring in. → Distributors dominate markets.<br><br>
-      We align them all — as one global growth system.<br>
-      That's not assistance.<br>
-      That's partnership.
-    </p>
-
-    <div class="cta-contact">
-      <div>
-        <span class="cta-label">EMAIL</span>
-        <span class="cta-value">hello@flairlist.com</span>
-      </div>
-      <div>
-        <span class="cta-label">WEBSITE</span>
-        <span class="cta-value">flairlist.com</span>
-      </div>
-      <div>
-        <span class="cta-label">INSTAGRAM</span>
-        <span class="cta-value">@flairlist | @thehustlehambleye</span>
-      </div>
-    </div>
-
-    <a href="#" class="cta-button">Partner With Us</a>
-  </section>
-
-        <footer class="site-footer">
-        <div class="footer-container">
-          <!-- =================================
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================
              COLUMN 1
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Who We Are</h3>
+        <div class="footer-column">
+          <h3>Who We Are</h3>
 
-            <a href="./mission.html">Mission</a>
-            <a href="./vision.html">Vision</a>
-            <a href="./values.html">Values</a>
-            <a href="./founder.html">Founder &amp; CEO</a>
-            <a href="./team.html">Leadership &amp; Team</a>
-            <a href="./press_room.html">Press Room</a>
-          </div>
+          <a href="./mission.html">Mission</a>
+          <a href="./vision.html">Vision</a>
+          <a href="./values.html">Values</a>
+          <a href="./founder.html">Founder &amp; CEO</a>
+          <a href="./team.html">Leadership &amp; Team</a>
+          <a href="./press_room.html">Press Room</a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 2
         ================================== -->
 
-          <div class="footer-column">
-            <h3>What We Do</h3>
+        <div class="footer-column">
+          <h3>What We Do</h3>
 
-            <a href="#" class="footer-bold"> Services </a>
+          <span class="footer-bold footer-label"> Services </span>
 
-            <a href="./expert-business-consultancy.html"> Expert Business Consultation </a>
+          <a href="./expert-business-consultancy.html">
+            Expert Business Consultation
+          </a>
 
-            <a href="./export-consultation.html"> Export Consultation </a>
+          <a href="./export-consultation.html"> Export Consultation </a>
 
-            <a href="./export-mentorship.html"> Export Mentorship </a>
+          <a href="./export-mentorship.html"> Export Mentorship </a>
 
-            <a href="./exclusive-business-growth-partnership.html"> Exclusive Partnership </a>
+          <a href="./exclusive-business-growth-partnership.html">
+            Exclusive Partnership
+          </a>
 
-            <a href="#" class="footer-bold"> Global Import-Export </a>
+          <a href="#" class="footer-bold"> Global Import-Export </a>
 
-            <a href="./countries.html"> Countries </a>
+          <a href="./countries.html"> Countries </a>
 
-            <a href="./products.html"> Products </a>
+          <a href="./products.html"> Products </a>
 
-            <a href="./partners.html"> Partner With Us </a>
-          </div>
+          <a href="./partners.html"> Partner With Us </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 3
         ================================== -->
 
-          <div class="footer-column">
-            <h3>More</h3>
+        <div class="footer-column">
+          <h3>More</h3>
 
-            <a href="#" class="footer-bold"> Supply Chain &amp; Workforce </a>
+          <span class="footer-bold footer-label">
+            Supply Chain &amp; Workforce
+          </span>
 
-            <a href="#"> Supply Chain &amp; Distribution </a>
+          <a href="#"> Supply Chain &amp; Distribution </a>
 
-            <a href="./workforce-mobility.html"> Workforce Programs </a>
+          <a href="./workforce-mobility.html"> Workforce Programs </a>
 
-            <a href="./deployment.html"> Deployment </a>
+          <a href="./deployment.html"> Deployment </a>
 
-            <a href="#" class="footer-bold"> Explore </a>
+          <a href="#" class="footer-bold"> Explore </a>
 
-            <a href="#"> Industries </a>
+          <a href="./industries.html"> Industries </a>
 
-            <a href="./case-studies.html"> Case Studies </a>
-          </div>
+          <a href="./case-studies.html"> Case Studies </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 4
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Opportunities</h3>
+        <div class="footer-column">
+          <h3>Opportunities</h3>
 
-            <a href="./career.html"> Careers </a>
+          <a href="./career.html"> Careers </a>
 
-            <a href="./investor.html"> Investors </a>
+          <a href="./investor.html"> Investors </a>
 
-            <a href="./contact.html"> Contact Us </a>
+          <a href="./contact.html"> Contact Us </a>
 
-            <h4 class="footer-follow-title">Follow Us</h4>
+          <h4 class="footer-follow-title">Follow Us</h4>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a
+            href="https://www.instagram.com/theshubhambibave/"
+            class="social-link"
+          >
+            <span class="social-icon"> ◎ </span>
 
-              @theshubhambibave
-            </a>
+            @theshubhambibave
+          </a>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a href="#" class="social-link">
+            <span class="social-icon"> ◎ </span>
 
-              @flairlist
-            </a>
-          </div>
+            @flairlist
+          </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 5
         ================================== -->
 
-          <div class="footer-column footer-connect">
-            <h3>Let's Connect</h3>
+        <div class="footer-column footer-connect">
+          <h3>Let's Connect</h3>
 
-            <div class="footer-contact">
-              <strong> ✉ Email: </strong>
+          <div class="footer-contact">
+            <strong> ✉ Email: </strong>
 
-              <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
-            </div>
-
-            <div class="footer-contact">
-              <strong> ◎ Website: </strong>
-
-              <a href="https://www.flairlist.com/"> FlairList.com </a>
-            </div>
-
-            <a href="./contact.html" class="footer-button"> Get in Touch </a>
+            <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
           </div>
-        </div>
 
-        <!-- =====================================
+          <div class="footer-contact">
+            <strong> ◎ Website: </strong>
+
+            <a href="https://www.flairlist.com/"> FlairList.com </a>
+          </div>
+
+          <a href="./contact.html" class="footer-button"> Get in Touch </a>
+        </div>
+      </div>
+
+      <!-- =====================================
          FOOTER BOTTOM
     ====================================== -->
 
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p>2026 FlairList Global. All rights reserved.</p>
-
-            <p class="footer-tagline">
-              "Building what global business runs on."
-            </p>
-          </div>
-
-          <nav class="footer-legal">
-            <a href="#"> Terms of Use </a>
-
-            <a href="#"> Privacy Policy </a>
-
-            <a href="#"> Refund Policy </a>
-
-            <a href="#"> Cancellation Policy </a>
-
-            <a href="#"> Cookies </a>
-          </nav>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>2026 FlairList Global. All rights reserved.</p>
         </div>
-      </footer>
 
+        <nav class="footer-legal">
+          <a href="./terms-and-conditions.html"> Terms of Use </a>
 
-  <script src="./Assets/js/script.js?v=3.0"></script>
-</body>
+          <a href="./privacy-policy.html"> Privacy Policy </a>
+
+          <a href="./refund-policy.html"> Refund Policy </a>
+
+          <a href="./cancellation-policy.html"> Cancellation Policy </a>
+
+          <a href="./privacy-policy.html"> Cookies </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./Assets/js/script.js?v=3.8"></script>
+  </body>
 </html>

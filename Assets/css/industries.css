@@ -67,14 +67,14 @@
 .ind-hero h1 {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: clamp(32px, 4vw, 56px); /* was clamp(46px, 6vw, 72px) */
+  font-size: clamp(38px, 4vw, 60px); /* was clamp(46px, 6vw, 72px) */
   line-height: 1.15;
   white-space: nowrap; /* new — forces one line */
   margin-bottom: 22px;
 }
 
 .ind-hero-tagline {
-  font-size: 19px;
+  font-size: 24px;
   line-height: 1.6;
   color: #d6e9e0;
   max-width: 640px;
@@ -301,7 +301,7 @@
 }
 
 .ind-section p {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.75;
   color: var(--text-heading);
   margin-bottom: 0;
@@ -342,7 +342,7 @@
 }
 
 .ind-hero-tagline {
-  font-size: 19px;
+  font-size: 22px;
   line-height: 1.6;
   color: #d6e9e0;
   max-width: 640px;
@@ -571,7 +571,7 @@
 }
 
 .ind-section p {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.75;
   color: var(--text-heading);
   margin-bottom: 0;
@@ -635,7 +635,7 @@
   border-radius: var(--radius-md);
   border: 1px solid var(--border-grid);
   box-shadow: var(--shadow-card);
-  padding: 32px 34px;
+  padding: 32px 40px;
 }
 
 .ind-role-heading {
@@ -776,7 +776,7 @@
   }
   .ind-hero h1 {
   white-space: normal;
-  font-size: clamp(30px, 8vw, 42px);
+  font-size: clamp(30px, 8vw, 52px);
 }
 }
 

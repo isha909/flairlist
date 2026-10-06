@@ -1,27 +1,31 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Global Import–Export Operations | FlairList Global</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Import–Export Operations | FlairList Global</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Assets/css/style.css?v=3.0" />
-    <link rel="stylesheet" href="./Assets/css/countries.css?v=3.0" />
+    <link rel="stylesheet" href="./Assets/css/style.css?v=3.8" />
+    <link rel="stylesheet" href="./Assets/css/countries.css?v=3.8" />
     <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <!-- ===================== NAVBAR ===================== -->
-        <header class="navbar" id="siteNavbar">
+    <header class="navbar" id="siteNavbar">
       <div class="navbar-container">
         <div class="nav-left">
           <!-- LOGO -->
-          <a href="./index.html" class="logo" aria-label="FlairList Global Home">
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="FlairList Global Home"
+          >
             <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
           </a>
 
@@ -63,211 +67,234 @@
             </button>
           </form>
 
-         <!-- COUNTRY / LANGUAGE SELECTOR -->
-<div class="country-selector">
-    <button class="country-btn" type="button" aria-expanded="false">
-        <span id="selectedCountry">India</span>
-        <svg _ngcontent-ng-c1672362817="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="app-icon" width="24" height="24"><path _ngcontent-ng-c1672362817="" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E4E3DE" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter"></path></svg>
-    </button>
+          <!-- COUNTRY / LANGUAGE SELECTOR -->
+          <div class="country-selector">
+            <button class="country-btn" type="button" aria-expanded="false">
+              <span id="selectedCountry">India</span>
+              <svg
+                _ngcontent-ng-c1672362817=""
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="app-icon"
+                width="24"
+                height="24"
+              >
+                <path
+                  _ngcontent-ng-c1672362817=""
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  fill="#E4E3DE"
+                  stroke="none"
+                  stroke-width="0"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+              </svg>
+            </button>
 
-    <div class="country-dropdown" id="countryDropdown">
+            <div class="country-dropdown" id="countryDropdown">
+              <button type="button" data-lang="en" data-country="India">
+                India
+              </button>
 
-        <button type="button" data-lang="en" data-country="India">
-            India
-        </button>
+              <button
+                type="button"
+                data-lang="ar"
+                data-country="United Arab Emirates"
+              >
+                United Arab Emirates
+              </button>
 
-        <button type="button" data-lang="ar" data-country="United Arab Emirates">
-            United Arab Emirates
-        </button>
+              <button type="button" data-lang="en" data-country="United States">
+                United States
+              </button>
 
-        <button type="button" data-lang="en" data-country="United States">
-            United States
-        </button>
+              <button type="button" data-lang="zh-CN" data-country="China">
+                China
+              </button>
 
-        <button type="button" data-lang="zh-CN" data-country="China">
-            China
-        </button>
+              <button type="button" data-lang="nl" data-country="Netherlands">
+                Netherlands
+              </button>
 
-        <button type="button" data-lang="nl" data-country="Netherlands">
-            Netherlands
-        </button>
+              <button
+                type="button"
+                data-lang="en"
+                data-country="United Kingdom"
+              >
+                United Kingdom
+              </button>
 
-        <button type="button" data-lang="en" data-country="United Kingdom">
-            United Kingdom
-        </button>
+              <button type="button" data-lang="en" data-country="Singapore">
+                Singapore
+              </button>
 
-        <button type="button" data-lang="en" data-country="Singapore">
-            Singapore
-        </button>
+              <button type="button" data-lang="ar" data-country="Saudi Arabia">
+                Saudi Arabia
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Saudi Arabia">
-            Saudi Arabia
-        </button>
+              <button type="button" data-lang="bn" data-country="Bangladesh">
+                Bangladesh
+              </button>
 
-        <button type="button" data-lang="bn" data-country="Bangladesh">
-            Bangladesh
-        </button>
+              <button type="button" data-lang="de" data-country="Germany">
+                Germany
+              </button>
 
-        <button type="button" data-lang="de" data-country="Germany">
-            Germany
-        </button>
+              <button type="button" data-lang="it" data-country="Italy">
+                Italy
+              </button>
 
-        <button type="button" data-lang="it" data-country="Italy">
-            Italy
-        </button>
+              <button type="button" data-lang="ja" data-country="Japan">
+                Japan
+              </button>
 
-        <button type="button" data-lang="ja" data-country="Japan">
-            Japan
-        </button>
+              <button type="button" data-lang="ko" data-country="South Korea">
+                South Korea
+              </button>
 
-        <button type="button" data-lang="ko" data-country="South Korea">
-            South Korea
-        </button>
+              <button type="button" data-lang="ms" data-country="Malaysia">
+                Malaysia
+              </button>
 
-        <button type="button" data-lang="ms" data-country="Malaysia">
-            Malaysia
-        </button>
+              <button type="button" data-lang="th" data-country="Thailand">
+                Thailand
+              </button>
 
-        <button type="button" data-lang="th" data-country="Thailand">
-            Thailand
-        </button>
+              <button type="button" data-lang="id" data-country="Indonesia">
+                Indonesia
+              </button>
 
-        <button type="button" data-lang="id" data-country="Indonesia">
-            Indonesia
-        </button>
+              <button type="button" data-lang="vi" data-country="Vietnam">
+                Vietnam
+              </button>
 
-        <button type="button" data-lang="vi" data-country="Vietnam">
-            Vietnam
-        </button>
+              <button type="button" data-lang="en" data-country="Philippines">
+                Philippines
+              </button>
 
-        <button type="button" data-lang="en" data-country="Philippines">
-            Philippines
-        </button>
+              <button type="button" data-lang="en" data-country="Australia">
+                Australia
+              </button>
 
-        <button type="button" data-lang="en" data-country="Australia">
-            Australia
-        </button>
+              <button type="button" data-lang="en" data-country="New Zealand">
+                New Zealand
+              </button>
 
-        <button type="button" data-lang="en" data-country="New Zealand">
-            New Zealand
-        </button>
+              <button type="button" data-lang="fr" data-country="France">
+                France
+              </button>
 
-        <button type="button" data-lang="fr" data-country="France">
-            France
-        </button>
+              <button type="button" data-lang="es" data-country="Spain">
+                Spain
+              </button>
 
-        <button type="button" data-lang="es" data-country="Spain">
-            Spain
-        </button>
+              <button type="button" data-lang="fr" data-country="Belgium">
+                Belgium
+              </button>
 
-        <button type="button" data-lang="fr" data-country="Belgium">
-            Belgium
-        </button>
+              <button type="button" data-lang="de" data-country="Switzerland">
+                Switzerland
+              </button>
 
-        <button type="button" data-lang="de" data-country="Switzerland">
-            Switzerland
-        </button>
+              <button type="button" data-lang="pl" data-country="Poland">
+                Poland
+              </button>
 
-        <button type="button" data-lang="pl" data-country="Poland">
-            Poland
-        </button>
+              <button type="button" data-lang="de" data-country="Austria">
+                Austria
+              </button>
 
-        <button type="button" data-lang="de" data-country="Austria">
-            Austria
-        </button>
+              <button type="button" data-lang="en" data-country="Ireland">
+                Ireland
+              </button>
 
-        <button type="button" data-lang="en" data-country="Ireland">
-            Ireland
-        </button>
+              <button type="button" data-lang="ar" data-country="Qatar">
+                Qatar
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Qatar">
-            Qatar
-        </button>
+              <button type="button" data-lang="ar" data-country="Kuwait">
+                Kuwait
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Kuwait">
-            Kuwait
-        </button>
+              <button type="button" data-lang="ar" data-country="Oman">
+                Oman
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Oman">
-            Oman
-        </button>
+              <button type="button" data-lang="ar" data-country="Bahrain">
+                Bahrain
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Bahrain">
-            Bahrain
-        </button>
+              <button type="button" data-lang="he" data-country="Israel">
+                Israel
+              </button>
 
-        <button type="button" data-lang="he" data-country="Israel">
-            Israel
-        </button>
+              <button type="button" data-lang="tr" data-country="Turkey">
+                Turkey
+              </button>
 
-        <button type="button" data-lang="tr" data-country="Turkey">
-            Turkey
-        </button>
+              <button type="button" data-lang="ar" data-country="Iraq">
+                Iraq
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Iraq">
-            Iraq
-        </button>
+              <button type="button" data-lang="en" data-country="South Africa">
+                South Africa
+              </button>
 
-        <button type="button" data-lang="en" data-country="South Africa">
-            South Africa
-        </button>
+              <button type="button" data-lang="ar" data-country="Egypt">
+                Egypt
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Egypt">
-            Egypt
-        </button>
+              <button type="button" data-lang="en" data-country="Nigeria">
+                Nigeria
+              </button>
 
-        <button type="button" data-lang="en" data-country="Nigeria">
-            Nigeria
-        </button>
+              <button type="button" data-lang="en" data-country="Kenya">
+                Kenya
+              </button>
 
-        <button type="button" data-lang="en" data-country="Kenya">
-            Kenya
-        </button>
+              <button type="button" data-lang="ar" data-country="Morocco">
+                Morocco
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Morocco">
-            Morocco
-        </button>
+              <button type="button" data-lang="en" data-country="Canada">
+                Canada
+              </button>
 
-        <button type="button" data-lang="en" data-country="Canada">
-            Canada
-        </button>
+              <button type="button" data-lang="pt" data-country="Brazil">
+                Brazil
+              </button>
 
-        <button type="button" data-lang="pt" data-country="Brazil">
-            Brazil
-        </button>
+              <button type="button" data-lang="es" data-country="Argentina">
+                Argentina
+              </button>
 
-        <button type="button" data-lang="es" data-country="Argentina">
-            Argentina
-        </button>
+              <button type="button" data-lang="es" data-country="Chile">
+                Chile
+              </button>
 
-        <button type="button" data-lang="es" data-country="Chile">
-            Chile
-        </button>
+              <button type="button" data-lang="es" data-country="Colombia">
+                Colombia
+              </button>
 
-        <button type="button" data-lang="es" data-country="Colombia">
-            Colombia
-        </button>
+              <button type="button" data-lang="es" data-country="Peru">
+                Peru
+              </button>
 
-        <button type="button" data-lang="es" data-country="Peru">
-            Peru
-        </button>
+              <button type="button" data-lang="ne" data-country="Nepal">
+                Nepal
+              </button>
 
-        <button type="button" data-lang="ne" data-country="Nepal">
-            Nepal
-        </button>
+              <button type="button" data-lang="si" data-country="Sri Lanka">
+                Sri Lanka
+              </button>
 
-        <button type="button" data-lang="si" data-country="Sri Lanka">
-            Sri Lanka
-        </button>
+              <button type="button" data-lang="ur" data-country="Pakistan">
+                Pakistan
+              </button>
+            </div>
+          </div>
 
-        <button type="button" data-lang="ur" data-country="Pakistan">
-            Pakistan
-        </button>
-
-    </div>
-</div>
-
-          <a href="#" class="magic-button">Magic Form</a>
+          <a href="./contact.html" class="magic-button">Magic Form</a>
         </div>
       </div>
 
@@ -396,10 +423,14 @@
             <!-- SERVICES -->
             <div class="mega-panel active" data-panel="services">
               <h3>Services</h3>
-              <a href="./expert-business-consultancy.html">Expert Business Consultation</a>
+              <a href="./expert-business-consultancy.html"
+                >Expert Business Consultation</a
+              >
               <a href="./export-consultation.html">Export Consultation</a>
               <a href="./export-mentorship.html">Export Mentorship</a>
-              <a href="./exclusive-business-growth-partnership.html">Exclusive Partnership</a>
+              <a href="./exclusive-business-growth-partnership.html"
+                >Exclusive Partnership</a
+              >
             </div>
 
             <!-- GLOBAL IMPORT-EXPORT -->
@@ -456,14 +487,24 @@
                   <h3>Products</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./AgriCommodities-products.html#agricommodities">Agri Commodities</a>
-                      <a href="./products.html#petrochemicals">Petrochemicals &amp; Energy Products</a>
+                      <a href="./AgriCommodities-products.html#agricommodities"
+                        >Agri Commodities</a
+                      >
+                      <a href="./products.html#petrochemicals"
+                        >Petrochemicals &amp; Energy Products</a
+                      >
                       <a href="./products.html#metals">Metals &amp; Minerals</a>
-                      <a href="./products.html#fmcg">FMCG &amp; Food Products</a>
-                      <a href="./products.html#raw-materials">Industrial Raw Materials</a>
+                      <a href="./products.html#fmcg"
+                        >FMCG &amp; Food Products</a
+                      >
+                      <a href="./products.html#raw-materials"
+                        >Industrial Raw Materials</a
+                      >
                     </div>
                     <div>
-                      <a href="./products.html#apparel">Apparel &amp; Textiles</a>
+                      <a href="./products.html#apparel"
+                        >Apparel &amp; Textiles</a
+                      >
                       <a href="./products.html#gems">Gems &amp; Jewellery</a>
                     </div>
                   </div>
@@ -531,15 +572,23 @@
                   <h3>Programs</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./workforce-mobility.html#farmer">Farmer / Manufacturer</a>
-                      <a href="./workforce-mobility.html#local-trader">Local Trader</a>
+                      <a href="./workforce-mobility.html#farmer"
+                        >Farmer / Manufacturer</a
+                      >
+                      <a href="./workforce-mobility.html#local-trader"
+                        >Local Trader</a
+                      >
                       <a href="./workforce-mobility.html#exporter">Exporter</a>
                       <a href="./workforce-mobility.html#cha">CHA</a>
-                      <a href="./workforce-mobility.html#freight-forwarder">Freight Forwarder</a>
+                      <a href="./workforce-mobility.html#freight-forwarder"
+                        >Freight Forwarder</a
+                      >
                     </div>
                     <div>
                       <a href="./workforce-mobility.html#importer">Importer</a>
-                      <a href="./workforce-mobility.html#distributor">Distributor</a>
+                      <a href="./workforce-mobility.html#distributor"
+                        >Distributor</a
+                      >
                       <a href="./workforce-mobility.html#retailer">Retailer</a>
                       <a href="./workforce-mobility.html#buyer">Buyer</a>
                     </div>
@@ -565,8 +614,12 @@
               <div class="industries-grid">
                 <div>
                   <a href="./finance.html">Finance</a>
-                  <a href="./real-estate.html">Real Estate &amp; Infrastructure</a>
-                  <a href="./energy-power.html">Energy, Power &amp; Sustainability</a>
+                  <a href="./real-estate.html"
+                    >Real Estate &amp; Infrastructure</a
+                  >
+                  <a href="./energy-power.html"
+                    >Energy, Power &amp; Sustainability</a
+                  >
                   <a href="./petrochemicals.html">Petrochemicals &amp; Oil</a>
                   <a href="./manufacturing.html">Manufacturing</a>
                 </div>
@@ -575,8 +628,12 @@
                   <a href="./logistics.html">Logistics &amp; Supply Chain</a>
                   <a href="./it-saas.html">IT &amp; SaaS</a>
                   <a href="./e-commerce.html">E-Commerce</a>
-                  <a href="./media-entertainment.html">Media &amp; Entertainment</a>
-                  <a href="./education-consulting.html">Education &amp; Consulting</a>
+                  <a href="./media-entertainment.html"
+                    >Media &amp; Entertainment</a
+                  >
+                  <a href="./education-consulting.html"
+                    >Education &amp; Consulting</a
+                  >
                 </div>
 
                 <div>
@@ -589,7 +646,9 @@
 
                 <div>
                   <a href="./apparel.html">Apparel</a>
-                  <a href="./food-beverage.html">F&amp;B (Food &amp; Beverage)</a>
+                  <a href="./food-beverage.html"
+                    >F&amp;B (Food &amp; Beverage)</a
+                  >
                 </div>
               </div>
             </div>
@@ -613,531 +672,756 @@
         </section>
       </div>
     </header>
-    
-<main class="countries-page">
 
-  <!-- ===================== HERO ===================== -->
-  <section class="countries-hero">
-    <div class="container countries-hero-inner">
-      <small>GLOBAL TRADE · IMPORT–EXPORT OPERATIONS</small>
-      <h1>Global Import–Export Operations</h1>
-      <p>Trusted Trade Across Key International Markets</p>
-    </div>
-  </section>
-
-  <!-- ===================== INTRO ===================== -->
-  <section class="countries-intro">
-    <div class="container countries-intro-grid">
-      <div class="countries-intro-copy">
-        <p>At FlairList Global, we operate as a cross-border trade, import–export, and market-expansion partner for businesses looking to trade reliably, compliantly, and profitably across multiple international markets.</p>
-        <p>Our strength lies not just in moving goods, but in understanding markets, buyers, regulations, and execution on ground.</p>
-        <div class="countries-intro-note">
-          We work with manufacturers, traders, MSMEs, bulk suppliers, and institutional buyers to enable smooth domestic and international trade flows—with clarity, structure, and accountability.
+    <main class="countries-page">
+      <!-- ===================== HERO ===================== -->
+      <section class="countries-hero">
+        <div class="container countries-hero-inner">
+          <small>GLOBAL TRADE · IMPORT–EXPORT OPERATIONS</small>
+          <h1>Global Import–Export Operations</h1>
+          <p>Trusted Trade Across Key International Markets</p>
         </div>
-      </div>
-      <div class="countries-intro-map">
-        <img src="./Assets/img/world.jpg"/>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===================== COUNTRIES OVERVIEW ===================== -->
-  <section class="countries-overview">
-    <div class="container">
-      <h2>Countries We Actively Operate In</h2>
-      <p>We currently support import, export, buyer sourcing, trade execution, and market expansion across the following key geographies:</p>
-      <div class="country-pills">
-        <span class="country-pill"><span class="flag-code">IN</span> India</span>
-        <span class="country-pill"><span class="flag-code">AE</span> UAE</span>
-        <span class="country-pill"><span class="flag-code">VN</span> Vietnam</span>
-        <span class="country-pill"><span class="flag-code">GB</span> United Kingdom</span>
-        <span class="country-pill"><span class="flag-code">NL</span> Netherlands</span>
-        <span class="country-pill"><span class="flag-code">US</span> United States</span>
-        <span class="country-pill"><span class="flag-code">RU</span> Russia</span>
-        <span class="country-pill"><span class="flag-code">KE</span> Kenya</span>
-      </div>
-    </div>
-  </section>
+      <!-- ===================== INTRO ===================== -->
+      <section class="countries-intro">
+        <div class="container countries-intro-grid">
+          <div class="countries-intro-copy">
+            <p>
+              At FlairList Global, we operate as a cross-border trade,
+              import–export, and market-expansion partner for businesses looking
+              to trade reliably, compliantly, and profitably across multiple
+              international markets.
+            </p>
+            <p>
+              Our strength lies not just in moving goods, but in understanding
+              markets, buyers, regulations, and execution on ground.
+            </p>
+            <div class="countries-intro-note">
+              We work with manufacturers, traders, MSMEs, bulk suppliers, and
+              institutional buyers to enable smooth domestic and international
+              trade flows—with clarity, structure, and accountability.
+            </div>
+          </div>
+          <div class="countries-intro-map">
+            <img src="./Assets/img/world.jpg" />
+          </div>
+        </div>
+      </section>
 
-  <!-- ===================== INDIA ===================== -->
-  <section class="country-section" id="india">
-    <div class="container country-grid">
-      <div>
-        <div class="country-heading">
-          <span class="country-code">IN</span>
+      <!-- ===================== COUNTRIES OVERVIEW ===================== -->
+      <section class="countries-overview">
+        <div class="container">
+          <h2>Countries We Actively Operate In</h2>
+          <p>
+            We currently support import, export, buyer sourcing, trade
+            execution, and market expansion across the following key
+            geographies:
+          </p>
+          <div class="country-pills">
+            <span class="country-pill"
+              ><span class="flag-code">IN</span> India</span
+            >
+            <span class="country-pill"
+              ><span class="flag-code">AE</span> UAE</span
+            >
+            <span class="country-pill"
+              ><span class="flag-code">VN</span> Vietnam</span
+            >
+            <span class="country-pill"
+              ><span class="flag-code">GB</span> United Kingdom</span
+            >
+            <span class="country-pill"
+              ><span class="flag-code">NL</span> Netherlands</span
+            >
+            <span class="country-pill"
+              ><span class="flag-code">US</span> United States</span
+            >
+            <span class="country-pill"
+              ><span class="flag-code">RU</span> Russia</span
+            >
+            <span class="country-pill"
+              ><span class="flag-code">KE</span> Kenya</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== INDIA ===================== -->
+      <section class="country-section" id="india">
+        <div class="container country-grid">
           <div>
-            <h3>India</h3>
-            <span class="country-tag">Base of Operations</span>
+            <div class="country-heading">
+              <span class="country-code">IN</span>
+              <div>
+                <h3>India</h3>
+                <span class="country-tag">Base of Operations</span>
+              </div>
+            </div>
+            <p class="country-desc">
+              India is our core operational base and supply origin for multiple
+              global markets.
+            </p>
+            <p class="country-note">
+              India acts as the manufacturing and sourcing backbone for our
+              global trade network.
+            </p>
           </div>
-        </div>
-        <p class="country-desc">India is our core operational base and supply origin for multiple global markets.</p>
-        <p class="country-note">India acts as the manufacturing and sourcing backbone for our global trade network.</p>
-      </div>
-      <div>
-        <div class="country-role-label">Our Role in India</div>
-        <div class="country-role-list">
-          <div><span class="arrow">→</span> Manufacturer &amp; supplier onboarding</div>
-          <div><span class="arrow">→</span> Product aggregation &amp; quality checks</div>
-          <div><span class="arrow">→</span> Domestic trade &amp; institutional supply</div>
-          <div><span class="arrow">→</span> Export readiness &amp; documentation</div>
-          <div><span class="arrow">→</span> Compliance: GST, IEC, FSSAI, APEDA, commodity boards</div>
-          <div><span class="arrow">→</span> Port operations across West &amp; East Coast</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== UAE ===================== -->
-  <section class="country-section alt" id="uae">
-    <div class="container country-grid">
-      <div>
-        <div class="country-heading">
-          <span class="country-code">AE</span>
           <div>
-            <h3>UAE</h3>
-            <span class="country-tag">Global Trade &amp; Re-Export Hub</span>
+            <div class="country-role-label">Our Role in India</div>
+            <div class="country-role-list">
+              <div>
+                <span class="arrow">→</span> Manufacturer &amp; supplier
+                onboarding
+              </div>
+              <div>
+                <span class="arrow">→</span> Product aggregation &amp; quality
+                checks
+              </div>
+              <div>
+                <span class="arrow">→</span> Domestic trade &amp; institutional
+                supply
+              </div>
+              <div>
+                <span class="arrow">→</span> Export readiness &amp;
+                documentation
+              </div>
+              <div>
+                <span class="arrow">→</span> Compliance: GST, IEC, FSSAI, APEDA,
+                commodity boards
+              </div>
+              <div>
+                <span class="arrow">→</span> Port operations across West &amp;
+                East Coast
+              </div>
+            </div>
           </div>
         </div>
-        <p class="country-desc">The UAE is one of the world's most strategic re-export and distribution centers, and a critical part of our ecosystem.</p>
-        <p class="country-note">Dubai enables faster market access, better liquidity, and regional expansion.</p>
-      </div>
-      <div>
-        <div class="country-role-label">Our Role in UAE</div>
-        <div class="country-role-list">
-          <div><span class="arrow">→</span> Buyer access across GCC, Africa &amp; Europe</div>
-          <div><span class="arrow">→</span> Re-export routing &amp; consolidation</div>
-          <div><span class="arrow">→</span> Commodity &amp; bulk trading support</div>
-          <div><span class="arrow">→</span> Distributor &amp; importer coordination</div>
-          <div><span class="arrow">→</span> Free-zone &amp; mainland trade structuring</div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===================== VIETNAM ===================== -->
-  <section class="country-section" id="vietnam">
-    <div class="container country-grid">
-      <div>
-        <div class="country-heading">
-          <span class="country-code">VN</span>
+      <!-- ===================== UAE ===================== -->
+      <section class="country-section alt" id="uae">
+        <div class="container country-grid">
           <div>
-            <h3>Vietnam</h3>
-            <span class="country-tag">Manufacturing &amp; Import–Export Gateway (ASEAN)</span>
+            <div class="country-heading">
+              <span class="country-code">AE</span>
+              <div>
+                <h3>UAE</h3>
+                <span class="country-tag"
+                  >Global Trade &amp; Re-Export Hub</span
+                >
+              </div>
+            </div>
+            <p class="country-desc">
+              The UAE is one of the world's most strategic re-export and
+              distribution centers, and a critical part of our ecosystem.
+            </p>
+            <p class="country-note">
+              Dubai enables faster market access, better liquidity, and regional
+              expansion.
+            </p>
           </div>
-        </div>
-        <p class="country-desc">Vietnam plays a key role in Asia-focused trade and alternative sourcing.</p>
-        <p class="country-note">Vietnam supports volume scaling and regional diversification.</p>
-      </div>
-      <div>
-        <div class="country-role-label">Our Role in Vietnam</div>
-        <div class="country-role-list">
-          <div><span class="arrow">→</span> Import–export coordination for ASEAN markets</div>
-          <div><span class="arrow">→</span> Manufacturing sourcing &amp; buyer matching</div>
-          <div><span class="arrow">→</span> Cross-border trading into Asia-Pacific</div>
-          <div><span class="arrow">→</span> Cost-competitive supply chain structuring</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== UNITED KINGDOM ===================== -->
-  <section class="country-section alt" id="uk">
-    <div class="container country-grid">
-      <div>
-        <div class="country-heading">
-          <span class="country-code">GB</span>
           <div>
-            <h3>United Kingdom</h3>
-            <span class="country-tag">Regulated &amp; High-Trust Market</span>
+            <div class="country-role-label">Our Role in UAE</div>
+            <div class="country-role-list">
+              <div>
+                <span class="arrow">→</span> Buyer access across GCC, Africa
+                &amp; Europe
+              </div>
+              <div>
+                <span class="arrow">→</span> Re-export routing &amp;
+                consolidation
+              </div>
+              <div>
+                <span class="arrow">→</span> Commodity &amp; bulk trading
+                support
+              </div>
+              <div>
+                <span class="arrow">→</span> Distributor &amp; importer
+                coordination
+              </div>
+              <div>
+                <span class="arrow">→</span> Free-zone &amp; mainland trade
+                structuring
+              </div>
+            </div>
           </div>
         </div>
-        <p class="country-desc">The UK is a compliance-driven, high-value market, especially for food, FMCG, and industrial products.</p>
-        <p class="country-note">UK operations focus on brand trust, consistency, and long-term buyer relationships.</p>
-      </div>
-      <div>
-        <div class="country-role-label">Our Role in the UK</div>
-        <div class="country-role-list">
-          <div><span class="arrow">→</span> Importer &amp; distributor onboarding</div>
-          <div><span class="arrow">→</span> Regulatory &amp; labeling alignment</div>
-          <div><span class="arrow">→</span> Buyer credibility checks</div>
-          <div><span class="arrow">→</span> Market-entry strategy for Indian exporters</div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===================== NETHERLANDS ===================== -->
-  <section class="country-section" id="netherlands">
-    <div class="container country-grid">
-      <div>
-        <div class="country-heading">
-          <span class="country-code">NL</span>
+      <!-- ===================== VIETNAM ===================== -->
+      <section class="country-section" id="vietnam">
+        <div class="container country-grid">
           <div>
-            <h3>Netherlands</h3>
-            <span class="country-tag">European Trade Gateway</span>
+            <div class="country-heading">
+              <span class="country-code">VN</span>
+              <div>
+                <h3>Vietnam</h3>
+                <span class="country-tag"
+                  >Manufacturing &amp; Import–Export Gateway (ASEAN)</span
+                >
+              </div>
+            </div>
+            <p class="country-desc">
+              Vietnam plays a key role in Asia-focused trade and alternative
+              sourcing.
+            </p>
+            <p class="country-note">
+              Vietnam supports volume scaling and regional diversification.
+            </p>
           </div>
-        </div>
-        <p class="country-desc">The Netherlands acts as a logistics and distribution gateway for Europe.</p>
-        <p class="country-note">This allows clients to enter multiple EU countries through a single strategic hub.</p>
-      </div>
-      <div>
-        <div class="country-role-label">Our Role in the Netherlands</div>
-        <div class="country-role-list">
-          <div><span class="arrow">→</span> Port-based trade &amp; warehousing support</div>
-          <div><span class="arrow">→</span> EU buyer access &amp; distributor linkage</div>
-          <div><span class="arrow">→</span> Re-routing &amp; consolidation for EU markets</div>
-          <div><span class="arrow">→</span> Compliance coordination for EU regulations</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== UNITED STATES ===================== -->
-  <section class="country-section alt" id="us">
-    <div class="container country-grid">
-      <div>
-        <div class="country-heading">
-          <span class="country-code">US</span>
           <div>
-            <h3>United States</h3>
-            <span class="country-tag">Large-Volume &amp; Compliance-Heavy Market</span>
+            <div class="country-role-label">Our Role in Vietnam</div>
+            <div class="country-role-list">
+              <div>
+                <span class="arrow">→</span> Import–export coordination for
+                ASEAN markets
+              </div>
+              <div>
+                <span class="arrow">→</span> Manufacturing sourcing &amp; buyer
+                matching
+              </div>
+              <div>
+                <span class="arrow">→</span> Cross-border trading into
+                Asia-Pacific
+              </div>
+              <div>
+                <span class="arrow">→</span> Cost-competitive supply chain
+                structuring
+              </div>
+            </div>
           </div>
         </div>
-        <p class="country-desc">The USA is one of the most demanding but rewarding markets globally.</p>
-        <p class="country-note">We focus on risk-managed entry and sustainable scaling, not one-off shipments.</p>
-      </div>
-      <div>
-        <div class="country-role-label">Our Role in the USA</div>
-        <div class="country-role-list">
-          <div><span class="arrow">→</span> Buyer &amp; importer verification</div>
-          <div><span class="arrow">→</span> Product-market fit assessment</div>
-          <div><span class="arrow">→</span> Compliance &amp; documentation guidance</div>
-          <div><span class="arrow">→</span> Pricing, logistics &amp; shipment planning</div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===================== RUSSIA ===================== -->
-  <section class="country-section" id="russia">
-    <div class="container country-grid">
-      <div>
-        <div class="country-heading">
-          <span class="country-code">RU</span>
+      <!-- ===================== UNITED KINGDOM ===================== -->
+      <section class="country-section alt" id="uk">
+        <div class="container country-grid">
           <div>
-            <h3>Russia</h3>
-            <span class="country-tag">Commodity &amp; Bulk Trade Corridor</span>
+            <div class="country-heading">
+              <span class="country-code">GB</span>
+              <div>
+                <h3>United Kingdom</h3>
+                <span class="country-tag"
+                  >Regulated &amp; High-Trust Market</span
+                >
+              </div>
+            </div>
+            <p class="country-desc">
+              The UK is a compliance-driven, high-value market, especially for
+              food, FMCG, and industrial products.
+            </p>
+            <p class="country-note">
+              UK operations focus on brand trust, consistency, and long-term
+              buyer relationships.
+            </p>
           </div>
-        </div>
-        <p class="country-desc">Russia remains a strong market for commodities, bulk goods, and strategic trade routes.</p>
-        <p class="country-note">Our approach prioritises controlled exposure and secure execution.</p>
-      </div>
-      <div>
-        <div class="country-role-label">Our Role in Russia</div>
-        <div class="country-role-list">
-          <div><span class="arrow">→</span> Bulk &amp; commodity trade coordination</div>
-          <div><span class="arrow">→</span> Buyer credibility &amp; risk assessment</div>
-          <div><span class="arrow">→</span> Payment structuring &amp; routing guidance</div>
-          <div><span class="arrow">→</span> Logistics feasibility analysis</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== KENYA ===================== -->
-  <section class="country-section alt" id="kenya">
-    <div class="container country-grid">
-      <div>
-        <div class="country-heading">
-          <span class="country-code">KE</span>
           <div>
-            <h3>Kenya</h3>
-            <span class="country-tag">East Africa Trade Entry Point</span>
+            <div class="country-role-label">Our Role in the UK</div>
+            <div class="country-role-list">
+              <div>
+                <span class="arrow">→</span> Importer &amp; distributor
+                onboarding
+              </div>
+              <div>
+                <span class="arrow">→</span> Regulatory &amp; labeling alignment
+              </div>
+              <div><span class="arrow">→</span> Buyer credibility checks</div>
+              <div>
+                <span class="arrow">→</span> Market-entry strategy for Indian
+                exporters
+              </div>
+            </div>
           </div>
         </div>
-        <p class="country-desc">Kenya is a growing gateway to East African markets.</p>
-        <p class="country-note">Kenya enables early-mover advantage in emerging African markets.</p>
-      </div>
-      <div>
-        <div class="country-role-label">Our Role in Kenya</div>
-        <div class="country-role-list">
-          <div><span class="arrow">→</span> Importer &amp; distributor sourcing</div>
-          <div><span class="arrow">→</span> FMCG, agri &amp; commodity trade support</div>
-          <div><span class="arrow">→</span> Regional expansion into neighboring countries</div>
-          <div><span class="arrow">→</span> Demand &amp; price intelligence</div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===================== ADDITIONAL MARKETS ===================== -->
-  <section class="additional-markets">
-    <div class="container">
-      <h2>Additional Markets in Our Active Network</h2>
-      <p>Beyond the above, our extended trade ecosystem includes access and execution support across:</p>
-      <div class="market-pills">
-        <span class="market-pill"><span class="flag-code">SA</span> Saudi Arabia</span>
-        <span class="market-pill"><span class="flag-code">QA</span> Qatar</span>
-        <span class="market-pill"><span class="flag-code">OM</span> Oman</span>
-        <span class="market-pill"><span class="flag-code">EG</span> Egypt</span>
-        <span class="market-pill"><span class="flag-code">TR</span> Turkey</span>
-        <span class="market-pill"><span class="flag-code">ID</span> Indonesia</span>
-        <span class="market-pill"><span class="flag-code">SG</span> Singapore</span>
-      </div>
-      <p class="fine-note">These markets are activated based on product suitability, compliance readiness, and buyer demand.</p>
-    </div>
-  </section>
-
-  <!-- ===================== WHAT WE ACTUALLY DO ===================== -->
-  <section class="what-we-do">
-    <div class="container what-we-do-grid">
-      <div>
-        <h2>What We Actually Do</h2>
-        <p class="what-we-do-sub">Beyond Just Shipping</p>
-        <div class="what-we-do-quote">
-          <p>We are not a freight forwarder or a listing platform.</p>
-          <p style="margin-top:10px;">We operate at the business and execution layer of trade.</p>
-        </div>
-      </div>
-      <div>
-        <div class="capabilities-label">Our Capabilities</div>
-        <div class="capabilities-grid">
-          <div>Import &amp; export execution support</div>
-          <div>Buyer &amp; supplier verification</div>
-          <div>Trade documentation &amp; compliance guidance</div>
-          <div>Pricing &amp; commercial structuring</div>
-          <div>Domestic &amp; international logistics coordination</div>
-          <div>Re-export &amp; routing strategy</div>
-          <div>Market-entry &amp; expansion planning</div>
-        </div>
-      </div>
-    </div>
-  </section>
-    <div class="container">
-      <p class="what-we-do-note">Every trade is treated as a business transaction, not a shipment.</p>
-    </div>
-
-  <!-- ===================== WHY GLOBAL CLIENTS TRUST ===================== -->
-  <section class="trust-section">
-    <div class="container">
-      <h2>Why Global Clients Trust FlairList Global</h2>
-      <div class="trust-grid">
-        <div class="trust-card"><span class="check">✓</span> Multi-country operational understanding</div>
-        <div class="trust-card"><span class="check">✓</span> Verified buyers &amp; suppliers across regions</div>
-        <div class="trust-card"><span class="check">✓</span> Real trade execution experience</div>
-        <div class="trust-card"><span class="check">✓</span> Compliance-first approach</div>
-        <div class="trust-card"><span class="check">✓</span> Strong presence across India &amp; UAE</div>
-        <div class="trust-card"><span class="check">✓</span> Single-point accountability</div>
-      </div>
-      <p class="fine">We don't promise shortcuts.</p>
-      <p class="bold">We build reliable trade systems.</p>
-    </div>
-  </section>
-
-  <!-- ===================== WHO WE WORK WITH ===================== -->
-  <section class="work-with">
-    <div class="container work-with-grid">
-      <div>
-        <h2>Who We Work With</h2>
-        <div class="work-with-pills">
-          <div class="work-with-pill">Manufacturers &amp; producers</div>
-          <div class="work-with-pill">Traders &amp; aggregators</div>
-          <div class="work-with-pill">MSMEs &amp; family businesses</div>
-          <div class="work-with-pill">Bulk buyers &amp; distributors</div>
-          <div class="work-with-pill wide">Institutional &amp; commercial procurement teams</div>
-        </div>
-      </div>
-      <div class="work-with-callout">
-        <p>If your goal is to buy, sell, or scale across borders—</p>
-        <p class="bold">we build the structure around it.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== OUR PHILOSOPHY ===================== -->
-  <section class="philosophy">
-    <div class="container">
-      <h2>Our Philosophy</h2>
-      <div class="philosophy-card">
-        <p>Global trade is not about geography.</p>
-        <p>It's about trust, execution, and repeatability.</p>
-        <p class="bold">That's what we focus on.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== FINAL CTA ===================== -->
-  <section class="countries-cta">
-    <div class="container">
-      <div class="countries-cta-card">
-        <h2>Let's Build International Trade — The Right Way</h2>
-        <p>From India to the world — and the world back to India.<br />FlairList Global stands where domestic strength meets international scale.</p>
-        <div class="countries-cta-details">
-          <div class="countries-cta-row">
-            <span class="label">Email</span>
-            <span class="value">hello@flairlist.com</span>
+      <!-- ===================== NETHERLANDS ===================== -->
+      <section class="country-section" id="netherlands">
+        <div class="container country-grid">
+          <div>
+            <div class="country-heading">
+              <span class="country-code">NL</span>
+              <div>
+                <h3>Netherlands</h3>
+                <span class="country-tag">European Trade Gateway</span>
+              </div>
+            </div>
+            <p class="country-desc">
+              The Netherlands acts as a logistics and distribution gateway for
+              Europe.
+            </p>
+            <p class="country-note">
+              This allows clients to enter multiple EU countries through a
+              single strategic hub.
+            </p>
           </div>
-          <div class="countries-cta-row">
-            <span class="label">Website</span>
-            <span class="value">flairlist.com</span>
-          </div>
-          <div class="countries-cta-row">
-            <span class="label">Instagram</span>
-            <span class="value">@flairlist | @theshubhambibave</span>
+          <div>
+            <div class="country-role-label">Our Role in the Netherlands</div>
+            <div class="country-role-list">
+              <div>
+                <span class="arrow">→</span> Port-based trade &amp; warehousing
+                support
+              </div>
+              <div>
+                <span class="arrow">→</span> EU buyer access &amp; distributor
+                linkage
+              </div>
+              <div>
+                <span class="arrow">→</span> Re-routing &amp; consolidation for
+                EU markets
+              </div>
+              <div>
+                <span class="arrow">→</span> Compliance coordination for EU
+                regulations
+              </div>
+            </div>
           </div>
         </div>
-        <a href="#" class="btn-solid-blue">Get in Touch</a>
+      </section>
+
+      <!-- ===================== UNITED STATES ===================== -->
+      <section class="country-section alt" id="us">
+        <div class="container country-grid">
+          <div>
+            <div class="country-heading">
+              <span class="country-code">US</span>
+              <div>
+                <h3>United States</h3>
+                <span class="country-tag"
+                  >Large-Volume &amp; Compliance-Heavy Market</span
+                >
+              </div>
+            </div>
+            <p class="country-desc">
+              The USA is one of the most demanding but rewarding markets
+              globally.
+            </p>
+            <p class="country-note">
+              We focus on risk-managed entry and sustainable scaling, not
+              one-off shipments.
+            </p>
+          </div>
+          <div>
+            <div class="country-role-label">Our Role in the USA</div>
+            <div class="country-role-list">
+              <div>
+                <span class="arrow">→</span> Buyer &amp; importer verification
+              </div>
+              <div>
+                <span class="arrow">→</span> Product-market fit assessment
+              </div>
+              <div>
+                <span class="arrow">→</span> Compliance &amp; documentation
+                guidance
+              </div>
+              <div>
+                <span class="arrow">→</span> Pricing, logistics &amp; shipment
+                planning
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== RUSSIA ===================== -->
+      <section class="country-section" id="russia">
+        <div class="container country-grid">
+          <div>
+            <div class="country-heading">
+              <span class="country-code">RU</span>
+              <div>
+                <h3>Russia</h3>
+                <span class="country-tag"
+                  >Commodity &amp; Bulk Trade Corridor</span
+                >
+              </div>
+            </div>
+            <p class="country-desc">
+              Russia remains a strong market for commodities, bulk goods, and
+              strategic trade routes.
+            </p>
+            <p class="country-note">
+              Our approach prioritises controlled exposure and secure execution.
+            </p>
+          </div>
+          <div>
+            <div class="country-role-label">Our Role in Russia</div>
+            <div class="country-role-list">
+              <div>
+                <span class="arrow">→</span> Bulk &amp; commodity trade
+                coordination
+              </div>
+              <div>
+                <span class="arrow">→</span> Buyer credibility &amp; risk
+                assessment
+              </div>
+              <div>
+                <span class="arrow">→</span> Payment structuring &amp; routing
+                guidance
+              </div>
+              <div>
+                <span class="arrow">→</span> Logistics feasibility analysis
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== KENYA ===================== -->
+      <section class="country-section alt" id="kenya">
+        <div class="container country-grid">
+          <div>
+            <div class="country-heading">
+              <span class="country-code">KE</span>
+              <div>
+                <h3>Kenya</h3>
+                <span class="country-tag">East Africa Trade Entry Point</span>
+              </div>
+            </div>
+            <p class="country-desc">
+              Kenya is a growing gateway to East African markets.
+            </p>
+            <p class="country-note">
+              Kenya enables early-mover advantage in emerging African markets.
+            </p>
+          </div>
+          <div>
+            <div class="country-role-label">Our Role in Kenya</div>
+            <div class="country-role-list">
+              <div>
+                <span class="arrow">→</span> Importer &amp; distributor sourcing
+              </div>
+              <div>
+                <span class="arrow">→</span> FMCG, agri &amp; commodity trade
+                support
+              </div>
+              <div>
+                <span class="arrow">→</span> Regional expansion into neighboring
+                countries
+              </div>
+              <div>
+                <span class="arrow">→</span> Demand &amp; price intelligence
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== ADDITIONAL MARKETS ===================== -->
+      <section class="additional-markets">
+        <div class="container">
+          <h2>Additional Markets in Our Active Network</h2>
+          <p>
+            Beyond the above, our extended trade ecosystem includes access and
+            execution support across:
+          </p>
+          <div class="market-pills">
+            <span class="market-pill"
+              ><span class="flag-code">SA</span> Saudi Arabia</span
+            >
+            <span class="market-pill"
+              ><span class="flag-code">QA</span> Qatar</span
+            >
+            <span class="market-pill"
+              ><span class="flag-code">OM</span> Oman</span
+            >
+            <span class="market-pill"
+              ><span class="flag-code">EG</span> Egypt</span
+            >
+            <span class="market-pill"
+              ><span class="flag-code">TR</span> Turkey</span
+            >
+            <span class="market-pill"
+              ><span class="flag-code">ID</span> Indonesia</span
+            >
+            <span class="market-pill"
+              ><span class="flag-code">SG</span> Singapore</span
+            >
+          </div>
+          <p class="fine-note">
+            These markets are activated based on product suitability, compliance
+            readiness, and buyer demand.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===================== WHAT WE ACTUALLY DO ===================== -->
+      <section class="what-we-do">
+        <div class="container what-we-do-grid">
+          <div>
+            <h2>What We Actually Do</h2>
+            <p class="what-we-do-sub">Beyond Just Shipping</p>
+            <div class="what-we-do-quote">
+              <p>We are not a freight forwarder or a listing platform.</p>
+              <p style="margin-top: 10px">
+                We operate at the business and execution layer of trade.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="capabilities-label">Our Capabilities</div>
+            <div class="capabilities-grid">
+              <div>Import &amp; export execution support</div>
+              <div>Buyer &amp; supplier verification</div>
+              <div>Trade documentation &amp; compliance guidance</div>
+              <div>Pricing &amp; commercial structuring</div>
+              <div>Domestic &amp; international logistics coordination</div>
+              <div>Re-export &amp; routing strategy</div>
+              <div>Market-entry &amp; expansion planning</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <p class="what-we-do-note">
+          Every trade is treated as a business transaction, not a shipment.
+        </p>
       </div>
-    </div>
-  </section>
 
-</main>
+      <!-- ===================== WHY GLOBAL CLIENTS TRUST ===================== -->
+      <section class="trust-section">
+        <div class="container">
+          <h2>Why Global Clients Trust FlairList Global</h2>
+          <div class="trust-grid">
+            <div class="trust-card">
+              <span class="check">✓</span> Multi-country operational
+              understanding
+            </div>
+            <div class="trust-card">
+              <span class="check">✓</span> Verified buyers &amp; suppliers
+              across regions
+            </div>
+            <div class="trust-card">
+              <span class="check">✓</span> Real trade execution experience
+            </div>
+            <div class="trust-card">
+              <span class="check">✓</span> Compliance-first approach
+            </div>
+            <div class="trust-card">
+              <span class="check">✓</span> Strong presence across India &amp;
+              UAE
+            </div>
+            <div class="trust-card">
+              <span class="check">✓</span> Single-point accountability
+            </div>
+          </div>
+          <p class="fine">We don't promise shortcuts.</p>
+          <p class="bold">We build reliable trade systems.</p>
+        </div>
+      </section>
 
-            <footer class="site-footer">
-        <div class="footer-container">
-          <!-- =================================
+      <!-- ===================== WHO WE WORK WITH ===================== -->
+      <section class="work-with">
+        <div class="container work-with-grid">
+          <div>
+            <h2>Who We Work With</h2>
+            <div class="work-with-pills">
+              <div class="work-with-pill">Manufacturers &amp; producers</div>
+              <div class="work-with-pill">Traders &amp; aggregators</div>
+              <div class="work-with-pill">MSMEs &amp; family businesses</div>
+              <div class="work-with-pill">Bulk buyers &amp; distributors</div>
+              <div class="work-with-pill wide">
+                Institutional &amp; commercial procurement teams
+              </div>
+            </div>
+          </div>
+          <div class="work-with-callout">
+            <p>If your goal is to buy, sell, or scale across borders—</p>
+            <p class="bold">we build the structure around it.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== OUR PHILOSOPHY ===================== -->
+      <section class="philosophy">
+        <div class="container">
+          <h2>Our Philosophy</h2>
+          <div class="philosophy-card">
+            <p>Global trade is not about geography.</p>
+            <p>It's about trust, execution, and repeatability.</p>
+            <p class="bold">That's what we focus on.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== FINAL CTA ===================== -->
+      <section class="countries-cta">
+        <div class="container">
+          <div class="countries-cta-card">
+            <h2>Let's Build International Trade — The Right Way</h2>
+            <p>
+              From India to the world — and the world back to India.<br />FlairList
+              Global stands where domestic strength meets international scale.
+            </p>
+            <div class="countries-cta-details">
+              <div class="countries-cta-row">
+                <span class="label">Email</span>
+                <span class="value">hello@flairlist.com</span>
+              </div>
+              <div class="countries-cta-row">
+                <span class="label">Website</span>
+                <span class="value">flairlist.com</span>
+              </div>
+              <div class="countries-cta-row">
+                <span class="label">Instagram</span>
+                <span class="value">@flairlist | @theshubhambibave</span>
+              </div>
+            </div>
+            <a href="./contact.html" class="btn-solid-blue">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================
              COLUMN 1
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Who We Are</h3>
+        <div class="footer-column">
+          <h3>Who We Are</h3>
 
-            <a href="./mission.html">Mission</a>
-            <a href="./vision.html">Vision</a>
-            <a href="./values.html">Values</a>
-            <a href="./founder.html">Founder &amp; CEO</a>
-            <a href="./team.html">Leadership &amp; Team</a>
-            <a href="./press_room.html">Press Room</a>
-          </div>
+          <a href="./mission.html">Mission</a>
+          <a href="./vision.html">Vision</a>
+          <a href="./values.html">Values</a>
+          <a href="./founder.html">Founder &amp; CEO</a>
+          <a href="./team.html">Leadership &amp; Team</a>
+          <a href="./press_room.html">Press Room</a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 2
         ================================== -->
 
-          <div class="footer-column">
-            <h3>What We Do</h3>
+        <div class="footer-column">
+          <h3>What We Do</h3>
 
-            <a href="#" class="footer-bold"> Services </a>
+          <span class="footer-bold footer-label"> Services </span>
 
-            <a href="./expert-business-consultancy.html"> Expert Business Consultation </a>
+          <a href="./expert-business-consultancy.html">
+            Expert Business Consultation
+          </a>
 
-            <a href="./export-consultation.html"> Export Consultation </a>
+          <a href="./export-consultation.html"> Export Consultation </a>
 
-            <a href="./export-mentorship.html"> Export Mentorship </a>
+          <a href="./export-mentorship.html"> Export Mentorship </a>
 
-            <a href="./exclusive-business-growth-partnership.html"> Exclusive Partnership </a>
+          <a href="./exclusive-business-growth-partnership.html">
+            Exclusive Partnership
+          </a>
 
-            <a href="#" class="footer-bold"> Global Import-Export </a>
+          <a href="#" class="footer-bold"> Global Import-Export </a>
 
-            <a href="./countries.html"> Countries </a>
+          <a href="./countries.html"> Countries </a>
 
-            <a href="./products.html"> Products </a>
+          <a href="./products.html"> Products </a>
 
-            <a href="./partners.html"> Partner With Us </a>
-          </div>
+          <a href="./partners.html"> Partner With Us </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 3
         ================================== -->
 
-          <div class="footer-column">
-            <h3>More</h3>
+        <div class="footer-column">
+          <h3>More</h3>
 
-            <a href="#" class="footer-bold"> Supply Chain &amp; Workforce </a>
+          <span class="footer-bold footer-label">
+            Supply Chain &amp; Workforce
+          </span>
 
-            <a href="#"> Supply Chain &amp; Distribution </a>
+          <a href="#"> Supply Chain &amp; Distribution </a>
 
-            <a href="./workforce-mobility.html"> Workforce Programs </a>
+          <a href="./workforce-mobility.html"> Workforce Programs </a>
 
-            <a href="./deployment.html"> Deployment </a>
+          <a href="./deployment.html"> Deployment </a>
 
-            <a href="#" class="footer-bold"> Explore </a>
+          <a href="#" class="footer-bold"> Explore </a>
 
-            <a href="#"> Industries </a>
+          <a href="./industries.html"> Industries </a>
 
-            <a href="./case-studies.html"> Case Studies </a>
-          </div>
+          <a href="./case-studies.html"> Case Studies </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 4
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Opportunities</h3>
+        <div class="footer-column">
+          <h3>Opportunities</h3>
 
-            <a href="./career.html"> Careers </a>
+          <a href="./career.html"> Careers </a>
 
-            <a href="./investor.html"> Investors </a>
+          <a href="./investor.html"> Investors </a>
 
-            <a href="./contact.html"> Contact Us </a>
+          <a href="./contact.html"> Contact Us </a>
 
-            <h4 class="footer-follow-title">Follow Us</h4>
+          <h4 class="footer-follow-title">Follow Us</h4>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a
+            href="https://www.instagram.com/theshubhambibave/"
+            class="social-link"
+          >
+            <span class="social-icon"> ◎ </span>
 
-              @theshubhambibave
-            </a>
+            @theshubhambibave
+          </a>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a href="#" class="social-link">
+            <span class="social-icon"> ◎ </span>
 
-              @flairlist
-            </a>
-          </div>
+            @flairlist
+          </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 5
         ================================== -->
 
-          <div class="footer-column footer-connect">
-            <h3>Let's Connect</h3>
+        <div class="footer-column footer-connect">
+          <h3>Let's Connect</h3>
 
-            <div class="footer-contact">
-              <strong> ✉ Email: </strong>
+          <div class="footer-contact">
+            <strong> ✉ Email: </strong>
 
-              <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
-            </div>
-
-            <div class="footer-contact">
-              <strong> ◎ Website: </strong>
-
-              <a href="https://www.flairlist.com/"> FlairList.com </a>
-            </div>
-
-            <a href="./contact.html" class="footer-button"> Get in Touch </a>
+            <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
           </div>
-        </div>
 
-        <!-- =====================================
+          <div class="footer-contact">
+            <strong> ◎ Website: </strong>
+
+            <a href="https://www.flairlist.com/"> FlairList.com </a>
+          </div>
+
+          <a href="./contact.html" class="footer-button"> Get in Touch </a>
+        </div>
+      </div>
+
+      <!-- =====================================
          FOOTER BOTTOM
     ====================================== -->
 
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p>2026 FlairList Global. All rights reserved.</p>
-
-            <p class="footer-tagline">
-              "Building what global business runs on."
-            </p>
-          </div>
-
-          <nav class="footer-legal">
-            <a href="#"> Terms of Use </a>
-
-            <a href="#"> Privacy Policy </a>
-
-            <a href="#"> Refund Policy </a>
-
-            <a href="#"> Cancellation Policy </a>
-
-            <a href="#"> Cookies </a>
-          </nav>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>2026 FlairList Global. All rights reserved.</p>
         </div>
-      </footer>
 
+        <nav class="footer-legal">
+          <a href="./terms-and-conditions.html"> Terms of Use </a>
 
-    <script src="./Assets/js/script.js?v=3.0"></script>
+          <a href="./privacy-policy.html"> Privacy Policy </a>
 
-</body>
+          <a href="./refund-policy.html"> Refund Policy </a>
+
+          <a href="./cancellation-policy.html"> Cancellation Policy </a>
+
+          <a href="./privacy-policy.html"> Cookies </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./Assets/js/script.js?v=3.8"></script>
+  </body>
 </html>

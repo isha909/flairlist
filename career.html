@@ -1,26 +1,30 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Careers | FlairList Global</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./Assets/css/style.css?v=3.0" />
-  <link rel="stylesheet" href="./Assets/css/career.css?v=3.0" />
-  <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
-</head>
-<body>
-  <!-- ===================== NAVBAR ===================== -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers | FlairList Global</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/css/style.css?v=3.8" />
+    <link rel="stylesheet" href="./Assets/css/career.css?v=3.8" />
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- ===================== NAVBAR ===================== -->
     <header class="navbar" id="siteNavbar">
       <div class="navbar-container">
         <div class="nav-left">
           <!-- LOGO -->
-          <a href="./index.html" class="logo" aria-label="FlairList Global Home">
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="FlairList Global Home"
+          >
             <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
           </a>
 
@@ -62,211 +66,234 @@
             </button>
           </form>
 
-         <!-- COUNTRY / LANGUAGE SELECTOR -->
-<div class="country-selector">
-    <button class="country-btn" type="button" aria-expanded="false">
-        <span id="selectedCountry">India</span>
-        <svg _ngcontent-ng-c1672362817="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="app-icon" width="24" height="24"><path _ngcontent-ng-c1672362817="" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E4E3DE" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter"></path></svg>
-    </button>
+          <!-- COUNTRY / LANGUAGE SELECTOR -->
+          <div class="country-selector">
+            <button class="country-btn" type="button" aria-expanded="false">
+              <span id="selectedCountry">India</span>
+              <svg
+                _ngcontent-ng-c1672362817=""
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="app-icon"
+                width="24"
+                height="24"
+              >
+                <path
+                  _ngcontent-ng-c1672362817=""
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  fill="#E4E3DE"
+                  stroke="none"
+                  stroke-width="0"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+              </svg>
+            </button>
 
-    <div class="country-dropdown" id="countryDropdown">
+            <div class="country-dropdown" id="countryDropdown">
+              <button type="button" data-lang="en" data-country="India">
+                India
+              </button>
 
-        <button type="button" data-lang="en" data-country="India">
-            India
-        </button>
+              <button
+                type="button"
+                data-lang="ar"
+                data-country="United Arab Emirates"
+              >
+                United Arab Emirates
+              </button>
 
-        <button type="button" data-lang="ar" data-country="United Arab Emirates">
-            United Arab Emirates
-        </button>
+              <button type="button" data-lang="en" data-country="United States">
+                United States
+              </button>
 
-        <button type="button" data-lang="en" data-country="United States">
-            United States
-        </button>
+              <button type="button" data-lang="zh-CN" data-country="China">
+                China
+              </button>
 
-        <button type="button" data-lang="zh-CN" data-country="China">
-            China
-        </button>
+              <button type="button" data-lang="nl" data-country="Netherlands">
+                Netherlands
+              </button>
 
-        <button type="button" data-lang="nl" data-country="Netherlands">
-            Netherlands
-        </button>
+              <button
+                type="button"
+                data-lang="en"
+                data-country="United Kingdom"
+              >
+                United Kingdom
+              </button>
 
-        <button type="button" data-lang="en" data-country="United Kingdom">
-            United Kingdom
-        </button>
+              <button type="button" data-lang="en" data-country="Singapore">
+                Singapore
+              </button>
 
-        <button type="button" data-lang="en" data-country="Singapore">
-            Singapore
-        </button>
+              <button type="button" data-lang="ar" data-country="Saudi Arabia">
+                Saudi Arabia
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Saudi Arabia">
-            Saudi Arabia
-        </button>
+              <button type="button" data-lang="bn" data-country="Bangladesh">
+                Bangladesh
+              </button>
 
-        <button type="button" data-lang="bn" data-country="Bangladesh">
-            Bangladesh
-        </button>
+              <button type="button" data-lang="de" data-country="Germany">
+                Germany
+              </button>
 
-        <button type="button" data-lang="de" data-country="Germany">
-            Germany
-        </button>
+              <button type="button" data-lang="it" data-country="Italy">
+                Italy
+              </button>
 
-        <button type="button" data-lang="it" data-country="Italy">
-            Italy
-        </button>
+              <button type="button" data-lang="ja" data-country="Japan">
+                Japan
+              </button>
 
-        <button type="button" data-lang="ja" data-country="Japan">
-            Japan
-        </button>
+              <button type="button" data-lang="ko" data-country="South Korea">
+                South Korea
+              </button>
 
-        <button type="button" data-lang="ko" data-country="South Korea">
-            South Korea
-        </button>
+              <button type="button" data-lang="ms" data-country="Malaysia">
+                Malaysia
+              </button>
 
-        <button type="button" data-lang="ms" data-country="Malaysia">
-            Malaysia
-        </button>
+              <button type="button" data-lang="th" data-country="Thailand">
+                Thailand
+              </button>
 
-        <button type="button" data-lang="th" data-country="Thailand">
-            Thailand
-        </button>
+              <button type="button" data-lang="id" data-country="Indonesia">
+                Indonesia
+              </button>
 
-        <button type="button" data-lang="id" data-country="Indonesia">
-            Indonesia
-        </button>
+              <button type="button" data-lang="vi" data-country="Vietnam">
+                Vietnam
+              </button>
 
-        <button type="button" data-lang="vi" data-country="Vietnam">
-            Vietnam
-        </button>
+              <button type="button" data-lang="en" data-country="Philippines">
+                Philippines
+              </button>
 
-        <button type="button" data-lang="en" data-country="Philippines">
-            Philippines
-        </button>
+              <button type="button" data-lang="en" data-country="Australia">
+                Australia
+              </button>
 
-        <button type="button" data-lang="en" data-country="Australia">
-            Australia
-        </button>
+              <button type="button" data-lang="en" data-country="New Zealand">
+                New Zealand
+              </button>
 
-        <button type="button" data-lang="en" data-country="New Zealand">
-            New Zealand
-        </button>
+              <button type="button" data-lang="fr" data-country="France">
+                France
+              </button>
 
-        <button type="button" data-lang="fr" data-country="France">
-            France
-        </button>
+              <button type="button" data-lang="es" data-country="Spain">
+                Spain
+              </button>
 
-        <button type="button" data-lang="es" data-country="Spain">
-            Spain
-        </button>
+              <button type="button" data-lang="fr" data-country="Belgium">
+                Belgium
+              </button>
 
-        <button type="button" data-lang="fr" data-country="Belgium">
-            Belgium
-        </button>
+              <button type="button" data-lang="de" data-country="Switzerland">
+                Switzerland
+              </button>
 
-        <button type="button" data-lang="de" data-country="Switzerland">
-            Switzerland
-        </button>
+              <button type="button" data-lang="pl" data-country="Poland">
+                Poland
+              </button>
 
-        <button type="button" data-lang="pl" data-country="Poland">
-            Poland
-        </button>
+              <button type="button" data-lang="de" data-country="Austria">
+                Austria
+              </button>
 
-        <button type="button" data-lang="de" data-country="Austria">
-            Austria
-        </button>
+              <button type="button" data-lang="en" data-country="Ireland">
+                Ireland
+              </button>
 
-        <button type="button" data-lang="en" data-country="Ireland">
-            Ireland
-        </button>
+              <button type="button" data-lang="ar" data-country="Qatar">
+                Qatar
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Qatar">
-            Qatar
-        </button>
+              <button type="button" data-lang="ar" data-country="Kuwait">
+                Kuwait
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Kuwait">
-            Kuwait
-        </button>
+              <button type="button" data-lang="ar" data-country="Oman">
+                Oman
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Oman">
-            Oman
-        </button>
+              <button type="button" data-lang="ar" data-country="Bahrain">
+                Bahrain
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Bahrain">
-            Bahrain
-        </button>
+              <button type="button" data-lang="he" data-country="Israel">
+                Israel
+              </button>
 
-        <button type="button" data-lang="he" data-country="Israel">
-            Israel
-        </button>
+              <button type="button" data-lang="tr" data-country="Turkey">
+                Turkey
+              </button>
 
-        <button type="button" data-lang="tr" data-country="Turkey">
-            Turkey
-        </button>
+              <button type="button" data-lang="ar" data-country="Iraq">
+                Iraq
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Iraq">
-            Iraq
-        </button>
+              <button type="button" data-lang="en" data-country="South Africa">
+                South Africa
+              </button>
 
-        <button type="button" data-lang="en" data-country="South Africa">
-            South Africa
-        </button>
+              <button type="button" data-lang="ar" data-country="Egypt">
+                Egypt
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Egypt">
-            Egypt
-        </button>
+              <button type="button" data-lang="en" data-country="Nigeria">
+                Nigeria
+              </button>
 
-        <button type="button" data-lang="en" data-country="Nigeria">
-            Nigeria
-        </button>
+              <button type="button" data-lang="en" data-country="Kenya">
+                Kenya
+              </button>
 
-        <button type="button" data-lang="en" data-country="Kenya">
-            Kenya
-        </button>
+              <button type="button" data-lang="ar" data-country="Morocco">
+                Morocco
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Morocco">
-            Morocco
-        </button>
+              <button type="button" data-lang="en" data-country="Canada">
+                Canada
+              </button>
 
-        <button type="button" data-lang="en" data-country="Canada">
-            Canada
-        </button>
+              <button type="button" data-lang="pt" data-country="Brazil">
+                Brazil
+              </button>
 
-        <button type="button" data-lang="pt" data-country="Brazil">
-            Brazil
-        </button>
+              <button type="button" data-lang="es" data-country="Argentina">
+                Argentina
+              </button>
 
-        <button type="button" data-lang="es" data-country="Argentina">
-            Argentina
-        </button>
+              <button type="button" data-lang="es" data-country="Chile">
+                Chile
+              </button>
 
-        <button type="button" data-lang="es" data-country="Chile">
-            Chile
-        </button>
+              <button type="button" data-lang="es" data-country="Colombia">
+                Colombia
+              </button>
 
-        <button type="button" data-lang="es" data-country="Colombia">
-            Colombia
-        </button>
+              <button type="button" data-lang="es" data-country="Peru">
+                Peru
+              </button>
 
-        <button type="button" data-lang="es" data-country="Peru">
-            Peru
-        </button>
+              <button type="button" data-lang="ne" data-country="Nepal">
+                Nepal
+              </button>
 
-        <button type="button" data-lang="ne" data-country="Nepal">
-            Nepal
-        </button>
+              <button type="button" data-lang="si" data-country="Sri Lanka">
+                Sri Lanka
+              </button>
 
-        <button type="button" data-lang="si" data-country="Sri Lanka">
-            Sri Lanka
-        </button>
+              <button type="button" data-lang="ur" data-country="Pakistan">
+                Pakistan
+              </button>
+            </div>
+          </div>
 
-        <button type="button" data-lang="ur" data-country="Pakistan">
-            Pakistan
-        </button>
-
-    </div>
-</div>
-
-          <a href="#" class="magic-button">Magic Form</a>
+          <a href="./contact.html" class="magic-button">Magic Form</a>
         </div>
       </div>
 
@@ -395,10 +422,14 @@
             <!-- SERVICES -->
             <div class="mega-panel active" data-panel="services">
               <h3>Services</h3>
-              <a href="./expert-business-consultancy.html">Expert Business Consultation</a>
+              <a href="./expert-business-consultancy.html"
+                >Expert Business Consultation</a
+              >
               <a href="./export-consultation.html">Export Consultation</a>
               <a href="./export-mentorship.html">Export Mentorship</a>
-              <a href="./exclusive-business-growth-partnership.html">Exclusive Partnership</a>
+              <a href="./exclusive-business-growth-partnership.html"
+                >Exclusive Partnership</a
+              >
             </div>
 
             <!-- GLOBAL IMPORT-EXPORT -->
@@ -455,14 +486,24 @@
                   <h3>Products</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./AgriCommodities-products.html#agricommodities">Agri Commodities</a>
-                      <a href="./products.html#petrochemicals">Petrochemicals &amp; Energy Products</a>
+                      <a href="./AgriCommodities-products.html#agricommodities"
+                        >Agri Commodities</a
+                      >
+                      <a href="./products.html#petrochemicals"
+                        >Petrochemicals &amp; Energy Products</a
+                      >
                       <a href="./products.html#metals">Metals &amp; Minerals</a>
-                      <a href="./products.html#fmcg">FMCG &amp; Food Products</a>
-                      <a href="./products.html#raw-materials">Industrial Raw Materials</a>
+                      <a href="./products.html#fmcg"
+                        >FMCG &amp; Food Products</a
+                      >
+                      <a href="./products.html#raw-materials"
+                        >Industrial Raw Materials</a
+                      >
                     </div>
                     <div>
-                      <a href="./products.html#apparel">Apparel &amp; Textiles</a>
+                      <a href="./products.html#apparel"
+                        >Apparel &amp; Textiles</a
+                      >
                       <a href="./products.html#gems">Gems &amp; Jewellery</a>
                     </div>
                   </div>
@@ -530,15 +571,23 @@
                   <h3>Programs</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./workforce-mobility.html#farmer">Farmer / Manufacturer</a>
-                      <a href="./workforce-mobility.html#local-trader">Local Trader</a>
+                      <a href="./workforce-mobility.html#farmer"
+                        >Farmer / Manufacturer</a
+                      >
+                      <a href="./workforce-mobility.html#local-trader"
+                        >Local Trader</a
+                      >
                       <a href="./workforce-mobility.html#exporter">Exporter</a>
                       <a href="./workforce-mobility.html#cha">CHA</a>
-                      <a href="./workforce-mobility.html#freight-forwarder">Freight Forwarder</a>
+                      <a href="./workforce-mobility.html#freight-forwarder"
+                        >Freight Forwarder</a
+                      >
                     </div>
                     <div>
                       <a href="./workforce-mobility.html#importer">Importer</a>
-                      <a href="./workforce-mobility.html#distributor">Distributor</a>
+                      <a href="./workforce-mobility.html#distributor"
+                        >Distributor</a
+                      >
                       <a href="./workforce-mobility.html#retailer">Retailer</a>
                       <a href="./workforce-mobility.html#buyer">Buyer</a>
                     </div>
@@ -564,8 +613,12 @@
               <div class="industries-grid">
                 <div>
                   <a href="./finance.html">Finance</a>
-                  <a href="./real-estate.html">Real Estate &amp; Infrastructure</a>
-                  <a href="./energy-power.html">Energy, Power &amp; Sustainability</a>
+                  <a href="./real-estate.html"
+                    >Real Estate &amp; Infrastructure</a
+                  >
+                  <a href="./energy-power.html"
+                    >Energy, Power &amp; Sustainability</a
+                  >
                   <a href="./petrochemicals.html">Petrochemicals &amp; Oil</a>
                   <a href="./manufacturing.html">Manufacturing</a>
                 </div>
@@ -574,8 +627,12 @@
                   <a href="./logistics.html">Logistics &amp; Supply Chain</a>
                   <a href="./it-saas.html">IT &amp; SaaS</a>
                   <a href="./e-commerce.html">E-Commerce</a>
-                  <a href="./media-entertainment.html">Media &amp; Entertainment</a>
-                  <a href="./education-consulting.html">Education &amp; Consulting</a>
+                  <a href="./media-entertainment.html"
+                    >Media &amp; Entertainment</a
+                  >
+                  <a href="./education-consulting.html"
+                    >Education &amp; Consulting</a
+                  >
                 </div>
 
                 <div>
@@ -588,7 +645,9 @@
 
                 <div>
                   <a href="./apparel.html">Apparel</a>
-                  <a href="./food-beverage.html">F&amp;B (Food &amp; Beverage)</a>
+                  <a href="./food-beverage.html"
+                    >F&amp;B (Food &amp; Beverage)</a
+                  >
                 </div>
               </div>
             </div>
@@ -613,389 +672,433 @@
       </div>
     </header>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero-career">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-label">FLAIRLIST GLOBAL | CAREERS</p>
-      <h1 class="hero-title">Build a Real Career Inside Global Trade</h1>
-      <p class="hero-desc">At FlairList Global, careers are not designed around job titles.<br>They are built around real execution, responsibility, and long-term growth.</p>
+    <!-- ================= HERO ================= -->
+    <section class="hero-career">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-label">FLAIRLIST GLOBAL | CAREERS</p>
+        <h1 class="hero-title">Build a Real Career Inside Global Trade</h1>
+        <p class="hero-desc">
+          At FlairList Global, careers are not designed around job titles.<br />They
+          are built around real execution, responsibility, and long-term growth.
+        </p>
 
-      <div class="pill-row">
-        <span class="pill">Meaningful work</span>
-        <span class="pill">Global exposure</span>
-        <span class="pill">Practical learning</span>
-        <span class="pill">Clear career direction</span>
+        <div class="pill-row">
+          <span class="pill">Meaningful work</span>
+          <span class="pill">Global exposure</span>
+          <span class="pill">Practical learning</span>
+          <span class="pill">Clear career direction</span>
+        </div>
+
+        <p class="hero-italic">You're in the right place.</p>
       </div>
+    </section>
 
-      <p class="hero-italic">You're in the right place.</p>
-    </div>
-  </section>
+    <!-- ================= WHY FLAIRLIST ================= -->
+    <section class="section bg-white">
+      <div class="why-grid">
+        <div class="why-text">
+          <p class="eyebrow">WHY FLAIRLIST GLOBAL</p>
+          <h2 class="section-title">Why Work With FlairList Global?</h2>
+          <p class="section-sub">
+            We operate inside live domestic and international business
+            environments — not simulations.
+          </p>
+          <p class="col-heading">That means:</p>
+          <ul class="dash-list">
+            <li>You work on real trade, real businesses, real outcomes</li>
+            <li>
+              You learn how entire supply chains function, not just one task
+            </li>
+            <li>
+              You gain exposure across industries, markets, and geographies
+            </li>
+            <li>You grow based on capability and execution, not just tenure</li>
+          </ul>
 
-  <!-- ================= WHY FLAIRLIST ================= -->
-  <section class="section bg-white">
-    <div class="why-grid">
-      <div class="why-text">
-        <p class="eyebrow">WHY FLAIRLIST GLOBAL</p>
-        <h2 class="section-title">Why Work With FlairList Global?</h2>
-        <p class="section-sub">We operate inside live domestic and international business environments — not simulations.</p>
-        <p class="col-heading">That means:</p>
-        <ul class="dash-list">
-          <li>You work on real trade, real businesses, real outcomes</li>
-          <li>You learn how entire supply chains function, not just one task</li>
-          <li>You gain exposure across industries, markets, and geographies</li>
-          <li>You grow based on capability and execution, not just tenure</li>
-        </ul>
+          <div class="highlight-box">
+            <p>This is not a desk-only career.</p>
+            <p class="bold">It's an operator's career.</p>
+          </div>
+        </div>
 
-        <div class="highlight-box">
-          <p>This is not a desk-only career.</p>
-          <p class="bold">It's an operator's career.</p>
+        <div class="why-cards">
+          <div class="icon-card">
+            <span class="icon-badge">🌐</span>
+            <p>Live International Operations</p>
+          </div>
+          <div class="icon-card">
+            <span class="icon-badge">📦</span>
+            <p>End-to-End Supply Chain Exposure</p>
+          </div>
+          <div class="icon-card">
+            <span class="icon-badge">📈</span>
+            <p>Growth by Capability, Not Tenure</p>
+          </div>
+          <div class="icon-card">
+            <span class="icon-badge">🏢</span>
+            <p>Multi-Industry, Multi-Geography</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="why-cards">
-        <div class="icon-card">
+    <!-- ================= WHO WE'RE LOOKING FOR ================= -->
+    <section class="section bg-soft">
+      <h2 class="section-title center">Who We're Looking For</h2>
+      <p class="section-sub center">We welcome people who are:</p>
+
+      <div class="looking-for-grid">
+        <div class="looking-card">
+          <span class="icon-badge">🔍</span>
+          <h3>Curious &amp; Willing to Learn</h3>
+          <p>
+            You ask questions, challenge assumptions, and treat every assignment
+            as an opportunity to understand more.
+          </p>
+        </div>
+        <div class="looking-card">
+          <span class="icon-badge">⚡</span>
+          <h3>Comfortable with Responsibility</h3>
+          <p>
+            You don't wait to be told twice. You take ownership and see things
+            through.
+          </p>
+        </div>
+        <div class="looking-card">
+          <span class="icon-badge">💬</span>
+          <h3>Clear in Communication</h3>
+          <p>
+            You say what you mean, document what you do, and keep stakeholders
+            informed without being prompted.
+          </p>
+        </div>
+        <div class="looking-card">
+          <span class="icon-badge">📁</span>
+          <h3>Disciplined with Processes</h3>
+          <p>
+            You understand that systems and structure drive outcomes at scale.
+            You follow process and improve it.
+          </p>
+        </div>
+        <div class="looking-card">
           <span class="icon-badge">🌐</span>
-          <p>Live International Operations</p>
-        </div>
-        <div class="icon-card">
-          <span class="icon-badge">📦</span>
-          <p>End-to-End Supply Chain Exposure</p>
-        </div>
-        <div class="icon-card">
-          <span class="icon-badge">📈</span>
-          <p>Growth by Capability, Not Tenure</p>
-        </div>
-        <div class="icon-card">
-          <span class="icon-badge">🏢</span>
-          <p>Multi-Industry, Multi-Geography</p>
+          <h3>Interested in Business &amp; Trade</h3>
+          <p>
+            Business, trade, logistics, markets, or operations — if any of these
+            fascinate you, you'll thrive here.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ================= WHO WE'RE LOOKING FOR ================= -->
-  <section class="section bg-soft">
-    <h2 class="section-title center">Who We're Looking For</h2>
-    <p class="section-sub center">We welcome people who are:</p>
+      <div class="center-note-box">
+        <p>You don't need to know everything on Day 1.</p>
+        <p class="bold">You need the intent to execute and improve.</p>
+      </div>
+    </section>
 
-    <div class="looking-for-grid">
-      <div class="looking-card">
-        <span class="icon-badge">🔍</span>
-        <h3>Curious &amp; Willing to Learn</h3>
-        <p>You ask questions, challenge assumptions, and treat every assignment as an opportunity to understand more.</p>
-      </div>
-      <div class="looking-card">
-        <span class="icon-badge">⚡</span>
-        <h3>Comfortable with Responsibility</h3>
-        <p>You don't wait to be told twice. You take ownership and see things through.</p>
-      </div>
-      <div class="looking-card">
-        <span class="icon-badge">💬</span>
-        <h3>Clear in Communication</h3>
-        <p>You say what you mean, document what you do, and keep stakeholders informed without being prompted.</p>
-      </div>
-      <div class="looking-card">
-        <span class="icon-badge">📁</span>
-        <h3>Disciplined with Processes</h3>
-        <p>You understand that systems and structure drive outcomes at scale. You follow process and improve it.</p>
-      </div>
-      <div class="looking-card">
-        <span class="icon-badge">🌐</span>
-        <h3>Interested in Business &amp; Trade</h3>
-        <p>Business, trade, logistics, markets, or operations — if any of these fascinate you, you'll thrive here.</p>
-      </div>
-    </div>
+    <!-- ================= CAREER TRACKS ================= -->
+    <section class="section bg-white">
+      <h2 class="section-title center">Career Tracks You Can Grow Into</h2>
+      <p class="section-sub center">
+        Depending on your skills and interest, roles may exist across:
+      </p>
 
-    <div class="center-note-box">
-      <p>You don't need to know everything on Day 1.</p>
-      <p class="bold">You need the intent to execute and improve.</p>
-    </div>
-  </section>
-
-  <!-- ================= CAREER TRACKS ================= -->
-  <section class="section bg-white">
-    <h2 class="section-title center">Career Tracks You Can Grow Into</h2>
-    <p class="section-sub center">Depending on your skills and interest, roles may exist across:</p>
-
-    <div class="tracks-grid">
-      <div class="track-card">
-        <span class="track-number">01</span>
-        <p>Import–Export Operations</p>
-      </div>
-      <div class="track-card">
-        <span class="track-number">02</span>
-        <p>Trade &amp; Business Coordination</p>
-      </div>
-      <div class="track-card">
-        <span class="track-number">03</span>
-        <p>Logistics &amp; Supply Chain</p>
-      </div>
-      <div class="track-card">
-        <span class="track-number">04</span>
-        <p>Documentation &amp; Compliance</p>
-      </div>
-      <div class="track-card">
-        <span class="track-number">05</span>
-        <p>Market Research &amp; Buyer Coordination</p>
-      </div>
-      <div class="track-card">
-        <span class="track-number">06</span>
-        <p>Business Growth &amp; Consulting Support</p>
-      </div>
-      <div class="track-card">
-        <span class="track-number">07</span>
-        <p>Workforce &amp; Program Operations</p>
-      </div>
-    </div>
-
-    <p class="italic-note">Many team members start in one role and grow across functions.</p>
-  </section>
-
-  <!-- ================= GAIN & CULTURE ================= -->
-  <section class="section bg-soft">
-    <div class="two-col-grid">
-      <div class="two-col-item">
-        <p class="eyebrow">WHAT YOU GAIN</p>
-        <h2 class="section-title">What You'll Gain Here</h2>
-        <ul class="check-list">
-          <li>End-to-end understanding of how global business works</li>
-          <li>Exposure to domestic &amp; international markets</li>
-          <li>Strong operational and commercial foundation</li>
-          <li>Mentorship from people actively running businesses</li>
-          <li>Long-term career clarity, not random job hopping</li>
-        </ul>
-        <p class="italic-note left">We value learning speed and execution mindset more than fancy resumes.</p>
+      <div class="tracks-grid">
+        <div class="track-card">
+          <span class="track-number">01</span>
+          <p>Import–Export Operations</p>
+        </div>
+        <div class="track-card">
+          <span class="track-number">02</span>
+          <p>Trade &amp; Business Coordination</p>
+        </div>
+        <div class="track-card">
+          <span class="track-number">03</span>
+          <p>Logistics &amp; Supply Chain</p>
+        </div>
+        <div class="track-card">
+          <span class="track-number">04</span>
+          <p>Documentation &amp; Compliance</p>
+        </div>
+        <div class="track-card">
+          <span class="track-number">05</span>
+          <p>Market Research &amp; Buyer Coordination</p>
+        </div>
+        <div class="track-card">
+          <span class="track-number">06</span>
+          <p>Business Growth &amp; Consulting Support</p>
+        </div>
+        <div class="track-card">
+          <span class="track-number">07</span>
+          <p>Workforce &amp; Program Operations</p>
+        </div>
       </div>
 
-      <div class="two-col-item">
-        <p class="eyebrow">WORK CULTURE</p>
-        <h2 class="section-title">Work Culture</h2>
-        <ul class="check-list">
-          <li>Professional, focused, and execution-driven</li>
-          <li>No unnecessary hierarchy</li>
-          <li>Accountability over micromanagement</li>
-          <li>Learning through real responsibility</li>
-          <li>Respect for people who take ownership</li>
-        </ul>
-        <p class="italic-note left">This is a place to build competence, not chase comfort.</p>
+      <p class="italic-note">
+        Many team members start in one role and grow across functions.
+      </p>
+    </section>
+
+    <!-- ================= GAIN & CULTURE ================= -->
+    <section class="section bg-soft">
+      <div class="two-col-grid">
+        <div class="two-col-item">
+          <p class="eyebrow">WHAT YOU GAIN</p>
+          <h2 class="section-title">What You'll Gain Here</h2>
+          <ul class="check-list">
+            <li>End-to-end understanding of how global business works</li>
+            <li>Exposure to domestic &amp; international markets</li>
+            <li>Strong operational and commercial foundation</li>
+            <li>Mentorship from people actively running businesses</li>
+            <li>Long-term career clarity, not random job hopping</li>
+          </ul>
+          <p class="italic-note left">
+            We value learning speed and execution mindset more than fancy
+            resumes.
+          </p>
+        </div>
+
+        <div class="two-col-item">
+          <p class="eyebrow">WORK CULTURE</p>
+          <h2 class="section-title">Work Culture</h2>
+          <ul class="check-list">
+            <li>Professional, focused, and execution-driven</li>
+            <li>No unnecessary hierarchy</li>
+            <li>Accountability over micromanagement</li>
+            <li>Learning through real responsibility</li>
+            <li>Respect for people who take ownership</li>
+          </ul>
+          <p class="italic-note left">
+            This is a place to build competence, not chase comfort.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ================= GROWTH ================= -->
-  <section class="section bg-white">
-    <div class="growth-grid">
-      <div class="growth-text">
-        <p class="eyebrow">LONG-TERM GROWTH</p>
-        <h2 class="section-title">Growth, Not Just a Job</h2>
-        <p class="col-heading">People who perform well here often:</p>
-        <ul class="arrow-list">
-          <li>Move into senior operational roles</li>
-          <li>Get exposure to international projects</li>
-          <li>Build into leadership or specialist positions</li>
-          <li>Build careers that travel across industries and countries</li>
-        </ul>
-        <p class="italic-note left">Your growth is linked to how much value you create.</p>
+    <!-- ================= GROWTH ================= -->
+    <section class="section bg-white">
+      <div class="growth-grid">
+        <div class="growth-text">
+          <p class="eyebrow">LONG-TERM GROWTH</p>
+          <h2 class="section-title">Growth, Not Just a Job</h2>
+          <p class="col-heading">People who perform well here often:</p>
+          <ul class="arrow-list">
+            <li>Move into senior operational roles</li>
+            <li>Get exposure to international projects</li>
+            <li>Build into leadership or specialist positions</li>
+            <li>Build careers that travel across industries and countries</li>
+          </ul>
+          <p class="italic-note left">
+            Your growth is linked to how much value you create.
+          </p>
+        </div>
+
+        <div class="quote-card">
+          <p>"Careers are built by doing the work others avoid."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= IMPORTANT NOTE ================= -->
+    <section class="section bg-soft">
+      <h2 class="section-title center">Important Note</h2>
+
+      <div class="note-grid">
+        <div class="note-col">
+          <p class="note-heading not-promise">WE DO NOT PROMISE:</p>
+          <ul class="dot-list">
+            <li>Instant promotions</li>
+            <li>Guaranteed overseas roles</li>
+            <li>Shortcut growth</li>
+          </ul>
+        </div>
+        <div class="note-col">
+          <p class="note-heading offer">WHAT WE DO OFFER IS:</p>
+          <ul class="check-list">
+            <li>Real work</li>
+            <li>Real exposure</li>
+            <li>Real learning</li>
+            <li>Fair growth opportunities</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW TO APPLY ================= -->
+    <section class="cta-section">
+      <h2 class="cta-title">How to Apply</h2>
+      <p class="cta-desc">If you believe you can:</p>
+
+      <div class="pill-row center">
+        <span class="pill pill-outline">Learn fast</span>
+        <span class="pill pill-outline">Execute responsibly</span>
+        <span class="pill pill-outline">Think long-term</span>
       </div>
 
-      <div class="quote-card">
-        <p>"Careers are built by doing the work others avoid."</p>
+      <p class="cta-desc">We'd like to hear from you.</p>
+
+      <div class="cta-buttons">
+        <a href="mailto:careers@flairlist.com" class="cta-outline-button"
+          >✉ careers@flairlist.com</a
+        >
+        <a href="#" class="cta-outline-button">🌐 FlairList.com</a>
       </div>
-    </div>
-  </section>
 
-  <!-- ================= IMPORTANT NOTE ================= -->
-  <section class="section bg-soft">
-    <h2 class="section-title center">Important Note</h2>
+      <p class="cta-footer-line">
+        Careers are built by doing the work others avoid.
+      </p>
+      <p class="cta-footer-italic">If that excites you — welcome.</p>
+    </section>
 
-    <div class="note-grid">
-      <div class="note-col">
-        <p class="note-heading not-promise">WE DO NOT PROMISE:</p>
-        <ul class="dot-list">
-          <li>Instant promotions</li>
-          <li>Guaranteed overseas roles</li>
-          <li>Shortcut growth</li>
-        </ul>
-      </div>
-      <div class="note-col">
-        <p class="note-heading offer">WHAT WE DO OFFER IS:</p>
-        <ul class="check-list">
-          <li>Real work</li>
-          <li>Real exposure</li>
-          <li>Real learning</li>
-          <li>Fair growth opportunities</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= HOW TO APPLY ================= -->
-  <section class="cta-section">
-    <h2 class="cta-title">How to Apply</h2>
-    <p class="cta-desc">If you believe you can:</p>
-
-    <div class="pill-row center">
-      <span class="pill pill-outline">Learn fast</span>
-      <span class="pill pill-outline">Execute responsibly</span>
-      <span class="pill pill-outline">Think long-term</span>
-    </div>
-
-    <p class="cta-desc">We'd like to hear from you.</p>
-
-    <div class="cta-buttons">
-      <a href="mailto:careers@flairlist.com" class="cta-outline-button">✉ careers@flairlist.com</a>
-      <a href="#" class="cta-outline-button">🌐 FlairList.com</a>
-    </div>
-
-    <p class="cta-footer-line">Careers are built by doing the work others avoid.</p>
-    <p class="cta-footer-italic">If that excites you — welcome.</p>
-  </section>
-
-        <footer class="site-footer">
-        <div class="footer-container">
-          <!-- =================================
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================
              COLUMN 1
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Who We Are</h3>
+        <div class="footer-column">
+          <h3>Who We Are</h3>
 
-            <a href="./mission.html">Mission</a>
-            <a href="./vision.html">Vision</a>
-            <a href="./values.html">Values</a>
-            <a href="./founder.html">Founder &amp; CEO</a>
-            <a href="./team.html">Leadership &amp; Team</a>
-            <a href="./press_room.html">Press Room</a>
-          </div>
+          <a href="./mission.html">Mission</a>
+          <a href="./vision.html">Vision</a>
+          <a href="./values.html">Values</a>
+          <a href="./founder.html">Founder &amp; CEO</a>
+          <a href="./team.html">Leadership &amp; Team</a>
+          <a href="./press_room.html">Press Room</a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 2
         ================================== -->
 
-          <div class="footer-column">
-            <h3>What We Do</h3>
+        <div class="footer-column">
+          <h3>What We Do</h3>
 
-            <a href="#" class="footer-bold"> Services </a>
+          <span class="footer-bold footer-label"> Services </span>
 
-            <a href="./expert-business-consultancy.html"> Expert Business Consultation </a>
+          <a href="./expert-business-consultancy.html">
+            Expert Business Consultation
+          </a>
 
-            <a href="./export-consultation.html"> Export Consultation </a>
+          <a href="./export-consultation.html"> Export Consultation </a>
 
-            <a href="./export-mentorship.html"> Export Mentorship </a>
+          <a href="./export-mentorship.html"> Export Mentorship </a>
 
-            <a href="./exclusive-business-growth-partnership.html"> Exclusive Partnership </a>
+          <a href="./exclusive-business-growth-partnership.html">
+            Exclusive Partnership
+          </a>
 
-            <a href="#" class="footer-bold"> Global Import-Export </a>
+          <a href="#" class="footer-bold"> Global Import-Export </a>
 
-            <a href="./countries.html"> Countries </a>
+          <a href="./countries.html"> Countries </a>
 
-            <a href="./products.html"> Products </a>
+          <a href="./products.html"> Products </a>
 
-            <a href="./partners.html"> Partner With Us </a>
-          </div>
+          <a href="./partners.html"> Partner With Us </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 3
         ================================== -->
 
-          <div class="footer-column">
-            <h3>More</h3>
+        <div class="footer-column">
+          <h3>More</h3>
 
-            <a href="#" class="footer-bold"> Supply Chain &amp; Workforce </a>
+          <span class="footer-bold footer-label">
+            Supply Chain &amp; Workforce
+          </span>
 
-            <a href="#"> Supply Chain &amp; Distribution </a>
+          <a href="#"> Supply Chain &amp; Distribution </a>
 
-            <a href="./workforce-mobility.html"> Workforce Programs </a>
+          <a href="./workforce-mobility.html"> Workforce Programs </a>
 
-            <a href="./deployment.html"> Deployment </a>
+          <a href="./deployment.html"> Deployment </a>
 
-            <a href="#" class="footer-bold"> Explore </a>
+          <a href="#" class="footer-bold"> Explore </a>
 
-            <a href="#"> Industries </a>
+          <a href="./industries.html"> Industries </a>
 
-            <a href="./case-studies.html"> Case Studies </a>
-          </div>
+          <a href="./case-studies.html"> Case Studies </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 4
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Opportunities</h3>
+        <div class="footer-column">
+          <h3>Opportunities</h3>
 
-            <a href="./career.html"> Careers </a>
+          <a href="./career.html"> Careers </a>
 
-            <a href="./investor.html"> Investors </a>
+          <a href="./investor.html"> Investors </a>
 
-            <a href="./contact.html"> Contact Us </a>
+          <a href="./contact.html"> Contact Us </a>
 
-            <h4 class="footer-follow-title">Follow Us</h4>
+          <h4 class="footer-follow-title">Follow Us</h4>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a
+            href="https://www.instagram.com/theshubhambibave/"
+            class="social-link"
+          >
+            <span class="social-icon"> ◎ </span>
 
-              @theshubhambibave
-            </a>
+            @theshubhambibave
+          </a>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a href="#" class="social-link">
+            <span class="social-icon"> ◎ </span>
 
-              @flairlist
-            </a>
-          </div>
+            @flairlist
+          </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 5
         ================================== -->
 
-          <div class="footer-column footer-connect">
-            <h3>Let's Connect</h3>
+        <div class="footer-column footer-connect">
+          <h3>Let's Connect</h3>
 
-            <div class="footer-contact">
-              <strong> ✉ Email: </strong>
+          <div class="footer-contact">
+            <strong> ✉ Email: </strong>
 
-              <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
-            </div>
-
-            <div class="footer-contact">
-              <strong> ◎ Website: </strong>
-
-              <a href="https://www.flairlist.com/"> FlairList.com </a>
-            </div>
-
-            <a href="./contact.html" class="footer-button"> Get in Touch </a>
+            <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
           </div>
-        </div>
 
-        <!-- =====================================
+          <div class="footer-contact">
+            <strong> ◎ Website: </strong>
+
+            <a href="https://www.flairlist.com/"> FlairList.com </a>
+          </div>
+
+          <a href="./contact.html" class="footer-button"> Get in Touch </a>
+        </div>
+      </div>
+
+      <!-- =====================================
          FOOTER BOTTOM
     ====================================== -->
 
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p>2026 FlairList Global. All rights reserved.</p>
-
-            <p class="footer-tagline">
-              "Building what global business runs on."
-            </p>
-          </div>
-
-          <nav class="footer-legal">
-            <a href="#"> Terms of Use </a>
-
-            <a href="#"> Privacy Policy </a>
-
-            <a href="#"> Refund Policy </a>
-
-            <a href="#"> Cancellation Policy </a>
-
-            <a href="#"> Cookies </a>
-          </nav>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>2026 FlairList Global. All rights reserved.</p>
         </div>
-      </footer>
 
+        <nav class="footer-legal">
+          <a href="./terms-and-conditions.html"> Terms of Use </a>
 
-  <script src="./Assets/js/script.js?v=3.0"></script>
-</body>
+          <a href="./privacy-policy.html"> Privacy Policy </a>
+
+          <a href="./refund-policy.html"> Refund Policy </a>
+
+          <a href="./cancellation-policy.html"> Cancellation Policy </a>
+
+          <a href="./privacy-policy.html"> Cookies </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./Assets/js/script.js?v=3.8"></script>
+  </body>
 </html>

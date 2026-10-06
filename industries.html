@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Industries | FlairList Global</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Existing Global CSS -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+
+    <!-- Industries Page CSS -->
+    <link rel="stylesheet" href="./Assets/css/industries_all.css">
+
+    <link
+        rel="shortcut icon"
+        href="./Assets/favicon.png"
+        type="image/x-icon"
+    >
+</head>
+
+<body>
+
+    <!-- =========================================================
+         NAVBAR
+    ========================================================== -->
+
+    <header class="navbar" id="siteNavbar">
+
+        <div class="navbar-container">
+
+            <!-- LEFT -->
+            <div class="nav-left">
+
+                <!-- LOGO -->
+                <a
+                    href="./index.html"
+                    class="logo"
+                    aria-label="FlairList Global Home"
+                >
+                    <img
+                        src="./Assets/img/flairlist_logo.png"
+                        alt="FlairList Global"
+                    >
+                </a>
+
+                <!-- NAVIGATION -->
+                <nav class="nav-links" aria-label="Main Navigation">
+
+                    <div class="nav-dropdown" data-menu="who">
+
+                        <button
+                            type="button"
+                            class="nav-link dropdown-trigger"
+                            aria-expanded="false"
+                        >
+                            <span>Who We Are</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </button>
+
+                    </div>
+
+                    <div class="nav-dropdown" data-menu="what">
+
+                        <button
+                            type="button"
+                            class="nav-link dropdown-trigger"
+                            aria-expanded="false"
+                        >
+                            <span>What We Do</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </button>
+
+                    </div>
+
+                    <a href="./career.html" class="nav-link">
+                        Careers
+                    </a>
+
+                    <a href="./investor.html" class="nav-link">
+                        Investors
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- RIGHT -->
+            <div class="nav-right">
+
+                <!-- SEARCH -->
+                <form class="search-box" id="navbarSearch">
+
+                    <input
+                        type="search"
+                        placeholder="Search..."
+                        aria-label="Search"
+                    >
+
+                    <button
+                        type="submit"
+                        class="search-button"
+                        aria-label="Search"
+                    >
+                        ⌕
+                    </button>
+
+                </form>
+
+
+                <!-- COUNTRY -->
+                <div class="country-selector">
+
+                    <button
+                        class="country-btn"
+                        type="button"
+                        aria-expanded="false"
+                    >
+                        <span id="selectedCountry">
+                            India
+                        </span>
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="app-icon"
+                            width="24"
+                            height="24"
+                        >
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                                fill="#E4E3DE"
+                            >
+                            </path>
+                        </svg>
+
+                    </button>
+
+                    <div
+                        class="country-dropdown"
+                        id="countryDropdown"
+                    >
+
+                        <button
+                            type="button"
+                            data-lang="en"
+                            data-country="India"
+                        >
+                            India
+                        </button>
+
+                        <button
+                            type="button"
+                            data-lang="ar"
+                            data-country="United Arab Emirates"
+                        >
+                            United Arab Emirates
+                        </button>
+
+                        <button
+                            type="button"
+                            data-lang="en"
+                            data-country="United States"
+                        >
+                            United States
+                        </button>
+
+                        <button
+                            type="button"
+                            data-lang="zh-CN"
+                            data-country="China"
+                        >
+                            China
+                        </button>
+
+                        <button
+                            type="button"
+                            data-lang="en"
+                            data-country="United Kingdom"
+                        >
+                            United Kingdom
+                        </button>
+
+                        <button
+                            type="button"
+                            data-lang="en"
+                            data-country="Singapore"
+                        >
+                            Singapore
+                        </button>
+
+                        <button
+                            type="button"
+                            data-lang="de"
+                            data-country="Germany"
+                        >
+                            Germany
+                        </button>
+
+                        <button
+                            type="button"
+                            data-lang="it"
+                            data-country="Italy"
+                        >
+                            Italy
+                        </button>
+
+                        <button
+                            type="button"
+                            data-lang="ja"
+                            data-country="Japan"
+                        >
+                            Japan
+                        </button>
+
+                        <button
+                            type="button"
+                            data-lang="ko"
+                            data-country="South Korea"
+                        >
+                            South Korea
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MAGIC FORM -->
+                <a
+                    href="./contact.html"
+                    class="magic-button"
+                >
+                    Magic Form
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             MEGA MENU
+        ====================================================== -->
+
+        <div
+            class="mega-menu"
+            id="megaMenu"
+            aria-hidden="true"
+        >
+
+            <!-- WHO WE ARE -->
+
+            <section
+                class="mega-content"
+                id="whoMenu"
+            >
+
+                <aside class="mega-sidebar">
+
+                    <button
+                        type="button"
+                        class="mega-side-item active"
+                        data-content="purpose"
+                    >
+                        <span>
+                            Purpose &amp; Values
+                        </span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="mega-side-item"
+                        data-content="leadership"
+                    >
+                        <span>
+                            Leadership &amp; Team
+                        </span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="mega-side-item"
+                        data-content="press"
+                    >
+                        <span>
+                            Press Room
+                        </span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="mega-side-item"
+                        data-content="contact"
+                    >
+                        <span>
+                            Contact Us
+                        </span>
+                    </button>
+
+                </aside>
+
+
+                <div class="mega-main">
+
+                    <div
+                        class="mega-panel active"
+                        data-panel="purpose"
+                    >
+
+                        <h3>
+                            Purpose &amp; Values
+                        </h3>
+
+                        <a href="./mission.html">
+                            Mission
+                        </a>
+
+                        <a href="./vision.html">
+                            Vision
+                        </a>
+
+                        <a href="./values.html">
+                            Values
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="mega-panel"
+                        data-panel="leadership"
+                    >
+
+                        <h3>
+                            Leadership &amp; Team
+                        </h3>
+
+                        <a href="./founder.html">
+                            Founder
+                        </a>
+
+                        <a href="./team.html">
+                            Executive Team
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="mega-panel"
+                        data-panel="press"
+                    >
+
+                        <h3>
+                            Press Room
+                        </h3>
+
+                        <a href="./press_room.html">
+                            Press Room
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="mega-panel"
+                        data-panel="contact"
+                    >
+
+                        <h3>
+                            Contact Us
+                        </h3>
+
+                        <a href="./contact.html">
+                            Contact Us
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- WHAT WE DO -->
+
+            <section
+                class="mega-content"
+                id="whatMenu"
+            >
+
+                <aside class="mega-sidebar">
+
+                    <button
+                        type="button"
+                        class="mega-side-item active"
+                        data-content="services"
+                    >
+                        <span>
+                            Services
+                        </span>
+                    </button>
+
+                </aside>
+
+
+                <div class="mega-main">
+
+                    <div
+                        class="mega-panel active"
+                        data-panel="services"
+                    >
+
+                        <h3>
+                            Services
+                        </h3>
+
+                        <a href="./expert-business-consultancy.html">
+                            Expert Business Consultation
+                        </a>
+
+                        <a href="./export-consultation.html">
+                            Export Consultation
+                        </a>
+
+                        <a href="./export-mentorship.html">
+                            Export Mentorship
+                        </a>
+
+                        <a href="./exclusive-business-growth-partnership.html">
+                            Exclusive Partnership
+                        </a>
+
+                        <a href="./countries.html">
+                            Countries
+                        </a>
+
+                        <a href="./products.html">
+                            Products
+                        </a>
+
+                        <a href="./partners.html">
+                            Partner With Us
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN INDUSTRIES PAGE
+    ========================================================== -->
+
+    <main class="industries-page">
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="industries-hero">
+
+            <div class="industries-hero-overlay"></div>
+
+            <div class="industries-hero-content">
+
+                <span class="industries-eyebrow">
+                    FLAIRLIST GLOBAL
+                </span>
+
+                <h1>
+                    Industries We Operate In
+                </h1>
+
+                <p>
+                    Across 16+ sectors. Domestic and international.
+                    Trade-ready and execution-focused.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             INTRODUCTION
+        ====================================================== -->
+
+        <section class="industries-intro">
+
+            <div class="industries-container">
+
+                <div class="industries-intro-text">
+
+                    <p>
+                        FlairList Global works across diverse industry
+                        verticals — providing structured consulting,
+                        trade facilitation, and market-access services
+                        to businesses operating at domestic and
+                        international levels.
+                    </p>
+
+                    <p>
+                        Every sector we enter is approached with the
+                        same discipline: credibility first, compliance
+                        always, execution with accountability.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             GLOBAL FOOTPRINT IMAGE
+        ====================================================== -->
+
+        <section class="industries-global-section">
+
+            <div class="industries-container">
+
+                <div class="industries-global-card">
+
+                    <img
+                        src="./Assets/img/world.jpg"
+                        alt="FlairList Global cross-sector industry footprint"
+                    >
+
+                    <div class="industries-image-caption">
+
+                        FlairList Global's cross-sector footprint spans
+                        manufacturing, logistics, energy, technology,
+                        infrastructure and commerce — domestically
+                        and internationally.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             INDUSTRY GRID
+        ====================================================== -->
+
+        <section class="industries-explore">
+
+            <div class="industries-container">
+
+
+                <!-- SECTION HEADING -->
+
+                <div class="industries-section-heading">
+
+                    <span>
+                        OUR SECTORS
+                    </span>
+
+                    <h2>
+                        Explore by Industry
+                    </h2>
+
+                    <p>
+                        Select an industry to understand our role,
+                        scope, and contribution — domestic and
+                        international.
+                    </p>
+
+                </div>
+
+
+                <!-- INDUSTRY CARDS -->
+
+                <div class="industries-grid">
+
+
+                    <!-- 01 FINANCE -->
+
+                    <a
+                        href="./finance.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            $
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Finance
+                            </h3>
+
+                            <p>
+                                Structured Capital. Controlled Growth.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 02 REAL ESTATE -->
+
+                    <a
+                        href="./real-estate.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ⌂
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Real Estate &amp; Infrastructure
+                            </h3>
+
+                            <p>
+                                Assets That Scale. Projects That Attract Capital.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 03 ENERGY -->
+
+                    <a
+                        href="./energy-power.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ⚡
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Energy, Power &amp; Sustainability
+                            </h3>
+
+                            <p>
+                                Growth With Responsibility.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 04 PETROCHEMICALS -->
+
+                    <a
+                        href="./petrochemicals.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ∿
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Petrochemicals &amp; Oil
+                            </h3>
+
+                            <p>
+                                High-Value Trade. Zero Margin for Error.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 05 MANUFACTURING -->
+
+                    <a
+                        href="./manufacturing.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ▦
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Manufacturing
+                            </h3>
+
+                            <p>
+                                From Production to Profitable Markets.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 06 LOGISTICS -->
+
+                    <a
+                        href="./logistics.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ▣
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Logistics &amp; Supply Chain
+                            </h3>
+
+                            <p>
+                                Movement With Control.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 07 IT -->
+
+                    <a
+                        href="./it-saas.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                IT &amp; SaaS
+                            </h3>
+
+                            <p>
+                                Technology That Sells.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 08 E-COMMERCE -->
+
+                    <a
+                        href="./e-commerce.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            🛒
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                E-Commerce
+                            </h3>
+
+                            <p>
+                                Structured Demand. Scalable Fulfilment.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 09 MEDIA -->
+
+                    <a
+                        href="./media-entertainment.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ◉
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Media &amp; Entertainment
+                            </h3>
+
+                            <p>
+                                Creativity With Commercial Direction.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 10 EDUCATION -->
+
+                    <a
+                        href="./education-consulting.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            🎓
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Education &amp; Consulting
+                            </h3>
+
+                            <p>
+                                Knowledge That Executes.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 11 HEALTH -->
+
+                    <a
+                        href="./health.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ♡
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Health &amp; Wellness
+                            </h3>
+
+                            <p>
+                                Trust-First Expansion.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 12 HOSPITALITY -->
+
+                    <a
+                        href="./hospitality.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ⌂
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Hospitality
+                            </h3>
+
+                            <p>
+                                Experience Meets Profitability.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 13 AVIATION -->
+
+                    <a
+                        href="./aviation.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ✈
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Aviation
+                            </h3>
+
+                            <p>
+                                Precision-Driven Growth.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 14 AGRICULTURE -->
+
+                    <a
+                        href="./agriculture.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ⚖
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Agriculture
+                            </h3>
+
+                            <p>
+                                From Soil to Global Shelves.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 15 GEMS -->
+
+                    <a
+                        href="./gems-jewellery.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ♢
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Gems &amp; Jewellery
+                            </h3>
+
+                            <p>
+                                High Value. Higher Discipline.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 16 APPAREL -->
+
+                    <a
+                        href="./apparel.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ♧
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                Apparel
+                            </h3>
+
+                            <p>
+                                Fashion With Global Flow.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 17 FOOD -->
+
+                    <a
+                        href="./food-beverage.html"
+                        class="industry-card"
+                    >
+
+                        <div class="industry-icon">
+                            ▣
+                        </div>
+
+                        <div class="industry-card-content">
+
+                            <h3>
+                                F&amp;B (Food &amp; Beverage)
+                            </h3>
+
+                            <p>
+                                Taste That Travels.
+                            </p>
+
+                        </div>
+
+                        <span class="industry-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section class="industries-cta-section">
+
+            <div class="industries-container">
+
+                <div class="industries-cta">
+
+                    <p>
+                        Across all sectors, our role is the same —
+                        bring structure, credibility, and execution
+                        to your business growth.
+                    </p>
+
+                    <a
+                        href="./contact.html"
+                        class="industries-cta-button"
+                    >
+                        Connect With Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- COLUMN 1 -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Who We Are
+                </h3>
+
+                <a href="./mission.html">
+                    Mission
+                </a>
+
+                <a href="./vision.html">
+                    Vision
+                </a>
+
+                <a href="./values.html">
+                    Values
+                </a>
+
+                <a href="./founder.html">
+                    Founder &amp; CEO
+                </a>
+
+                <a href="./team.html">
+                    Leadership &amp; Team
+                </a>
+
+                <a href="./press_room.html">
+                    Press Room
+                </a>
+
+            </div>
+
+
+            <!-- COLUMN 2 -->
+
+            <div class="footer-column">
+
+                <h3>
+                    What We Do
+                </h3>
+
+                <span class="footer-bold footer-label">
+                    Services
+                </span>
+
+                <a href="./expert-business-consultancy.html">
+                    Expert Business Consultation
+                </a>
+
+                <a href="./export-consultation.html">
+                    Export Consultation
+                </a>
+
+                <a href="./export-mentorship.html">
+                    Export Mentorship
+                </a>
+
+                <a href="./exclusive-business-growth-partnership.html">
+                    Exclusive Partnership
+                </a>
+
+                <a href="./countries.html">
+                    Countries
+                </a>
+
+                <a href="./products.html">
+                    Products
+                </a>
+
+                <a href="./partners.html">
+                    Partner With Us
+                </a>
+
+            </div>
+
+
+            <!-- COLUMN 3 -->
+
+            <div class="footer-column">
+
+                <h3>
+                    More
+                </h3>
+
+                <span class="footer-bold footer-label">
+                    Supply Chain &amp; Workforce
+                </span>
+
+                <a href="#">
+                    Supply Chain &amp; Distribution
+                </a>
+
+                <a href="./workforce-mobility.html">
+                    Workforce Programs
+                </a>
+
+                <a href="./deployment.html">
+                    Deployment
+                </a>
+
+                <span class="footer-bold footer-label">
+                    Explore
+                </span>
+
+                <!-- INDUSTRIES CONNECTED -->
+                <a href="./industries.html">
+                    Industries
+                </a>
+
+                <a href="./case-studies.html">
+                    Case Studies
+                </a>
+
+            </div>
+
+
+            <!-- COLUMN 4 -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Opportunities
+                </h3>
+
+                <a href="./career.html">
+                    Careers
+                </a>
+
+                <a href="./investor.html">
+                    Investors
+                </a>
+
+                <a href="./contact.html">
+                    Contact Us
+                </a>
+
+                <h4 class="footer-follow-title">
+                    Follow Us
+                </h4>
+
+                <a
+                    href="https://www.instagram.com/theshubhambibave/"
+                    class="social-link"
+                >
+                    <span class="social-icon">
+                        ◎
+                    </span>
+
+                    @theshubhambibave
+                </a>
+
+                <a
+                    href="#"
+                    class="social-link"
+                >
+                    <span class="social-icon">
+                        ◎
+                    </span>
+
+                    @flairlist
+                </a>
+
+            </div>
+
+
+            <!-- COLUMN 5 -->
+
+            <div class="footer-column footer-connect">
+
+                <h3>
+                    Let's Connect
+                </h3>
+
+                <div class="footer-contact">
+
+                    <strong>
+                        ✉ Email:
+                    </strong>
+
+                    <a href="mailto:hello@flairlist.com">
+                        hello@flairlist.com
+                    </a>
+
+                </div>
+
+                <div class="footer-contact">
+
+                    <strong>
+                        ◎ Website:
+                    </strong>
+
+                    <a href="https://www.flairlist.com/">
+                        FlairList.com
+                    </a>
+
+                </div>
+
+                <a
+                    href="./contact.html"
+                    class="footer-button"
+                >
+                    Get in Touch
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-left">
+
+                <p>
+                    2026 FlairList Global. All rights reserved.
+                </p>
+
+            </div>
+
+            <nav class="footer-legal">
+
+                <a href="./terms-and-conditions.html">
+                    Terms of Use
+                </a>
+
+                <a href="./privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="./refund-policy.html">
+                    Refund Policy
+                </a>
+
+                <a href="./cancellation-policy.html">
+                    Cancellation Policy
+                </a>
+
+                <a href="./privacy-policy.html">
+                    Cookies
+                </a>
+
+            </nav>
+
+        </div>
+
+    </footer>
+
+
+    <!-- GLOBAL JAVASCRIPT -->
+
+    <script src="./Assets/js/script.js"></script>
+
+</body>
+</html>

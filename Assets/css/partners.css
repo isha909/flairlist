@@ -27,6 +27,7 @@
 /* ---------- HERO ---------- */
 .partner-hero {
   position: relative;
+  min-height: 300px;
   overflow: hidden;
   padding: 90px 0;
   color: #fff;
@@ -86,7 +87,7 @@
   line-height: 1.25;
 }
 .why-partner-copy p {
-  font-size: 22px;
+  font-size: 17px;
   color: var(--text-body);
   line-height: 1.7;
   margin-bottom: 8px;
@@ -136,8 +137,8 @@
   margin-bottom: 14px;
 }
 .access-card p {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
   color: #04261D;
   line-height: 1.4;
 }
@@ -146,9 +147,12 @@
   border-left: 3px solid var(--primary-blue);
   border-radius: 4px;
   padding: 24px 28px;
+  max-width: 700px;
+  margin: 0;
+  box-sizing: border-box;
 }
 .why-partner-quote p {
-  font-size: 20px;
+  font-size: 18px;
   color: #04261D;
   margin-bottom: 6px;
 }
@@ -189,18 +193,18 @@
   margin-bottom: 20px;
 }
 .partner-type-num {
-  font-size: 34px;
+  font-size: 38px;
   font-weight: 800;
   color: #A7F3D0;
   line-height: 2.5;
 }
 .partner-type-head h3 {
-  font-size: 26px;
+  font-size: 22px;
   color: var(--text-heading);
   margin-bottom: 4px;
 }
 .partner-type-head span {
-  font-size: 19px;
+  font-size: 18px;
   color: var(--text-body);
 }
 .partner-type-italic {
@@ -210,7 +214,7 @@
   margin-bottom: 16px;
 }
 .partner-type-sub-label {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
   font-weight: 800;
   color: var(--primary-blue);
@@ -228,8 +232,8 @@
 .dash-list li {
   position: relative;
   padding-left: 18px;
-  font-size: 20px;
-  color: #3D5E52;
+  font-size: 15px;
+  color: black;
 }
 .dash-list li::before {
   content: "–";
@@ -263,7 +267,7 @@
   flex-shrink: 0;
 }
 .partner-result p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text-heading);
 }
@@ -273,7 +277,7 @@
   padding: 80px 0;
 }
 .strong-partner h2 {
-  font-size: 32px;
+  font-size: 42px;
   color: var(--text-heading);
   margin-bottom: 34px;
 }
@@ -286,30 +290,38 @@
   background: var(--surface-soft);
   border-radius: 10px;
   padding: 24px 26px;
+  position: relative;
 }
+
 .strong-check {
+  position: absolute;
+  left: 30px;
+  top: 36px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: #F0FDF4;
   color: var(--primary-blue);
   font-size: 13px;
   margin-bottom: 14px;
 }
+
 .strong-card h3 {
-  font-size: 22px;
+  font-size: 18px;
   color: var(--text-heading);
   margin-bottom: 8px;
-}
-.strong-card p {
-  font-size: 17px;
-  color: var(--text-body);
-  line-height: 1.5;
+  margin-left: 70px;
 }
 
+.strong-card p {
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.5;
+  margin-left: 70px;
+}
 /* ---------- WHAT WE LOOK FOR IN A PARTNER ---------- */
 .look-for {
   background: var(--surface-soft);
@@ -353,7 +365,7 @@
   margin-bottom: 14px;
 }
 .look-for-card h3 {
-  font-size: 22px;
+  font-size: 20px;
   color: var(--text-heading);
   margin-bottom: 12px;
 }
@@ -363,12 +375,12 @@
   padding: 80px 0;
 }
 .models-section h2 {
-  font-size: 32px;
+  font-size: 42px;
   color: var(--text-heading);
   margin-bottom: 10px;
 }
 .models-sub {
-  font-size: 22px;
+  font-size: 18px;
   color: var(--text-body);
   margin-bottom: 34px;
 }
@@ -395,8 +407,8 @@
   color: #a7f3d0;
 }
 .models-list span.label {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 500;
   color: #04261D;
 }
 .models-doc-box {
@@ -450,7 +462,7 @@
   margin-bottom: 14px;
 }
 .step-item p {
-  font-size: 18px;
+  font-size: 15px;
   color: #3D5E52;
   line-height: 1.4;
 }
@@ -484,11 +496,11 @@
 .why-stay-list div {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   padding: 14px 0;
   border-bottom: 1px solid var(--border-grid);
-  font-size: 19px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   color: #04261D;
 }
 .why-stay-list .check {

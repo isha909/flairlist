@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,11 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Assets/css/style.css?v=3.0" />
-    <link rel="stylesheet" href="./Assets/css/purpose_&_values.css?v=3.0" />
+    <link rel="stylesheet" href="./Assets/css/style.css?v=3.8" />
+    <link rel="stylesheet" href="./Assets/css/purpose_&_values.css?v=3.8" />
     <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
   </head>
   <body>
@@ -20,7 +20,11 @@
       <div class="navbar-container">
         <div class="nav-left">
           <!-- LOGO -->
-          <a href="./index.html" class="logo" aria-label="FlairList Global Home">
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="FlairList Global Home"
+          >
             <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
           </a>
 
@@ -62,211 +66,234 @@
             </button>
           </form>
 
-         <!-- COUNTRY / LANGUAGE SELECTOR -->
-<div class="country-selector">
-    <button class="country-btn" type="button" aria-expanded="false">
-        <span id="selectedCountry">India</span>
-        <svg _ngcontent-ng-c1672362817="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="app-icon" width="24" height="24"><path _ngcontent-ng-c1672362817="" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E4E3DE" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter"></path></svg>
-    </button>
+          <!-- COUNTRY / LANGUAGE SELECTOR -->
+          <div class="country-selector">
+            <button class="country-btn" type="button" aria-expanded="false">
+              <span id="selectedCountry">India</span>
+              <svg
+                _ngcontent-ng-c1672362817=""
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="app-icon"
+                width="24"
+                height="24"
+              >
+                <path
+                  _ngcontent-ng-c1672362817=""
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  fill="#E4E3DE"
+                  stroke="none"
+                  stroke-width="0"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+              </svg>
+            </button>
 
-    <div class="country-dropdown" id="countryDropdown">
+            <div class="country-dropdown" id="countryDropdown">
+              <button type="button" data-lang="en" data-country="India">
+                India
+              </button>
 
-        <button type="button" data-lang="en" data-country="India">
-            India
-        </button>
+              <button
+                type="button"
+                data-lang="ar"
+                data-country="United Arab Emirates"
+              >
+                United Arab Emirates
+              </button>
 
-        <button type="button" data-lang="ar" data-country="United Arab Emirates">
-            United Arab Emirates
-        </button>
+              <button type="button" data-lang="en" data-country="United States">
+                United States
+              </button>
 
-        <button type="button" data-lang="en" data-country="United States">
-            United States
-        </button>
+              <button type="button" data-lang="zh-CN" data-country="China">
+                China
+              </button>
 
-        <button type="button" data-lang="zh-CN" data-country="China">
-            China
-        </button>
+              <button type="button" data-lang="nl" data-country="Netherlands">
+                Netherlands
+              </button>
 
-        <button type="button" data-lang="nl" data-country="Netherlands">
-            Netherlands
-        </button>
+              <button
+                type="button"
+                data-lang="en"
+                data-country="United Kingdom"
+              >
+                United Kingdom
+              </button>
 
-        <button type="button" data-lang="en" data-country="United Kingdom">
-            United Kingdom
-        </button>
+              <button type="button" data-lang="en" data-country="Singapore">
+                Singapore
+              </button>
 
-        <button type="button" data-lang="en" data-country="Singapore">
-            Singapore
-        </button>
+              <button type="button" data-lang="ar" data-country="Saudi Arabia">
+                Saudi Arabia
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Saudi Arabia">
-            Saudi Arabia
-        </button>
+              <button type="button" data-lang="bn" data-country="Bangladesh">
+                Bangladesh
+              </button>
 
-        <button type="button" data-lang="bn" data-country="Bangladesh">
-            Bangladesh
-        </button>
+              <button type="button" data-lang="de" data-country="Germany">
+                Germany
+              </button>
 
-        <button type="button" data-lang="de" data-country="Germany">
-            Germany
-        </button>
+              <button type="button" data-lang="it" data-country="Italy">
+                Italy
+              </button>
 
-        <button type="button" data-lang="it" data-country="Italy">
-            Italy
-        </button>
+              <button type="button" data-lang="ja" data-country="Japan">
+                Japan
+              </button>
 
-        <button type="button" data-lang="ja" data-country="Japan">
-            Japan
-        </button>
+              <button type="button" data-lang="ko" data-country="South Korea">
+                South Korea
+              </button>
 
-        <button type="button" data-lang="ko" data-country="South Korea">
-            South Korea
-        </button>
+              <button type="button" data-lang="ms" data-country="Malaysia">
+                Malaysia
+              </button>
 
-        <button type="button" data-lang="ms" data-country="Malaysia">
-            Malaysia
-        </button>
+              <button type="button" data-lang="th" data-country="Thailand">
+                Thailand
+              </button>
 
-        <button type="button" data-lang="th" data-country="Thailand">
-            Thailand
-        </button>
+              <button type="button" data-lang="id" data-country="Indonesia">
+                Indonesia
+              </button>
 
-        <button type="button" data-lang="id" data-country="Indonesia">
-            Indonesia
-        </button>
+              <button type="button" data-lang="vi" data-country="Vietnam">
+                Vietnam
+              </button>
 
-        <button type="button" data-lang="vi" data-country="Vietnam">
-            Vietnam
-        </button>
+              <button type="button" data-lang="en" data-country="Philippines">
+                Philippines
+              </button>
 
-        <button type="button" data-lang="en" data-country="Philippines">
-            Philippines
-        </button>
+              <button type="button" data-lang="en" data-country="Australia">
+                Australia
+              </button>
 
-        <button type="button" data-lang="en" data-country="Australia">
-            Australia
-        </button>
+              <button type="button" data-lang="en" data-country="New Zealand">
+                New Zealand
+              </button>
 
-        <button type="button" data-lang="en" data-country="New Zealand">
-            New Zealand
-        </button>
+              <button type="button" data-lang="fr" data-country="France">
+                France
+              </button>
 
-        <button type="button" data-lang="fr" data-country="France">
-            France
-        </button>
+              <button type="button" data-lang="es" data-country="Spain">
+                Spain
+              </button>
 
-        <button type="button" data-lang="es" data-country="Spain">
-            Spain
-        </button>
+              <button type="button" data-lang="fr" data-country="Belgium">
+                Belgium
+              </button>
 
-        <button type="button" data-lang="fr" data-country="Belgium">
-            Belgium
-        </button>
+              <button type="button" data-lang="de" data-country="Switzerland">
+                Switzerland
+              </button>
 
-        <button type="button" data-lang="de" data-country="Switzerland">
-            Switzerland
-        </button>
+              <button type="button" data-lang="pl" data-country="Poland">
+                Poland
+              </button>
 
-        <button type="button" data-lang="pl" data-country="Poland">
-            Poland
-        </button>
+              <button type="button" data-lang="de" data-country="Austria">
+                Austria
+              </button>
 
-        <button type="button" data-lang="de" data-country="Austria">
-            Austria
-        </button>
+              <button type="button" data-lang="en" data-country="Ireland">
+                Ireland
+              </button>
 
-        <button type="button" data-lang="en" data-country="Ireland">
-            Ireland
-        </button>
+              <button type="button" data-lang="ar" data-country="Qatar">
+                Qatar
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Qatar">
-            Qatar
-        </button>
+              <button type="button" data-lang="ar" data-country="Kuwait">
+                Kuwait
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Kuwait">
-            Kuwait
-        </button>
+              <button type="button" data-lang="ar" data-country="Oman">
+                Oman
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Oman">
-            Oman
-        </button>
+              <button type="button" data-lang="ar" data-country="Bahrain">
+                Bahrain
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Bahrain">
-            Bahrain
-        </button>
+              <button type="button" data-lang="he" data-country="Israel">
+                Israel
+              </button>
 
-        <button type="button" data-lang="he" data-country="Israel">
-            Israel
-        </button>
+              <button type="button" data-lang="tr" data-country="Turkey">
+                Turkey
+              </button>
 
-        <button type="button" data-lang="tr" data-country="Turkey">
-            Turkey
-        </button>
+              <button type="button" data-lang="ar" data-country="Iraq">
+                Iraq
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Iraq">
-            Iraq
-        </button>
+              <button type="button" data-lang="en" data-country="South Africa">
+                South Africa
+              </button>
 
-        <button type="button" data-lang="en" data-country="South Africa">
-            South Africa
-        </button>
+              <button type="button" data-lang="ar" data-country="Egypt">
+                Egypt
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Egypt">
-            Egypt
-        </button>
+              <button type="button" data-lang="en" data-country="Nigeria">
+                Nigeria
+              </button>
 
-        <button type="button" data-lang="en" data-country="Nigeria">
-            Nigeria
-        </button>
+              <button type="button" data-lang="en" data-country="Kenya">
+                Kenya
+              </button>
 
-        <button type="button" data-lang="en" data-country="Kenya">
-            Kenya
-        </button>
+              <button type="button" data-lang="ar" data-country="Morocco">
+                Morocco
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Morocco">
-            Morocco
-        </button>
+              <button type="button" data-lang="en" data-country="Canada">
+                Canada
+              </button>
 
-        <button type="button" data-lang="en" data-country="Canada">
-            Canada
-        </button>
+              <button type="button" data-lang="pt" data-country="Brazil">
+                Brazil
+              </button>
 
-        <button type="button" data-lang="pt" data-country="Brazil">
-            Brazil
-        </button>
+              <button type="button" data-lang="es" data-country="Argentina">
+                Argentina
+              </button>
 
-        <button type="button" data-lang="es" data-country="Argentina">
-            Argentina
-        </button>
+              <button type="button" data-lang="es" data-country="Chile">
+                Chile
+              </button>
 
-        <button type="button" data-lang="es" data-country="Chile">
-            Chile
-        </button>
+              <button type="button" data-lang="es" data-country="Colombia">
+                Colombia
+              </button>
 
-        <button type="button" data-lang="es" data-country="Colombia">
-            Colombia
-        </button>
+              <button type="button" data-lang="es" data-country="Peru">
+                Peru
+              </button>
 
-        <button type="button" data-lang="es" data-country="Peru">
-            Peru
-        </button>
+              <button type="button" data-lang="ne" data-country="Nepal">
+                Nepal
+              </button>
 
-        <button type="button" data-lang="ne" data-country="Nepal">
-            Nepal
-        </button>
+              <button type="button" data-lang="si" data-country="Sri Lanka">
+                Sri Lanka
+              </button>
 
-        <button type="button" data-lang="si" data-country="Sri Lanka">
-            Sri Lanka
-        </button>
+              <button type="button" data-lang="ur" data-country="Pakistan">
+                Pakistan
+              </button>
+            </div>
+          </div>
 
-        <button type="button" data-lang="ur" data-country="Pakistan">
-            Pakistan
-        </button>
-
-    </div>
-</div>
-
-          <a href="#" class="magic-button">Magic Form</a>
+          <a href="./contact.html" class="magic-button">Magic Form</a>
         </div>
       </div>
 
@@ -395,10 +422,14 @@
             <!-- SERVICES -->
             <div class="mega-panel active" data-panel="services">
               <h3>Services</h3>
-              <a href="./expert-business-consultancy.html">Expert Business Consultation</a>
+              <a href="./expert-business-consultancy.html"
+                >Expert Business Consultation</a
+              >
               <a href="./export-consultation.html">Export Consultation</a>
               <a href="./export-mentorship.html">Export Mentorship</a>
-              <a href="./exclusive-business-growth-partnership.html">Exclusive Partnership</a>
+              <a href="./exclusive-business-growth-partnership.html"
+                >Exclusive Partnership</a
+              >
             </div>
 
             <!-- GLOBAL IMPORT-EXPORT -->
@@ -455,14 +486,24 @@
                   <h3>Products</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./AgriCommodities-products.html#agricommodities">Agri Commodities</a>
-                      <a href="./products.html#petrochemicals">Petrochemicals &amp; Energy Products</a>
+                      <a href="./AgriCommodities-products.html#agricommodities"
+                        >Agri Commodities</a
+                      >
+                      <a href="./products.html#petrochemicals"
+                        >Petrochemicals &amp; Energy Products</a
+                      >
                       <a href="./products.html#metals">Metals &amp; Minerals</a>
-                      <a href="./products.html#fmcg">FMCG &amp; Food Products</a>
-                      <a href="./products.html#raw-materials">Industrial Raw Materials</a>
+                      <a href="./products.html#fmcg"
+                        >FMCG &amp; Food Products</a
+                      >
+                      <a href="./products.html#raw-materials"
+                        >Industrial Raw Materials</a
+                      >
                     </div>
                     <div>
-                      <a href="./products.html#apparel">Apparel &amp; Textiles</a>
+                      <a href="./products.html#apparel"
+                        >Apparel &amp; Textiles</a
+                      >
                       <a href="./products.html#gems">Gems &amp; Jewellery</a>
                     </div>
                   </div>
@@ -530,15 +571,23 @@
                   <h3>Programs</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./workforce-mobility.html#farmer">Farmer / Manufacturer</a>
-                      <a href="./workforce-mobility.html#local-trader">Local Trader</a>
+                      <a href="./workforce-mobility.html#farmer"
+                        >Farmer / Manufacturer</a
+                      >
+                      <a href="./workforce-mobility.html#local-trader"
+                        >Local Trader</a
+                      >
                       <a href="./workforce-mobility.html#exporter">Exporter</a>
                       <a href="./workforce-mobility.html#cha">CHA</a>
-                      <a href="./workforce-mobility.html#freight-forwarder">Freight Forwarder</a>
+                      <a href="./workforce-mobility.html#freight-forwarder"
+                        >Freight Forwarder</a
+                      >
                     </div>
                     <div>
                       <a href="./workforce-mobility.html#importer">Importer</a>
-                      <a href="./workforce-mobility.html#distributor">Distributor</a>
+                      <a href="./workforce-mobility.html#distributor"
+                        >Distributor</a
+                      >
                       <a href="./workforce-mobility.html#retailer">Retailer</a>
                       <a href="./workforce-mobility.html#buyer">Buyer</a>
                     </div>
@@ -564,8 +613,12 @@
               <div class="industries-grid">
                 <div>
                   <a href="./finance.html">Finance</a>
-                  <a href="./real-estate.html">Real Estate &amp; Infrastructure</a>
-                  <a href="./energy-power.html">Energy, Power &amp; Sustainability</a>
+                  <a href="./real-estate.html"
+                    >Real Estate &amp; Infrastructure</a
+                  >
+                  <a href="./energy-power.html"
+                    >Energy, Power &amp; Sustainability</a
+                  >
                   <a href="./petrochemicals.html">Petrochemicals &amp; Oil</a>
                   <a href="./manufacturing.html">Manufacturing</a>
                 </div>
@@ -574,8 +627,12 @@
                   <a href="./logistics.html">Logistics &amp; Supply Chain</a>
                   <a href="./it-saas.html">IT &amp; SaaS</a>
                   <a href="./e-commerce.html">E-Commerce</a>
-                  <a href="./media-entertainment.html">Media &amp; Entertainment</a>
-                  <a href="./education-consulting.html">Education &amp; Consulting</a>
+                  <a href="./media-entertainment.html"
+                    >Media &amp; Entertainment</a
+                  >
+                  <a href="./education-consulting.html"
+                    >Education &amp; Consulting</a
+                  >
                 </div>
 
                 <div>
@@ -588,7 +645,9 @@
 
                 <div>
                   <a href="./apparel.html">Apparel</a>
-                  <a href="./food-beverage.html">F&amp;B (Food &amp; Beverage)</a>
+                  <a href="./food-beverage.html"
+                    >F&amp;B (Food &amp; Beverage)</a
+                  >
                 </div>
               </div>
             </div>
@@ -619,10 +678,20 @@
         <h1>Vision</h1>
         <p>
           Building the Most Trusted Global Trade &amp; Execution Ecosystem
-          <svg class="hero-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <svg
+            class="hero-globe"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            <path
+              d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+            ></path>
           </svg>
         </p>
       </div>
@@ -632,10 +701,9 @@
     <section class="vision-belief">
       <div class="container vision-belief-container">
         <p class="belief-intro">
-          At FlairList Global, our vision is not built around one company,
-          one sector, or one <br>
-          geography. It is built around a long-term
-          belief:
+          At FlairList Global, our vision is not built around one company, one
+          sector, or one <br />
+          geography. It is built around a long-term belief:
         </p>
 
         <div class="belief-quote">
@@ -657,8 +725,8 @@
             <li>Capital aligns with execution, not speculation</li>
           </ul>
           <em>
-            We aim to become a quiet but critical backbone of how domestic
-            and international commerce functions.
+            We aim to become a quiet but critical backbone of how domestic and
+            international commerce functions.
           </em>
         </div>
       </div>
@@ -720,26 +788,50 @@
         <div class="dimensions-grid">
           <article class="dimension-card">
             <span class="dimension-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
               </svg>
             </span>
             <h3>For Global Trade</h3>
             <p>We envision a future where:</p>
             <ul class="check-list light">
-              <li>Small and mid-sized businesses can access global markets without exploitation</li>
+              <li>
+                Small and mid-sized businesses can access global markets without
+                exploitation
+              </li>
               <li>Supply chains are transparent, compliant, and predictable</li>
-              <li>Cross-border trade is driven by systems, not intermediaries</li>
+              <li>
+                Cross-border trade is driven by systems, not intermediaries
+              </li>
               <li>Growth is repeatable, not accidental</li>
             </ul>
-            <em>India plays a central role — not as a low-cost supplier, but as a globally respected execution hub.</em>
+            <em
+              >India plays a central role — not as a low-cost supplier, but as a
+              globally respected execution hub.</em
+            >
           </article>
 
           <article class="dimension-card">
             <span class="dimension-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                 <circle cx="9" cy="7" r="4"></circle>
                 <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -747,24 +839,42 @@
               </svg>
             </span>
             <h3>For Talent &amp; Workforce Mobility</h3>
-            <p>The next decade will be defined by execution-ready talent, not degrees.</p>
+            <p>
+              The next decade will be defined by execution-ready talent, not
+              degrees.
+            </p>
             <ul class="check-list light">
               <li>Prepare people to operate inside real supply chains</li>
               <li>Enable cross-border mobility responsibly</li>
               <li>Create careers that grow across industries and countries</li>
               <li>Reduce dependency on unskilled or mismatched labour</li>
             </ul>
-            <em>Talent is an asset that compounds, not a resource that gets consumed.</em>
+            <em
+              >Talent is an asset that compounds, not a resource that gets
+              consumed.</em
+            >
           </article>
 
           <article class="dimension-card">
             <span class="dimension-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                ></path>
               </svg>
             </span>
             <h3>For Partnerships</h3>
-            <p>We don't want transactional relationships. We aim to build long-term partnerships with:</p>
+            <p>
+              We don't want transactional relationships. We aim to build
+              long-term partnerships with:
+            </p>
             <ul class="check-list light">
               <li>Businesses seeking structured growth</li>
               <li>Governments focused on employability and trade</li>
@@ -776,7 +886,14 @@
 
           <article class="dimension-card">
             <span class="dimension-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
                 <polyline points="17 6 23 6 23 12"></polyline>
               </svg>
@@ -806,21 +923,62 @@
       <div class="container">
         <h2 class="section-title light">What Guides Every Decision We Make</h2>
 
-                <div class="principles-grid">
+        <div class="principles-grid">
           <div class="principle-card">
-            <span class="principle-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <span class="principle-icon"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <circle cx="12" cy="12" r="3" /></svg
+            ></span>
             <p>Long-term trust over short-term wins</p>
           </div>
           <div class="principle-card">
-            <span class="principle-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+            <span class="principle-icon"
+              ><svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" /></svg
+            ></span>
             <p>Execution over explanation</p>
           </div>
           <div class="principle-card">
-            <span class="principle-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><line x1="9" y1="8" x2="9" y2="8"/><line x1="15" y1="8" x2="15" y2="8"/><line x1="9" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="9" y2="16"/><line x1="15" y1="16" x2="15" y2="16"/></svg></span>
+            <span class="principle-icon"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="4" y="3" width="16" height="18" rx="1" />
+                <line x1="9" y1="8" x2="9" y2="8" />
+                <line x1="15" y1="8" x2="15" y2="8" />
+                <line x1="9" y1="12" x2="9" y2="12" />
+                <line x1="15" y1="12" x2="15" y2="12" />
+                <line x1="9" y1="16" x2="9" y2="16" />
+                <line x1="15" y1="16" x2="15" y2="16" /></svg
+            ></span>
             <p>Structure over shortcuts</p>
           </div>
           <div class="principle-card">
-            <span class="principle-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="8 12.5 11 15.5 16 9.5"/></svg></span>
+            <span class="principle-icon"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <polyline points="8 12.5 11 15.5 16 9.5" /></svg
+            ></span>
             <p>Responsibility over hype</p>
           </div>
         </div>
@@ -856,174 +1014,181 @@
       <div class="container vision-final-container">
         <h2>Final Thought</h2>
         <p class="vision-final-lead">
-          Many companies chase scale. Very few build systems that deserve
-          scale.
+          Many companies chase scale. Very few build systems that deserve scale.
         </p>
 
         <div class="vision-final-box">
           <p>Our vision is to be among the latter.</p>
         </div>
 
-        <p class="vision-final-quote">"Building what global trade will rely on tomorrow."</p>
+        <p class="vision-final-quote">
+          "Building what global trade will rely on tomorrow."
+        </p>
 
         <div class="final-actions">
-          <a href="./mission.html" class="btn btn-outline-blue">Read Our Mission</a>
-          <a href="#" class="btn btn-outline-blue">Explore Our Values</a>
-          <a href="#" class="btn btn-solid-blue">Get in Touch</a>
+          <a href="./mission.html" class="btn btn-outline-blue"
+            >Read Our Mission</a
+          >
+          <a href="./values.html" class="btn btn-outline-blue">Explore Our Values</a>
+          <a href="./contact.html" class="btn btn-solid-blue">Get in Touch</a>
         </div>
       </div>
     </section>
 
     <!-- ===================== FOOTER ===================== -->
 
-      <!-- =========================================
+    <!-- =========================================
      FOOTER
 ========================================= -->
 
-            <footer class="site-footer">
-        <div class="footer-container">
-          <!-- =================================
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================
              COLUMN 1
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Who We Are</h3>
+        <div class="footer-column">
+          <h3>Who We Are</h3>
 
-            <a href="./mission.html">Mission</a>
-            <a href="./vision.html">Vision</a>
-            <a href="./values.html">Values</a>
-            <a href="./founder.html">Founder &amp; CEO</a>
-            <a href="./team.html">Leadership &amp; Team</a>
-            <a href="./press_room.html">Press Room</a>
-          </div>
+          <a href="./mission.html">Mission</a>
+          <a href="./vision.html">Vision</a>
+          <a href="./values.html">Values</a>
+          <a href="./founder.html">Founder &amp; CEO</a>
+          <a href="./team.html">Leadership &amp; Team</a>
+          <a href="./press_room.html">Press Room</a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 2
         ================================== -->
 
-          <div class="footer-column">
-            <h3>What We Do</h3>
+        <div class="footer-column">
+          <h3>What We Do</h3>
 
-            <a href="#" class="footer-bold"> Services </a>
+          <span class="footer-bold footer-label"> Services </span>
 
-            <a href="./expert-business-consultancy.html"> Expert Business Consultation </a>
+          <a href="./expert-business-consultancy.html">
+            Expert Business Consultation
+          </a>
 
-            <a href="./export-consultation.html"> Export Consultation </a>
+          <a href="./export-consultation.html"> Export Consultation </a>
 
-            <a href="./export-mentorship.html"> Export Mentorship </a>
+          <a href="./export-mentorship.html"> Export Mentorship </a>
 
-            <a href="./exclusive-business-growth-partnership.html"> Exclusive Partnership </a>
+          <a href="./exclusive-business-growth-partnership.html">
+            Exclusive Partnership
+          </a>
 
-            <a href="#" class="footer-bold"> Global Import-Export </a>
+          <a href="#" class="footer-bold"> Global Import-Export </a>
 
-            <a href="./countries.html"> Countries </a>
+          <a href="./countries.html"> Countries </a>
 
-            <a href="./products.html"> Products </a>
+          <a href="./products.html"> Products </a>
 
-            <a href="./partners.html"> Partner With Us </a>
-          </div>
+          <a href="./partners.html"> Partner With Us </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 3
         ================================== -->
 
-          <div class="footer-column">
-            <h3>More</h3>
+        <div class="footer-column">
+          <h3>More</h3>
 
-            <a href="#" class="footer-bold"> Supply Chain &amp; Workforce </a>
+          <span class="footer-bold footer-label">
+            Supply Chain &amp; Workforce
+          </span>
 
-            <a href="#"> Supply Chain &amp; Distribution </a>
+          <a href="#"> Supply Chain &amp; Distribution </a>
 
-            <a href="./workforce-mobility.html"> Workforce Programs </a>
+          <a href="./workforce-mobility.html"> Workforce Programs </a>
 
-            <a href="./deployment.html"> Deployment </a>
+          <a href="./deployment.html"> Deployment </a>
 
-            <a href="#" class="footer-bold"> Explore </a>
+          <a href="#" class="footer-bold"> Explore </a>
 
-            <a href="#"> Industries </a>
+          <a href="./industries.html"> Industries </a>
 
-            <a href="./case-studies.html"> Case Studies </a>
-          </div>
+          <a href="./case-studies.html"> Case Studies </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 4
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Opportunities</h3>
+        <div class="footer-column">
+          <h3>Opportunities</h3>
 
-            <a href="./career.html"> Careers </a>
+          <a href="./career.html"> Careers </a>
 
-            <a href="./investor.html"> Investors </a>
+          <a href="./investor.html"> Investors </a>
 
-            <a href="./contact.html"> Contact Us </a>
+          <a href="./contact.html"> Contact Us </a>
 
-            <h4 class="footer-follow-title">Follow Us</h4>
+          <h4 class="footer-follow-title">Follow Us</h4>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a
+            href="https://www.instagram.com/theshubhambibave/"
+            class="social-link"
+          >
+            <span class="social-icon"> ◎ </span>
 
-              @theshubhambibave
-            </a>
+            @theshubhambibave
+          </a>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a href="#" class="social-link">
+            <span class="social-icon"> ◎ </span>
 
-              @flairlist
-            </a>
-          </div>
+            @flairlist
+          </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 5
         ================================== -->
 
-          <div class="footer-column footer-connect">
-            <h3>Let's Connect</h3>
+        <div class="footer-column footer-connect">
+          <h3>Let's Connect</h3>
 
-            <div class="footer-contact">
-              <strong> ✉ Email: </strong>
+          <div class="footer-contact">
+            <strong> ✉ Email: </strong>
 
-              <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
-            </div>
-
-            <div class="footer-contact">
-              <strong> ◎ Website: </strong>
-
-              <a href="https://www.flairlist.com/"> FlairList.com </a>
-            </div>
-
-            <a href="./contact.html" class="footer-button"> Get in Touch </a>
+            <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
           </div>
-        </div>
 
-        <!-- =====================================
+          <div class="footer-contact">
+            <strong> ◎ Website: </strong>
+
+            <a href="https://www.flairlist.com/"> FlairList.com </a>
+          </div>
+
+          <a href="./contact.html" class="footer-button"> Get in Touch </a>
+        </div>
+      </div>
+
+      <!-- =====================================
          FOOTER BOTTOM
     ====================================== -->
 
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p>2026 FlairList Global. All rights reserved.</p>
-
-            <p class="footer-tagline">
-              "Building what global business runs on."
-            </p>
-          </div>
-
-          <nav class="footer-legal">
-            <a href="#"> Terms of Use </a>
-
-            <a href="#"> Privacy Policy </a>
-
-            <a href="#"> Refund Policy </a>
-
-            <a href="#"> Cancellation Policy </a>
-
-            <a href="#"> Cookies </a>
-          </nav>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>2026 FlairList Global. All rights reserved.</p>
         </div>
-      </footer>
 
+        <nav class="footer-legal">
+          <a href="./terms-and-conditions.html"> Terms of Use </a>
 
-    <script src="./Assets/js/script.js?v=3.0"></script>
+          <a href="./privacy-policy.html"> Privacy Policy </a>
+
+          <a href="./refund-policy.html"> Refund Policy </a>
+
+          <a href="./cancellation-policy.html"> Cancellation Policy </a>
+
+          <a href="./privacy-policy.html"> Cookies </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./Assets/js/script.js?v=3.8"></script>
   </body>
 </html>

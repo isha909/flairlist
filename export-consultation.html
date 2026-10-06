@@ -1,26 +1,33 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Export Consultation Program | FlairList Global</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Export Consultation Program | FlairList Global</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./Assets/css/style.css?v=3.0">
-  <link rel="stylesheet" href="./Assets/css/export-consultation.css?v=4.0">
-</head>
+    <link rel="stylesheet" href="./Assets/css/style.css?v=3.8" />
+    <link rel="stylesheet" href="./Assets/css/export-consultation.css?v=3.8" />
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
+  </head>
 
-<body>
-
+  <body>
     <!-- ===================== FLAIRLIST NAVBAR ===================== -->
-        <header class="navbar" id="siteNavbar">
+    <header class="navbar" id="siteNavbar">
       <div class="navbar-container">
         <div class="nav-left">
           <!-- LOGO -->
-          <a href="./index.html" class="logo" aria-label="FlairList Global Home">
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="FlairList Global Home"
+          >
             <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
           </a>
 
@@ -62,211 +69,234 @@
             </button>
           </form>
 
-         <!-- COUNTRY / LANGUAGE SELECTOR -->
-<div class="country-selector">
-    <button class="country-btn" type="button" aria-expanded="false">
-        <span id="selectedCountry">India</span>
-        <svg _ngcontent-ng-c1672362817="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="app-icon" width="24" height="24"><path _ngcontent-ng-c1672362817="" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E4E3DE" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter"></path></svg>
-    </button>
+          <!-- COUNTRY / LANGUAGE SELECTOR -->
+          <div class="country-selector">
+            <button class="country-btn" type="button" aria-expanded="false">
+              <span id="selectedCountry">India</span>
+              <svg
+                _ngcontent-ng-c1672362817=""
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="app-icon"
+                width="24"
+                height="24"
+              >
+                <path
+                  _ngcontent-ng-c1672362817=""
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  fill="#E4E3DE"
+                  stroke="none"
+                  stroke-width="0"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+              </svg>
+            </button>
 
-    <div class="country-dropdown" id="countryDropdown">
+            <div class="country-dropdown" id="countryDropdown">
+              <button type="button" data-lang="en" data-country="India">
+                India
+              </button>
 
-        <button type="button" data-lang="en" data-country="India">
-            India
-        </button>
+              <button
+                type="button"
+                data-lang="ar"
+                data-country="United Arab Emirates"
+              >
+                United Arab Emirates
+              </button>
 
-        <button type="button" data-lang="ar" data-country="United Arab Emirates">
-            United Arab Emirates
-        </button>
+              <button type="button" data-lang="en" data-country="United States">
+                United States
+              </button>
 
-        <button type="button" data-lang="en" data-country="United States">
-            United States
-        </button>
+              <button type="button" data-lang="zh-CN" data-country="China">
+                China
+              </button>
 
-        <button type="button" data-lang="zh-CN" data-country="China">
-            China
-        </button>
+              <button type="button" data-lang="nl" data-country="Netherlands">
+                Netherlands
+              </button>
 
-        <button type="button" data-lang="nl" data-country="Netherlands">
-            Netherlands
-        </button>
+              <button
+                type="button"
+                data-lang="en"
+                data-country="United Kingdom"
+              >
+                United Kingdom
+              </button>
 
-        <button type="button" data-lang="en" data-country="United Kingdom">
-            United Kingdom
-        </button>
+              <button type="button" data-lang="en" data-country="Singapore">
+                Singapore
+              </button>
 
-        <button type="button" data-lang="en" data-country="Singapore">
-            Singapore
-        </button>
+              <button type="button" data-lang="ar" data-country="Saudi Arabia">
+                Saudi Arabia
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Saudi Arabia">
-            Saudi Arabia
-        </button>
+              <button type="button" data-lang="bn" data-country="Bangladesh">
+                Bangladesh
+              </button>
 
-        <button type="button" data-lang="bn" data-country="Bangladesh">
-            Bangladesh
-        </button>
+              <button type="button" data-lang="de" data-country="Germany">
+                Germany
+              </button>
 
-        <button type="button" data-lang="de" data-country="Germany">
-            Germany
-        </button>
+              <button type="button" data-lang="it" data-country="Italy">
+                Italy
+              </button>
 
-        <button type="button" data-lang="it" data-country="Italy">
-            Italy
-        </button>
+              <button type="button" data-lang="ja" data-country="Japan">
+                Japan
+              </button>
 
-        <button type="button" data-lang="ja" data-country="Japan">
-            Japan
-        </button>
+              <button type="button" data-lang="ko" data-country="South Korea">
+                South Korea
+              </button>
 
-        <button type="button" data-lang="ko" data-country="South Korea">
-            South Korea
-        </button>
+              <button type="button" data-lang="ms" data-country="Malaysia">
+                Malaysia
+              </button>
 
-        <button type="button" data-lang="ms" data-country="Malaysia">
-            Malaysia
-        </button>
+              <button type="button" data-lang="th" data-country="Thailand">
+                Thailand
+              </button>
 
-        <button type="button" data-lang="th" data-country="Thailand">
-            Thailand
-        </button>
+              <button type="button" data-lang="id" data-country="Indonesia">
+                Indonesia
+              </button>
 
-        <button type="button" data-lang="id" data-country="Indonesia">
-            Indonesia
-        </button>
+              <button type="button" data-lang="vi" data-country="Vietnam">
+                Vietnam
+              </button>
 
-        <button type="button" data-lang="vi" data-country="Vietnam">
-            Vietnam
-        </button>
+              <button type="button" data-lang="en" data-country="Philippines">
+                Philippines
+              </button>
 
-        <button type="button" data-lang="en" data-country="Philippines">
-            Philippines
-        </button>
+              <button type="button" data-lang="en" data-country="Australia">
+                Australia
+              </button>
 
-        <button type="button" data-lang="en" data-country="Australia">
-            Australia
-        </button>
+              <button type="button" data-lang="en" data-country="New Zealand">
+                New Zealand
+              </button>
 
-        <button type="button" data-lang="en" data-country="New Zealand">
-            New Zealand
-        </button>
+              <button type="button" data-lang="fr" data-country="France">
+                France
+              </button>
 
-        <button type="button" data-lang="fr" data-country="France">
-            France
-        </button>
+              <button type="button" data-lang="es" data-country="Spain">
+                Spain
+              </button>
 
-        <button type="button" data-lang="es" data-country="Spain">
-            Spain
-        </button>
+              <button type="button" data-lang="fr" data-country="Belgium">
+                Belgium
+              </button>
 
-        <button type="button" data-lang="fr" data-country="Belgium">
-            Belgium
-        </button>
+              <button type="button" data-lang="de" data-country="Switzerland">
+                Switzerland
+              </button>
 
-        <button type="button" data-lang="de" data-country="Switzerland">
-            Switzerland
-        </button>
+              <button type="button" data-lang="pl" data-country="Poland">
+                Poland
+              </button>
 
-        <button type="button" data-lang="pl" data-country="Poland">
-            Poland
-        </button>
+              <button type="button" data-lang="de" data-country="Austria">
+                Austria
+              </button>
 
-        <button type="button" data-lang="de" data-country="Austria">
-            Austria
-        </button>
+              <button type="button" data-lang="en" data-country="Ireland">
+                Ireland
+              </button>
 
-        <button type="button" data-lang="en" data-country="Ireland">
-            Ireland
-        </button>
+              <button type="button" data-lang="ar" data-country="Qatar">
+                Qatar
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Qatar">
-            Qatar
-        </button>
+              <button type="button" data-lang="ar" data-country="Kuwait">
+                Kuwait
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Kuwait">
-            Kuwait
-        </button>
+              <button type="button" data-lang="ar" data-country="Oman">
+                Oman
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Oman">
-            Oman
-        </button>
+              <button type="button" data-lang="ar" data-country="Bahrain">
+                Bahrain
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Bahrain">
-            Bahrain
-        </button>
+              <button type="button" data-lang="he" data-country="Israel">
+                Israel
+              </button>
 
-        <button type="button" data-lang="he" data-country="Israel">
-            Israel
-        </button>
+              <button type="button" data-lang="tr" data-country="Turkey">
+                Turkey
+              </button>
 
-        <button type="button" data-lang="tr" data-country="Turkey">
-            Turkey
-        </button>
+              <button type="button" data-lang="ar" data-country="Iraq">
+                Iraq
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Iraq">
-            Iraq
-        </button>
+              <button type="button" data-lang="en" data-country="South Africa">
+                South Africa
+              </button>
 
-        <button type="button" data-lang="en" data-country="South Africa">
-            South Africa
-        </button>
+              <button type="button" data-lang="ar" data-country="Egypt">
+                Egypt
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Egypt">
-            Egypt
-        </button>
+              <button type="button" data-lang="en" data-country="Nigeria">
+                Nigeria
+              </button>
 
-        <button type="button" data-lang="en" data-country="Nigeria">
-            Nigeria
-        </button>
+              <button type="button" data-lang="en" data-country="Kenya">
+                Kenya
+              </button>
 
-        <button type="button" data-lang="en" data-country="Kenya">
-            Kenya
-        </button>
+              <button type="button" data-lang="ar" data-country="Morocco">
+                Morocco
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Morocco">
-            Morocco
-        </button>
+              <button type="button" data-lang="en" data-country="Canada">
+                Canada
+              </button>
 
-        <button type="button" data-lang="en" data-country="Canada">
-            Canada
-        </button>
+              <button type="button" data-lang="pt" data-country="Brazil">
+                Brazil
+              </button>
 
-        <button type="button" data-lang="pt" data-country="Brazil">
-            Brazil
-        </button>
+              <button type="button" data-lang="es" data-country="Argentina">
+                Argentina
+              </button>
 
-        <button type="button" data-lang="es" data-country="Argentina">
-            Argentina
-        </button>
+              <button type="button" data-lang="es" data-country="Chile">
+                Chile
+              </button>
 
-        <button type="button" data-lang="es" data-country="Chile">
-            Chile
-        </button>
+              <button type="button" data-lang="es" data-country="Colombia">
+                Colombia
+              </button>
 
-        <button type="button" data-lang="es" data-country="Colombia">
-            Colombia
-        </button>
+              <button type="button" data-lang="es" data-country="Peru">
+                Peru
+              </button>
 
-        <button type="button" data-lang="es" data-country="Peru">
-            Peru
-        </button>
+              <button type="button" data-lang="ne" data-country="Nepal">
+                Nepal
+              </button>
 
-        <button type="button" data-lang="ne" data-country="Nepal">
-            Nepal
-        </button>
+              <button type="button" data-lang="si" data-country="Sri Lanka">
+                Sri Lanka
+              </button>
 
-        <button type="button" data-lang="si" data-country="Sri Lanka">
-            Sri Lanka
-        </button>
+              <button type="button" data-lang="ur" data-country="Pakistan">
+                Pakistan
+              </button>
+            </div>
+          </div>
 
-        <button type="button" data-lang="ur" data-country="Pakistan">
-            Pakistan
-        </button>
-
-    </div>
-</div>
-
-          <a href="#" class="magic-button">Magic Form</a>
+          <a href="./contact.html" class="magic-button">Magic Form</a>
         </div>
       </div>
 
@@ -395,10 +425,14 @@
             <!-- SERVICES -->
             <div class="mega-panel active" data-panel="services">
               <h3>Services</h3>
-              <a href="./expert-business-consultancy.html">Expert Business Consultation</a>
+              <a href="./expert-business-consultancy.html"
+                >Expert Business Consultation</a
+              >
               <a href="./export-consultation.html">Export Consultation</a>
               <a href="./export-mentorship.html">Export Mentorship</a>
-              <a href="./exclusive-business-growth-partnership.html">Exclusive Partnership</a>
+              <a href="./exclusive-business-growth-partnership.html"
+                >Exclusive Partnership</a
+              >
             </div>
 
             <!-- GLOBAL IMPORT-EXPORT -->
@@ -455,14 +489,24 @@
                   <h3>Products</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./AgriCommodities-products.html#agricommodities">Agri Commodities</a>
-                      <a href="./products.html#petrochemicals">Petrochemicals &amp; Energy Products</a>
+                      <a href="./AgriCommodities-products.html#agricommodities"
+                        >Agri Commodities</a
+                      >
+                      <a href="./products.html#petrochemicals"
+                        >Petrochemicals &amp; Energy Products</a
+                      >
                       <a href="./products.html#metals">Metals &amp; Minerals</a>
-                      <a href="./products.html#fmcg">FMCG &amp; Food Products</a>
-                      <a href="./products.html#raw-materials">Industrial Raw Materials</a>
+                      <a href="./products.html#fmcg"
+                        >FMCG &amp; Food Products</a
+                      >
+                      <a href="./products.html#raw-materials"
+                        >Industrial Raw Materials</a
+                      >
                     </div>
                     <div>
-                      <a href="./products.html#apparel">Apparel &amp; Textiles</a>
+                      <a href="./products.html#apparel"
+                        >Apparel &amp; Textiles</a
+                      >
                       <a href="./products.html#gems">Gems &amp; Jewellery</a>
                     </div>
                   </div>
@@ -530,15 +574,23 @@
                   <h3>Programs</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./workforce-mobility.html#farmer">Farmer / Manufacturer</a>
-                      <a href="./workforce-mobility.html#local-trader">Local Trader</a>
+                      <a href="./workforce-mobility.html#farmer"
+                        >Farmer / Manufacturer</a
+                      >
+                      <a href="./workforce-mobility.html#local-trader"
+                        >Local Trader</a
+                      >
                       <a href="./workforce-mobility.html#exporter">Exporter</a>
                       <a href="./workforce-mobility.html#cha">CHA</a>
-                      <a href="./workforce-mobility.html#freight-forwarder">Freight Forwarder</a>
+                      <a href="./workforce-mobility.html#freight-forwarder"
+                        >Freight Forwarder</a
+                      >
                     </div>
                     <div>
                       <a href="./workforce-mobility.html#importer">Importer</a>
-                      <a href="./workforce-mobility.html#distributor">Distributor</a>
+                      <a href="./workforce-mobility.html#distributor"
+                        >Distributor</a
+                      >
                       <a href="./workforce-mobility.html#retailer">Retailer</a>
                       <a href="./workforce-mobility.html#buyer">Buyer</a>
                     </div>
@@ -564,8 +616,12 @@
               <div class="industries-grid">
                 <div>
                   <a href="./finance.html">Finance</a>
-                  <a href="./real-estate.html">Real Estate &amp; Infrastructure</a>
-                  <a href="./energy-power.html">Energy, Power &amp; Sustainability</a>
+                  <a href="./real-estate.html"
+                    >Real Estate &amp; Infrastructure</a
+                  >
+                  <a href="./energy-power.html"
+                    >Energy, Power &amp; Sustainability</a
+                  >
                   <a href="./petrochemicals.html">Petrochemicals &amp; Oil</a>
                   <a href="./manufacturing.html">Manufacturing</a>
                 </div>
@@ -574,8 +630,12 @@
                   <a href="./logistics.html">Logistics &amp; Supply Chain</a>
                   <a href="./it-saas.html">IT &amp; SaaS</a>
                   <a href="./e-commerce.html">E-Commerce</a>
-                  <a href="./media-entertainment.html">Media &amp; Entertainment</a>
-                  <a href="./education-consulting.html">Education &amp; Consulting</a>
+                  <a href="./media-entertainment.html"
+                    >Media &amp; Entertainment</a
+                  >
+                  <a href="./education-consulting.html"
+                    >Education &amp; Consulting</a
+                  >
                 </div>
 
                 <div>
@@ -588,7 +648,9 @@
 
                 <div>
                   <a href="./apparel.html">Apparel</a>
-                  <a href="./food-beverage.html">F&amp;B (Food &amp; Beverage)</a>
+                  <a href="./food-beverage.html"
+                    >F&amp;B (Food &amp; Beverage)</a
+                  >
                 </div>
               </div>
             </div>
@@ -613,558 +675,760 @@
       </div>
     </header>
 
-<main class="exc">
-
-    <!-- HERO -->
-    <section class="exc-hero">
-      <div class="exc-container exc-hero-content">
-        <p class="exc-hero-eyebrow">Services · International Market</p>
-        <h1>Export Consultation Program</h1>
-        <p class="exc-hero-sub">International Market – From India to the World</p>
-        <p class="exc-hero-quote">“If you can sell in India, you can sell globally — you just need the right direction.”</p>
-      </div>
-    </section>
-
-    <!-- INTRO -->
-    <section class="exc-section exc-white">
-      <div class="exc-container exc-intro">
-        <div>
-          <p class="exc-lead">
-            The Export Consultation Program by FlairList Global is a structured, data-backed, execution-focused
-            export consulting system designed for Indian businesses that want to enter or expand into international
-            markets—without trial &amp; error, fake buyers, or costly mistakes.
+    <main class="exc">
+      <!-- HERO -->
+      <section class="exc-hero">
+        <div class="exc-container exc-hero-content">
+          <p class="exc-hero-eyebrow">Services · International Market</p>
+          <h1>Export Consultation Program</h1>
+          <p class="exc-hero-sub">
+            International Market – From India to the World
           </p>
-
-          <div class="exc-notice">
-            <p>This is not a webinar.</p>
-            <p>This is not a generic export checklist.</p>
-            <p><strong>This is real export consulting, built for Indian exporters operating in real-world conditions.</strong></p>
-          </div>
+          <p class="exc-hero-quote">
+            “If you can sell in India, you can sell globally — you just need the
+            right direction.”
+          </p>
         </div>
+      </section>
 
-        <img class="exc-intro-img" src="./Assets/img/intro-export-consultation.png" alt="Export documentation, folders and a clipboard on a desk" />
-      </div>
-    </section>
-
-    <!-- WHO -->
-    <section class="exc-section exc-soft">
-      <div class="exc-container">
-        <h2 class="exc-title">Who Is This Program For?</h2>
-        <p class="exc-subtitle">This program is ideal for:</p>
-
-        <div class="exc-audience">
-          <div>Business owners who want to start exports but feel confused</div>
-          <div>MSMEs &amp; manufacturers seeking international buyers</div>
-          <div>Traders struggling to find genuine, verified importers</div>
-          <div>Exporters tired of fake leads, losses, and guesswork</div>
-        </div>
-
-        <div class="exc-card exc-card--wide">
-          <p class="exc-muted-text">If you've ever thought:</p>
-          <div class="exc-quote-rows">
-            <div>“Export feels complicated.”</div>
-            <div>“I don't know which country to target.”</div>
-            <div>“What if payment gets stuck?”</div>
-          </div>
-          <p class="exc-small">This program was built <strong>exactly for you.</strong></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY FLAIRLIST -->
-    <section class="exc-section exc-white">
-      <div class="exc-container">
-        <h2 class="exc-title">Why FlairList Global?</h2>
-
-        <div class="exc-two-col">
+      <!-- INTRO -->
+      <section class="exc-section exc-white">
+        <div class="exc-container exc-intro">
           <div>
-            <p class="exc-intro-text">What makes FlairList Global different:</p>
-            <ul class="exc-symptoms">
-              <li>↓ One of India's most practical Export &amp; Business Growth Consulting firms</li>
-              <li>↓ Data-driven guidance with verified export intelligence</li>
-              <li>↓ Focus on decision clarity, risk reduction &amp; execution</li>
-            </ul>
-            <p class="exc-small">We don't promise shortcuts.<br>We build <strong>correct export foundations—so your first shipment happens right.</strong></p>
-          </div>
+            <p class="exc-lead">
+              The Export Consultation Program by FlairList Global is a
+              structured, data-backed, execution-focused export consulting
+              system designed for Indian businesses that want to enter or expand
+              into international markets—without trial &amp; error, fake buyers,
+              or costly mistakes.
+            </p>
 
-          <div>
-            <div class="exc-stats">
-              <div class="exc-stat"><strong>₹10,000+ Cr</strong><span>Combined client trade value</span></div>
-              <div class="exc-stat"><strong>3 Lakh+</strong><span>Global consumers impacted</span></div>
-            </div>
-            <div class="exc-flow" aria-label="Direction, then Intelligence, then Execution">
-              <span class="exc-chip-dark">Direction</span><i>→</i><span class="exc-chip-dark">Intelligence</span><i>→</i><span class="exc-chip-dark">Execution</span>
+            <div class="exc-notice">
+              <p>This is not a webinar.</p>
+              <p>This is not a generic export checklist.</p>
+              <p>
+                <strong
+                  >This is real export consulting, built for Indian exporters
+                  operating in real-world conditions.</strong
+                >
+              </p>
             </div>
           </div>
+
+          <img
+            class="exc-intro-img"
+            src="./Assets/img/intro-export-consultation.png"
+            alt="Export documentation, folders and a clipboard on a desk"
+          />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONSULTATION 1 -->
-    <section class="exc-section exc-soft">
-      <div class="exc-container">
-        <header class="exc-block-head">
-          <span class="exc-pill exc-pill--green">Consultation 1</span>
-          <h2 class="exc-title">Business Understanding &amp; Export Readiness Call</h2>
-          <p class="exc-value">Market Value: <strong>₹35,000</strong></p>
-          <p class="exc-tagline">To diagnose export readiness and identify exact blockers before any strategy is suggested. This call ensures you don't enter exports blindly.</p>
-        </header>
+      <!-- WHO -->
+      <section class="exc-section exc-soft">
+        <div class="exc-container exc-container--wide">
+          <h2 class="exc-title">Who Is This Program For?</h2>
+          <p class="exc-subtitle">This program is ideal for:</p>
 
-        <div class="exc-grid-2">
-          <article class="exc-panel">
-            <h3>1. Business &amp; Product Understanding</h3>
-            <span class="exc-label">We map:</span>
-            <ul class="exc-dash">
-              <li>Product category &amp; variant mapping</li>
-              <li>HS Code identification &amp; validation</li>
-              <li>Product usage, shelf life &amp; packaging suitability</li>
-              <li>Production capacity &amp; scalability check</li>
-              <li>MOQ feasibility for international buyers</li>
-            </ul>
-          </article>
+          <div class="exc-audience">
+            <div>
+              Business owners who want to start exports but feel confused
+            </div>
+            <div>MSMEs &amp; manufacturers seeking international buyers</div>
+            <div>Traders struggling to find genuine, verified importers</div>
+            <div>Exporters tired of fake leads, losses, and guesswork</div>
+          </div>
 
-          <article class="exc-panel">
-            <h3>2. Commercial Readiness</h3>
-            <span class="exc-label">We analyse:</span>
-            <ul class="exc-dash">
-              <li>Domestic pricing &amp; margin analysis</li>
-              <li>Export pricing feasibility (FOB / CIF / CNF)</li>
-              <li>Cost breakup — manufacturing, logistics, duties, packaging</li>
-              <li>Currency fluctuation &amp; buffer assessment</li>
-            </ul>
-            <p class="exc-note">Understanding real cost vs perceived export price is the first unlock.</p>
-          </article>
-
-          <article class="exc-panel">
-            <h3>3. Export Readiness Assessment</h3>
-            <span class="exc-label">We review:</span>
-            <ul class="exc-dash">
-              <li>IEC availability check</li>
-              <li>Certification review (FSSAI, ISO, CE, etc.)</li>
-              <li>Compliance &amp; documentation gaps</li>
-              <li>Packaging &amp; labeling compliance review</li>
-              <li>Country-wise regulatory sensitivity</li>
-            </ul>
-            <p class="exc-note">Most exporters skip this — and face rejection at the border.</p>
-          </article>
-
-          <article class="exc-panel">
-            <h3>4. Market &amp; Geography Understanding</h3>
-            <span class="exc-label">We evaluate:</span>
-            <ul class="exc-dash">
-              <li>Countries you're considering</li>
-              <li>Countries you must avoid initially</li>
-              <li>Demand vs saturation analysis</li>
-              <li>Risk profiling — payment, compliance, logistics</li>
-            </ul>
-            <p class="exc-note">Targeting the wrong country is the most expensive mistake in exports.</p>
-          </article>
-
-          <article class="exc-panel exc-panel--wide">
-            <h3>5. Blocker Identification</h3>
-            <span class="exc-label">We uncover:</span>
-            <ul class="exc-dash exc-dash--cols">
-              <li>Why exports didn't start earlier</li>
-              <li>Why past inquiries didn't convert</li>
-              <li>Where time or money was wasted</li>
-              <li>Operational vs strategic blockers</li>
-            </ul>
-            <p class="exc-note">Before strategy, we need to know what's actually in the way.</p>
-          </article>
+          <div class="exc-card exc-card--wide">
+            <p class="exc-muted-text">If you've ever thought:</p>
+            <div class="exc-quote-rows">
+              <div>“Export feels complicated.”</div>
+              <div>“I don't know which country to target.”</div>
+              <div>“What if payment gets stuck?”</div>
+            </div>
+            <p class="exc-small">
+              This program was built <strong>exactly for you.</strong>
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div class="exc-outcome">
-          <span class="exc-label">Output of Consultation 1</span>
-          <p>You leave with complete diagnostic clarity:</p>
-          <strong>“Now I know my export readiness score — and exactly what to fix before I begin.”</strong>
-        </div>
-      </div>
-    </section>
+      <!-- WHY FLAIRLIST -->
+      <section class="exc-section exc-white">
+        <div class="exc-container exc-container--wide">
+          <h2 class="exc-title">Why FlairList Global?</h2>
 
-    <!-- CONSULTATION 2 -->
-    <section class="exc-section exc-white">
-      <div class="exc-container">
-        <header class="exc-block-head">
-          <span class="exc-pill exc-pill--mint">Consultation 2</span>
-          <h2 class="exc-title">Export Strategy &amp; Solution Call</h2>
-          <p class="exc-value">Market Value: <strong>₹45,000</strong></p>
-          <p class="exc-tagline">To convert raw business data into a clear, executable export plan.</p>
-        </header>
+          <div class="exc-two-col">
+            <div>
+              <p class="exc-intro-text">
+                What makes FlairList Global different:
+              </p>
+              <ul class="exc-symptoms">
+                <li>
+                  ↓ One of India's most practical Export &amp; Business Growth
+                  Consulting firms
+                </li>
+                <li>
+                  ↓ Data-driven guidance with verified export intelligence
+                </li>
+                <li>
+                  ↓ Focus on decision clarity, risk reduction &amp; execution
+                </li>
+              </ul>
+              <p class="exc-small">
+                We don't promise shortcuts.<br />We build
+                <strong
+                  >correct export foundations—so your first shipment happens
+                  right.</strong
+                >
+              </p>
+            </div>
 
-        <div class="exc-grid-2">
-          <article class="exc-panel">
-            <h3>Market Intelligence</h3>
-            <span class="exc-mini-tag">Global Demand</span>
-            <span class="exc-label">We provide:</span>
-            <ul class="exc-dash">
-              <li>Product-specific global demand snapshot</li>
-              <li>Past 1-year India export data (value &amp; volume)</li>
-              <li>Shipment frequency &amp; seasonality trends</li>
-              <li>Importing country demand ranking</li>
-              <li>Buyer maturity analysis by country</li>
-            </ul>
-            <p class="exc-note">Data replaces guesswork.</p>
-          </article>
-
-          <article class="exc-panel">
-            <h3>Competitive Intelligence</h3>
-            <span class="exc-mini-tag">Know Your Competition</span>
-            <span class="exc-label">We analyse:</span>
-            <ul class="exc-dash">
-              <li>Top 10 Indian exporters for the same HS Code</li>
-              <li>Exporter shipment &amp; pricing patterns</li>
-              <li>Buyer overlap analysis</li>
-              <li>White-space opportunity identification</li>
-            </ul>
-            <p class="exc-note">You know exactly where gaps exist for your product to enter.</p>
-          </article>
-
-          <article class="exc-panel">
-            <h3>Pricing &amp; Commercial Strategy</h3>
-            <span class="exc-mini-tag">Profit First</span>
-            <span class="exc-label">We define:</span>
-            <ul class="exc-dash">
-              <li>Export pricing range (minimum–maximum)</li>
-              <li>Recommended pricing band</li>
-              <li>Payment term suitability: Advance, TT, LC</li>
-              <li>Risk-adjusted payment structuring</li>
-              <li>Incoterms recommendation</li>
-            </ul>
-            <p class="exc-note">Right pricing = right buyers. Wrong pricing = zero conversions.</p>
-          </article>
-
-          <article class="exc-panel">
-            <h3>Buyer Acquisition Strategy</h3>
-            <span class="exc-mini-tag">Verified Buyers Only</span>
-            <span class="exc-label">We build:</span>
-            <ul class="exc-dash">
-              <li>Ideal buyer profile definition</li>
-              <li>Buyer credibility filtering logic</li>
-              <li>Importer vs trader comparison</li>
-              <li>Outreach frameworks</li>
-              <li>Buyer conversation &amp; negotiation structure</li>
-            </ul>
-            <p class="exc-note">Stop chasing fake leads. Start converting verified importers.</p>
-          </article>
-
-          <article class="exc-panel exc-panel--wide">
-            <h3>Compliance &amp; Documentation Strategy</h3>
-            <span class="exc-label">We cover:</span>
-            <ul class="exc-dash exc-dash--cols">
-              <li>Mandatory export documents list</li>
-              <li>Product &amp; country-specific certifications</li>
-              <li>Packaging &amp; labeling compliance checklist</li>
-              <li>Port, customs &amp; CHA readiness overview</li>
-            </ul>
-            <p class="exc-note">Compliance gaps kill deals at the last moment. We close them before you start.</p>
-          </article>
-        </div>
-
-        <div class="exc-outcome">
-          <span class="exc-label">Strategic Output of Consultation 2</span>
-          <p>You receive a concrete go-to-market direction:</p>
-          <strong>“Export country shortlisted. Pricing set. Buyer outreach strategy ready. Risk mapped.”</strong>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHAT YOU RECEIVE -->
-    <section class="exc-section exc-soft">
-      <div class="exc-container">
-        <h2 class="exc-title">What You Receive</h2>
-
-        <div class="exc-grid-2">
-          <article class="exc-panel exc-deliverable">
-            <div class="exc-deliverable-head">
-              <svg class="exc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
-              <div>
-                <span class="exc-label">PDF Report · Delivered Same Day</span>
-                <p class="exc-value">Market Value: ₹40,000</p>
+            <div>
+              <div class="exc-stats">
+                <div class="exc-stat">
+                  <strong>₹10,000+ Cr</strong
+                  ><span>Combined client trade value</span>
+                </div>
+                <div class="exc-stat">
+                  <strong>3 Lakh+</strong><span>Global consumers impacted</span>
+                </div>
+              </div>
+              <div
+                class="exc-flow"
+                aria-label="Direction, then Intelligence, then Execution"
+              >
+                <span class="exc-chip-dark">Direction</span><i>→</i
+                ><span class="exc-chip-dark">Intelligence</span><i>→</i
+                ><span class="exc-chip-dark">Execution</span>
               </div>
             </div>
-            <h3 class="exc-h3-lg">Detailed Export Intelligence Report</h3>
-            <p class="exc-muted-text">Your export control document. What it covers:</p>
-            <ul class="exc-dash">
-              <li><strong>Market Intelligence</strong> — global product demand analysis, top importing countries ranked, import value &amp; volume trends, geography-wise price ranges</li>
-              <li><strong>India-Centric Export Data</strong> — HS Code-based export statistics, shipment count &amp; frequency, export value trends, export velocity indicators</li>
-              <li><strong>Competitive Intelligence</strong> — top Indian exporters list, exporter product mix, buyer-country mapping</li>
-              <li><strong>Buyer Intelligence</strong> — buyer sourcing behaviour, import frequency &amp; seriousness, average order size indicators</li>
-              <li><strong>Compliance &amp; Risk</strong> — mandatory &amp; optional certifications, country-wise regulatory overview, payment risk zones, overall export feasibility summary</li>
-            </ul>
-          </article>
+          </div>
+        </div>
+      </section>
 
-          <article class="exc-panel exc-deliverable">
-            <div class="exc-deliverable-head">
-              <svg class="exc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
-              <div>
-                <span class="exc-label">PDF Roadmap · Delivered Next Day</span>
-                <p class="exc-value">Market Value: ₹25,000</p>
+      <!-- CONSULTATION 1 -->
+      <section class="exc-section exc-soft">
+        <div class="exc-container exc-container--wide">
+          <header class="exc-block-head">
+            <span class="exc-pill exc-pill--green">Consultation 1</span>
+            <h2 class="exc-title">
+              Business Understanding &amp; Export Readiness Call
+            </h2>
+            <p class="exc-value">Market Value: <strong>₹35,000</strong></p>
+            <p class="exc-tagline">
+              To diagnose export readiness and identify exact blockers before
+              any strategy is suggested. This call ensures you don't enter
+              exports blindly.
+            </p>
+          </header>
+
+          <div class="exc-grid-2">
+            <article class="exc-panel">
+              <h3>1. Business &amp; Product Understanding</h3>
+              <span class="exc-label">We map:</span>
+              <ul class="exc-dash">
+                <li>Product category &amp; variant mapping</li>
+                <li>HS Code identification &amp; validation</li>
+                <li>Product usage, shelf life &amp; packaging suitability</li>
+                <li>Production capacity &amp; scalability check</li>
+                <li>MOQ feasibility for international buyers</li>
+              </ul>
+            </article>
+
+            <article class="exc-panel">
+              <h3>2. Commercial Readiness</h3>
+              <span class="exc-label">We analyse:</span>
+              <ul class="exc-dash">
+                <li>Domestic pricing &amp; margin analysis</li>
+                <li>Export pricing feasibility (FOB / CIF / CNF)</li>
+                <li>
+                  Cost breakup — manufacturing, logistics, duties, packaging
+                </li>
+                <li>Currency fluctuation &amp; buffer assessment</li>
+              </ul>
+              <p class="exc-note">
+                Understanding real cost vs perceived export price is the first
+                unlock.
+              </p>
+            </article>
+
+            <article class="exc-panel">
+              <h3>3. Export Readiness Assessment</h3>
+              <span class="exc-label">We review:</span>
+              <ul class="exc-dash">
+                <li>IEC availability check</li>
+                <li>Certification review (FSSAI, ISO, CE, etc.)</li>
+                <li>Compliance &amp; documentation gaps</li>
+                <li>Packaging &amp; labeling compliance review</li>
+                <li>Country-wise regulatory sensitivity</li>
+              </ul>
+              <p class="exc-note">
+                Most exporters skip this — and face rejection at the border.
+              </p>
+            </article>
+
+            <article class="exc-panel">
+              <h3>4. Market &amp; Geography Understanding</h3>
+              <span class="exc-label">We evaluate:</span>
+              <ul class="exc-dash">
+                <li>Countries you're considering</li>
+                <li>Countries you must avoid initially</li>
+                <li>Demand vs saturation analysis</li>
+                <li>Risk profiling — payment, compliance, logistics</li>
+              </ul>
+              <p class="exc-note">
+                Targeting the wrong country is the most expensive mistake in
+                exports.
+              </p>
+            </article>
+
+            <article class="exc-panel exc-panel--wide">
+              <h3>5. Blocker Identification</h3>
+              <span class="exc-label">We uncover:</span>
+              <ul class="exc-dash exc-dash--cols">
+                <li>Why exports didn't start earlier</li>
+                <li>Why past inquiries didn't convert</li>
+                <li>Where time or money was wasted</li>
+                <li>Operational vs strategic blockers</li>
+              </ul>
+              <p class="exc-note">
+                Before strategy, we need to know what's actually in the way.
+              </p>
+            </article>
+          </div>
+
+          <div class="exc-outcome">
+            <span class="exc-label">Output of Consultation 1</span>
+            <p>You leave with complete diagnostic clarity:</p>
+            <strong
+              >“Now I know my export readiness score — and exactly what to fix
+              before I begin.”</strong
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- CONSULTATION 2 -->
+      <section class="exc-section exc-white">
+        <div class="exc-container exc-container--wide">
+          <header class="exc-block-head">
+            <span class="exc-pill exc-pill--mint">Consultation 2</span>
+            <h2 class="exc-title">Export Strategy &amp; Solution Call</h2>
+            <p class="exc-value">Market Value: <strong>₹45,000</strong></p>
+            <p class="exc-tagline">
+              To convert raw business data into a clear, executable export plan.
+            </p>
+          </header>
+
+          <div class="exc-grid-2">
+            <article class="exc-panel">
+              <h3>Market Intelligence</h3>
+              <span class="exc-mini-tag">Global Demand</span>
+              <span class="exc-label">We provide:</span>
+              <ul class="exc-dash">
+                <li>Product-specific global demand snapshot</li>
+                <li>Past 1-year India export data (value &amp; volume)</li>
+                <li>Shipment frequency &amp; seasonality trends</li>
+                <li>Importing country demand ranking</li>
+                <li>Buyer maturity analysis by country</li>
+              </ul>
+              <p class="exc-note">Data replaces guesswork.</p>
+            </article>
+
+            <article class="exc-panel">
+              <h3>Competitive Intelligence</h3>
+              <span class="exc-mini-tag">Know Your Competition</span>
+              <span class="exc-label">We analyse:</span>
+              <ul class="exc-dash">
+                <li>Top 10 Indian exporters for the same HS Code</li>
+                <li>Exporter shipment &amp; pricing patterns</li>
+                <li>Buyer overlap analysis</li>
+                <li>White-space opportunity identification</li>
+              </ul>
+              <p class="exc-note">
+                You know exactly where gaps exist for your product to enter.
+              </p>
+            </article>
+
+            <article class="exc-panel">
+              <h3>Pricing &amp; Commercial Strategy</h3>
+              <span class="exc-mini-tag">Profit First</span>
+              <span class="exc-label">We define:</span>
+              <ul class="exc-dash">
+                <li>Export pricing range (minimum–maximum)</li>
+                <li>Recommended pricing band</li>
+                <li>Payment term suitability: Advance, TT, LC</li>
+                <li>Risk-adjusted payment structuring</li>
+                <li>Incoterms recommendation</li>
+              </ul>
+              <p class="exc-note">
+                Right pricing = right buyers. Wrong pricing = zero conversions.
+              </p>
+            </article>
+
+            <article class="exc-panel">
+              <h3>Buyer Acquisition Strategy</h3>
+              <span class="exc-mini-tag">Verified Buyers Only</span>
+              <span class="exc-label">We build:</span>
+              <ul class="exc-dash">
+                <li>Ideal buyer profile definition</li>
+                <li>Buyer credibility filtering logic</li>
+                <li>Importer vs trader comparison</li>
+                <li>Outreach frameworks</li>
+                <li>Buyer conversation &amp; negotiation structure</li>
+              </ul>
+              <p class="exc-note">
+                Stop chasing fake leads. Start converting verified importers.
+              </p>
+            </article>
+
+            <article class="exc-panel exc-panel--wide">
+              <h3>Compliance &amp; Documentation Strategy</h3>
+              <span class="exc-label">We cover:</span>
+              <ul class="exc-dash exc-dash--cols">
+                <li>Mandatory export documents list</li>
+                <li>Product &amp; country-specific certifications</li>
+                <li>Packaging &amp; labeling compliance checklist</li>
+                <li>Port, customs &amp; CHA readiness overview</li>
+              </ul>
+              <p class="exc-note">
+                Compliance gaps kill deals at the last moment. We close them
+                before you start.
+              </p>
+            </article>
+          </div>
+
+          <div class="exc-outcome">
+            <span class="exc-label">Strategic Output of Consultation 2</span>
+            <p>You receive a concrete go-to-market direction:</p>
+            <strong
+              >“Export country shortlisted. Pricing set. Buyer outreach strategy
+              ready. Risk mapped.”</strong
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT YOU RECEIVE -->
+      <section class="exc-section exc-soft">
+        <div class="exc-container exc-container--wide">
+          <h2 class="exc-title">What You Receive</h2>
+
+          <div class="exc-grid-2">
+            <article class="exc-panel exc-deliverable">
+              <div class="exc-deliverable-head">
+                <svg
+                  class="exc-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                  <polyline points="16 7 22 7 22 13" />
+                </svg>
+                <div>
+                  <span class="exc-label">PDF Report · Delivered Same Day</span>
+                  <p class="exc-value">Market Value: ₹40,000</p>
+                </div>
+              </div>
+              <h3 class="exc-h3-lg">Detailed Export Intelligence Report</h3>
+              <p class="exc-muted-text">
+                Your export control document. What it covers:
+              </p>
+              <ul class="exc-dash">
+                <li>
+                  <strong>Market Intelligence</strong> — global product demand
+                  analysis, top importing countries ranked, import value &amp;
+                  volume trends, geography-wise price ranges
+                </li>
+                <li>
+                  <strong>India-Centric Export Data</strong> — HS Code-based
+                  export statistics, shipment count &amp; frequency, export
+                  value trends, export velocity indicators
+                </li>
+                <li>
+                  <strong>Competitive Intelligence</strong> — top Indian
+                  exporters list, exporter product mix, buyer-country mapping
+                </li>
+                <li>
+                  <strong>Buyer Intelligence</strong> — buyer sourcing
+                  behaviour, import frequency &amp; seriousness, average order
+                  size indicators
+                </li>
+                <li>
+                  <strong>Compliance &amp; Risk</strong> — mandatory &amp;
+                  optional certifications, country-wise regulatory overview,
+                  payment risk zones, overall export feasibility summary
+                </li>
+              </ul>
+            </article>
+
+            <article class="exc-panel exc-deliverable">
+              <div class="exc-deliverable-head">
+                <svg
+                  class="exc-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+                  <line x1="9" y1="3" x2="9" y2="18" />
+                  <line x1="15" y1="6" x2="15" y2="21" />
+                </svg>
+                <div>
+                  <span class="exc-label"
+                    >PDF Roadmap · Delivered Next Day</span
+                  >
+                  <p class="exc-value">Market Value: ₹25,000</p>
+                </div>
+              </div>
+              <h3 class="exc-h3-lg">12-Week Export Execution Roadmap</h3>
+              <p class="exc-muted-text">
+                A week-by-week export execution plan. Weekly Breakdown:
+              </p>
+              <ul class="exc-dash">
+                <li>
+                  <strong>Weeks 1–2:</strong> Foundation — IEC, HS Code,
+                  packaging, pricing
+                </li>
+                <li>
+                  <strong>Weeks 3–4:</strong> Compliance — certifications,
+                  regulations, CHA readiness
+                </li>
+                <li>
+                  <strong>Weeks 5–6:</strong> Buyer Outreach — buyer list usage,
+                  outreach, qualification
+                </li>
+                <li>
+                  <strong>Weeks 7–8:</strong> Negotiation — samples, pricing,
+                  payment terms, due diligence
+                </li>
+                <li>
+                  <strong>Weeks 9–10:</strong> Logistics Planning — freight,
+                  Incoterms, documentation, scheduling
+                </li>
+                <li>
+                  <strong>Weeks 11–12:</strong> Execution — order confirmation,
+                  payment, shipment, follow-up
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUPPORT -->
+      <section class="exc-section exc-white exc-support">
+        <div class="exc-container exc-container--narrow">
+          <span class="exc-pill exc-pill--mint"
+            >4-Week Priority Export Support</span
+          >
+          <h2 class="exc-title">Guided Execution, Not Passive Consulting</h2>
+          <p class="exc-value">Market Value: <strong>₹30,000</strong></p>
+          <div class="exc-chips">
+            <span>Weekly expert calls</span>
+            <span>Execution review &amp; correction</span>
+            <span>Buyer conversation guidance</span>
+            <span>Compliance clarifications</span>
+            <span>Shipment-stage confidence</span>
+          </div>
+          <p class="exc-tagline">
+            “This kept us from making a ₹10 Lakh mistake on our first shipment.”
+          </p>
+        </div>
+      </section>
+
+      <!-- WHAT CHANGES -->
+      <section class="exc-section exc-soft">
+        <div class="exc-container exc-container--narrow">
+          <h2 class="exc-title exc-title--center">
+            What Changes After This Program
+          </h2>
+          <div class="exc-change-list">
+            <span>Export direction is crystal clear</span>
+            <span>Right market &amp; country identified</span>
+            <span>Pricing is export-ready &amp; competitive</span>
+            <span>Buyer acquisition becomes structured</span>
+            <span>Compliance &amp; risk mapped in advance</span>
+            <span>First shipment happens right</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL FEELING -->
+      <section class="exc-section exc-white">
+        <div class="exc-container exc-container--narrow">
+          <h2 class="exc-title exc-title--center">
+            The Final Feeling We Want You to Have
+          </h2>
+
+          <div class="exc-feelings">
+            <div>“I know exactly which country I should target.”</div>
+            <div>“I have a complete execution plan, week by week.”</div>
+            <div>“My first export will happen right — not by guesswork.”</div>
+          </div>
+
+          <div class="exc-card exc-real">
+            <h3>Why This Is Real Export Consulting (Not Advice)</h3>
+            <ul class="exc-crosses">
+              <li>No random export webinar</li>
+              <li>No fake buyer lead lists</li>
+              <li>No costly trial &amp; error</li>
+            </ul>
+            <div class="exc-only">
+              <span class="exc-label">Only:</span>
+              <div
+                class="exc-flow"
+                aria-label="Direction, then Intelligence, then Strategy, then Execution"
+              >
+                <span class="exc-chip-dark">Direction</span><i>→</i
+                ><span class="exc-chip-dark">Intelligence</span><i>→</i
+                ><span class="exc-chip-dark">Strategy</span><i>→</i
+                ><span class="exc-chip-dark">Execution</span>
               </div>
             </div>
-            <h3 class="exc-h3-lg">12-Week Export Execution Roadmap</h3>
-            <p class="exc-muted-text">A week-by-week export execution plan. Weekly Breakdown:</p>
-            <ul class="exc-dash">
-              <li><strong>Weeks 1–2:</strong> Foundation — IEC, HS Code, packaging, pricing</li>
-              <li><strong>Weeks 3–4:</strong> Compliance — certifications, regulations, CHA readiness</li>
-              <li><strong>Weeks 5–6:</strong> Buyer Outreach — buyer list usage, outreach, qualification</li>
-              <li><strong>Weeks 7–8:</strong> Negotiation — samples, pricing, payment terms, due diligence</li>
-              <li><strong>Weeks 9–10:</strong> Logistics Planning — freight, Incoterms, documentation, scheduling</li>
-              <li><strong>Weeks 11–12:</strong> Execution — order confirmation, payment, shipment, follow-up</li>
-            </ul>
-          </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SUPPORT -->
-    <section class="exc-section exc-white exc-support">
-      <div class="exc-container exc-container--narrow">
-        <span class="exc-pill exc-pill--mint">4-Week Priority Export Support</span>
-        <h2 class="exc-title">Guided Execution, Not Passive Consulting</h2>
-        <p class="exc-value">Market Value: <strong>₹30,000</strong></p>
-        <div class="exc-chips">
-          <span>Weekly expert calls</span>
-          <span>Execution review &amp; correction</span>
-          <span>Buyer conversation guidance</span>
-          <span>Compliance clarifications</span>
-          <span>Shipment-stage confidence</span>
-        </div>
-        <p class="exc-tagline">“This kept us from making a ₹10 Lakh mistake on our first shipment.”</p>
-      </div>
-    </section>
+      <!-- INVESTMENT -->
+      <section class="exc-investment">
+        <div class="exc-container exc-container--mid">
+          <h2>Program Value Breakdown</h2>
 
-    <!-- WHAT CHANGES -->
-    <section class="exc-section exc-soft">
-      <div class="exc-container exc-container--narrow">
-        <h2 class="exc-title exc-title--center">What Changes After This Program</h2>
-        <div class="exc-change-list">
-          <span>Export direction is crystal clear</span>
-          <span>Right market &amp; country identified</span>
-          <span>Pricing is export-ready &amp; competitive</span>
-          <span>Buyer acquisition becomes structured</span>
-          <span>Compliance &amp; risk mapped in advance</span>
-          <span>First shipment happens right</span>
-        </div>
-      </div>
-    </section>
+          <div class="exc-investment-grid">
+            <div class="exc-price-table">
+              <div>
+                <span>Export Readiness Consultation</span><b>₹35,000</b>
+              </div>
+              <div><span>Export Strategy Consultation</span><b>₹45,000</b></div>
+              <div>
+                <span>Detailed Export Intelligence Report (PDF)</span
+                ><b>₹40,000</b>
+              </div>
+              <div>
+                <span>12-Week Export Execution Roadmap (PDF)</span
+                ><b>₹25,000</b>
+              </div>
+              <div>
+                <span>4-Week Priority Export Support</span><b>₹30,000</b>
+              </div>
+              <div class="exc-total">
+                <span>Total Real Market Value</span><b>₹1,75,000</b>
+              </div>
+            </div>
 
-    <!-- FINAL FEELING -->
-    <section class="exc-section exc-white">
-      <div class="exc-container exc-container--narrow">
-        <h2 class="exc-title exc-title--center">The Final Feeling We Want You to Have</h2>
-
-        <div class="exc-feelings">
-          <div>“I know exactly which country I should target.”</div>
-          <div>“I have a complete execution plan, week by week.”</div>
-          <div>“My first export will happen right — not by guesswork.”</div>
-        </div>
-
-        <div class="exc-card exc-real">
-          <h3>Why This Is Real Export Consulting (Not Advice)</h3>
-          <ul class="exc-crosses">
-            <li>No random export webinar</li>
-            <li>No fake buyer lead lists</li>
-            <li>No costly trial &amp; error</li>
-          </ul>
-          <div class="exc-only">
-            <span class="exc-label">Only:</span>
-            <div class="exc-flow" aria-label="Direction, then Intelligence, then Strategy, then Execution">
-              <span class="exc-chip-dark">Direction</span><i>→</i><span class="exc-chip-dark">Intelligence</span><i>→</i><span class="exc-chip-dark">Strategy</span><i>→</i><span class="exc-chip-dark">Execution</span>
+            <div class="exc-price-box">
+              <span class="exc-price-label">Special Program Price</span>
+              <strong>₹80,000 <span class="exc-gst">+ GST</span></strong>
+              <p class="exc-regular">Regular Price: <s>₹1,00,000</s></p>
+              <p class="exc-price-note">
+                You receive ₹1.75 Lakhs-worth export thinking at less than 30%
+                of its real consulting value. One wrong export decision can cost
+                more than this entire program.
+              </p>
+              <a href="./contact.html" class="exc-btn exc-btn--light"
+                >Book Your Consultation</a
+              >
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- INVESTMENT -->
-    <section class="exc-investment">
-      <div class="exc-container exc-container--mid">
-        <h2>Program Value Breakdown</h2>
+      <!-- GET STARTED -->
+      <section class="exc-section exc-white" id="start">
+        <div class="exc-container exc-container--narrow">
+          <div class="exc-card exc-start">
+            <h2>Get Started Today</h2>
+            <p class="exc-muted-text">
+              If India can be your base, the world can be your market — with the
+              right direction. This consultation ensures your first export
+              happens right, not randomly.
+            </p>
 
-        <div class="exc-investment-grid">
-          <div class="exc-price-table">
-            <div><span>Export Readiness Consultation</span><b>₹35,000</b></div>
-            <div><span>Export Strategy Consultation</span><b>₹45,000</b></div>
-            <div><span>Detailed Export Intelligence Report (PDF)</span><b>₹40,000</b></div>
-            <div><span>12-Week Export Execution Roadmap (PDF)</span><b>₹25,000</b></div>
-            <div><span>4-Week Priority Export Support</span><b>₹30,000</b></div>
-            <div class="exc-total"><span>Total Real Market Value</span><b>₹1,75,000</b></div>
-          </div>
+            <div class="exc-contact">
+              <div>
+                <span>Email</span
+                ><span
+                  ><a href="mailto:hello@flairlist.com"
+                    >hello@flairlist.com</a
+                  ></span
+                >
+              </div>
+              <div>
+                <span>Website</span
+                ><span
+                  ><a href="https://www.flairlist.com/">flairlist.com</a></span
+                >
+              </div>
+              <div>
+                <span>Instagram</span
+                ><span>@flairlist | @theshubhambibave</span>
+              </div>
+            </div>
 
-          <div class="exc-price-box">
-            <span class="exc-price-label">Special Program Price</span>
-            <strong>₹80,000 <span class="exc-gst">+ GST</span></strong>
-            <p class="exc-regular">Regular Price: <s>₹1,00,000</s></p>
-            <p class="exc-price-note">You receive ₹1.75 Lakhs-worth export thinking at less than 30% of its real consulting value. One wrong export decision can cost more than this entire program.</p>
-            <a href="#start" class="exc-btn exc-btn--light">Book Your Consultation</a>
+            <a href="./contact.html" class="exc-btn">Book Your Consultation</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- GET STARTED -->
-    <section class="exc-section exc-white" id="start">
-      <div class="exc-container exc-container--narrow">
-        <div class="exc-card exc-start">
-          <h2>Get Started Today</h2>
-          <p class="exc-muted-text">If India can be your base, the world can be your market — with the right direction. This consultation ensures your first export happens right, not randomly.</p>
-
-          <div class="exc-contact">
-            <div><span>Email</span><span><a href="mailto:hello@flairlist.com">hello@flairlist.com</a></span></div>
-            <div><span>Website</span><span><a href="https://www.flairlist.com/">flairlist.com</a></span></div>
-            <div><span>Instagram</span><span>@flairlist | @theshubhambibave</span></div>
-          </div>
-
-          <a href="#start" class="exc-btn">Book Your Consultation</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-            <footer class="site-footer">
-        <div class="footer-container">
-          <!-- =================================
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================
              COLUMN 1
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Who We Are</h3>
+        <div class="footer-column">
+          <h3>Who We Are</h3>
 
-            <a href="./mission.html">Mission</a>
-            <a href="./vision.html">Vision</a>
-            <a href="./values.html">Values</a>
-            <a href="./founder.html">Founder &amp; CEO</a>
-            <a href="./team.html">Leadership &amp; Team</a>
-            <a href="./press_room.html">Press Room</a>
-          </div>
+          <a href="./mission.html">Mission</a>
+          <a href="./vision.html">Vision</a>
+          <a href="./values.html">Values</a>
+          <a href="./founder.html">Founder &amp; CEO</a>
+          <a href="./team.html">Leadership &amp; Team</a>
+          <a href="./press_room.html">Press Room</a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 2
         ================================== -->
 
-          <div class="footer-column">
-            <h3>What We Do</h3>
+        <div class="footer-column">
+          <h3>What We Do</h3>
 
-            <a href="#" class="footer-bold"> Services </a>
+          <span class="footer-bold footer-label"> Services </span>
 
-            <a href="./expert-business-consultancy.html"> Expert Business Consultation </a>
+          <a href="./expert-business-consultancy.html">
+            Expert Business Consultation
+          </a>
 
-            <a href="./export-consultation.html"> Export Consultation </a>
+          <a href="./export-consultation.html"> Export Consultation </a>
 
-            <a href="./export-mentorship.html"> Export Mentorship </a>
+          <a href="./export-mentorship.html"> Export Mentorship </a>
 
-            <a href="./exclusive-business-growth-partnership.html"> Exclusive Partnership </a>
+          <a href="./exclusive-business-growth-partnership.html">
+            Exclusive Partnership
+          </a>
 
-            <a href="#" class="footer-bold"> Global Import-Export </a>
+          <a href="#" class="footer-bold"> Global Import-Export </a>
 
-            <a href="./countries.html"> Countries </a>
+          <a href="./countries.html"> Countries </a>
 
-            <a href="./products.html"> Products </a>
+          <a href="./products.html"> Products </a>
 
-            <a href="./partners.html"> Partner With Us </a>
-          </div>
+          <a href="./partners.html"> Partner With Us </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 3
         ================================== -->
 
-          <div class="footer-column">
-            <h3>More</h3>
+        <div class="footer-column">
+          <h3>More</h3>
 
-            <a href="#" class="footer-bold"> Supply Chain &amp; Workforce </a>
+          <span class="footer-bold footer-label">
+            Supply Chain &amp; Workforce
+          </span>
 
-            <a href="#"> Supply Chain &amp; Distribution </a>
+          <a href="#"> Supply Chain &amp; Distribution </a>
 
-            <a href="./workforce-mobility.html"> Workforce Programs </a>
+          <a href="./workforce-mobility.html"> Workforce Programs </a>
 
-            <a href="./deployment.html"> Deployment </a>
+          <a href="./deployment.html"> Deployment </a>
 
-            <a href="#" class="footer-bold"> Explore </a>
+          <a href="#" class="footer-bold"> Explore </a>
 
-            <a href="#"> Industries </a>
+          <a href="./industries.html"> Industries </a>
 
-            <a href="./case-studies.html"> Case Studies </a>
-          </div>
+          <a href="./case-studies.html"> Case Studies </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 4
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Opportunities</h3>
+        <div class="footer-column">
+          <h3>Opportunities</h3>
 
-            <a href="./career.html"> Careers </a>
+          <a href="./career.html"> Careers </a>
 
-            <a href="./investor.html"> Investors </a>
+          <a href="./investor.html"> Investors </a>
 
-            <a href="./contact.html"> Contact Us </a>
+          <a href="./contact.html"> Contact Us </a>
 
-            <h4 class="footer-follow-title">Follow Us</h4>
+          <h4 class="footer-follow-title">Follow Us</h4>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a
+            href="https://www.instagram.com/theshubhambibave/"
+            class="social-link"
+          >
+            <span class="social-icon"> ◎ </span>
 
-              @theshubhambibave
-            </a>
+            @theshubhambibave
+          </a>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a href="#" class="social-link">
+            <span class="social-icon"> ◎ </span>
 
-              @flairlist
-            </a>
-          </div>
+            @flairlist
+          </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 5
         ================================== -->
 
-          <div class="footer-column footer-connect">
-            <h3>Let's Connect</h3>
+        <div class="footer-column footer-connect">
+          <h3>Let's Connect</h3>
 
-            <div class="footer-contact">
-              <strong> ✉ Email: </strong>
+          <div class="footer-contact">
+            <strong> ✉ Email: </strong>
 
-              <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
-            </div>
-
-            <div class="footer-contact">
-              <strong> ◎ Website: </strong>
-
-              <a href="https://www.flairlist.com/"> FlairList.com </a>
-            </div>
-
-            <a href="./contact.html" class="footer-button"> Get in Touch </a>
+            <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
           </div>
-        </div>
 
-        <!-- =====================================
+          <div class="footer-contact">
+            <strong> ◎ Website: </strong>
+
+            <a href="https://www.flairlist.com/"> FlairList.com </a>
+          </div>
+
+          <a href="./contact.html" class="footer-button"> Get in Touch </a>
+        </div>
+      </div>
+
+      <!-- =====================================
          FOOTER BOTTOM
     ====================================== -->
 
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p>2026 FlairList Global. All rights reserved.</p>
-
-            <p class="footer-tagline">
-              "Building what global business runs on."
-            </p>
-          </div>
-
-          <nav class="footer-legal">
-            <a href="#"> Terms of Use </a>
-
-            <a href="#"> Privacy Policy </a>
-
-            <a href="#"> Refund Policy </a>
-
-            <a href="#"> Cancellation Policy </a>
-
-            <a href="#"> Cookies </a>
-          </nav>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>2026 FlairList Global. All rights reserved.</p>
         </div>
-      </footer>
 
-<script src="./Assets/js/script.js?v=3.0"></script>
-</body>
+        <nav class="footer-legal">
+          <a href="./terms-and-conditions.html"> Terms of Use </a>
+
+          <a href="./privacy-policy.html"> Privacy Policy </a>
+
+          <a href="./refund-policy.html"> Refund Policy </a>
+
+          <a href="./cancellation-policy.html"> Cancellation Policy </a>
+
+          <a href="./privacy-policy.html"> Cookies </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./Assets/js/script.js?v=3.8"></script>
+  </body>
 </html>

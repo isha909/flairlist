@@ -41,7 +41,7 @@ img {
   color: #ffffff;
   text-align: center;
   padding: 70px 30px;
-  height: 400px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,7 +57,7 @@ img {
 }
 
 .hero-title {
-  font-size: 58px;
+  font-size: 62px;
   font-weight: 700;
   width: 950px;
   margin: 0 auto 14px auto;
@@ -86,7 +86,7 @@ img {
 }
 
 .intro-text p {
-  font-size: 19px;
+  font-size: 17px;
   color: var(--text-body);
   margin-bottom: 16px;
 }
@@ -118,7 +118,7 @@ img {
 }
 
 .section-title {
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 700;
   color: var(--text-heading);
   max-width: 1180px;

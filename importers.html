@@ -1,26 +1,30 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Supply Chain: Importers | FlairList Global</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./Assets/css/style.css?v=3.0" />
-  <link rel="stylesheet" href="./Assets/css/importers.css?v=3.0" />
-  <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
-</head>
-<body>
-  <!-- ===================== NAVBAR ===================== -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supply Chain: Importers | FlairList Global</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/css/style.css?v=3.8" />
+    <link rel="stylesheet" href="./Assets/css/importers.css?v=3.8" />
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- ===================== NAVBAR ===================== -->
     <header class="navbar" id="siteNavbar">
       <div class="navbar-container">
         <div class="nav-left">
           <!-- LOGO -->
-          <a href="./index.html" class="logo" aria-label="FlairList Global Home">
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="FlairList Global Home"
+          >
             <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
           </a>
 
@@ -62,211 +66,234 @@
             </button>
           </form>
 
-         <!-- COUNTRY / LANGUAGE SELECTOR -->
-<div class="country-selector">
-    <button class="country-btn" type="button" aria-expanded="false">
-        <span id="selectedCountry">India</span>
-        <svg _ngcontent-ng-c1672362817="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="app-icon" width="24" height="24"><path _ngcontent-ng-c1672362817="" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E4E3DE" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter"></path></svg>
-    </button>
+          <!-- COUNTRY / LANGUAGE SELECTOR -->
+          <div class="country-selector">
+            <button class="country-btn" type="button" aria-expanded="false">
+              <span id="selectedCountry">India</span>
+              <svg
+                _ngcontent-ng-c1672362817=""
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="app-icon"
+                width="24"
+                height="24"
+              >
+                <path
+                  _ngcontent-ng-c1672362817=""
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  fill="#E4E3DE"
+                  stroke="none"
+                  stroke-width="0"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+              </svg>
+            </button>
 
-    <div class="country-dropdown" id="countryDropdown">
+            <div class="country-dropdown" id="countryDropdown">
+              <button type="button" data-lang="en" data-country="India">
+                India
+              </button>
 
-        <button type="button" data-lang="en" data-country="India">
-            India
-        </button>
+              <button
+                type="button"
+                data-lang="ar"
+                data-country="United Arab Emirates"
+              >
+                United Arab Emirates
+              </button>
 
-        <button type="button" data-lang="ar" data-country="United Arab Emirates">
-            United Arab Emirates
-        </button>
+              <button type="button" data-lang="en" data-country="United States">
+                United States
+              </button>
 
-        <button type="button" data-lang="en" data-country="United States">
-            United States
-        </button>
+              <button type="button" data-lang="zh-CN" data-country="China">
+                China
+              </button>
 
-        <button type="button" data-lang="zh-CN" data-country="China">
-            China
-        </button>
+              <button type="button" data-lang="nl" data-country="Netherlands">
+                Netherlands
+              </button>
 
-        <button type="button" data-lang="nl" data-country="Netherlands">
-            Netherlands
-        </button>
+              <button
+                type="button"
+                data-lang="en"
+                data-country="United Kingdom"
+              >
+                United Kingdom
+              </button>
 
-        <button type="button" data-lang="en" data-country="United Kingdom">
-            United Kingdom
-        </button>
+              <button type="button" data-lang="en" data-country="Singapore">
+                Singapore
+              </button>
 
-        <button type="button" data-lang="en" data-country="Singapore">
-            Singapore
-        </button>
+              <button type="button" data-lang="ar" data-country="Saudi Arabia">
+                Saudi Arabia
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Saudi Arabia">
-            Saudi Arabia
-        </button>
+              <button type="button" data-lang="bn" data-country="Bangladesh">
+                Bangladesh
+              </button>
 
-        <button type="button" data-lang="bn" data-country="Bangladesh">
-            Bangladesh
-        </button>
+              <button type="button" data-lang="de" data-country="Germany">
+                Germany
+              </button>
 
-        <button type="button" data-lang="de" data-country="Germany">
-            Germany
-        </button>
+              <button type="button" data-lang="it" data-country="Italy">
+                Italy
+              </button>
 
-        <button type="button" data-lang="it" data-country="Italy">
-            Italy
-        </button>
+              <button type="button" data-lang="ja" data-country="Japan">
+                Japan
+              </button>
 
-        <button type="button" data-lang="ja" data-country="Japan">
-            Japan
-        </button>
+              <button type="button" data-lang="ko" data-country="South Korea">
+                South Korea
+              </button>
 
-        <button type="button" data-lang="ko" data-country="South Korea">
-            South Korea
-        </button>
+              <button type="button" data-lang="ms" data-country="Malaysia">
+                Malaysia
+              </button>
 
-        <button type="button" data-lang="ms" data-country="Malaysia">
-            Malaysia
-        </button>
+              <button type="button" data-lang="th" data-country="Thailand">
+                Thailand
+              </button>
 
-        <button type="button" data-lang="th" data-country="Thailand">
-            Thailand
-        </button>
+              <button type="button" data-lang="id" data-country="Indonesia">
+                Indonesia
+              </button>
 
-        <button type="button" data-lang="id" data-country="Indonesia">
-            Indonesia
-        </button>
+              <button type="button" data-lang="vi" data-country="Vietnam">
+                Vietnam
+              </button>
 
-        <button type="button" data-lang="vi" data-country="Vietnam">
-            Vietnam
-        </button>
+              <button type="button" data-lang="en" data-country="Philippines">
+                Philippines
+              </button>
 
-        <button type="button" data-lang="en" data-country="Philippines">
-            Philippines
-        </button>
+              <button type="button" data-lang="en" data-country="Australia">
+                Australia
+              </button>
 
-        <button type="button" data-lang="en" data-country="Australia">
-            Australia
-        </button>
+              <button type="button" data-lang="en" data-country="New Zealand">
+                New Zealand
+              </button>
 
-        <button type="button" data-lang="en" data-country="New Zealand">
-            New Zealand
-        </button>
+              <button type="button" data-lang="fr" data-country="France">
+                France
+              </button>
 
-        <button type="button" data-lang="fr" data-country="France">
-            France
-        </button>
+              <button type="button" data-lang="es" data-country="Spain">
+                Spain
+              </button>
 
-        <button type="button" data-lang="es" data-country="Spain">
-            Spain
-        </button>
+              <button type="button" data-lang="fr" data-country="Belgium">
+                Belgium
+              </button>
 
-        <button type="button" data-lang="fr" data-country="Belgium">
-            Belgium
-        </button>
+              <button type="button" data-lang="de" data-country="Switzerland">
+                Switzerland
+              </button>
 
-        <button type="button" data-lang="de" data-country="Switzerland">
-            Switzerland
-        </button>
+              <button type="button" data-lang="pl" data-country="Poland">
+                Poland
+              </button>
 
-        <button type="button" data-lang="pl" data-country="Poland">
-            Poland
-        </button>
+              <button type="button" data-lang="de" data-country="Austria">
+                Austria
+              </button>
 
-        <button type="button" data-lang="de" data-country="Austria">
-            Austria
-        </button>
+              <button type="button" data-lang="en" data-country="Ireland">
+                Ireland
+              </button>
 
-        <button type="button" data-lang="en" data-country="Ireland">
-            Ireland
-        </button>
+              <button type="button" data-lang="ar" data-country="Qatar">
+                Qatar
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Qatar">
-            Qatar
-        </button>
+              <button type="button" data-lang="ar" data-country="Kuwait">
+                Kuwait
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Kuwait">
-            Kuwait
-        </button>
+              <button type="button" data-lang="ar" data-country="Oman">
+                Oman
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Oman">
-            Oman
-        </button>
+              <button type="button" data-lang="ar" data-country="Bahrain">
+                Bahrain
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Bahrain">
-            Bahrain
-        </button>
+              <button type="button" data-lang="he" data-country="Israel">
+                Israel
+              </button>
 
-        <button type="button" data-lang="he" data-country="Israel">
-            Israel
-        </button>
+              <button type="button" data-lang="tr" data-country="Turkey">
+                Turkey
+              </button>
 
-        <button type="button" data-lang="tr" data-country="Turkey">
-            Turkey
-        </button>
+              <button type="button" data-lang="ar" data-country="Iraq">
+                Iraq
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Iraq">
-            Iraq
-        </button>
+              <button type="button" data-lang="en" data-country="South Africa">
+                South Africa
+              </button>
 
-        <button type="button" data-lang="en" data-country="South Africa">
-            South Africa
-        </button>
+              <button type="button" data-lang="ar" data-country="Egypt">
+                Egypt
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Egypt">
-            Egypt
-        </button>
+              <button type="button" data-lang="en" data-country="Nigeria">
+                Nigeria
+              </button>
 
-        <button type="button" data-lang="en" data-country="Nigeria">
-            Nigeria
-        </button>
+              <button type="button" data-lang="en" data-country="Kenya">
+                Kenya
+              </button>
 
-        <button type="button" data-lang="en" data-country="Kenya">
-            Kenya
-        </button>
+              <button type="button" data-lang="ar" data-country="Morocco">
+                Morocco
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Morocco">
-            Morocco
-        </button>
+              <button type="button" data-lang="en" data-country="Canada">
+                Canada
+              </button>
 
-        <button type="button" data-lang="en" data-country="Canada">
-            Canada
-        </button>
+              <button type="button" data-lang="pt" data-country="Brazil">
+                Brazil
+              </button>
 
-        <button type="button" data-lang="pt" data-country="Brazil">
-            Brazil
-        </button>
+              <button type="button" data-lang="es" data-country="Argentina">
+                Argentina
+              </button>
 
-        <button type="button" data-lang="es" data-country="Argentina">
-            Argentina
-        </button>
+              <button type="button" data-lang="es" data-country="Chile">
+                Chile
+              </button>
 
-        <button type="button" data-lang="es" data-country="Chile">
-            Chile
-        </button>
+              <button type="button" data-lang="es" data-country="Colombia">
+                Colombia
+              </button>
 
-        <button type="button" data-lang="es" data-country="Colombia">
-            Colombia
-        </button>
+              <button type="button" data-lang="es" data-country="Peru">
+                Peru
+              </button>
 
-        <button type="button" data-lang="es" data-country="Peru">
-            Peru
-        </button>
+              <button type="button" data-lang="ne" data-country="Nepal">
+                Nepal
+              </button>
 
-        <button type="button" data-lang="ne" data-country="Nepal">
-            Nepal
-        </button>
+              <button type="button" data-lang="si" data-country="Sri Lanka">
+                Sri Lanka
+              </button>
 
-        <button type="button" data-lang="si" data-country="Sri Lanka">
-            Sri Lanka
-        </button>
+              <button type="button" data-lang="ur" data-country="Pakistan">
+                Pakistan
+              </button>
+            </div>
+          </div>
 
-        <button type="button" data-lang="ur" data-country="Pakistan">
-            Pakistan
-        </button>
-
-    </div>
-</div>
-
-          <a href="#" class="magic-button">Magic Form</a>
+          <a href="./contact.html" class="magic-button">Magic Form</a>
         </div>
       </div>
 
@@ -395,10 +422,14 @@
             <!-- SERVICES -->
             <div class="mega-panel active" data-panel="services">
               <h3>Services</h3>
-              <a href="./expert-business-consultancy.html">Expert Business Consultation</a>
+              <a href="./expert-business-consultancy.html"
+                >Expert Business Consultation</a
+              >
               <a href="./export-consultation.html">Export Consultation</a>
               <a href="./export-mentorship.html">Export Mentorship</a>
-              <a href="./exclusive-business-growth-partnership.html">Exclusive Partnership</a>
+              <a href="./exclusive-business-growth-partnership.html"
+                >Exclusive Partnership</a
+              >
             </div>
 
             <!-- GLOBAL IMPORT-EXPORT -->
@@ -455,14 +486,24 @@
                   <h3>Products</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./AgriCommodities-products.html#agricommodities">Agri Commodities</a>
-                      <a href="./products.html#petrochemicals">Petrochemicals &amp; Energy Products</a>
+                      <a href="./AgriCommodities-products.html#agricommodities"
+                        >Agri Commodities</a
+                      >
+                      <a href="./products.html#petrochemicals"
+                        >Petrochemicals &amp; Energy Products</a
+                      >
                       <a href="./products.html#metals">Metals &amp; Minerals</a>
-                      <a href="./products.html#fmcg">FMCG &amp; Food Products</a>
-                      <a href="./products.html#raw-materials">Industrial Raw Materials</a>
+                      <a href="./products.html#fmcg"
+                        >FMCG &amp; Food Products</a
+                      >
+                      <a href="./products.html#raw-materials"
+                        >Industrial Raw Materials</a
+                      >
                     </div>
                     <div>
-                      <a href="./products.html#apparel">Apparel &amp; Textiles</a>
+                      <a href="./products.html#apparel"
+                        >Apparel &amp; Textiles</a
+                      >
                       <a href="./products.html#gems">Gems &amp; Jewellery</a>
                     </div>
                   </div>
@@ -530,15 +571,23 @@
                   <h3>Programs</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./workforce-mobility.html#farmer">Farmer / Manufacturer</a>
-                      <a href="./workforce-mobility.html#local-trader">Local Trader</a>
+                      <a href="./workforce-mobility.html#farmer"
+                        >Farmer / Manufacturer</a
+                      >
+                      <a href="./workforce-mobility.html#local-trader"
+                        >Local Trader</a
+                      >
                       <a href="./workforce-mobility.html#exporter">Exporter</a>
                       <a href="./workforce-mobility.html#cha">CHA</a>
-                      <a href="./workforce-mobility.html#freight-forwarder">Freight Forwarder</a>
+                      <a href="./workforce-mobility.html#freight-forwarder"
+                        >Freight Forwarder</a
+                      >
                     </div>
                     <div>
                       <a href="./workforce-mobility.html#importer">Importer</a>
-                      <a href="./workforce-mobility.html#distributor">Distributor</a>
+                      <a href="./workforce-mobility.html#distributor"
+                        >Distributor</a
+                      >
                       <a href="./workforce-mobility.html#retailer">Retailer</a>
                       <a href="./workforce-mobility.html#buyer">Buyer</a>
                     </div>
@@ -564,8 +613,12 @@
               <div class="industries-grid">
                 <div>
                   <a href="./finance.html">Finance</a>
-                  <a href="./real-estate.html">Real Estate &amp; Infrastructure</a>
-                  <a href="./energy-power.html">Energy, Power &amp; Sustainability</a>
+                  <a href="./real-estate.html"
+                    >Real Estate &amp; Infrastructure</a
+                  >
+                  <a href="./energy-power.html"
+                    >Energy, Power &amp; Sustainability</a
+                  >
                   <a href="./petrochemicals.html">Petrochemicals &amp; Oil</a>
                   <a href="./manufacturing.html">Manufacturing</a>
                 </div>
@@ -574,8 +627,12 @@
                   <a href="./logistics.html">Logistics &amp; Supply Chain</a>
                   <a href="./it-saas.html">IT &amp; SaaS</a>
                   <a href="./e-commerce.html">E-Commerce</a>
-                  <a href="./media-entertainment.html">Media &amp; Entertainment</a>
-                  <a href="./education-consulting.html">Education &amp; Consulting</a>
+                  <a href="./media-entertainment.html"
+                    >Media &amp; Entertainment</a
+                  >
+                  <a href="./education-consulting.html"
+                    >Education &amp; Consulting</a
+                  >
                 </div>
 
                 <div>
@@ -588,7 +645,9 @@
 
                 <div>
                   <a href="./apparel.html">Apparel</a>
-                  <a href="./food-beverage.html">F&amp;B (Food &amp; Beverage)</a>
+                  <a href="./food-beverage.html"
+                    >F&amp;B (Food &amp; Beverage)</a
+                  >
                 </div>
               </div>
             </div>
@@ -613,443 +672,529 @@
       </div>
     </header>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero-import">
-    <p class="hero-label">SUPPLY CHAIN &amp; DISTRIBUTION</p>
-    <h1 class="hero-title">How We Partner With Importers</h1>
-    <p class="hero-subtitle">From Arrival to Advantage — Acting as One Import Business</p>
-  </section>
+    <!-- ================= HERO ================= -->
+    <section class="hero-import">
+      <p class="hero-label">SUPPLY CHAIN &amp; DISTRIBUTION</p>
+      <h1 class="hero-title">How We Partner With Importers</h1>
+      <p class="hero-subtitle">
+        From Arrival to Advantage — Acting as One Import Business
+      </p>
+    </section>
 
-  <!-- ================= INTRO ================= -->
-  <section class="intro-section">
-    <div class="intro-grid">
-      <div class="intro-text">
-        <p>At FlairList Global, we believe importers are not the end of the supply chain.</p>
-        <p>They are the gateway to real market consumption, distribution, and revenue realisation.</p>
-        <p>That's why we don't work for importers.</p>
-        <p>We work with them as one integrated import operation.</p>
-        <p>When importers win on clarity, cost, compliance, and continuity — the entire global trade chain succeeds.</p>
+    <!-- ================= INTRO ================= -->
+    <section class="intro-section">
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p>
+            At FlairList Global, we believe importers are not the end of the
+            supply chain.
+          </p>
+          <p>
+            They are the gateway to real market consumption, distribution, and
+            revenue realisation.
+          </p>
+          <p>That's why we don't work for importers.</p>
+          <p>We work with them as one integrated import operation.</p>
+          <p>
+            When importers win on clarity, cost, compliance, and continuity —
+            the entire global trade chain succeeds.
+          </p>
+        </div>
+        <div class="intro-image">
+          <img
+            src="./Assets/img/importer_program.png"
+            alt="Forklift moving cargo pallets in a warehouse"
+          />
+        </div>
       </div>
-      <div class="intro-image">
-        <img src="./Assets/img/importer_program.png" alt="Forklift moving cargo pallets in a warehouse">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ================= REAL PROBLEMS ================= -->
-  <section class="section bg-soft">
-    <h2 class="section-title">The Real Problems Importers Face Today</h2>
-    <p class="section-sub">Across countries and industries, importers consistently struggle with:</p>
+    <!-- ================= REAL PROBLEMS ================= -->
+    <section class="section bg-soft">
+      <h2 class="section-title">The Real Problems Importers Face Today</h2>
+      <p class="section-sub">
+        Across countries and industries, importers consistently struggle with:
+      </p>
 
-    <div class="grid-2">
-      <div class="grid-box">Unreliable overseas suppliers</div>
-      <div class="grid-box">Inconsistent product quality &amp; specifications</div>
-      <div class="grid-box">Sudden compliance or customs issues</div>
-      <div class="grid-box">Unexpected landed cost escalations</div>
-      <div class="grid-box">Delays in shipment arrival &amp; clearance</div>
-      <div class="grid-box">Poor communication across exporter-CHA-freight layers</div>
-      <div class="grid-box">Payment risk &amp; lack of leverage with sellers</div>
-      <div class="grid-box">Difficulty scaling imports predictably</div>
-    </div>
-
-    <p class="italic-note">We exist to remove these risks before they hit your warehouse.</p>
-  </section>
-
-  <!-- ================= PHILOSOPHY ================= -->
-  <section class="section bg-white">
-    <h2 class="section-title center">Our Philosophy</h2>
-
-    <div class="philosophy-card">
-      <p class="philosophy-quote">"Imports Are Not Purchases — They Are Systems"</p>
-      <p class="col-heading">Most importers are forced to operate reactively:</p>
-      <p class="flow-line">Shipment arrives → problem appears → cost increases</p>
-      <p class="col-heading">We reverse this:</p>
-      <p class="flow-line bold">Demand planning → supplier control → compliance certainty → smooth delivery</p>
-      <p class="support-closing">That's how importing becomes profitable, repeatable, and scalable.</p>
-    </div>
-  </section>
-
-  <!-- ================= HOW WE HELP IMPORTERS ================= -->
-  <section class="section bg-soft">
-    <h2 class="section-title">How We Help Importers (End-to-End Partnership)</h2>
-
-    <div class="grid-2 support-grid">
-      <div class="support-box">
-        <h3>1. Verified Supplier &amp; Exporter Control</h3>
-        <p class="support-tag">No More Supplier Surprises</p>
-        <p class="support-lead">WE ENSURE IMPORTERS WORK ONLY WITH:</p>
-        <ul class="dash-list">
-          <li>Verified manufacturers &amp; exporters</li>
-          <li>Capacity-validated suppliers</li>
-          <li>Quality-checked production sources</li>
-          <li>Exporters with shipment track records</li>
-        </ul>
-        <p class="support-lead">WE HANDLE:</p>
-        <ul class="dash-list">
-          <li>Supplier background checks</li>
-          <li>Product &amp; capacity validation</li>
-          <li>Trade history analysis</li>
-        </ul>
-        <p class="outcome-note">Importers stop gambling on unknown suppliers.</p>
+      <div class="grid-2">
+        <div class="grid-box">Unreliable overseas suppliers</div>
+        <div class="grid-box">
+          Inconsistent product quality &amp; specifications
+        </div>
+        <div class="grid-box">Sudden compliance or customs issues</div>
+        <div class="grid-box">Unexpected landed cost escalations</div>
+        <div class="grid-box">Delays in shipment arrival &amp; clearance</div>
+        <div class="grid-box">
+          Poor communication across exporter-CHA-freight layers
+        </div>
+        <div class="grid-box">
+          Payment risk &amp; lack of leverage with sellers
+        </div>
+        <div class="grid-box">Difficulty scaling imports predictably</div>
       </div>
 
-      <div class="support-box">
-        <h3>2. Product, Quality &amp; Specification Alignment</h3>
-        <p class="support-lead">BEFORE SHIPMENT:</p>
+      <p class="italic-note">
+        We exist to remove these risks before they hit your warehouse.
+      </p>
+    </section>
+
+    <!-- ================= PHILOSOPHY ================= -->
+    <section class="section bg-white">
+      <h2 class="section-title center">Our Philosophy</h2>
+
+      <div class="philosophy-card">
+        <p class="philosophy-quote">
+          "Imports Are Not Purchases — They Are Systems"
+        </p>
+        <p class="col-heading">
+          Most importers are forced to operate reactively:
+        </p>
+        <p class="flow-line">
+          Shipment arrives → problem appears → cost increases
+        </p>
+        <p class="col-heading">We reverse this:</p>
+        <p class="flow-line bold">
+          Demand planning → supplier control → compliance certainty → smooth
+          delivery
+        </p>
+        <p class="support-closing">
+          That's how importing becomes profitable, repeatable, and scalable.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= HOW WE HELP IMPORTERS ================= -->
+    <section class="section bg-soft">
+      <h2 class="section-title">
+        How We Help Importers (End-to-End Partnership)
+      </h2>
+
+      <div class="grid-2 support-grid">
+        <div class="support-box">
+          <h3>1. Verified Supplier &amp; Exporter Control</h3>
+          <p class="support-tag">No More Supplier Surprises</p>
+          <p class="support-lead">WE ENSURE IMPORTERS WORK ONLY WITH:</p>
+          <ul class="dash-list">
+            <li>Verified manufacturers &amp; exporters</li>
+            <li>Capacity-validated suppliers</li>
+            <li>Quality-checked production sources</li>
+            <li>Exporters with shipment track records</li>
+          </ul>
+          <p class="support-lead">WE HANDLE:</p>
+          <ul class="dash-list">
+            <li>Supplier background checks</li>
+            <li>Product &amp; capacity validation</li>
+            <li>Trade history analysis</li>
+          </ul>
+          <p class="outcome-note">
+            Importers stop gambling on unknown suppliers.
+          </p>
+        </div>
+
+        <div class="support-box">
+          <h3>2. Product, Quality &amp; Specification Alignment</h3>
+          <p class="support-lead">BEFORE SHIPMENT:</p>
+          <ul class="dash-list">
+            <li>Product specifications are locked</li>
+            <li>Quality benchmarks are documented</li>
+            <li>
+              Packaging &amp; labelling are aligned with import regulations
+            </li>
+            <li>Samples &amp; pre-shipment checks are validated</li>
+          </ul>
+          <p class="outcome-note">
+            This prevents: Rejections, short-shipments, quality disputes.
+          </p>
+        </div>
+
+        <div class="support-box">
+          <h3>3. Import Compliance &amp; Customs Readiness</h3>
+          <p class="support-lead">
+            We act as a compliance shield for importers.
+          </p>
+          <p class="support-lead">SUPPORT INCLUDES:</p>
+          <ul class="dash-list">
+            <li>Country-specific import regulation mapping</li>
+            <li>HS code &amp; valuation alignment</li>
+            <li>Import documentation sequencing</li>
+            <li>Coordination with CHAs for smooth clearance</li>
+            <li>Risk pre-checks for sensitive goods</li>
+          </ul>
+          <p class="outcome-note">Importers move confidently, not painfully.</p>
+        </div>
+
+        <div class="support-box">
+          <h3>4. Landed Cost Control &amp; Commercial Structuring</h3>
+          <p class="support-lead">WE HELP IMPORTERS:</p>
+          <ul class="dash-list">
+            <li>Calculate true landed cost (ex-works → warehouse)</li>
+            <li>Optimise incoterms selection</li>
+            <li>Structure pricing buffers</li>
+            <li>Negotiate supplier pricing confidently</li>
+            <li>Avoid hidden charges</li>
+          </ul>
+          <p class="outcome-note">
+            Margins are designed, not discovered later.
+          </p>
+        </div>
+
+        <div class="support-box">
+          <h3>5. Logistics, Freight &amp; Arrival Coordination</h3>
+          <p class="support-lead">WE WORK AS ONE UNIT WITH:</p>
+          <ul class="dash-list">
+            <li>Freight forwarders</li>
+            <li>CHAs</li>
+            <li>Port &amp; warehouse operators</li>
+          </ul>
+          <p class="support-lead">WE MANAGE:</p>
+          <ul class="dash-list">
+            <li>Arrival scheduling</li>
+            <li>Container de-stuffing coordination</li>
+            <li>Delay &amp; demurrage risk reduction</li>
+            <li>Exception handling</li>
+          </ul>
+          <p class="outcome-note">
+            Importers get on-time, organised cargo flow.
+          </p>
+        </div>
+
+        <div class="support-box">
+          <h3>6. Payment Security &amp; Risk Management</h3>
+          <p class="support-lead">WE PROTECT IMPORTERS BY:</p>
+          <ul class="dash-list">
+            <li>Structuring secure payment terms</li>
+            <li>Aligning payments with shipment milestones</li>
+            <li>Flagging seller-side risks early</li>
+            <li>Supporting dispute resolution if needed</li>
+          </ul>
+          <p class="outcome-note">
+            Import happens with commercial confidence, not anxiety.
+          </p>
+        </div>
+
+        <div class="support-box full-width">
+          <h3>7. Continuity, Scale &amp; Repeat Supply Planning</h3>
+          <p class="support-tag">One Shipment Is Not a Supply Chain</p>
+          <p class="support-lead">WE HELP IMPORTERS:</p>
+          <ul class="dash-list">
+            <li>Convert suppliers into long-term partners</li>
+            <li>Plan recurring import cycles</li>
+            <li>Diversify supply risk across regions</li>
+            <li>Scale volumes safely</li>
+          </ul>
+          <p class="outcome-note">
+            Importing becomes strategic, not opportunistic.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PARTNER MODEL ================= -->
+    <section class="section bg-white">
+      <h2 class="section-title center">
+        Acting as One: Our Import Partner Model
+      </h2>
+
+      <div class="philosophy-card">
+        <p class="col-heading">In long-term importer partnerships, we:</p>
         <ul class="dash-list">
-          <li>Product specifications are locked</li>
-          <li>Quality benchmarks are documented</li>
-          <li>Packaging &amp; labelling are aligned with import regulations</li>
-          <li>Samples &amp; pre-shipment checks are validated</li>
+          <li>Co-plan procurement cycles</li>
+          <li>Stay involved till cargo is received &amp; reconciled</li>
+          <li>Coordinate corrections mid-shipment if required</li>
+          <li>Support renegotiations &amp; future planning</li>
         </ul>
-        <p class="outcome-note">This prevents: Rejections, short-shipments, quality disputes.</p>
+
+        <p class="col-heading spaced">IN MANY CASES, WE ALSO:</p>
+        <div class="pill-row">
+          <span class="pill">Represent importers in exporter discussions</span>
+          <span class="pill">Support renegotiation of terms</span>
+          <span class="pill"
+            >Align imports with downstream distribution needs</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EARLIER VS NOW ================= -->
+    <section class="section bg-soft">
+      <h2 class="section-title">
+        How This Partnership Changes an Importer's Reality
+      </h2>
+
+      <div class="compare-grid">
+        <div class="compare-box compare-before">
+          <h3>Earlier</h3>
+          <ul class="plain-list">
+            <li>Supplier uncertainty</li>
+            <li>Cost surprises</li>
+            <li>Clearance stress</li>
+            <li>Delivery delays</li>
+          </ul>
+        </div>
+        <div class="compare-box compare-after">
+          <h3>With FlairList Global</h3>
+          <ul class="plain-list">
+            <li>Verified suppliers</li>
+            <li>Predictable landed costs</li>
+            <li>Smooth customs clearance</li>
+            <li>On-time cargo arrival</li>
+            <li>Confidence to scale imports</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="support-box">
-        <h3>3. Import Compliance &amp; Customs Readiness</h3>
-        <p class="support-lead">We act as a compliance shield for importers.</p>
-        <p class="support-lead">SUPPORT INCLUDES:</p>
-        <ul class="dash-list">
-          <li>Country-specific import regulation mapping</li>
-          <li>HS code &amp; valuation alignment</li>
-          <li>Import documentation sequencing</li>
-          <li>Coordination with CHAs for smooth clearance</li>
-          <li>Risk pre-checks for sensitive goods</li>
-        </ul>
-        <p class="outcome-note">Importers move confidently, not painfully.</p>
-      </div>
+      <p class="italic-note">
+        Imports stop being risk-heavy transactions.<br />They become controlled
+        supply systems.
+      </p>
+    </section>
 
-      <div class="support-box">
-        <h3>4. Landed Cost Control &amp; Commercial Structuring</h3>
-        <p class="support-lead">WE HELP IMPORTERS:</p>
-        <ul class="dash-list">
-          <li>Calculate true landed cost (ex-works → warehouse)</li>
-          <li>Optimise incoterms selection</li>
-          <li>Structure pricing buffers</li>
-          <li>Negotiate supplier pricing confidently</li>
-          <li>Avoid hidden charges</li>
-        </ul>
-        <p class="outcome-note">Margins are designed, not discovered later.</p>
-      </div>
+    <!-- ================= TRUST ================= -->
+    <section class="section bg-white">
+      <h2 class="section-title center">Why Importers Trust FlairList Global</h2>
 
-      <div class="support-box">
-        <h3>5. Logistics, Freight &amp; Arrival Coordination</h3>
-        <p class="support-lead">WE WORK AS ONE UNIT WITH:</p>
-        <ul class="dash-list">
-          <li>Freight forwarders</li>
-          <li>CHAs</li>
-          <li>Port &amp; warehouse operators</li>
-        </ul>
-        <p class="support-lead">WE MANAGE:</p>
-        <ul class="dash-list">
-          <li>Arrival scheduling</li>
-          <li>Container de-stuffing coordination</li>
-          <li>Delay &amp; demurrage risk reduction</li>
-          <li>Exception handling</li>
-        </ul>
-        <p class="outcome-note">Importers get on-time, organised cargo flow.</p>
-      </div>
-
-      <div class="support-box">
-        <h3>6. Payment Security &amp; Risk Management</h3>
-        <p class="support-lead">WE PROTECT IMPORTERS BY:</p>
-        <ul class="dash-list">
-          <li>Structuring secure payment terms</li>
-          <li>Aligning payments with shipment milestones</li>
-          <li>Flagging seller-side risks early</li>
-          <li>Supporting dispute resolution if needed</li>
-        </ul>
-        <p class="outcome-note">Import happens with commercial confidence, not anxiety.</p>
-      </div>
-
-      <div class="support-box full-width">
-        <h3>7. Continuity, Scale &amp; Repeat Supply Planning</h3>
-        <p class="support-tag">One Shipment Is Not a Supply Chain</p>
-        <p class="support-lead">WE HELP IMPORTERS:</p>
-        <ul class="dash-list">
-          <li>Convert suppliers into long-term partners</li>
-          <li>Plan recurring import cycles</li>
-          <li>Diversify supply risk across regions</li>
-          <li>Scale volumes safely</li>
-        </ul>
-        <p class="outcome-note">Importing becomes strategic, not opportunistic.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= PARTNER MODEL ================= -->
-  <section class="section bg-white">
-    <h2 class="section-title center">Acting as One: Our Import Partner Model</h2>
-
-    <div class="philosophy-card">
-      <p class="col-heading">In long-term importer partnerships, we:</p>
-      <ul class="dash-list">
-        <li>Co-plan procurement cycles</li>
-        <li>Stay involved till cargo is received &amp; reconciled</li>
-        <li>Coordinate corrections mid-shipment if required</li>
-        <li>Support renegotiations &amp; future planning</li>
+      <ul class="dash-list trust-list">
+        <li>Deep understanding of exporter-side realities</li>
+        <li>Strong coordination with freight &amp; CHA layers</li>
+        <li>Multi-country import experience</li>
+        <li>Multi-commodity trade exposure</li>
+        <li>Compliance-first mindset</li>
+        <li>One-point accountability till delivery</li>
       </ul>
 
-      <p class="col-heading spaced">IN MANY CASES, WE ALSO:</p>
-      <div class="pill-row">
-        <span class="pill">Represent importers in exporter discussions</span>
-        <span class="pill">Support renegotiation of terms</span>
-        <span class="pill">Align imports with downstream distribution needs</span>
+      <p class="italic-note">
+        We don't disappear after imports sell.<br />We stay till cargo is
+        received, cleared, and accounted for.
+      </p>
+    </section>
+
+    <!-- ================= WHO IS IT FOR ================= -->
+    <section class="section bg-soft">
+      <h2 class="section-title center">Who This Partnership Is Ideal For</h2>
+
+      <div class="grid-2 ideal-boxes">
+        <div class="grid-box list-box">
+          <p class="col-heading">THIS PARTNERSHIP IS BUILT FOR:</p>
+          <ul class="dash-list">
+            <li>Active importers seeking scale</li>
+            <li>Distributors &amp; wholesalers</li>
+            <li>Manufacturers importing raw materials</li>
+            <li>Traders importing for domestic markets</li>
+            <li>Businesses wanting supply certainty</li>
+          </ul>
+        </div>
+        <div class="grid-box list-box muted-box">
+          <p class="col-heading muted">NOT SUITED FOR:</p>
+          <ul class="dash-list">
+            <li>Importers seeking shortcuts</li>
+            <li>Not for those ignoring compliance or quality discipline</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ================= EARLIER VS NOW ================= -->
-  <section class="section bg-soft">
-    <h2 class="section-title">How This Partnership Changes an Importer's Reality</h2>
+    <!-- ================= OUR BELIEF ================= -->
+    <section class="section bg-white belief-section">
+      <div class="belief-card">
+        <h2 class="section-title center">Our Belief</h2>
+        <p class="belief-bold">
+          Importers carry the responsibility of market supply and customer
+          trust.
+        </p>
+        <p class="belief-bold">
+          They deserve partners who control risk — not add to it.
+        </p>
+        <p class="belief-sub">
+          That's what we do — by acting as one import business.
+        </p>
 
-    <div class="compare-grid">
-      <div class="compare-box compare-before">
-        <h3>Earlier</h3>
-        <ul class="plain-list">
-          <li>Supplier uncertainty</li>
-          <li>Cost surprises</li>
-          <li>Clearance stress</li>
-          <li>Delivery delays</li>
-        </ul>
+        <p class="belief-chain">
+          Farmers produce. → Traders aggregate. → Exporters ship. → CHAs clear.
+          → Freight forwarders move. → Importers distribute.
+        </p>
+        <p class="belief-bold">
+          We align them all — as one global trade system.
+        </p>
+        <p class="belief-quote">
+          <em>That's not assistance.<br />That's partnership.</em>
+        </p>
       </div>
-      <div class="compare-box compare-after">
-        <h3>With FlairList Global</h3>
-        <ul class="plain-list">
-          <li>Verified suppliers</li>
-          <li>Predictable landed costs</li>
-          <li>Smooth customs clearance</li>
-          <li>On-time cargo arrival</li>
-          <li>Confidence to scale imports</li>
-        </ul>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-section">
+      <h2 class="cta-title">Let's Import — With Control &amp; Confidence</h2>
+      <p class="cta-desc">
+        If you are an importer who values clarity, control, and long-term
+        partnerships — we want to work with you.
+      </p>
+
+      <div class="cta-contact">
+        <div>
+          <span class="cta-label">EMAIL</span>
+          <span class="cta-value">hello@flairlist.com</span>
+        </div>
+        <div>
+          <span class="cta-label">WEBSITE</span>
+          <span class="cta-value">flairlist.com</span>
+        </div>
+        <div>
+          <span class="cta-label">INSTAGRAM</span>
+          <span class="cta-value">@flairlist | @thehustlehambleye</span>
+        </div>
       </div>
-    </div>
 
-    <p class="italic-note">Imports stop being risk-heavy transactions.<br>They become controlled supply systems.</p>
-  </section>
+      <a href="./contact.html" class="cta-button">Partner With Us</a>
+    </section>
 
-  <!-- ================= TRUST ================= -->
-  <section class="section bg-white">
-    <h2 class="section-title center">Why Importers Trust FlairList Global</h2>
-
-    <ul class="dash-list trust-list">
-      <li>Deep understanding of exporter-side realities</li>
-      <li>Strong coordination with freight &amp; CHA layers</li>
-      <li>Multi-country import experience</li>
-      <li>Multi-commodity trade exposure</li>
-      <li>Compliance-first mindset</li>
-      <li>One-point accountability till delivery</li>
-    </ul>
-
-    <p class="italic-note">We don't disappear after imports sell.<br>We stay till cargo is received, cleared, and accounted for.</p>
-  </section>
-
-  <!-- ================= WHO IS IT FOR ================= -->
-  <section class="section bg-soft">
-    <h2 class="section-title center">Who This Partnership Is Ideal For</h2>
-
-    <div class="grid-2 ideal-boxes">
-      <div class="grid-box list-box">
-        <p class="col-heading">THIS PARTNERSHIP IS BUILT FOR:</p>
-        <ul class="dash-list">
-          <li>Active importers seeking scale</li>
-          <li>Distributors &amp; wholesalers</li>
-          <li>Manufacturers importing raw materials</li>
-          <li>Traders importing for domestic markets</li>
-          <li>Businesses wanting supply certainty</li>
-        </ul>
-      </div>
-      <div class="grid-box list-box muted-box">
-        <p class="col-heading muted">NOT SUITED FOR:</p>
-        <ul class="dash-list">
-          <li>Importers seeking shortcuts</li>
-          <li>Not for those ignoring compliance or quality discipline</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= OUR BELIEF ================= -->
-  <section class="section bg-white belief-section">
-    <div class="belief-card">
-      <h2 class="section-title center">Our Belief</h2>
-      <p class="belief-bold">Importers carry the responsibility of market supply and customer trust.</p>
-      <p class="belief-bold">They deserve partners who control risk — not add to it.</p>
-      <p class="belief-sub">That's what we do — by acting as one import business.</p>
-
-      <p class="belief-chain">Farmers produce. → Traders aggregate. → Exporters ship. → CHAs clear. → Freight forwarders move. → Importers distribute.</p>
-      <p class="belief-bold">We align them all — as one global trade system.</p>
-      <p class="belief-quote"><em>That's not assistance.<br>That's partnership.</em></p>
-    </div>
-  </section>
-
-  <!-- ================= CTA ================= -->
-  <section class="cta-section">
-    <h2 class="cta-title">Let's Import — With Control &amp; Confidence</h2>
-    <p class="cta-desc">If you are an importer who values clarity, control, and long-term partnerships — we want to work with you.</p>
-
-    <div class="cta-contact">
-      <div>
-        <span class="cta-label">EMAIL</span>
-        <span class="cta-value">hello@flairlist.com</span>
-      </div>
-      <div>
-        <span class="cta-label">WEBSITE</span>
-        <span class="cta-value">flairlist.com</span>
-      </div>
-      <div>
-        <span class="cta-label">INSTAGRAM</span>
-        <span class="cta-value">@flairlist | @thehustlehambleye</span>
-      </div>
-    </div>
-
-    <a href="#" class="cta-button">Partner With Us</a>
-  </section>
-
-        <footer class="site-footer">
-        <div class="footer-container">
-          <!-- =================================
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================
              COLUMN 1
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Who We Are</h3>
+        <div class="footer-column">
+          <h3>Who We Are</h3>
 
-            <a href="./mission.html">Mission</a>
-            <a href="./vision.html">Vision</a>
-            <a href="./values.html">Values</a>
-            <a href="./founder.html">Founder &amp; CEO</a>
-            <a href="./team.html">Leadership &amp; Team</a>
-            <a href="./press_room.html">Press Room</a>
-          </div>
+          <a href="./mission.html">Mission</a>
+          <a href="./vision.html">Vision</a>
+          <a href="./values.html">Values</a>
+          <a href="./founder.html">Founder &amp; CEO</a>
+          <a href="./team.html">Leadership &amp; Team</a>
+          <a href="./press_room.html">Press Room</a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 2
         ================================== -->
 
-          <div class="footer-column">
-            <h3>What We Do</h3>
+        <div class="footer-column">
+          <h3>What We Do</h3>
 
-            <a href="#" class="footer-bold"> Services </a>
+          <span class="footer-bold footer-label"> Services </span>
 
-            <a href="./expert-business-consultancy.html"> Expert Business Consultation </a>
+          <a href="./expert-business-consultancy.html">
+            Expert Business Consultation
+          </a>
 
-            <a href="./export-consultation.html"> Export Consultation </a>
+          <a href="./export-consultation.html"> Export Consultation </a>
 
-            <a href="./export-mentorship.html"> Export Mentorship </a>
+          <a href="./export-mentorship.html"> Export Mentorship </a>
 
-            <a href="./exclusive-business-growth-partnership.html"> Exclusive Partnership </a>
+          <a href="./exclusive-business-growth-partnership.html">
+            Exclusive Partnership
+          </a>
 
-            <a href="#" class="footer-bold"> Global Import-Export </a>
+          <a href="#" class="footer-bold"> Global Import-Export </a>
 
-            <a href="./countries.html"> Countries </a>
+          <a href="./countries.html"> Countries </a>
 
-            <a href="./products.html"> Products </a>
+          <a href="./products.html"> Products </a>
 
-            <a href="./partners.html"> Partner With Us </a>
-          </div>
+          <a href="./partners.html"> Partner With Us </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 3
         ================================== -->
 
-          <div class="footer-column">
-            <h3>More</h3>
+        <div class="footer-column">
+          <h3>More</h3>
 
-            <a href="#" class="footer-bold"> Supply Chain &amp; Workforce </a>
+          <span class="footer-bold footer-label">
+            Supply Chain &amp; Workforce
+          </span>
 
-            <a href="#"> Supply Chain &amp; Distribution </a>
+          <a href="#"> Supply Chain &amp; Distribution </a>
 
-            <a href="./workforce-mobility.html"> Workforce Programs </a>
+          <a href="./workforce-mobility.html"> Workforce Programs </a>
 
-            <a href="./deployment.html"> Deployment </a>
+          <a href="./deployment.html"> Deployment </a>
 
-            <a href="#" class="footer-bold"> Explore </a>
+          <a href="#" class="footer-bold"> Explore </a>
 
-            <a href="#"> Industries </a>
+          <a href="./industries.html"> Industries </a>
 
-            <a href="./case-studies.html"> Case Studies </a>
-          </div>
+          <a href="./case-studies.html"> Case Studies </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 4
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Opportunities</h3>
+        <div class="footer-column">
+          <h3>Opportunities</h3>
 
-            <a href="./career.html"> Careers </a>
+          <a href="./career.html"> Careers </a>
 
-            <a href="./investor.html"> Investors </a>
+          <a href="./investor.html"> Investors </a>
 
-            <a href="./contact.html"> Contact Us </a>
+          <a href="./contact.html"> Contact Us </a>
 
-            <h4 class="footer-follow-title">Follow Us</h4>
+          <h4 class="footer-follow-title">Follow Us</h4>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a
+            href="https://www.instagram.com/theshubhambibave/"
+            class="social-link"
+          >
+            <span class="social-icon"> ◎ </span>
 
-              @theshubhambibave
-            </a>
+            @theshubhambibave
+          </a>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a href="#" class="social-link">
+            <span class="social-icon"> ◎ </span>
 
-              @flairlist
-            </a>
-          </div>
+            @flairlist
+          </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 5
         ================================== -->
 
-          <div class="footer-column footer-connect">
-            <h3>Let's Connect</h3>
+        <div class="footer-column footer-connect">
+          <h3>Let's Connect</h3>
 
-            <div class="footer-contact">
-              <strong> ✉ Email: </strong>
+          <div class="footer-contact">
+            <strong> ✉ Email: </strong>
 
-              <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
-            </div>
-
-            <div class="footer-contact">
-              <strong> ◎ Website: </strong>
-
-              <a href="https://www.flairlist.com/"> FlairList.com </a>
-            </div>
-
-            <a href="./contact.html" class="footer-button"> Get in Touch </a>
+            <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
           </div>
-        </div>
 
-        <!-- =====================================
+          <div class="footer-contact">
+            <strong> ◎ Website: </strong>
+
+            <a href="https://www.flairlist.com/"> FlairList.com </a>
+          </div>
+
+          <a href="./contact.html" class="footer-button"> Get in Touch </a>
+        </div>
+      </div>
+
+      <!-- =====================================
          FOOTER BOTTOM
     ====================================== -->
 
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p>2026 FlairList Global. All rights reserved.</p>
-
-            <p class="footer-tagline">
-              "Building what global business runs on."
-            </p>
-          </div>
-
-          <nav class="footer-legal">
-            <a href="#"> Terms of Use </a>
-
-            <a href="#"> Privacy Policy </a>
-
-            <a href="#"> Refund Policy </a>
-
-            <a href="#"> Cancellation Policy </a>
-
-            <a href="#"> Cookies </a>
-          </nav>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>2026 FlairList Global. All rights reserved.</p>
         </div>
-      </footer>
 
+        <nav class="footer-legal">
+          <a href="./terms-and-conditions.html"> Terms of Use </a>
 
-  <script src="./Assets/js/script.js?v=3.0"></script>
-</body>
+          <a href="./privacy-policy.html"> Privacy Policy </a>
+
+          <a href="./refund-policy.html"> Refund Policy </a>
+
+          <a href="./cancellation-policy.html"> Cancellation Policy </a>
+
+          <a href="./privacy-policy.html"> Cookies </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./Assets/js/script.js?v=3.8"></script>
+  </body>
 </html>

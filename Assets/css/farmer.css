@@ -42,7 +42,7 @@ img {
   color: #ffffff;
   text-align: center;
   padding: 70px 30px;
-  height: 500px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@ img {
 }
 
 .hero-titles {
-  font-size: 70px;
+  font-size: 55px;
   font-weight: 700;
   width: 80vw;
   margin: 0 auto;
@@ -95,9 +95,9 @@ img {
 }
 
 .intro-box p {
-  font-size: 17px;
+  font-size: 16px;
   color: var(--text-heading);
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 8px;
 }
 
@@ -131,15 +131,15 @@ img {
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 700;
   color: var(--text-heading);
-  max-width: 1180px;
+  max-width: 1500px;
   margin: 0 auto 12px auto;
 }
 
 .section-title.center {
-  text-align: center;
+  text-align: left;
 }
 
 .section-sub {
@@ -188,61 +188,95 @@ img {
 
 /* ============ PHILOSOPHY CARD ============ */
 .philosophy-card {
-  max-width: 1000px;
+  max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
-  background: var(--surface-white);
-  border: 1px solid var(--border-grid);
-  border-radius: var(--radius-md);
-  padding: 34px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
 }
 
 .philosophy-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 34px;
+}
+
+.philosophy-col {
+  background: var(--surface-white);
+  border: 1px solid var(--border-grid);
+  border-radius: var(--radius-md);
+  padding: 40px;
+  min-height: 355px;
+  box-shadow: 0 4px 18px rgba(4, 38, 29, 0.06);
 }
 
 .col-heading {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
   color: var(--text-heading);
-  margin-bottom: 14px;
+  margin-bottom: 22px;
 }
 
 .dash-list li {
   position: relative;
-  font-size: 18px;
-  color: var(--text-body);
-  padding-left: 16px;
-  margin-bottom: 10px;
+  font-size: 0.96rem;
+  color: black;
+  padding-left: 28px;
+  margin-bottom: 18px;
 }
 
 .dash-list li::before {
   content: "–";
   position: absolute;
   left: 0;
-  color: var(--text-body);
+  color: var(--primary-blue);
 }
 
 .philosophy-footer {
-  margin-top: 26px;
-  padding-top: 22px;
-  border-top: 1px solid var(--border-grid);
+  margin-top: 34px;
+  background: var(--surface-white);
+  border: 1px solid var(--border-grid);
+  border-radius: var(--radius-md);
+  padding: 40px;
+  min-height: 215px;
+  box-shadow: 0 4px 18px rgba(4, 38, 29, 0.06);
 }
 
 .footer-cols {
-  display: flex;
-  gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   font-size: 18px;
   color: var(--text-body);
 }
 
+@media (max-width: 900px) {
+  .philosophy-card {
+    width: calc(100% - 40px);
+  }
+
+  .philosophy-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-cols {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
 /* ============ SUPPORT GRID (farmers / manufacturers) ============ */
 .support-grid {
-  gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 27px;
+  width: min(1500px, calc(100% - 68px));
+  margin: 0 auto;
 }
 
 .support-box {
+  width: 100%;
   border: 1px solid var(--border-grid);
   border-radius: var(--radius-md);
   padding: 28px;
@@ -250,7 +284,7 @@ img {
 }
 
 .support-box h3 {
-  font-size: 24px;
+  font-size: 1.02rem;
   font-weight: 700;
   color: var(--text-heading);
   margin-bottom: 6px;
@@ -264,8 +298,7 @@ img {
 }
 
 .support-lead {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 15px;
   color: var(--text-heading);
   margin: 14px 0 10px 0;
 }
@@ -285,14 +318,19 @@ img {
 .co-growth {
   text-align: center;
 }
+.co-growth .section-title {
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto 30px;
+}
 
 .co-growth-card {
-  max-width: 640px;
+  max-width: 865px;
   margin: 0 auto 30px auto;
   background: var(--surface-white);
   border: 1px solid var(--border-grid);
   border-radius: var(--radius-md);
-  padding: 30px 34px;
+  padding: 44px 40px;
   text-align: left;
 }
 
@@ -312,11 +350,12 @@ img {
 
 /* ============ WHO IS IT FOR ============ */
 .ideal-columns {
-  max-width: 1000px;
+  max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 34px;
 }
 
 /* ============ OUR BELIEF ============ */
@@ -326,82 +365,115 @@ img {
 }
 
 .belief-card {
-  max-width: 700px;
+  max-width: 960px;
   width: 100%;
-  border: 1px solid var(--border-grid);
-  border-radius: var(--radius-md);
-  padding: 40px;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
 }
 
 .belief-card blockquote {
   border-left: 3px solid var(--primary-blue);
-  padding-left: 22px;
-  margin-top: 20px;
+  border-top: 1px solid var(--border-grid);
+  border-right: 1px solid var(--border-grid);
+  border-bottom: 1px solid var(--border-grid);
+  border-radius: var(--radius-md);
+  padding: 24px 34px;
+  margin: 18px 0 0;
+  background: var(--surface-white);
+  box-shadow: 0 4px 18px rgba(4, 38, 29, 0.06);
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+}
+
+.belief-card blockquote:first-child {
+  margin-top: 0;
 }
 
 .belief-card blockquote p {
   font-size: 20px;
   font-style: italic;
   color: var(--text-heading);
-  margin-bottom: 14px;
+  margin: 0;
+  line-height: 1.5;
 }
-
 /* ============ CTA ============ */
 .cta-section {
-  background: linear-gradient(135deg, #04261D 0%, #08382B 100%);
-  color: #ffffff;
-  text-align: center;
+  text-align: left;
   padding: 90px 60px;
+}
+
+.cta-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 70px;
+  row-gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cta-title {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 18px;
+  line-height: 1.25;
+  margin-bottom: 22px;
 }
 
 .cta-desc {
   font-size: 20px;
-  color: #a7f3d0;
-  margin-bottom: 40px;
+  line-height: 1.7;
+  margin-bottom: 0;
 }
 
 .cta-contact {
   display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.cta-contact > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 28px;
+  border: 1px solid var(--border-grid);
+  background: var(--surface-white);
+}
+
+.cta-contact > div:first-child {
+  border-radius: 0;
+}
+
+.cta-contact > div:last-child {
+  border-radius: 0;
 }
 
 .cta-label {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
-  color: #00E676;
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 
 .cta-value {
   display: block;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
-  color: #ffffff;
 }
 
 .cta-button {
+  grid-column: 1 / -1;
+  justify-self: center;
   display: inline-block;
-  background: #00E676;
-  color: #04261D;
   font-weight: 700;
   font-size: 16px;
-  padding: 14px 34px;
+  padding: 16px 34px;
   border-radius: 6px;
-  transition: opacity 0.2s ease;
-}
-
-.cta-button:hover {
-  opacity: 0.85;
 }
 
 /* ============ RESPONSIVE ============ */
@@ -441,5 +513,74 @@ img {
 
   .cta-contact {
     gap: 30px;
+  }
+
+  .cta-section {
+  grid-template-columns: 1fr;
+  padding: 60px 24px;
+  row-gap: 35px;
+}
+
+.cta-title {
+  font-size: 32px;
+}
+
+.cta-contact {
+  width: 100%;
+}
+
+.cta-button {
+  grid-column: 1;
+}
+}
+
+
+.co-growth .section-title {
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto 30px;
+}
+
+.co-growth-card {
+  max-width: 865px;
+  margin: 0 auto 30px auto;
+  background: var(--surface-white);
+  border: 1px solid var(--border-grid);
+  border-radius: var(--radius-md);
+  padding: 44px 40px;
+  text-align: left;
+}
+
+.ideal-columns {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+}
+
+section:has(.ideal-columns) .section-title {
+  max-width: 1600px;
+  margin: 0 auto 24px;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .co-growth .section-title {
+    text-align: center;
+  }
+
+  .co-growth-card {
+    max-width: 100%;
+  }
+
+  .ideal-columns {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  section:has(.ideal-columns) .section-title {
+    text-align: left;
   }
 }

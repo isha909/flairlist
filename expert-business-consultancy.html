@@ -1,27 +1,31 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expert Business Consultation | FlairList Global</title>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expert Business Consultation | FlairList Global</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Inter:wght@400;500;600;700;800&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="./Assets/css/style.css?v=3.8" />
+    <link rel="stylesheet"href="./Assets/css/expert-business-consultancy.css?v=3.8"/>
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
+  </head>
 
-  <link rel="stylesheet" href="./Assets/css/style.css?v=3.0" />
-  <link rel="stylesheet" href="./Assets/css/expert-business-consultancy.css?v=4.0">
-</head>
-
-<body>
-  <!-- HEADER -->
+  <body>
+    <!-- HEADER -->
 
     <!-- ===================== FLAIRLIST NAVBAR ===================== -->
-        <header class="navbar" id="siteNavbar">
+    <header class="navbar" id="siteNavbar">
       <div class="navbar-container">
         <div class="nav-left">
           <!-- LOGO -->
-          <a href="./index.html" class="logo" aria-label="FlairList Global Home">
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="FlairList Global Home"
+          >
             <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
           </a>
 
@@ -63,211 +67,234 @@
             </button>
           </form>
 
-         <!-- COUNTRY / LANGUAGE SELECTOR -->
-<div class="country-selector">
-    <button class="country-btn" type="button" aria-expanded="false">
-        <span id="selectedCountry">India</span>
-        <svg _ngcontent-ng-c1672362817="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="app-icon" width="24" height="24"><path _ngcontent-ng-c1672362817="" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E4E3DE" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter"></path></svg>
-    </button>
+          <!-- COUNTRY / LANGUAGE SELECTOR -->
+          <div class="country-selector">
+            <button class="country-btn" type="button" aria-expanded="false">
+              <span id="selectedCountry">India</span>
+              <svg
+                _ngcontent-ng-c1672362817=""
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="app-icon"
+                width="24"
+                height="24"
+              >
+                <path
+                  _ngcontent-ng-c1672362817=""
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  fill="#E4E3DE"
+                  stroke="none"
+                  stroke-width="0"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+              </svg>
+            </button>
 
-    <div class="country-dropdown" id="countryDropdown">
+            <div class="country-dropdown" id="countryDropdown">
+              <button type="button" data-lang="en" data-country="India">
+                India
+              </button>
 
-        <button type="button" data-lang="en" data-country="India">
-            India
-        </button>
+              <button
+                type="button"
+                data-lang="ar"
+                data-country="United Arab Emirates"
+              >
+                United Arab Emirates
+              </button>
 
-        <button type="button" data-lang="ar" data-country="United Arab Emirates">
-            United Arab Emirates
-        </button>
+              <button type="button" data-lang="en" data-country="United States">
+                United States
+              </button>
 
-        <button type="button" data-lang="en" data-country="United States">
-            United States
-        </button>
+              <button type="button" data-lang="zh-CN" data-country="China">
+                China
+              </button>
 
-        <button type="button" data-lang="zh-CN" data-country="China">
-            China
-        </button>
+              <button type="button" data-lang="nl" data-country="Netherlands">
+                Netherlands
+              </button>
 
-        <button type="button" data-lang="nl" data-country="Netherlands">
-            Netherlands
-        </button>
+              <button
+                type="button"
+                data-lang="en"
+                data-country="United Kingdom"
+              >
+                United Kingdom
+              </button>
 
-        <button type="button" data-lang="en" data-country="United Kingdom">
-            United Kingdom
-        </button>
+              <button type="button" data-lang="en" data-country="Singapore">
+                Singapore
+              </button>
 
-        <button type="button" data-lang="en" data-country="Singapore">
-            Singapore
-        </button>
+              <button type="button" data-lang="ar" data-country="Saudi Arabia">
+                Saudi Arabia
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Saudi Arabia">
-            Saudi Arabia
-        </button>
+              <button type="button" data-lang="bn" data-country="Bangladesh">
+                Bangladesh
+              </button>
 
-        <button type="button" data-lang="bn" data-country="Bangladesh">
-            Bangladesh
-        </button>
+              <button type="button" data-lang="de" data-country="Germany">
+                Germany
+              </button>
 
-        <button type="button" data-lang="de" data-country="Germany">
-            Germany
-        </button>
+              <button type="button" data-lang="it" data-country="Italy">
+                Italy
+              </button>
 
-        <button type="button" data-lang="it" data-country="Italy">
-            Italy
-        </button>
+              <button type="button" data-lang="ja" data-country="Japan">
+                Japan
+              </button>
 
-        <button type="button" data-lang="ja" data-country="Japan">
-            Japan
-        </button>
+              <button type="button" data-lang="ko" data-country="South Korea">
+                South Korea
+              </button>
 
-        <button type="button" data-lang="ko" data-country="South Korea">
-            South Korea
-        </button>
+              <button type="button" data-lang="ms" data-country="Malaysia">
+                Malaysia
+              </button>
 
-        <button type="button" data-lang="ms" data-country="Malaysia">
-            Malaysia
-        </button>
+              <button type="button" data-lang="th" data-country="Thailand">
+                Thailand
+              </button>
 
-        <button type="button" data-lang="th" data-country="Thailand">
-            Thailand
-        </button>
+              <button type="button" data-lang="id" data-country="Indonesia">
+                Indonesia
+              </button>
 
-        <button type="button" data-lang="id" data-country="Indonesia">
-            Indonesia
-        </button>
+              <button type="button" data-lang="vi" data-country="Vietnam">
+                Vietnam
+              </button>
 
-        <button type="button" data-lang="vi" data-country="Vietnam">
-            Vietnam
-        </button>
+              <button type="button" data-lang="en" data-country="Philippines">
+                Philippines
+              </button>
 
-        <button type="button" data-lang="en" data-country="Philippines">
-            Philippines
-        </button>
+              <button type="button" data-lang="en" data-country="Australia">
+                Australia
+              </button>
 
-        <button type="button" data-lang="en" data-country="Australia">
-            Australia
-        </button>
+              <button type="button" data-lang="en" data-country="New Zealand">
+                New Zealand
+              </button>
 
-        <button type="button" data-lang="en" data-country="New Zealand">
-            New Zealand
-        </button>
+              <button type="button" data-lang="fr" data-country="France">
+                France
+              </button>
 
-        <button type="button" data-lang="fr" data-country="France">
-            France
-        </button>
+              <button type="button" data-lang="es" data-country="Spain">
+                Spain
+              </button>
 
-        <button type="button" data-lang="es" data-country="Spain">
-            Spain
-        </button>
+              <button type="button" data-lang="fr" data-country="Belgium">
+                Belgium
+              </button>
 
-        <button type="button" data-lang="fr" data-country="Belgium">
-            Belgium
-        </button>
+              <button type="button" data-lang="de" data-country="Switzerland">
+                Switzerland
+              </button>
 
-        <button type="button" data-lang="de" data-country="Switzerland">
-            Switzerland
-        </button>
+              <button type="button" data-lang="pl" data-country="Poland">
+                Poland
+              </button>
 
-        <button type="button" data-lang="pl" data-country="Poland">
-            Poland
-        </button>
+              <button type="button" data-lang="de" data-country="Austria">
+                Austria
+              </button>
 
-        <button type="button" data-lang="de" data-country="Austria">
-            Austria
-        </button>
+              <button type="button" data-lang="en" data-country="Ireland">
+                Ireland
+              </button>
 
-        <button type="button" data-lang="en" data-country="Ireland">
-            Ireland
-        </button>
+              <button type="button" data-lang="ar" data-country="Qatar">
+                Qatar
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Qatar">
-            Qatar
-        </button>
+              <button type="button" data-lang="ar" data-country="Kuwait">
+                Kuwait
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Kuwait">
-            Kuwait
-        </button>
+              <button type="button" data-lang="ar" data-country="Oman">
+                Oman
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Oman">
-            Oman
-        </button>
+              <button type="button" data-lang="ar" data-country="Bahrain">
+                Bahrain
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Bahrain">
-            Bahrain
-        </button>
+              <button type="button" data-lang="he" data-country="Israel">
+                Israel
+              </button>
 
-        <button type="button" data-lang="he" data-country="Israel">
-            Israel
-        </button>
+              <button type="button" data-lang="tr" data-country="Turkey">
+                Turkey
+              </button>
 
-        <button type="button" data-lang="tr" data-country="Turkey">
-            Turkey
-        </button>
+              <button type="button" data-lang="ar" data-country="Iraq">
+                Iraq
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Iraq">
-            Iraq
-        </button>
+              <button type="button" data-lang="en" data-country="South Africa">
+                South Africa
+              </button>
 
-        <button type="button" data-lang="en" data-country="South Africa">
-            South Africa
-        </button>
+              <button type="button" data-lang="ar" data-country="Egypt">
+                Egypt
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Egypt">
-            Egypt
-        </button>
+              <button type="button" data-lang="en" data-country="Nigeria">
+                Nigeria
+              </button>
 
-        <button type="button" data-lang="en" data-country="Nigeria">
-            Nigeria
-        </button>
+              <button type="button" data-lang="en" data-country="Kenya">
+                Kenya
+              </button>
 
-        <button type="button" data-lang="en" data-country="Kenya">
-            Kenya
-        </button>
+              <button type="button" data-lang="ar" data-country="Morocco">
+                Morocco
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Morocco">
-            Morocco
-        </button>
+              <button type="button" data-lang="en" data-country="Canada">
+                Canada
+              </button>
 
-        <button type="button" data-lang="en" data-country="Canada">
-            Canada
-        </button>
+              <button type="button" data-lang="pt" data-country="Brazil">
+                Brazil
+              </button>
 
-        <button type="button" data-lang="pt" data-country="Brazil">
-            Brazil
-        </button>
+              <button type="button" data-lang="es" data-country="Argentina">
+                Argentina
+              </button>
 
-        <button type="button" data-lang="es" data-country="Argentina">
-            Argentina
-        </button>
+              <button type="button" data-lang="es" data-country="Chile">
+                Chile
+              </button>
 
-        <button type="button" data-lang="es" data-country="Chile">
-            Chile
-        </button>
+              <button type="button" data-lang="es" data-country="Colombia">
+                Colombia
+              </button>
 
-        <button type="button" data-lang="es" data-country="Colombia">
-            Colombia
-        </button>
+              <button type="button" data-lang="es" data-country="Peru">
+                Peru
+              </button>
 
-        <button type="button" data-lang="es" data-country="Peru">
-            Peru
-        </button>
+              <button type="button" data-lang="ne" data-country="Nepal">
+                Nepal
+              </button>
 
-        <button type="button" data-lang="ne" data-country="Nepal">
-            Nepal
-        </button>
+              <button type="button" data-lang="si" data-country="Sri Lanka">
+                Sri Lanka
+              </button>
 
-        <button type="button" data-lang="si" data-country="Sri Lanka">
-            Sri Lanka
-        </button>
+              <button type="button" data-lang="ur" data-country="Pakistan">
+                Pakistan
+              </button>
+            </div>
+          </div>
 
-        <button type="button" data-lang="ur" data-country="Pakistan">
-            Pakistan
-        </button>
-
-    </div>
-</div>
-
-          <a href="#" class="magic-button">Magic Form</a>
+          <a href="./contact.html" class="magic-button">Magic Form</a>
         </div>
       </div>
 
@@ -396,10 +423,14 @@
             <!-- SERVICES -->
             <div class="mega-panel active" data-panel="services">
               <h3>Services</h3>
-              <a href="./expert-business-consultancy.html">Expert Business Consultation</a>
+              <a href="./expert-business-consultancy.html"
+                >Expert Business Consultation</a
+              >
               <a href="./export-consultation.html">Export Consultation</a>
               <a href="./export-mentorship.html">Export Mentorship</a>
-              <a href="./exclusive-business-growth-partnership.html">Exclusive Partnership</a>
+              <a href="./exclusive-business-growth-partnership.html"
+                >Exclusive Partnership</a
+              >
             </div>
 
             <!-- GLOBAL IMPORT-EXPORT -->
@@ -456,14 +487,24 @@
                   <h3>Products</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./AgriCommodities-products.html#agricommodities">Agri Commodities</a>
-                      <a href="./products.html#petrochemicals">Petrochemicals &amp; Energy Products</a>
+                      <a href="./AgriCommodities-products.html#agricommodities"
+                        >Agri Commodities</a
+                      >
+                      <a href="./products.html#petrochemicals"
+                        >Petrochemicals &amp; Energy Products</a
+                      >
                       <a href="./products.html#metals">Metals &amp; Minerals</a>
-                      <a href="./products.html#fmcg">FMCG &amp; Food Products</a>
-                      <a href="./products.html#raw-materials">Industrial Raw Materials</a>
+                      <a href="./products.html#fmcg"
+                        >FMCG &amp; Food Products</a
+                      >
+                      <a href="./products.html#raw-materials"
+                        >Industrial Raw Materials</a
+                      >
                     </div>
                     <div>
-                      <a href="./products.html#apparel">Apparel &amp; Textiles</a>
+                      <a href="./products.html#apparel"
+                        >Apparel &amp; Textiles</a
+                      >
                       <a href="./products.html#gems">Gems &amp; Jewellery</a>
                     </div>
                   </div>
@@ -531,15 +572,23 @@
                   <h3>Programs</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./workforce-mobility.html#farmer">Farmer / Manufacturer</a>
-                      <a href="./workforce-mobility.html#local-trader">Local Trader</a>
+                      <a href="./workforce-mobility.html#farmer"
+                        >Farmer / Manufacturer</a
+                      >
+                      <a href="./workforce-mobility.html#local-trader"
+                        >Local Trader</a
+                      >
                       <a href="./workforce-mobility.html#exporter">Exporter</a>
                       <a href="./workforce-mobility.html#cha">CHA</a>
-                      <a href="./workforce-mobility.html#freight-forwarder">Freight Forwarder</a>
+                      <a href="./workforce-mobility.html#freight-forwarder"
+                        >Freight Forwarder</a
+                      >
                     </div>
                     <div>
                       <a href="./workforce-mobility.html#importer">Importer</a>
-                      <a href="./workforce-mobility.html#distributor">Distributor</a>
+                      <a href="./workforce-mobility.html#distributor"
+                        >Distributor</a
+                      >
                       <a href="./workforce-mobility.html#retailer">Retailer</a>
                       <a href="./workforce-mobility.html#buyer">Buyer</a>
                     </div>
@@ -565,8 +614,12 @@
               <div class="industries-grid">
                 <div>
                   <a href="./finance.html">Finance</a>
-                  <a href="./real-estate.html">Real Estate &amp; Infrastructure</a>
-                  <a href="./energy-power.html">Energy, Power &amp; Sustainability</a>
+                  <a href="./real-estate.html"
+                    >Real Estate &amp; Infrastructure</a
+                  >
+                  <a href="./energy-power.html"
+                    >Energy, Power &amp; Sustainability</a
+                  >
                   <a href="./petrochemicals.html">Petrochemicals &amp; Oil</a>
                   <a href="./manufacturing.html">Manufacturing</a>
                 </div>
@@ -575,8 +628,12 @@
                   <a href="./logistics.html">Logistics &amp; Supply Chain</a>
                   <a href="./it-saas.html">IT &amp; SaaS</a>
                   <a href="./e-commerce.html">E-Commerce</a>
-                  <a href="./media-entertainment.html">Media &amp; Entertainment</a>
-                  <a href="./education-consulting.html">Education &amp; Consulting</a>
+                  <a href="./media-entertainment.html"
+                    >Media &amp; Entertainment</a
+                  >
+                  <a href="./education-consulting.html"
+                    >Education &amp; Consulting</a
+                  >
                 </div>
 
                 <div>
@@ -589,7 +646,9 @@
 
                 <div>
                   <a href="./apparel.html">Apparel</a>
-                  <a href="./food-beverage.html">F&amp;B (Food &amp; Beverage)</a>
+                  <a href="./food-beverage.html"
+                    >F&amp;B (Food &amp; Beverage)</a
+                  >
                 </div>
               </div>
             </div>
@@ -614,562 +673,767 @@
       </div>
     </header>
 
-
-  <main class="ebc">
-
-    <!-- HERO -->
-    <section class="ebc-hero">
-      <div class="ebc-container ebc-hero-content">
-        <p class="ebc-hero-eyebrow">Services · Indian Market</p>
-        <h1>Expert Business Consultation</h1>
-        <p class="ebc-hero-sub">Indian Market – Sales, Marketing, Pricing &amp; Business Clarity</p>
-        <p class="ebc-hero-quote">“We don't give ideas. We fix systems.”</p>
-      </div>
-    </section>
-
-    <!-- INTRO -->
-    <section class="ebc-section ebc-white">
-      <div class="ebc-container ebc-container--narrow">
-        <p class="ebc-lead">At FlairList, Expert Business Consultation is not a motivational call or a brainstorming session.</p>
-        <p class="ebc-lead">
-          It is a structured, outcome-driven consulting engagement designed to identify why your business
-          is not scaling despite effort—and then fix it with clarity, systems, and execution control.
-        </p>
-
-        <div class="ebc-notice">
-          <p>Most Indian businesses don't fail because of lack of hard work.</p>
-          <p>They fail because they keep fixing symptoms, not systems.</p>
-          <p><strong>This consultation exists to make sure you fix the right problems first.</strong></p>
+    <main class="ebc">
+      <!-- HERO -->
+      <section class="ebc-hero">
+        <div class="ebc-container ebc-hero-content">
+          <p class="ebc-hero-eyebrow">Services · Indian Market</p>
+          <h1>Expert Business Consultation</h1>
+          <p class="ebc-hero-sub">
+            Indian Market – Sales, Marketing, Pricing &amp; Business Clarity
+          </p>
+          <p class="ebc-hero-quote">“We don't give ideas. We fix systems.”</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- WHAT IT MEANS -->
-    <section class="ebc-section ebc-soft">
-      <div class="ebc-container">
-        <h2 class="ebc-title">What This Consultation Actually Means</h2>
+      <!-- INTRO -->
+      <section class="ebc-section ebc-white">
+        <div class="ebc-container ebc-container--narrow">
+          <p class="ebc-lead">
+            At FlairList, Expert Business Consultation is not a motivational
+            call or a brainstorming session.
+          </p>
+          <p class="ebc-lead">
+            It is a structured, outcome-driven consulting engagement designed to
+            identify why your business is not scaling despite effort—and then
+            fix it with clarity, systems, and execution control.
+          </p>
 
-        <div class="ebc-two-col">
-          <div>
-            <p class="ebc-intro-text">Most business owners believe their core problems are:</p>
-            <ul class="ebc-symptoms">
-              <li>↓ Low leads</li>
-              <li>↓ Weak marketing</li>
-              <li>↓ Poor sales</li>
-            </ul>
-            <p class="ebc-small">In reality, <strong>90% of Indian businesses suffer from structural issues, not effort issues.</strong></p>
-            <p class="ebc-small">You don't need more ideas.<br>You need <strong>clarity, structure, and control.</strong></p>
+          <div class="ebc-notice">
+            <p>
+              Most Indian businesses don't fail because of lack of hard work.
+            </p>
+            <p>They fail because they keep fixing symptoms, not systems.</p>
+            <p>
+              <strong
+                >This consultation exists to make sure you fix the right
+                problems first.</strong
+              >
+            </p>
           </div>
+        </div>
+      </section>
 
-          <div>
-            <div class="ebc-card">
-              <p class="ebc-muted-text">As Business Consultants, we step into your business and ask one uncomfortable but powerful question:</p>
-              <h3 class="ebc-question">“Why is this business not scaling despite effort?”</h3>
-              <p class="ebc-small">Then we break the business down, find the real bottlenecks, and rebuild clarity—systematically.</p>
+      <!-- WHAT IT MEANS -->
+      <section class="ebc-section ebc-soft">
+        <div class="ebc-container">
+          <h2 class="ebc-title">What This Consultation Actually Means</h2>
+
+          <div class="ebc-two-col">
+            <div>
+              <p class="ebc-intro-text">
+                Most business owners believe their core problems are:
+              </p>
+              <ul class="ebc-symptoms">
+                <li>↓ Low leads</li>
+                <li>↓ Weak marketing</li>
+                <li>↓ Poor sales</li>
+              </ul>
+              <p class="ebc-small">
+                In reality,
+                <strong
+                  >90% of Indian businesses suffer from structural issues, not
+                  effort issues.</strong
+                >
+              </p>
+              <p class="ebc-small">
+                You don't need more ideas.<br />You need
+                <strong>clarity, structure, and control.</strong>
+              </p>
             </div>
-            <div class="ebc-flow" aria-label="Clarity, then Structure, then Control">
-              <span class="ebc-chip-dark">Clarity</span><i>→</i><span class="ebc-chip-dark">Structure</span><i>→</i><span class="ebc-chip-dark">Control</span>
+
+            <div>
+              <div class="ebc-card">
+                <p class="ebc-muted-text">
+                  As Business Consultants, we step into your business and ask
+                  one uncomfortable but powerful question:
+                </p>
+                <h3 class="ebc-question">
+                  “Why is this business not scaling despite effort?”
+                </h3>
+                <p class="ebc-small">
+                  Then we break the business down, find the real bottlenecks,
+                  and rebuild clarity—systematically.
+                </p>
+              </div>
+              <div
+                class="ebc-flow"
+                aria-label="Clarity, then Structure, then Control"
+              >
+                <span class="ebc-chip-dark">Clarity</span><i>→</i
+                ><span class="ebc-chip-dark">Structure</span><i>→</i
+                ><span class="ebc-chip-dark">Control</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- WHO -->
-    <section class="ebc-section ebc-white">
-      <div class="ebc-container">
-        <h2 class="ebc-title">Who This Is For</h2>
-        <p class="ebc-subtitle">This consultation is designed for:</p>
+      <!-- WHO -->
+      <section class="ebc-section ebc-white">
+        <div class="ebc-container">
+          <h2 class="ebc-title">Who This Is For</h2>
+          <p class="ebc-subtitle">This consultation is designed for:</p>
 
-        <div class="ebc-audience">
-          <div>Business owners struggling with sales consistency</div>
-          <div>Founders confused about pricing &amp; positioning</div>
-          <div>Brands getting leads but not quality conversions</div>
-          <div>Teams working hard but not seeing results</div>
-        </div>
-
-        <div class="ebc-card ebc-card--wide">
-          <p class="ebc-muted-text">If any of these thoughts sound familiar:</p>
-          <div class="ebc-quote-rows">
-            <div>“We are doing everything, still not growing.”</div>
-            <div>“Leads come, but conversions don't.”</div>
-            <div>“Market is crowded—how do we stand out?”</div>
+          <div class="ebc-audience">
+            <div>Business owners struggling with sales consistency</div>
+            <div>Founders confused about pricing &amp; positioning</div>
+            <div>Brands getting leads but not quality conversions</div>
+            <div>Teams working hard but not seeing results</div>
           </div>
-          <p class="ebc-small">This consultation acts as your <strong>business reset button.</strong></p>
+
+          <div class="ebc-card ebc-card--wide">
+            <p class="ebc-muted-text">
+              If any of these thoughts sound familiar:
+            </p>
+            <div class="ebc-quote-rows">
+              <div>“We are doing everything, still not growing.”</div>
+              <div>“Leads come, but conversions don't.”</div>
+              <div>“Market is crowded—how do we stand out?”</div>
+            </div>
+            <p class="ebc-small">
+              This consultation acts as your
+              <strong>business reset button.</strong>
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- HOW WE HELP -->
-    <section class="ebc-section ebc-soft">
-      <div class="ebc-container">
-        <h2 class="ebc-title">How We Help You</h2>
-        <p class="ebc-subtitle ebc-subtitle--narrow">We do real consulting, not random advice. Your business is analysed and rebuilt across 6 core business pillars:</p>
+      <!-- HOW WE HELP -->
+      <section class="ebc-section ebc-soft">
+        <div class="ebc-container">
+          <h2 class="ebc-title">How We Help You</h2>
+          <p class="ebc-subtitle ebc-subtitle--narrow">
+            We do real consulting, not random advice. Your business is analysed
+            and rebuilt across 6 core business pillars:
+          </p>
 
-        <div class="ebc-pillars">
-          <div class="ebc-pillar"><span>01</span><strong>Customer &amp; Demand Clarity</strong></div>
-          <div class="ebc-pillar"><span>02</span><strong>Pricing &amp; Positioning</strong></div>
-          <div class="ebc-pillar"><span>03</span><strong>Sales System &amp; Conversions</strong></div>
-          <div class="ebc-pillar"><span>04</span><strong>Marketing Direction (Not Tactics)</strong></div>
-          <div class="ebc-pillar"><span>05</span><strong>Operations &amp; Team Efficiency</strong></div>
-          <div class="ebc-pillar"><span>06</span><strong>12-Week Execution Control</strong></div>
+          <div class="ebc-pillars">
+            <div class="ebc-pillar">
+              <span>01</span><strong>Customer &amp; Demand Clarity</strong>
+            </div>
+            <div class="ebc-pillar">
+              <span>02</span><strong>Pricing &amp; Positioning</strong>
+            </div>
+            <div class="ebc-pillar">
+              <span>03</span><strong>Sales System &amp; Conversions</strong>
+            </div>
+            <div class="ebc-pillar">
+              <span>04</span><strong>Marketing Direction (Not Tactics)</strong>
+            </div>
+            <div class="ebc-pillar">
+              <span>05</span><strong>Operations &amp; Team Efficiency</strong>
+            </div>
+            <div class="ebc-pillar">
+              <span>06</span><strong>12-Week Execution Control</strong>
+            </div>
+          </div>
+
+          <p class="ebc-center-note">
+            Every recommendation, report, and roadmap ties directly back to
+            these pillars.
+          </p>
         </div>
+      </section>
 
-        <p class="ebc-center-note">Every recommendation, report, and roadmap ties directly back to these pillars.</p>
-      </div>
-    </section>
+      <!-- CONSULTATION 1 -->
+      <section class="ebc-section ebc-white">
+        <div class="ebc-container">
+          <header class="ebc-block-head">
+            <span class="ebc-pill ebc-pill--green">Consultation 1</span>
+            <h2 class="ebc-title">Business Diagnosis Call</h2>
+            <p class="ebc-value">Market Value: <strong>₹30,000</strong></p>
+            <p class="ebc-tagline">
+              This is not a casual discussion. This is a business X-ray.
+            </p>
+          </header>
 
-    <!-- CONSULTATION 1 -->
-    <section class="ebc-section ebc-white">
-      <div class="ebc-container">
-        <header class="ebc-block-head">
-          <span class="ebc-pill ebc-pill--green">Consultation 1</span>
-          <h2 class="ebc-title">Business Diagnosis Call</h2>
+          <div class="ebc-grid-2">
+            <article class="ebc-panel">
+              <h3>1. Business Model Diagnosis</h3>
+              <span class="ebc-label">We break down:</span>
+              <ul class="ebc-dash">
+                <li>What you sell</li>
+                <li>Who you sell to</li>
+                <li>How money actually flows</li>
+                <li>Where margins are made or lost</li>
+                <li>
+                  Which part of the business is overworked vs underperforming
+                </li>
+              </ul>
+              <p class="ebc-note">
+                Most clients realize: “We were focusing on the wrong part of the
+                business.”
+              </p>
+            </article>
+
+            <article class="ebc-panel">
+              <h3>2. Customer &amp; Demand Reality Check</h3>
+              <span class="ebc-label">We analyse:</span>
+              <ul class="ebc-dash">
+                <li>Who actually buys from you</li>
+                <li>Who should buy from you</li>
+                <li>Where demand is real vs assumed</li>
+                <li>Why current leads are low quality</li>
+              </ul>
+              <p class="ebc-note">
+                This alone helps stop wasted marketing spend.
+              </p>
+            </article>
+
+            <article class="ebc-panel">
+              <h3>3. Sales &amp; Conversion Bottleneck Mapping</h3>
+              <span class="ebc-label">We identify:</span>
+              <ul class="ebc-dash">
+                <li>Where leads are dropping</li>
+                <li>Why inquiries don't convert</li>
+                <li>Where sales conversations fail</li>
+                <li>Why discounts are becoming necessary</li>
+              </ul>
+              <p class="ebc-note">
+                Often, revenue improves without increasing leads.
+              </p>
+            </article>
+
+            <article class="ebc-panel">
+              <h3>4. Pricing &amp; Value Leak Identification</h3>
+              <span class="ebc-label">We evaluate:</span>
+              <ul class="ebc-dash">
+                <li>Whether pricing matches value</li>
+                <li>If margins are sustainable</li>
+                <li>If customers are confused, not price-sensitive</li>
+                <li>Whether objections are real or positioning-related</li>
+              </ul>
+              <p class="ebc-note">
+                Most businesses don't need lower prices. They need clear value
+                communication.
+              </p>
+            </article>
+          </div>
+
+          <div class="ebc-outcome">
+            <span class="ebc-label">Outcome of Consultation 1</span>
+            <p>You leave with one powerful realization:</p>
+            <strong
+              >“Now I know exactly what is broken—and why growth feels
+              stuck.”</strong
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- CONSULTATION 2 -->
+      <section class="ebc-section ebc-soft">
+        <div class="ebc-container">
+          <header class="ebc-block-head">
+            <span class="ebc-pill ebc-pill--mint">Consultation 2</span>
+            <h2 class="ebc-title">Growth Strategy Call (60 Minutes)</h2>
+            <p class="ebc-value">Market Value: <strong>₹40,000</strong></p>
+            <p class="ebc-tagline">This is where clarity turns into control.</p>
+          </header>
+
+          <div class="ebc-grid-2">
+            <article class="ebc-panel">
+              <h3>1. Customer &amp; Market Strategy</h3>
+              <span class="ebc-mini-tag">Demand First</span>
+              <span class="ebc-label">We define:</span>
+              <ul class="ebc-dash">
+                <li>Ideal paying customer (not random leads)</li>
+                <li>Indian buyer psychology</li>
+                <li>Decision-making triggers</li>
+                <li>Trust factors needed before conversion</li>
+              </ul>
+              <p class="ebc-note">
+                This stops chasing everyone—and converts the right people.
+              </p>
+            </article>
+
+            <article class="ebc-panel">
+              <h3>2. Pricing &amp; Positioning Strategy</h3>
+              <span class="ebc-mini-tag">Profit First</span>
+              <span class="ebc-label">We fix:</span>
+              <ul class="ebc-dash">
+                <li>Pricing logic (not just numbers)</li>
+                <li>Price justification frameworks</li>
+                <li>Premium vs volume positioning</li>
+                <li>Discount elimination strategy</li>
+              </ul>
+              <p class="ebc-note">
+                Clients often realize: “We were cheap, but still not trusted.”
+              </p>
+            </article>
+
+            <article class="ebc-panel">
+              <h3>3. Sales System &amp; Conversion Framework</h3>
+              <span class="ebc-label">We build:</span>
+              <ul class="ebc-dash">
+                <li>Lead qualification logic</li>
+                <li>Step-by-step sales flow</li>
+                <li>Conversation structure</li>
+                <li>Follow-up system</li>
+                <li>Objection handling framework</li>
+              </ul>
+              <p class="ebc-note">Sales becomes predictable, not emotional.</p>
+            </article>
+
+            <article class="ebc-panel">
+              <h3>4. Marketing Direction</h3>
+              <span class="ebc-mini-tag">Clarity Over Chaos</span>
+              <p class="ebc-tagline ebc-tagline--inline">
+                We don't run ads. We decide what marketing should communicate.
+              </p>
+              <span class="ebc-label">We define:</span>
+              <ul class="ebc-dash">
+                <li>Core messaging</li>
+                <li>
+                  Platform priorities (WhatsApp, Instagram, LinkedIn, Offline)
+                </li>
+                <li>Content direction (education vs selling)</li>
+                <li>Funnel logic (Awareness → Inquiry → Sale)</li>
+              </ul>
+              <p class="ebc-note">Marketing finally supports sales.</p>
+            </article>
+
+            <article class="ebc-panel ebc-panel--wide">
+              <h3>5. Operations &amp; Team Alignment</h3>
+              <span class="ebc-label">We identify:</span>
+              <ul class="ebc-dash ebc-dash--cols">
+                <li>Founder vs team responsibilities</li>
+                <li>Execution bottlenecks</li>
+                <li>Process gaps</li>
+                <li>Where systems are needed instead of manpower</li>
+              </ul>
+              <p class="ebc-note">Growth—without chaos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT YOU RECEIVE -->
+      <section class="ebc-section ebc-white">
+        <div class="ebc-container">
+          <h2 class="ebc-title">What You Receive</h2>
+
+          <div class="ebc-grid-2">
+            <article class="ebc-panel ebc-deliverable">
+              <div class="ebc-deliverable-head">
+                <svg
+                  class="ebc-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                  <polyline points="16 7 22 7 22 13" />
+                </svg>
+                <div>
+                  <span class="ebc-label">PDF Report · Delivered Same Day</span>
+                  <p class="ebc-value">Market Value: ₹35,000</p>
+                </div>
+              </div>
+              <h3 class="ebc-h3-lg">Detailed Business Growth Report</h3>
+              <p class="ebc-muted-text">
+                This is your business control document. What it includes:
+              </p>
+              <ul class="ebc-dash">
+                <li>
+                  <strong>Market &amp; Competitor Analysis</strong> — competitor
+                  pricing &amp; positioning, differentiation gaps, saturation vs
+                  opportunity
+                </li>
+                <li>
+                  <strong>Customer Blueprint</strong> — ideal customer persona,
+                  buying behaviour, objection triggers, trust-building
+                  requirements
+                </li>
+                <li>
+                  <strong>Sales &amp; Conversion Improvements</strong> — funnel
+                  gap analysis, sales flow corrections, conversion action steps
+                </li>
+                <li>
+                  <strong>Pricing &amp; Positioning</strong> — pricing logic
+                  correction, value communication strategy, discount control
+                  framework
+                </li>
+                <li>
+                  <strong>Stop / Start / Improve Framework</strong> — what to
+                  stop wasting money on, what creates results, what systems need
+                  strengthening
+                </li>
+              </ul>
+            </article>
+
+            <article class="ebc-panel ebc-deliverable">
+              <div class="ebc-deliverable-head">
+                <svg
+                  class="ebc-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+                  <line x1="9" y1="3" x2="9" y2="18" />
+                  <line x1="15" y1="6" x2="15" y2="21" />
+                </svg>
+                <div>
+                  <span class="ebc-label"
+                    >PDF Roadmap · Delivered Next Day</span
+                  >
+                  <p class="ebc-value">Market Value: ₹25,000</p>
+                </div>
+              </div>
+              <h3 class="ebc-h3-lg">12-Week Business Growth Roadmap</h3>
+              <p class="ebc-muted-text">
+                This is where consulting turns into execution. Weekly Focus
+                Areas:
+              </p>
+              <ul class="ebc-dash">
+                <li>
+                  <strong>Weeks 1–2:</strong> Customer clarity, pricing
+                  alignment, messaging
+                </li>
+                <li>
+                  <strong>Weeks 3–4:</strong> Lead direction, funnel structure,
+                  sales scripts
+                </li>
+                <li>
+                  <strong>Weeks 5–6:</strong> Conversion improvement,
+                  follow-ups, objections
+                </li>
+                <li>
+                  <strong>Weeks 7–8:</strong> Branding, trust signals, content
+                  direction
+                </li>
+                <li>
+                  <strong>Weeks 9–10:</strong> Team alignment, founder workload,
+                  automation
+                </li>
+                <li>
+                  <strong>Weeks 11–12:</strong> Review, refinement, scaling
+                  preparation
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUPPORT -->
+      <section class="ebc-section ebc-soft ebc-support">
+        <div class="ebc-container ebc-container--narrow">
+          <span class="ebc-pill ebc-pill--mint"
+            >4-Week Priority Expert Support</span
+          >
+          <h2 class="ebc-title">Consultant Supervision, Not Casual Support</h2>
           <p class="ebc-value">Market Value: <strong>₹30,000</strong></p>
-          <p class="ebc-tagline">This is not a casual discussion. This is a business X-ray.</p>
-        </header>
-
-        <div class="ebc-grid-2">
-          <article class="ebc-panel">
-            <h3>1. Business Model Diagnosis</h3>
-            <span class="ebc-label">We break down:</span>
-            <ul class="ebc-dash">
-              <li>What you sell</li>
-              <li>Who you sell to</li>
-              <li>How money actually flows</li>
-              <li>Where margins are made or lost</li>
-              <li>Which part of the business is overworked vs underperforming</li>
-            </ul>
-            <p class="ebc-note">Most clients realize: “We were focusing on the wrong part of the business.”</p>
-          </article>
-
-          <article class="ebc-panel">
-            <h3>2. Customer &amp; Demand Reality Check</h3>
-            <span class="ebc-label">We analyse:</span>
-            <ul class="ebc-dash">
-              <li>Who actually buys from you</li>
-              <li>Who should buy from you</li>
-              <li>Where demand is real vs assumed</li>
-              <li>Why current leads are low quality</li>
-            </ul>
-            <p class="ebc-note">This alone helps stop wasted marketing spend.</p>
-          </article>
-
-          <article class="ebc-panel">
-            <h3>3. Sales &amp; Conversion Bottleneck Mapping</h3>
-            <span class="ebc-label">We identify:</span>
-            <ul class="ebc-dash">
-              <li>Where leads are dropping</li>
-              <li>Why inquiries don't convert</li>
-              <li>Where sales conversations fail</li>
-              <li>Why discounts are becoming necessary</li>
-            </ul>
-            <p class="ebc-note">Often, revenue improves without increasing leads.</p>
-          </article>
-
-          <article class="ebc-panel">
-            <h3>4. Pricing &amp; Value Leak Identification</h3>
-            <span class="ebc-label">We evaluate:</span>
-            <ul class="ebc-dash">
-              <li>Whether pricing matches value</li>
-              <li>If margins are sustainable</li>
-              <li>If customers are confused, not price-sensitive</li>
-              <li>Whether objections are real or positioning-related</li>
-            </ul>
-            <p class="ebc-note">Most businesses don't need lower prices. They need clear value communication.</p>
-          </article>
+          <div class="ebc-chips">
+            <span>Weekly execution reviews</span>
+            <span>Course correction</span>
+            <span>Priority problem-solving</span>
+            <span>Decision validation</span>
+            <span>Accountability</span>
+          </div>
+          <p class="ebc-tagline">“This kept us from going off-track.”</p>
         </div>
+      </section>
 
-        <div class="ebc-outcome">
-          <span class="ebc-label">Outcome of Consultation 1</span>
-          <p>You leave with one powerful realization:</p>
-          <strong>“Now I know exactly what is broken—and why growth feels stuck.”</strong>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONSULTATION 2 -->
-    <section class="ebc-section ebc-soft">
-      <div class="ebc-container">
-        <header class="ebc-block-head">
-          <span class="ebc-pill ebc-pill--mint">Consultation 2</span>
-          <h2 class="ebc-title">Growth Strategy Call (60 Minutes)</h2>
-          <p class="ebc-value">Market Value: <strong>₹40,000</strong></p>
-          <p class="ebc-tagline">This is where clarity turns into control.</p>
-        </header>
-
-        <div class="ebc-grid-2">
-          <article class="ebc-panel">
-            <h3>1. Customer &amp; Market Strategy</h3>
-            <span class="ebc-mini-tag">Demand First</span>
-            <span class="ebc-label">We define:</span>
-            <ul class="ebc-dash">
-              <li>Ideal paying customer (not random leads)</li>
-              <li>Indian buyer psychology</li>
-              <li>Decision-making triggers</li>
-              <li>Trust factors needed before conversion</li>
-            </ul>
-            <p class="ebc-note">This stops chasing everyone—and converts the right people.</p>
-          </article>
-
-          <article class="ebc-panel">
-            <h3>2. Pricing &amp; Positioning Strategy</h3>
-            <span class="ebc-mini-tag">Profit First</span>
-            <span class="ebc-label">We fix:</span>
-            <ul class="ebc-dash">
-              <li>Pricing logic (not just numbers)</li>
-              <li>Price justification frameworks</li>
-              <li>Premium vs volume positioning</li>
-              <li>Discount elimination strategy</li>
-            </ul>
-            <p class="ebc-note">Clients often realize: “We were cheap, but still not trusted.”</p>
-          </article>
-
-          <article class="ebc-panel">
-            <h3>3. Sales System &amp; Conversion Framework</h3>
-            <span class="ebc-label">We build:</span>
-            <ul class="ebc-dash">
-              <li>Lead qualification logic</li>
-              <li>Step-by-step sales flow</li>
-              <li>Conversation structure</li>
-              <li>Follow-up system</li>
-              <li>Objection handling framework</li>
-            </ul>
-            <p class="ebc-note">Sales becomes predictable, not emotional.</p>
-          </article>
-
-          <article class="ebc-panel">
-            <h3>4. Marketing Direction</h3>
-            <span class="ebc-mini-tag">Clarity Over Chaos</span>
-            <p class="ebc-tagline ebc-tagline--inline">We don't run ads. We decide what marketing should communicate.</p>
-            <span class="ebc-label">We define:</span>
-            <ul class="ebc-dash">
-              <li>Core messaging</li>
-              <li>Platform priorities (WhatsApp, Instagram, LinkedIn, Offline)</li>
-              <li>Content direction (education vs selling)</li>
-              <li>Funnel logic (Awareness → Inquiry → Sale)</li>
-            </ul>
-            <p class="ebc-note">Marketing finally supports sales.</p>
-          </article>
-
-          <article class="ebc-panel ebc-panel--wide">
-            <h3>5. Operations &amp; Team Alignment</h3>
-            <span class="ebc-label">We identify:</span>
-            <ul class="ebc-dash ebc-dash--cols">
-              <li>Founder vs team responsibilities</li>
-              <li>Execution bottlenecks</li>
-              <li>Process gaps</li>
-              <li>Where systems are needed instead of manpower</li>
-            </ul>
-            <p class="ebc-note">Growth—without chaos.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHAT YOU RECEIVE -->
-    <section class="ebc-section ebc-white">
-      <div class="ebc-container">
-        <h2 class="ebc-title">What You Receive</h2>
-
-        <div class="ebc-grid-2">
-          <article class="ebc-panel ebc-deliverable">
-            <div class="ebc-deliverable-head">
-              <svg class="ebc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
-              <div>
-                <span class="ebc-label">PDF Report · Delivered Same Day</span>
-                <p class="ebc-value">Market Value: ₹35,000</p>
+      <!-- WHAT CHANGES -->
+      <section class="ebc-section ebc-white">
+        <div class="ebc-container">
+          <div class="ebc-changes">
+            <div>
+              <h2 class="ebc-title">What Changes After This Consultation</h2>
+              <div class="ebc-change-list">
+                <span>Sales feel structured</span>
+                <span>Marketing stops being random</span>
+                <span>Pricing becomes confident</span>
+                <span>Team works with clarity</span>
+                <span>Founder stress reduces</span>
+                <span>Growth becomes predictable</span>
               </div>
             </div>
-            <h3 class="ebc-h3-lg">Detailed Business Growth Report</h3>
-            <p class="ebc-muted-text">This is your business control document. What it includes:</p>
-            <ul class="ebc-dash">
-              <li><strong>Market &amp; Competitor Analysis</strong> — competitor pricing &amp; positioning, differentiation gaps, saturation vs opportunity</li>
-              <li><strong>Customer Blueprint</strong> — ideal customer persona, buying behaviour, objection triggers, trust-building requirements</li>
-              <li><strong>Sales &amp; Conversion Improvements</strong> — funnel gap analysis, sales flow corrections, conversion action steps</li>
-              <li><strong>Pricing &amp; Positioning</strong> — pricing logic correction, value communication strategy, discount control framework</li>
-              <li><strong>Stop / Start / Improve Framework</strong> — what to stop wasting money on, what creates results, what systems need strengthening</li>
-            </ul>
-          </article>
+            <img
+              class="ebc-changes-img"
+              src="./Assets/img/case-studies.png"
+              alt="A consultant presenting a performance dashboard to a team"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
 
-          <article class="ebc-panel ebc-deliverable">
-            <div class="ebc-deliverable-head">
-              <svg class="ebc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
-              <div>
-                <span class="ebc-label">PDF Roadmap · Delivered Next Day</span>
-                <p class="ebc-value">Market Value: ₹25,000</p>
+      <!-- FINAL FEELING -->
+      <section class="ebc-section ebc-soft">
+        <div class="ebc-container ebc-container--narrow">
+          <h2 class="ebc-title ebc-title--center">
+            The Final Feeling We Want You to Have
+          </h2>
+
+          <div class="ebc-feelings">
+            <div>“My business finally makes sense.”</div>
+            <div>“I know where money comes from.”</div>
+            <div>“I know exactly what to fix next.”</div>
+          </div>
+
+          <div class="ebc-card ebc-real">
+            <h3>Why This Is Real Consulting (Not Advice)</h3>
+            <ul class="ebc-crosses">
+              <li>No generic frameworks</li>
+              <li>No motivational talk</li>
+              <li>No dependency creation</li>
+            </ul>
+            <div class="ebc-only">
+              <span class="ebc-label">Only:</span>
+              <div
+                class="ebc-flow"
+                aria-label="Clarity, then Structure, then Execution, then Control"
+              >
+                <span class="ebc-chip-dark">Clarity</span><i>→</i
+                ><span class="ebc-chip-dark">Structure</span><i>→</i
+                ><span class="ebc-chip-dark">Execution</span><i>→</i
+                ><span class="ebc-chip-dark">Control</span>
               </div>
             </div>
-            <h3 class="ebc-h3-lg">12-Week Business Growth Roadmap</h3>
-            <p class="ebc-muted-text">This is where consulting turns into execution. Weekly Focus Areas:</p>
-            <ul class="ebc-dash">
-              <li><strong>Weeks 1–2:</strong> Customer clarity, pricing alignment, messaging</li>
-              <li><strong>Weeks 3–4:</strong> Lead direction, funnel structure, sales scripts</li>
-              <li><strong>Weeks 5–6:</strong> Conversion improvement, follow-ups, objections</li>
-              <li><strong>Weeks 7–8:</strong> Branding, trust signals, content direction</li>
-              <li><strong>Weeks 9–10:</strong> Team alignment, founder workload, automation</li>
-              <li><strong>Weeks 11–12:</strong> Review, refinement, scaling preparation</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SUPPORT -->
-    <section class="ebc-section ebc-soft ebc-support">
-      <div class="ebc-container ebc-container--narrow">
-        <span class="ebc-pill ebc-pill--mint">4-Week Priority Expert Support</span>
-        <h2 class="ebc-title">Consultant Supervision, Not Casual Support</h2>
-        <p class="ebc-value">Market Value: <strong>₹30,000</strong></p>
-        <div class="ebc-chips">
-          <span>Weekly execution reviews</span>
-          <span>Course correction</span>
-          <span>Priority problem-solving</span>
-          <span>Decision validation</span>
-          <span>Accountability</span>
-        </div>
-        <p class="ebc-tagline">“This kept us from going off-track.”</p>
-      </div>
-    </section>
-
-    <!-- WHAT CHANGES -->
-    <section class="ebc-section ebc-white">
-      <div class="ebc-container">
-        <div class="ebc-changes">
-          <div>
-            <h2 class="ebc-title">What Changes After This Consultation</h2>
-            <div class="ebc-change-list">
-              <span>Sales feel structured</span>
-              <span>Marketing stops being random</span>
-              <span>Pricing becomes confident</span>
-              <span>Team works with clarity</span>
-              <span>Founder stress reduces</span>
-              <span>Growth becomes predictable</span>
-            </div>
           </div>
-          <img class="ebc-changes-img" src="./Assets/img/case-studies.png" alt="A consultant presenting a performance dashboard to a team" loading="lazy" />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FINAL FEELING -->
-    <section class="ebc-section ebc-soft">
-      <div class="ebc-container ebc-container--narrow">
-        <h2 class="ebc-title ebc-title--center">The Final Feeling We Want You to Have</h2>
+      <!-- INVESTMENT -->
+      <section class="ebc-investment">
+        <div class="ebc-container ebc-container--mid">
+          <h2>Investment &amp; Value Breakdown</h2>
 
-        <div class="ebc-feelings">
-          <div>“My business finally makes sense.”</div>
-          <div>“I know where money comes from.”</div>
-          <div>“I know exactly what to fix next.”</div>
-        </div>
+          <div class="ebc-investment-grid">
+            <div class="ebc-price-table">
+              <div><span>Business Diagnosis Call</span><b>₹30,000</b></div>
+              <div>
+                <span>Growth Strategy Call (60 Minutes)</span><b>₹40,000</b>
+              </div>
+              <div>
+                <span>Detailed Business Growth Report (PDF)</span><b>₹35,000</b>
+              </div>
+              <div>
+                <span>12-Week Business Growth Roadmap (PDF)</span><b>₹25,000</b>
+              </div>
+              <div>
+                <span>4-Week Priority Expert Support</span><b>₹30,000</b>
+              </div>
+              <div class="ebc-total">
+                <span>Total Real Market Value</span><b>₹1,60,000</b>
+              </div>
+            </div>
 
-        <div class="ebc-card ebc-real">
-          <h3>Why This Is Real Consulting (Not Advice)</h3>
-          <ul class="ebc-crosses">
-            <li>No generic frameworks</li>
-            <li>No motivational talk</li>
-            <li>No dependency creation</li>
-          </ul>
-          <div class="ebc-only">
-            <span class="ebc-label">Only:</span>
-            <div class="ebc-flow" aria-label="Clarity, then Structure, then Execution, then Control">
-              <span class="ebc-chip-dark">Clarity</span><i>→</i><span class="ebc-chip-dark">Structure</span><i>→</i><span class="ebc-chip-dark">Execution</span><i>→</i><span class="ebc-chip-dark">Control</span>
+            <div class="ebc-price-box">
+              <span class="ebc-price-label">Special Consultation Fee</span>
+              <strong>₹80,000 <span class="ebc-gst">+ GST</span></strong>
+              <p class="ebc-regular">Regular Price: <s>₹1,00,000</s></p>
+              <p class="ebc-price-note">
+                You receive real consulting, clarity, and execution control at
+                less than one-third of its market value.
+              </p>
+              <a href="./contact.html" class="ebc-btn ebc-btn--light"
+                >Book Your Consultation</a
+              >
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- INVESTMENT -->
-    <section class="ebc-investment">
-      <div class="ebc-container ebc-container--mid">
-        <h2>Investment &amp; Value Breakdown</h2>
+      <!-- GET STARTED -->
+      <section class="ebc-section ebc-white" id="start">
+        <div class="ebc-container ebc-container--narrow">
+          <div class="ebc-card ebc-start">
+            <h2>Get Started Today</h2>
+            <p class="ebc-muted-text">
+              Most businesses don't fail because of lack of effort. They fail
+              because they fix the wrong problems. This consultation ensures you
+              fix the right ones first.
+            </p>
 
-        <div class="ebc-investment-grid">
-          <div class="ebc-price-table">
-            <div><span>Business Diagnosis Call</span><b>₹30,000</b></div>
-            <div><span>Growth Strategy Call (60 Minutes)</span><b>₹40,000</b></div>
-            <div><span>Detailed Business Growth Report (PDF)</span><b>₹35,000</b></div>
-            <div><span>12-Week Business Growth Roadmap (PDF)</span><b>₹25,000</b></div>
-            <div><span>4-Week Priority Expert Support</span><b>₹30,000</b></div>
-            <div class="ebc-total"><span>Total Real Market Value</span><b>₹1,60,000</b></div>
-          </div>
+            <div class="ebc-contact">
+              <div>
+                <span>Email</span
+                ><span
+                  ><a href="mailto:hello@flairlist.com"
+                    >hello@flairlist.com</a
+                  ></span
+                >
+              </div>
+              <div>
+                <span>Website</span
+                ><span
+                  ><a href="https://www.flairlist.com/">flairlist.com</a></span
+                >
+              </div>
+              <div>
+                <span>Instagram</span
+                ><span>@flairlist | @theshubhambibave</span>
+              </div>
+            </div>
 
-          <div class="ebc-price-box">
-            <span class="ebc-price-label">Special Consultation Fee</span>
-            <strong>₹80,000 <span class="ebc-gst">+ GST</span></strong>
-            <p class="ebc-regular">Regular Price: <s>₹1,00,000</s></p>
-            <p class="ebc-price-note">You receive real consulting, clarity, and execution control at less than one-third of its market value.</p>
-            <a href="#start" class="ebc-btn ebc-btn--light">Book Your Consultation</a>
+            <a href="./contact.html" class="ebc-btn">Book Your Consultation</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- GET STARTED -->
-    <section class="ebc-section ebc-white" id="start">
-      <div class="ebc-container ebc-container--narrow">
-        <div class="ebc-card ebc-start">
-          <h2>Get Started Today</h2>
-          <p class="ebc-muted-text">Most businesses don't fail because of lack of effort. They fail because they fix the wrong problems. This consultation ensures you fix the right ones first.</p>
-
-          <div class="ebc-contact">
-            <div><span>Email</span><span><a href="mailto:hello@flairlist.com">hello@flairlist.com</a></span></div>
-            <div><span>Website</span><span><a href="https://www.flairlist.com/">flairlist.com</a></span></div>
-            <div><span>Instagram</span><span>@flairlist | @theshubhambibave</span></div>
-          </div>
-
-          <a href="#start" class="ebc-btn">Book Your Consultation</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-            <footer class="site-footer">
-        <div class="footer-container">
-          <!-- =================================
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================
              COLUMN 1
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Who We Are</h3>
+        <div class="footer-column">
+          <h3>Who We Are</h3>
 
-            <a href="./mission.html">Mission</a>
-            <a href="./vision.html">Vision</a>
-            <a href="./values.html">Values</a>
-            <a href="./founder.html">Founder &amp; CEO</a>
-            <a href="./team.html">Leadership &amp; Team</a>
-            <a href="./press_room.html">Press Room</a>
-          </div>
+          <a href="./mission.html">Mission</a>
+          <a href="./vision.html">Vision</a>
+          <a href="./values.html">Values</a>
+          <a href="./founder.html">Founder &amp; CEO</a>
+          <a href="./team.html">Leadership &amp; Team</a>
+          <a href="./press_room.html">Press Room</a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 2
         ================================== -->
 
-          <div class="footer-column">
-            <h3>What We Do</h3>
+        <div class="footer-column">
+          <h3>What We Do</h3>
 
-            <a href="#" class="footer-bold"> Services </a>
+          <span class="footer-bold footer-label"> Services </span>
 
-            <a href="./expert-business-consultancy.html"> Expert Business Consultation </a>
+          <a href="./expert-business-consultancy.html">
+            Expert Business Consultation
+          </a>
 
-            <a href="./export-consultation.html"> Export Consultation </a>
+          <a href="./export-consultation.html"> Export Consultation </a>
 
-            <a href="./export-mentorship.html"> Export Mentorship </a>
+          <a href="./export-mentorship.html"> Export Mentorship </a>
 
-            <a href="./exclusive-business-growth-partnership.html"> Exclusive Partnership </a>
+          <a href="./exclusive-business-growth-partnership.html">
+            Exclusive Partnership
+          </a>
 
-            <a href="#" class="footer-bold"> Global Import-Export </a>
+          <a href="#" class="footer-bold"> Global Import-Export </a>
 
-            <a href="./countries.html"> Countries </a>
+          <a href="./countries.html"> Countries </a>
 
-            <a href="./products.html"> Products </a>
+          <a href="./products.html"> Products </a>
 
-            <a href="./partners.html"> Partner With Us </a>
-          </div>
+          <a href="./partners.html"> Partner With Us </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 3
         ================================== -->
 
-          <div class="footer-column">
-            <h3>More</h3>
+        <div class="footer-column">
+          <h3>More</h3>
 
-            <a href="#" class="footer-bold"> Supply Chain &amp; Workforce </a>
+          <span class="footer-bold footer-label">
+            Supply Chain &amp; Workforce
+          </span>
 
-            <a href="#"> Supply Chain &amp; Distribution </a>
+          <a href="#"> Supply Chain &amp; Distribution </a>
 
-            <a href="./workforce-mobility.html"> Workforce Programs </a>
+          <a href="./workforce-mobility.html"> Workforce Programs </a>
 
-            <a href="./deployment.html"> Deployment </a>
+          <a href="./deployment.html"> Deployment </a>
 
-            <a href="#" class="footer-bold"> Explore </a>
+          <a href="#" class="footer-bold"> Explore </a>
 
-            <a href="#"> Industries </a>
+          <a href="./industries.html"> Industries </a>
 
-            <a href="./case-studies.html"> Case Studies </a>
-          </div>
+          <a href="./case-studies.html"> Case Studies </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 4
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Opportunities</h3>
+        <div class="footer-column">
+          <h3>Opportunities</h3>
 
-            <a href="./career.html"> Careers </a>
+          <a href="./career.html"> Careers </a>
 
-            <a href="./investor.html"> Investors </a>
+          <a href="./investor.html"> Investors </a>
 
-            <a href="./contact.html"> Contact Us </a>
+          <a href="./contact.html"> Contact Us </a>
 
-            <h4 class="footer-follow-title">Follow Us</h4>
+          <h4 class="footer-follow-title">Follow Us</h4>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a
+            href="https://www.instagram.com/theshubhambibave/"
+            class="social-link"
+          >
+            <span class="social-icon"> ◎ </span>
 
-              @theshubhambibave
-            </a>
+            @theshubhambibave
+          </a>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a href="#" class="social-link">
+            <span class="social-icon"> ◎ </span>
 
-              @flairlist
-            </a>
-          </div>
+            @flairlist
+          </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 5
         ================================== -->
 
-          <div class="footer-column footer-connect">
-            <h3>Let's Connect</h3>
+        <div class="footer-column footer-connect">
+          <h3>Let's Connect</h3>
 
-            <div class="footer-contact">
-              <strong> ✉ Email: </strong>
+          <div class="footer-contact">
+            <strong> ✉ Email: </strong>
 
-              <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
-            </div>
-
-            <div class="footer-contact">
-              <strong> ◎ Website: </strong>
-
-              <a href="https://www.flairlist.com/"> FlairList.com </a>
-            </div>
-
-            <a href="./contact.html" class="footer-button"> Get in Touch </a>
+            <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
           </div>
-        </div>
 
-        <!-- =====================================
+          <div class="footer-contact">
+            <strong> ◎ Website: </strong>
+
+            <a href="https://www.flairlist.com/"> FlairList.com </a>
+          </div>
+
+          <a href="./contact.html" class="footer-button"> Get in Touch </a>
+        </div>
+      </div>
+
+      <!-- =====================================
          FOOTER BOTTOM
     ====================================== -->
 
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p>2026 FlairList Global. All rights reserved.</p>
-
-            <p class="footer-tagline">
-              "Building what global business runs on."
-            </p>
-          </div>
-
-          <nav class="footer-legal">
-            <a href="#"> Terms of Use </a>
-
-            <a href="#"> Privacy Policy </a>
-
-            <a href="#"> Refund Policy </a>
-
-            <a href="#"> Cancellation Policy </a>
-
-            <a href="#"> Cookies </a>
-          </nav>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>2026 FlairList Global. All rights reserved.</p>
         </div>
-      </footer>
-      
-<script src="./Assets/js/script.js?v=3.0"></script>
-</body>
+
+        <nav class="footer-legal">
+          <a href="./terms-and-conditions.html"> Terms of Use </a>
+
+          <a href="./privacy-policy.html"> Privacy Policy </a>
+
+          <a href="./refund-policy.html"> Refund Policy </a>
+
+          <a href="./cancellation-policy.html"> Cancellation Policy </a>
+
+          <a href="./privacy-policy.html"> Cookies </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./Assets/js/script.js?v=3.8"></script>
+  </body>
 </html>

@@ -62,37 +62,45 @@
   margin-left: 0;
 }
 .founder-bio p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
   color: var(--primary-blue);
   margin-bottom: 22px;
-  max-width: 680px;
+  max-width: 700px;
 }
 
 /* ---------- A LEADER WITH A GLOBAL PERSPECTIVE ---------- */
 .global-perspective {
   padding: 70px 0;
 }
+
 .global-perspective .container,
 .journey .container,
 .leadership-apart .container {
-  width: min(1200px, calc(100% - 68px));
+  width: min(1680px, calc(100% - 68px));
   margin: 0 auto;
 }
+
 .section-title.left {
+  max-width: 1035px;
+  margin: 0 100px 24px;
+
   font-size: 36px;
-  text-align: left;
-  margin-bottom: 24px;
+  text-align: center;
 }
+
 .perspective-lead {
+  max-width: 900px;
+  margin: 0 300px 60px;
+
   padding-left: 0;
+
   font-size: 18px;
-  text-align: left;
+  text-align: justify;
   line-height: 1.65;
   color: var(--primary-blue);
-  max-width: 900px;
-  margin-bottom: 44px;
 }
+
 .perspective-lead strong {
   color: var(--primary-blue);
 }
@@ -100,42 +108,58 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
+  width: 100%;
+
   margin-bottom: 50px;
-  border-top: 2px solid var(--border-grid);
-  border-bottom: 2px solid var(--border-grid);
-  border-left: 2px solid var(--border-grid);
-  border-right: 2px solid var(--border-grid);
+
+  border-top: 1px solid var(--border-grid);
+  border-bottom: 1px solid var(--border-grid);
+  border-left: 1px solid var(--border-grid);
+  border-right: 1px solid var(--border-grid);
 }
+
 .perspective-card {
   background: transparent;
   border-radius: 0;
-  padding: 40px 44px;
+  padding: 48px 38px 48px;
+
   box-shadow: none;
+  min-width: 0;
 }
 .perspective-card + .perspective-card {
-  border-left: 2px solid var(--border-grid);
+  border-left: 1px solid var(--border-grid);
 }
 .perspective-card h4 {
   font-size: 15px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+
   color: var(--primary-blue);
+
   margin-bottom: 16px;
+
   font-weight: 800;
 }
+
 .perspective-card p {
   font-size: 17px;
   color: #04261D;
   line-height: 1.6;
 }
+
 .perspective-note {
-  font-size: 18px;
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  font-size: 20px;
   line-height: 1.75;
+
   color: var(--primary-blue);
-  max-width: 900px;
+
   padding: 10px 0 60px;
-  padding-left: 0;
 }
+
 .perspective-note strong {
   color: var(--primary-blue);
 }
@@ -143,18 +167,22 @@
 .journey {
   padding: 60px 0 70px;
 }
+
 .journey .section-title.left {
   font-size: 36px;
-  margin-bottom: 24px;
+  max-width: 1035px;
+  margin: 0 auto 24px;
 }
+
 .journey-text {
   padding-left: 0;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.65;
   color: var(--primary-blue);
   max-width: 900px;
-  margin-bottom: 22px;
+  margin: 0 auto 22px;
 }
+
 .journey-text strong {
   color: var(--primary-blue);
 }
@@ -164,11 +192,11 @@
   border-left: 3px solid var(--primary-blue);
   border-radius: 0;
   padding: 28px 32px;
-  max-width: 850px;
-  margin-top: 20px;
-  margin-left: 0;
+  max-width: 800px;
+  margin: 40px auto 0;
   font-size: 18px;
 }
+
 .author-card small {
   display: block;
   font-size: 15px;
@@ -176,8 +204,8 @@
   font-weight: 800;
   color: var(--primary-blue);
   margin-bottom: 8px;
-
 }
+
 .author-card h3 {
   font-size: 20px;
   color: var(--primary-blue);
@@ -185,6 +213,7 @@
   font-weight: 700;
   padding-top: 15px;
 }
+
 .author-card p {
   font-size: 20px;
   padding-top: 20px;
@@ -192,53 +221,52 @@
   line-height: 1.5;
   margin: 0;
 }
-/* ---------- WHAT SETS HIS LEADERSHIP APART ---------- */
+
 .leadership-apart {
   padding: 70px 0;
   text-align: left;
 }
+
 .apart-list {
-  border-top: 2px solid var(--border-grid);
-  border-right: 2px solid var(--border-grid);
-  border-left: 2px solid var(--border-grid);
-  border-bottom: 2px solid var(--border-grid);
+  border: 1px solid var(--border-grid);
   display: flex;
   flex-direction: column;
   background: #fff;
   box-shadow: 0 4px 18px rgba(4, 38, 29, 0.08);
   overflow: hidden;
 }
+
 .apart-item {
   padding: 42px 46px;
 }
+
 .apart-item + .apart-item {
-  border-top: 2px solid var(--border-grid);
-  border-right: 2px solid var(--border-grid);
-  border-left: 2px solid var(--border-grid);
-  border-bottom: 2px solid var(--border-grid);
-  color: #04261D;
+  border-top: 1px solid var(--border-grid);
 }
+
 .apart-item h4 {
   font-size: 22px;
   color: var(--primary-blue);
   margin-bottom: 14px;
   text-align: left;
 }
+
 .apart-item > p {
   font-size: 17px;
   color: #04261D;
   line-height: 1.7;
   margin-bottom: 14px;
 }
+
 .apart-item .check-list {
   gap: 10px;
   margin-bottom: 15px;
 }
+
 .apart-item .check-list li {
   font-size: 15px;
   color: var(--primary-blue);
 }
-
 /* ---------- IMPACT BEYOND BORDERS ---------- */
 .impact {
   padding: 70px 0;
@@ -587,7 +615,7 @@ ul.impact-list li {
   padding: 70px 0 80px;
 }
 .team-members .container {
-  width: min(1100px, calc(100% - 68px));
+  width: min(1300px, calc(100% - 68px));
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -621,7 +649,7 @@ ul.impact-list li {
   color: #3D5E52;
 }
 .member-card > p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.7;
   color: #3D5E52;
   margin-bottom: 22px;
@@ -641,7 +669,7 @@ ul.impact-list li {
   gap: 2px;
 }
 .member-card .plain-list li {
-  font-size: 18px;
+  font-size: 16px;
   color: #3D5E52;
 }
 
@@ -701,61 +729,78 @@ ul.impact-list li {
 .why-matters {
   background: var(--primary-blue);
   color: #fff;
-  padding: 90px 0;
+  padding: 50px 0 50px;
   margin-bottom: 40px;
   text-align: center;
 }
+
 .why-matters h2 {
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
+
 .why-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto 50px;
+  gap: 36px;
+  max-width: 1300px;
+  margin: 0 auto 78px;
 }
+
 .why-card {
   background: #ffffff14;
   border-radius: 14px;
-  padding: 46px 30px;
+  padding: 44px 30px;
+  min-height: 163px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
+
 .why-check {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
-  background: #00E676;
+  background: #4ade5b;
   color: #fff;
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 13px;
+  margin-bottom: 27px;
 }
+
 .why-card p {
   font-size: 19px;
   font-weight: 700;
+  margin: 0;
 }
+
 .why-note {
   font-size: 19px;
-  color: #a7f3d0;
-  margin-bottom: 44px;
+  color: #fff;
+  margin-bottom: 80px;
 }
+
 .why-actions {
   display: flex;
   justify-content: center;
   gap: 18px;
   flex-wrap: wrap;
 }
+
 .why-actions .btn {
-  padding: 16px 30px;
+  padding: 16px 34px;
   font-size: 16px;
 }
+
 .why-actions .btn-solid-blue {
   background: #fff;
   color: var(--primary-blue);
 }
+
 .why-actions .btn-solid-blue:hover {
   background: #F0FDF4;
   opacity: 1;

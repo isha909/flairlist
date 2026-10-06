@@ -34,7 +34,7 @@
   --radius-md: 12px;
 
   /* Fonts */
-  --font-heading: "Bricolage Grotesque", sans-serif;
+  --font-heading: "Bricolage Grotesque 96pt ExtraBold", "Bricolage Grotesque", sans-serif;
   --font-body: "Inter", sans-serif;
 }
 

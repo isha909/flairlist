@@ -34,7 +34,7 @@
   --radius-md: 12px;
 
   /* Fonts */
-  --font-heading: "Bricolage Grotesque", sans-serif;
+  --font-heading: "Bricolage Grotesque 96pt ExtraBold", "Bricolage Grotesque", sans-serif;
   --font-body: "Inter", sans-serif;
 }
 
@@ -68,7 +68,7 @@ img {
 /* ============ HERO ============ */
 .hero-fc {
   position: relative;
-  min-height: 580px;
+  min-height: 620px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,7 +161,7 @@ img {
 }
 
 .section-title {
-  font-size: 34px;
+  font-size: 44px;
   font-weight: 700;
   color: var(--text-heading);
   max-width: 1180px;
@@ -173,9 +173,9 @@ img {
 }
 
 .section-sub {
-  font-size: 18px;
+  font-size: 14px;
   color: var(--text-body);
-  max-width: 700px;
+  max-width: 500px;
   margin: 0 auto 40px auto;
 }
 
@@ -184,9 +184,10 @@ img {
 }
 
 .body-text {
-  font-size: 20px;
+  font-size: 15px;
   color: var(--text-body);
   margin-bottom: 16px;
+  max-width: 700px;
 }
 
 /* ============ WHO WE ARE ============ */
@@ -208,18 +209,18 @@ img {
 
 /* ============ EXPERTISE ============ */
 .expertise-grid {
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 27px;
 }
 
 .expertise-card {
   background: var(--surface-white);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 30px 28px;
+  padding: 30px 32px;
   box-shadow: var(--shadow-card);
 }
 
@@ -233,20 +234,20 @@ img {
 }
 
 .expertise-card h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--text-heading);
   margin-bottom: 10px;
 }
 
 .expertise-card p {
-  font-size: 20px;
+  font-size: 15px;
   color: var(--text-body);
 }
 
 /* ============ YOUR GOALS ============ */
 .goals-grid {
-  max-width: 1180px;
+  max-width: 1300px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.2fr 1fr;

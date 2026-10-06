@@ -43,6 +43,10 @@
   width: min(960px, 100% - 48px);
 }
 
+.exc-container--wide {
+  width: min(1400px, 100% - 48px);
+}
+
 .exc-section {
   padding: 72px 0;
 }
@@ -58,7 +62,7 @@
 /* ---------- Typography ---------- */
 
 .exc-title {
-  font-size: clamp(26px, 3.2vw, 34px);
+  font-size: clamp(29px, 4.2vw, 38px);
   line-height: 1.2;
   color: var(--exc-ink);
   margin-bottom: 26px;
@@ -79,7 +83,7 @@
 }
 
 .exc-lead {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.75;
   color: var(--exc-ink);
   margin-bottom: 20px;
@@ -98,7 +102,7 @@
 }
 
 .exc-small {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--exc-ink);
   margin-bottom: 10px;
 }
@@ -259,7 +263,7 @@
   position: relative;
   padding-left: 18px;
   margin-bottom: 8px;
-  font-size: 13.5px;
+  font-size: 15px;
   line-height: 1.55;
   color: var(--exc-ink);
 }
@@ -284,7 +288,7 @@
 
 .exc-hero {
   position: relative;
-  min-height: 440px;
+  min-height: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -361,7 +365,7 @@
   border-left: 1px solid var(--exc-line);
   padding: 6px 14px;
   margin-bottom: 6px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--exc-ink);
 }
 
@@ -409,7 +413,7 @@
   border-left: 3px solid var(--exc-ink);
   border-radius: 6px;
   padding: 16px 18px;
-  font-size: 14.5px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -418,7 +422,7 @@
   border-left: 3px solid rgba(4, 38, 29, 0.18);
   padding: 10px 16px;
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
 }
 
@@ -562,7 +566,7 @@
 
 .exc-stat strong {
   display: block;
-  font-family: var(--font-heading, "Bricolage Grotesque"), sans-serif;
+  font-family: var(--font-heading, "Bricolage Grotesque 96pt ExtraBold", "Bricolage Grotesque"), sans-serif;
   font-size: 24px;
   line-height: 1.2;
   color: var(--exc-ink);
@@ -589,7 +593,7 @@
   border: 1px solid var(--exc-line-green);
   border-radius: 6px;
   padding: 14px 18px;
-  font-size: 13.5px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--exc-ink);
 }
@@ -613,7 +617,7 @@
   box-shadow: var(--exc-shadow);
   padding: 14px 20px;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 18px;
   font-style: italic;
   color: var(--exc-ink);
 }
@@ -624,7 +628,7 @@
 }
 
 .exc-real h3 {
-  font-size: 17px;
+  font-size: 19px;
   margin-bottom: 14px;
 }
 
@@ -674,7 +678,7 @@
 .exc-investment h2 {
   text-align: center;
   color: #fff;
-  font-size: clamp(26px, 3.4vw, 36px);
+  font-size: clamp(30px, 3.8vw, 40px);
   margin-bottom: 40px;
 }
 
@@ -738,7 +742,7 @@
 
 .exc-price-box strong {
   display: block;
-  font-family: var(--font-heading, "Bricolage Grotesque"), sans-serif;
+  font-family: var(--font-heading, "Bricolage Grotesque 96pt ExtraBold", "Bricolage Grotesque"), sans-serif;
   font-size: clamp(44px, 6vw, 58px);
   line-height: 1.1;
   color: #fff;
@@ -914,5 +918,73 @@
 
   .exc-contact > div span:last-child {
     text-align: left;
+  }
+}
+
+/* ==========================================================
+   INTRO SECTION (alignment only) – scoped to .exc-intro
+   ========================================================== */
+.exc-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 74px;
+  align-items: start;
+  width: min(1560px, calc(100% - 68px));
+  margin: 0 auto;
+}
+
+.exc-intro .exc-lead {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 38px;
+}
+
+.exc-intro .exc-notice {
+  margin-top: 0;
+  border-left-width: 4px;
+  border-radius: 0 12px 12px 0;
+  padding: 34px 46px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.exc-intro .exc-notice p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.exc-intro .exc-notice p:last-child {
+  margin-bottom: 0;
+}
+
+.exc-intro .exc-intro-img {
+  width: 100%;
+  height: 490px;
+  min-height: 0;
+  max-height: none;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .exc-intro {
+    grid-template-columns: 1fr;
+    width: min(100% - 40px, 700px);
+    gap: 40px;
+  }
+
+  .exc-intro .exc-lead {
+    font-size: 18px;
+  }
+
+  .exc-intro .exc-notice {
+    padding: 24px 28px;
+  }
+
+  .exc-intro .exc-intro-img {
+    height: auto;
+    min-height: 220px;
   }
 }

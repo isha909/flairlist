@@ -1,25 +1,32 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Studies | FlairList Global</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Studies | FlairList Global</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200..800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./Assets/css/style.css?v=3.0" />
-    <link rel="stylesheet" href="./Assets/css/case-studies.css?v=3.0" />
+    <link rel="stylesheet" href="./Assets/css/style.css?v=3.8" />
+    <link rel="stylesheet" href="./Assets/css/case-studies.css?v=3.8" />
     <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <!-- ===================== NAVBAR ===================== -->
-        <header class="navbar" id="siteNavbar">
+    <header class="navbar" id="siteNavbar">
       <div class="navbar-container">
         <div class="nav-left">
           <!-- LOGO -->
-          <a href="./index.html" class="logo" aria-label="FlairList Global Home">
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="FlairList Global Home"
+          >
             <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
           </a>
 
@@ -61,211 +68,234 @@
             </button>
           </form>
 
-         <!-- COUNTRY / LANGUAGE SELECTOR -->
-<div class="country-selector">
-    <button class="country-btn" type="button" aria-expanded="false">
-        <span id="selectedCountry">India</span>
-        <svg _ngcontent-ng-c1672362817="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="app-icon" width="24" height="24"><path _ngcontent-ng-c1672362817="" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E4E3DE" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter"></path></svg>
-    </button>
+          <!-- COUNTRY / LANGUAGE SELECTOR -->
+          <div class="country-selector">
+            <button class="country-btn" type="button" aria-expanded="false">
+              <span id="selectedCountry">India</span>
+              <svg
+                _ngcontent-ng-c1672362817=""
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="app-icon"
+                width="24"
+                height="24"
+              >
+                <path
+                  _ngcontent-ng-c1672362817=""
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  fill="#E4E3DE"
+                  stroke="none"
+                  stroke-width="0"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+              </svg>
+            </button>
 
-    <div class="country-dropdown" id="countryDropdown">
+            <div class="country-dropdown" id="countryDropdown">
+              <button type="button" data-lang="en" data-country="India">
+                India
+              </button>
 
-        <button type="button" data-lang="en" data-country="India">
-            India
-        </button>
+              <button
+                type="button"
+                data-lang="ar"
+                data-country="United Arab Emirates"
+              >
+                United Arab Emirates
+              </button>
 
-        <button type="button" data-lang="ar" data-country="United Arab Emirates">
-            United Arab Emirates
-        </button>
+              <button type="button" data-lang="en" data-country="United States">
+                United States
+              </button>
 
-        <button type="button" data-lang="en" data-country="United States">
-            United States
-        </button>
+              <button type="button" data-lang="zh-CN" data-country="China">
+                China
+              </button>
 
-        <button type="button" data-lang="zh-CN" data-country="China">
-            China
-        </button>
+              <button type="button" data-lang="nl" data-country="Netherlands">
+                Netherlands
+              </button>
 
-        <button type="button" data-lang="nl" data-country="Netherlands">
-            Netherlands
-        </button>
+              <button
+                type="button"
+                data-lang="en"
+                data-country="United Kingdom"
+              >
+                United Kingdom
+              </button>
 
-        <button type="button" data-lang="en" data-country="United Kingdom">
-            United Kingdom
-        </button>
+              <button type="button" data-lang="en" data-country="Singapore">
+                Singapore
+              </button>
 
-        <button type="button" data-lang="en" data-country="Singapore">
-            Singapore
-        </button>
+              <button type="button" data-lang="ar" data-country="Saudi Arabia">
+                Saudi Arabia
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Saudi Arabia">
-            Saudi Arabia
-        </button>
+              <button type="button" data-lang="bn" data-country="Bangladesh">
+                Bangladesh
+              </button>
 
-        <button type="button" data-lang="bn" data-country="Bangladesh">
-            Bangladesh
-        </button>
+              <button type="button" data-lang="de" data-country="Germany">
+                Germany
+              </button>
 
-        <button type="button" data-lang="de" data-country="Germany">
-            Germany
-        </button>
+              <button type="button" data-lang="it" data-country="Italy">
+                Italy
+              </button>
 
-        <button type="button" data-lang="it" data-country="Italy">
-            Italy
-        </button>
+              <button type="button" data-lang="ja" data-country="Japan">
+                Japan
+              </button>
 
-        <button type="button" data-lang="ja" data-country="Japan">
-            Japan
-        </button>
+              <button type="button" data-lang="ko" data-country="South Korea">
+                South Korea
+              </button>
 
-        <button type="button" data-lang="ko" data-country="South Korea">
-            South Korea
-        </button>
+              <button type="button" data-lang="ms" data-country="Malaysia">
+                Malaysia
+              </button>
 
-        <button type="button" data-lang="ms" data-country="Malaysia">
-            Malaysia
-        </button>
+              <button type="button" data-lang="th" data-country="Thailand">
+                Thailand
+              </button>
 
-        <button type="button" data-lang="th" data-country="Thailand">
-            Thailand
-        </button>
+              <button type="button" data-lang="id" data-country="Indonesia">
+                Indonesia
+              </button>
 
-        <button type="button" data-lang="id" data-country="Indonesia">
-            Indonesia
-        </button>
+              <button type="button" data-lang="vi" data-country="Vietnam">
+                Vietnam
+              </button>
 
-        <button type="button" data-lang="vi" data-country="Vietnam">
-            Vietnam
-        </button>
+              <button type="button" data-lang="en" data-country="Philippines">
+                Philippines
+              </button>
 
-        <button type="button" data-lang="en" data-country="Philippines">
-            Philippines
-        </button>
+              <button type="button" data-lang="en" data-country="Australia">
+                Australia
+              </button>
 
-        <button type="button" data-lang="en" data-country="Australia">
-            Australia
-        </button>
+              <button type="button" data-lang="en" data-country="New Zealand">
+                New Zealand
+              </button>
 
-        <button type="button" data-lang="en" data-country="New Zealand">
-            New Zealand
-        </button>
+              <button type="button" data-lang="fr" data-country="France">
+                France
+              </button>
 
-        <button type="button" data-lang="fr" data-country="France">
-            France
-        </button>
+              <button type="button" data-lang="es" data-country="Spain">
+                Spain
+              </button>
 
-        <button type="button" data-lang="es" data-country="Spain">
-            Spain
-        </button>
+              <button type="button" data-lang="fr" data-country="Belgium">
+                Belgium
+              </button>
 
-        <button type="button" data-lang="fr" data-country="Belgium">
-            Belgium
-        </button>
+              <button type="button" data-lang="de" data-country="Switzerland">
+                Switzerland
+              </button>
 
-        <button type="button" data-lang="de" data-country="Switzerland">
-            Switzerland
-        </button>
+              <button type="button" data-lang="pl" data-country="Poland">
+                Poland
+              </button>
 
-        <button type="button" data-lang="pl" data-country="Poland">
-            Poland
-        </button>
+              <button type="button" data-lang="de" data-country="Austria">
+                Austria
+              </button>
 
-        <button type="button" data-lang="de" data-country="Austria">
-            Austria
-        </button>
+              <button type="button" data-lang="en" data-country="Ireland">
+                Ireland
+              </button>
 
-        <button type="button" data-lang="en" data-country="Ireland">
-            Ireland
-        </button>
+              <button type="button" data-lang="ar" data-country="Qatar">
+                Qatar
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Qatar">
-            Qatar
-        </button>
+              <button type="button" data-lang="ar" data-country="Kuwait">
+                Kuwait
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Kuwait">
-            Kuwait
-        </button>
+              <button type="button" data-lang="ar" data-country="Oman">
+                Oman
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Oman">
-            Oman
-        </button>
+              <button type="button" data-lang="ar" data-country="Bahrain">
+                Bahrain
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Bahrain">
-            Bahrain
-        </button>
+              <button type="button" data-lang="he" data-country="Israel">
+                Israel
+              </button>
 
-        <button type="button" data-lang="he" data-country="Israel">
-            Israel
-        </button>
+              <button type="button" data-lang="tr" data-country="Turkey">
+                Turkey
+              </button>
 
-        <button type="button" data-lang="tr" data-country="Turkey">
-            Turkey
-        </button>
+              <button type="button" data-lang="ar" data-country="Iraq">
+                Iraq
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Iraq">
-            Iraq
-        </button>
+              <button type="button" data-lang="en" data-country="South Africa">
+                South Africa
+              </button>
 
-        <button type="button" data-lang="en" data-country="South Africa">
-            South Africa
-        </button>
+              <button type="button" data-lang="ar" data-country="Egypt">
+                Egypt
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Egypt">
-            Egypt
-        </button>
+              <button type="button" data-lang="en" data-country="Nigeria">
+                Nigeria
+              </button>
 
-        <button type="button" data-lang="en" data-country="Nigeria">
-            Nigeria
-        </button>
+              <button type="button" data-lang="en" data-country="Kenya">
+                Kenya
+              </button>
 
-        <button type="button" data-lang="en" data-country="Kenya">
-            Kenya
-        </button>
+              <button type="button" data-lang="ar" data-country="Morocco">
+                Morocco
+              </button>
 
-        <button type="button" data-lang="ar" data-country="Morocco">
-            Morocco
-        </button>
+              <button type="button" data-lang="en" data-country="Canada">
+                Canada
+              </button>
 
-        <button type="button" data-lang="en" data-country="Canada">
-            Canada
-        </button>
+              <button type="button" data-lang="pt" data-country="Brazil">
+                Brazil
+              </button>
 
-        <button type="button" data-lang="pt" data-country="Brazil">
-            Brazil
-        </button>
+              <button type="button" data-lang="es" data-country="Argentina">
+                Argentina
+              </button>
 
-        <button type="button" data-lang="es" data-country="Argentina">
-            Argentina
-        </button>
+              <button type="button" data-lang="es" data-country="Chile">
+                Chile
+              </button>
 
-        <button type="button" data-lang="es" data-country="Chile">
-            Chile
-        </button>
+              <button type="button" data-lang="es" data-country="Colombia">
+                Colombia
+              </button>
 
-        <button type="button" data-lang="es" data-country="Colombia">
-            Colombia
-        </button>
+              <button type="button" data-lang="es" data-country="Peru">
+                Peru
+              </button>
 
-        <button type="button" data-lang="es" data-country="Peru">
-            Peru
-        </button>
+              <button type="button" data-lang="ne" data-country="Nepal">
+                Nepal
+              </button>
 
-        <button type="button" data-lang="ne" data-country="Nepal">
-            Nepal
-        </button>
+              <button type="button" data-lang="si" data-country="Sri Lanka">
+                Sri Lanka
+              </button>
 
-        <button type="button" data-lang="si" data-country="Sri Lanka">
-            Sri Lanka
-        </button>
+              <button type="button" data-lang="ur" data-country="Pakistan">
+                Pakistan
+              </button>
+            </div>
+          </div>
 
-        <button type="button" data-lang="ur" data-country="Pakistan">
-            Pakistan
-        </button>
-
-    </div>
-</div>
-
-          <a href="#" class="magic-button">Magic Form</a>
+          <a href="./contact.html" class="magic-button">Magic Form</a>
         </div>
       </div>
 
@@ -394,10 +424,14 @@
             <!-- SERVICES -->
             <div class="mega-panel active" data-panel="services">
               <h3>Services</h3>
-              <a href="./expert-business-consultancy.html">Expert Business Consultation</a>
+              <a href="./expert-business-consultancy.html"
+                >Expert Business Consultation</a
+              >
               <a href="./export-consultation.html">Export Consultation</a>
               <a href="./export-mentorship.html">Export Mentorship</a>
-              <a href="./exclusive-business-growth-partnership.html">Exclusive Partnership</a>
+              <a href="./exclusive-business-growth-partnership.html"
+                >Exclusive Partnership</a
+              >
             </div>
 
             <!-- GLOBAL IMPORT-EXPORT -->
@@ -454,14 +488,24 @@
                   <h3>Products</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./AgriCommodities-products.html#agricommodities">Agri Commodities</a>
-                      <a href="./products.html#petrochemicals">Petrochemicals &amp; Energy Products</a>
+                      <a href="./AgriCommodities-products.html#agricommodities"
+                        >Agri Commodities</a
+                      >
+                      <a href="./products.html#petrochemicals"
+                        >Petrochemicals &amp; Energy Products</a
+                      >
                       <a href="./products.html#metals">Metals &amp; Minerals</a>
-                      <a href="./products.html#fmcg">FMCG &amp; Food Products</a>
-                      <a href="./products.html#raw-materials">Industrial Raw Materials</a>
+                      <a href="./products.html#fmcg"
+                        >FMCG &amp; Food Products</a
+                      >
+                      <a href="./products.html#raw-materials"
+                        >Industrial Raw Materials</a
+                      >
                     </div>
                     <div>
-                      <a href="./products.html#apparel">Apparel &amp; Textiles</a>
+                      <a href="./products.html#apparel"
+                        >Apparel &amp; Textiles</a
+                      >
                       <a href="./products.html#gems">Gems &amp; Jewellery</a>
                     </div>
                   </div>
@@ -529,15 +573,23 @@
                   <h3>Programs</h3>
                   <div class="mega-columns two">
                     <div>
-                      <a href="./workforce-mobility.html#farmer">Farmer / Manufacturer</a>
-                      <a href="./workforce-mobility.html#local-trader">Local Trader</a>
+                      <a href="./workforce-mobility.html#farmer"
+                        >Farmer / Manufacturer</a
+                      >
+                      <a href="./workforce-mobility.html#local-trader"
+                        >Local Trader</a
+                      >
                       <a href="./workforce-mobility.html#exporter">Exporter</a>
                       <a href="./workforce-mobility.html#cha">CHA</a>
-                      <a href="./workforce-mobility.html#freight-forwarder">Freight Forwarder</a>
+                      <a href="./workforce-mobility.html#freight-forwarder"
+                        >Freight Forwarder</a
+                      >
                     </div>
                     <div>
                       <a href="./workforce-mobility.html#importer">Importer</a>
-                      <a href="./workforce-mobility.html#distributor">Distributor</a>
+                      <a href="./workforce-mobility.html#distributor"
+                        >Distributor</a
+                      >
                       <a href="./workforce-mobility.html#retailer">Retailer</a>
                       <a href="./workforce-mobility.html#buyer">Buyer</a>
                     </div>
@@ -563,8 +615,12 @@
               <div class="industries-grid">
                 <div>
                   <a href="./finance.html">Finance</a>
-                  <a href="./real-estate.html">Real Estate &amp; Infrastructure</a>
-                  <a href="./energy-power.html">Energy, Power &amp; Sustainability</a>
+                  <a href="./real-estate.html"
+                    >Real Estate &amp; Infrastructure</a
+                  >
+                  <a href="./energy-power.html"
+                    >Energy, Power &amp; Sustainability</a
+                  >
                   <a href="./petrochemicals.html">Petrochemicals &amp; Oil</a>
                   <a href="./manufacturing.html">Manufacturing</a>
                 </div>
@@ -573,8 +629,12 @@
                   <a href="./logistics.html">Logistics &amp; Supply Chain</a>
                   <a href="./it-saas.html">IT &amp; SaaS</a>
                   <a href="./e-commerce.html">E-Commerce</a>
-                  <a href="./media-entertainment.html">Media &amp; Entertainment</a>
-                  <a href="./education-consulting.html">Education &amp; Consulting</a>
+                  <a href="./media-entertainment.html"
+                    >Media &amp; Entertainment</a
+                  >
+                  <a href="./education-consulting.html"
+                    >Education &amp; Consulting</a
+                  >
                 </div>
 
                 <div>
@@ -587,7 +647,9 @@
 
                 <div>
                   <a href="./apparel.html">Apparel</a>
-                  <a href="./food-beverage.html">F&amp;B (Food &amp; Beverage)</a>
+                  <a href="./food-beverage.html"
+                    >F&amp;B (Food &amp; Beverage)</a
+                  >
                 </div>
               </div>
             </div>
@@ -612,609 +674,657 @@
       </div>
     </header>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-label">FLAIRLIST GLOBAL | CASE STUDIES</p>
-      <h1 class="hero-title">Real-World Scenarios.<br>Structured Execution.<br>Measurable Outcomes.</h1>
-      <p class="hero-desc">Below are illustrative case studies that reflect the type of work, execution depth, and outcomes delivered by FlairList Global across multiple industries.</p>
-    </div>
-  </section>
-
-  <!-- ================= INTRO NOTE ================= -->
-  <section class="intro-note">
-    <p><em>These case studies are representative in nature, created to explain how problems are approached and solved within complex domestic and international business environments.</em></p>
-  </section>
-
-  <!-- ================= CASE STUDIES ================= -->
-  <main class="case-studies">
-
-    <!-- 01 -->
-    <article class="case-study bg-light">
-      <div class="case-inner">
-        <div class="case-header">
-          <span class="case-number">01</span>
-          <div>
-            <p class="case-tag">AGRICULTURE &amp; AGRI-EXPORTS</p>
-            <p class="case-region">India → Middle East &amp; Southeast Asia</p>
-          </div>
-        </div>
-        <h2 class="case-title">Agriculture (Domestic → International Export)</h2>
-        <div class="case-columns">
-          <div class="case-col">
-            <h3>THE CHALLENGE</h3>
-            <p class="col-intro">A cluster of agri-producers faced:</p>
-            <ul>
-              <li>Price volatility in domestic markets</li>
-              <li>Heavy dependence on intermediaries</li>
-              <li>Zero export exposure despite export-grade produce</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUR INTERVENTION</h3>
-            <ul class="check-list">
-              <li>Mapped demand for specific grades &amp; varieties internationally</li>
-              <li>Aligned harvesting cycles with buyer demand windows</li>
-              <li>Structured export-compliant packaging &amp; documentation</li>
-              <li>Connected producers to verified importers via re-export hubs</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUTCOME</h3>
-            <ul class="check-list">
-              <li>Shift from distress selling to contract-based pricing</li>
-              <li>Entry into export markets within one season</li>
-              <li>Improved farmer price realisation &amp; payment predictability</li>
-            </ul>
-          </div>
-        </div>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-label">FLAIRLIST GLOBAL | CASE STUDIES</p>
+        <h1 class="hero-title">
+          Real-World Scenarios.<br />Structured Execution.<br />Measurable
+          Outcomes.
+        </h1>
+        <p class="hero-desc">
+          Below are illustrative case studies that reflect the type of work,
+          execution depth, and outcomes delivered by FlairList Global across
+          multiple industries.
+        </p>
       </div>
-    </article>
+    </section>
 
-    <!-- 02 -->
-    <article class="case-study bg-white">
-      <div class="case-inner">
-        <div class="case-header">
-          <span class="case-number">02</span>
-          <div>
-            <p class="case-tag">MANUFACTURING</p>
-            <p class="case-region">India → Europe</p>
+    <!-- ================= INTRO NOTE ================= -->
+    <section class="intro-note">
+      <p>
+        <em
+          >These case studies are representative in nature, created to explain
+          how problems are approached and solved within complex domestic and
+          international business environments.</em
+        >
+      </p>
+    </section>
+
+    <!-- ================= CASE STUDIES ================= -->
+    <main class="case-studies">
+      <!-- 01 -->
+      <article class="case-study bg-light">
+        <div class="case-inner">
+          <div class="case-header">
+            <span class="case-number">01</span>
+            <div>
+              <p class="case-tag">AGRICULTURE &amp; AGRI-EXPORTS</p>
+              <p class="case-region">
+                India → Middle East &amp; Southeast Asia
+              </p>
+            </div>
+          </div>
+          <h2 class="case-title">
+            Agriculture (Domestic → International Export)
+          </h2>
+          <div class="case-columns">
+            <div class="case-col">
+              <h3>THE CHALLENGE</h3>
+              <p class="col-intro">A cluster of agri-producers faced:</p>
+              <ul>
+                <li>Price volatility in domestic markets</li>
+                <li>Heavy dependence on intermediaries</li>
+                <li>Zero export exposure despite export-grade produce</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUR INTERVENTION</h3>
+              <ul class="check-list">
+                <li>
+                  Mapped demand for specific grades &amp; varieties
+                  internationally
+                </li>
+                <li>Aligned harvesting cycles with buyer demand windows</li>
+                <li>
+                  Structured export-compliant packaging &amp; documentation
+                </li>
+                <li>
+                  Connected producers to verified importers via re-export hubs
+                </li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUTCOME</h3>
+              <ul class="check-list">
+                <li>Shift from distress selling to contract-based pricing</li>
+                <li>Entry into export markets within one season</li>
+                <li>
+                  Improved farmer price realisation &amp; payment predictability
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <h2 class="case-title">Manufacturing (Mid-Size Factory Scaling Globally)</h2>
-        <div class="case-columns">
-          <div class="case-col">
-            <h3>THE CHALLENGE</h3>
-            <p class="col-intro">A manufacturing unit had strong production capacity but:</p>
-            <ul>
-              <li>No clarity on which export market to enter</li>
-              <li>Poor pricing confidence</li>
-              <li>Fear of compliance &amp; shipment risk</li>
-            </ul>
+      </article>
+
+      <!-- 02 -->
+      <article class="case-study bg-white">
+        <div class="case-inner">
+          <div class="case-header">
+            <span class="case-number">02</span>
+            <div>
+              <p class="case-tag">MANUFACTURING</p>
+              <p class="case-region">India → Europe</p>
+            </div>
           </div>
-          <div class="case-col">
-            <h3>OUR INTERVENTION</h3>
-            <ul class="check-list">
-              <li>Market feasibility &amp; HS-code-based demand mapping</li>
-              <li>Pricing correction with margin protection</li>
-              <li>Export documentation &amp; logistics flow setup</li>
-              <li>Buyer negotiation support</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUTCOME</h3>
-            <ul class="check-list">
-              <li>First export shipment executed smoothly</li>
-              <li>Transition from domestic-only to mixed revenue model</li>
-              <li>Long-term supply discussions initiated with repeat buyers</li>
-            </ul>
+          <h2 class="case-title">
+            Manufacturing (Mid-Size Factory Scaling Globally)
+          </h2>
+          <div class="case-columns">
+            <div class="case-col">
+              <h3>THE CHALLENGE</h3>
+              <p class="col-intro">
+                A manufacturing unit had strong production capacity but:
+              </p>
+              <ul>
+                <li>No clarity on which export market to enter</li>
+                <li>Poor pricing confidence</li>
+                <li>Fear of compliance &amp; shipment risk</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUR INTERVENTION</h3>
+              <ul class="check-list">
+                <li>Market feasibility &amp; HS-code-based demand mapping</li>
+                <li>Pricing correction with margin protection</li>
+                <li>Export documentation &amp; logistics flow setup</li>
+                <li>Buyer negotiation support</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUTCOME</h3>
+              <ul class="check-list">
+                <li>First export shipment executed smoothly</li>
+                <li>Transition from domestic-only to mixed revenue model</li>
+                <li>
+                  Long-term supply discussions initiated with repeat buyers
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="case-study bg-light">
+        <div class="case-inner">
+          <div class="case-header">
+            <span class="case-number">03</span>
+            <div>
+              <p class="case-tag">PETROCHEMICALS &amp; ENERGY</p>
+              <p class="case-region">Middle East Asia</p>
+            </div>
+          </div>
+          <h2 class="case-title">Petrochemicals &amp; Energy Trade</h2>
+          <div class="case-columns">
+            <div class="case-col">
+              <h3>THE CHALLENGE</h3>
+              <p class="col-intro">A trading entity struggled with:</p>
+              <ul>
+                <li>Fake buyer inquiries</li>
+                <li>Payment risk exposure</li>
+                <li>High compliance sensitivity</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUR INTERVENTION</h3>
+              <ul class="check-list">
+                <li>Buyer credibility &amp; trade-history verification</li>
+                <li>Risk-adjusted payment structuring</li>
+                <li>Shipment execution through verified logistics partners</li>
+                <li>Compliance &amp; documentation oversight</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUTCOME</h3>
+              <ul class="check-list">
+                <li>Controlled bulk shipment execution</li>
+                <li>Reduced counterparty risk</li>
+                <li>Entry into repeat trade discussions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 -->
+      <article class="case-study bg-white">
+        <div class="case-inner">
+          <div class="case-header">
+            <span class="case-number">04</span>
+            <div>
+              <p class="case-tag">LOGISTICS &amp; FREIGHT</p>
+              <p class="case-region">India (Multi-Port Operations)</p>
+            </div>
+          </div>
+          <h2 class="case-title">Logistics &amp; Supply Chain Optimisation</h2>
+          <div class="case-columns">
+            <div class="case-col">
+              <h3>THE CHALLENGE</h3>
+              <p class="col-intro">A freight partner faced:</p>
+              <ul>
+                <li>Last-minute shipment chaos</li>
+                <li>Inaccurate cargo data</li>
+                <li>Blame pressure from exporters</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUR INTERVENTION</h3>
+              <ul class="check-list">
+                <li>Advance shipment planning with exporters</li>
+                <li>Documentation discipline before CHA filing</li>
+                <li>Coordinated freight-CHA-exporter workflows</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUTCOME</h3>
+              <ul class="check-list">
+                <li>Reduced rollovers &amp; rework</li>
+                <li>Better rate negotiation due to predictable volumes</li>
+                <li>Improved execution reputation with exporters</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 -->
+      <article class="case-study bg-light">
+        <div class="case-inner">
+          <div class="case-header">
+            <span class="case-number">05</span>
+            <div>
+              <p class="case-tag">FMCG / FOOD &amp; BEVERAGE</p>
+              <p class="case-region">India → GCC</p>
+            </div>
+          </div>
+          <h2 class="case-title">
+            FMCG &amp; Food Products (Domestic + Export)
+          </h2>
+          <div class="case-columns">
+            <div class="case-col">
+              <h3>THE CHALLENGE</h3>
+              <p class="col-intro">An FMCG brand faced:</p>
+              <ul>
+                <li>
+                  Strong domestic sales but stalled international expansion
+                </li>
+                <li>Labeling &amp; shelf-life compliance confusion</li>
+                <li>Distributor resistance</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUR INTERVENTION</h3>
+              <ul class="check-list">
+                <li>Export-ready product &amp; packaging alignment</li>
+                <li>Market-specific compliance mapping</li>
+                <li>Distributor onboarding support</li>
+                <li>Pricing &amp; positioning strategy</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUTCOME</h3>
+              <ul class="check-list">
+                <li>Successful export market entry</li>
+                <li>Stable repeat orders</li>
+                <li>Parallel domestic brand strengthening</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 -->
+      <article class="case-study bg-white">
+        <div class="case-inner">
+          <div class="case-header">
+            <span class="case-number">06</span>
+            <div>
+              <p class="case-tag">IT &amp; SAAS</p>
+              <p class="case-region">USA &amp; Europe</p>
+            </div>
+          </div>
+          <h2 class="case-title">IT &amp; SaaS (Global Client Acquisition)</h2>
+          <div class="case-columns">
+            <div class="case-col">
+              <h3>THE CHALLENGE</h3>
+              <p class="col-intro">A SaaS company had:</p>
+              <ul>
+                <li>Good product but weak international sales traction</li>
+                <li>No clarity on buyer personas</li>
+                <li>Inefficient pricing narrative</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUR INTERVENTION</h3>
+              <ul class="check-list">
+                <li>Market positioning correction</li>
+                <li>ICP (Ideal Customer Profile) definition</li>
+                <li>Sales &amp; outreach structure</li>
+                <li>International client engagement guidance</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUTCOME</h3>
+              <ul class="check-list">
+                <li>Improved inbound quality</li>
+                <li>Shorter sales cycles</li>
+                <li>Higher-value contracts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 07 -->
+      <article class="case-study bg-light">
+        <div class="case-inner">
+          <div class="case-header">
+            <span class="case-number">07</span>
+            <div>
+              <p class="case-tag">EDUCATION, TRADE &amp; LOGISTICS</p>
+              <p class="case-region">India → Overseas Trade Hubs</p>
+            </div>
+          </div>
+          <h2 class="case-title">
+            Workforce Mobility (Trade Operations Talent)
+          </h2>
+          <div class="case-columns">
+            <div class="case-col">
+              <h3>THE CHALLENGE</h3>
+              <p class="col-intro">New entrants into trade lacked:</p>
+              <ul>
+                <li>Practical execution exposure</li>
+                <li>Role clarity</li>
+                <li>Employability confidence</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUR INTERVENTION</h3>
+              <ul class="check-list">
+                <li>End-to-end supply chain training</li>
+                <li>Role-specific execution exposure</li>
+                <li>Deployment readiness evaluation</li>
+                <li>Partner ecosystem coordination</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUTCOME</h3>
+              <ul class="check-list">
+                <li>Candidates absorbed into live trade operations</li>
+                <li>Reduced onboarding friction for employers</li>
+                <li>Sustainable career pathways created</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 08 -->
+      <article class="case-study bg-white">
+        <div class="case-inner">
+          <div class="case-header">
+            <span class="case-number">08</span>
+            <div>
+              <p class="case-tag">IMPORT, DISTRIBUTION &amp; RETAIL</p>
+              <p class="case-region">Asia → Domestic Markets</p>
+            </div>
+          </div>
+          <h2 class="case-title">Importer–Distributor Alignment</h2>
+          <div class="case-columns">
+            <div class="case-col">
+              <h3>THE CHALLENGE</h3>
+              <p class="col-intro">An importer–distributor network faced:</p>
+              <ul>
+                <li>Supply unpredictability</li>
+                <li>Margin erosion</li>
+                <li>Inventory pile-ups</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUR INTERVENTION</h3>
+              <ul class="check-list">
+                <li>Import cycle planning</li>
+                <li>Distributor pricing discipline</li>
+                <li>Demand-aligned inventory planning</li>
+                <li>Upstream supply coordination</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUTCOME</h3>
+              <ul class="check-list">
+                <li>Improved stock rotation</li>
+                <li>Stable margins</li>
+                <li>Stronger retailer confidence</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 09 -->
+      <article class="case-study bg-light">
+        <div class="case-inner">
+          <div class="case-header">
+            <span class="case-number">09</span>
+            <div>
+              <p class="case-tag">REAL ESTATE &amp; INFRASTRUCTURE</p>
+              <p class="case-region">India → NRI Capital</p>
+            </div>
+          </div>
+          <h2 class="case-title">Real Estate &amp; Infrastructure Advisory</h2>
+          <div class="case-columns">
+            <div class="case-col">
+              <h3>THE CHALLENGE</h3>
+              <p class="col-intro">A developer faced:</p>
+              <ul>
+                <li>Slow inventory movement</li>
+                <li>Weak investor confidence</li>
+                <li>Poor positioning</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUR INTERVENTION</h3>
+              <ul class="check-list">
+                <li>Market feasibility &amp; demand analysis</li>
+                <li>Project restructuring for investor clarity</li>
+                <li>Capital &amp; channel alignment</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUTCOME</h3>
+              <ul class="check-list">
+                <li>Renewed investor interest</li>
+                <li>Improved sales traction</li>
+                <li>Better long-term project visibility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="case-study bg-white">
+        <div class="case-inner">
+          <div class="case-header">
+            <span class="case-number">10</span>
+            <div>
+              <p class="case-tag">APPAREL &amp; TEXTILES</p>
+              <p class="case-region">India → Europe</p>
+            </div>
+          </div>
+          <h2 class="case-title">Apparel &amp; Textiles (Export Expansion)</h2>
+          <div class="case-columns">
+            <div class="case-col">
+              <h3>THE CHALLENGE</h3>
+              <p class="col-intro">An apparel exporter faced:</p>
+              <ul>
+                <li>Price pressure</li>
+                <li>Quality compliance issues</li>
+                <li>One-time buyers only</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUR INTERVENTION</h3>
+              <ul class="check-list">
+                <li>Buyer-product-price alignment</li>
+                <li>Quality &amp; inspection discipline</li>
+                <li>Repeat-order strategy design</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h3>OUTCOME</h3>
+              <ul class="check-list">
+                <li>Higher buyer retention</li>
+                <li>Predictable export cycles</li>
+                <li>Improved production planning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- ================= REFLECT SECTION ================= -->
+    <section class="reflect-section">
+      <h2>What These Case Studies Reflect</h2>
+      <p class="reflect-sub">Across industries, the pattern is consistent:</p>
+      <div class="reflect-cards">
+        <div class="reflect-card">
+          Problems are structural, not effort-based
+        </div>
+        <div class="reflect-card">Execution clarity beats random expansion</div>
+        <div class="reflect-card">Ecosystems outperform isolated actions</div>
       </div>
-    </article>
+      <p class="reflect-quote">
+        <em
+          >This is how FlairList Global operates—quietly, systematically, and
+          long-term.</em
+        >
+      </p>
+    </section>
 
-    <!-- 03 -->
-    <article class="case-study bg-light">
-      <div class="case-inner">
-        <div class="case-header">
-          <span class="case-number">03</span>
-          <div>
-            <p class="case-tag">PETROCHEMICALS &amp; ENERGY</p>
-            <p class="case-region">Middle East Asia</p>
-          </div>
-        </div>
-        <h2 class="case-title">Petrochemicals &amp; Energy Trade</h2>
-        <div class="case-columns">
-          <div class="case-col">
-            <h3>THE CHALLENGE</h3>
-            <p class="col-intro">A trading entity struggled with:</p>
-            <ul>
-              <li>Fake buyer inquiries</li>
-              <li>Payment risk exposure</li>
-              <li>High compliance sensitivity</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUR INTERVENTION</h3>
-            <ul class="check-list">
-              <li>Buyer credibility &amp; trade-history verification</li>
-              <li>Risk-adjusted payment structuring</li>
-              <li>Shipment execution through verified logistics partners</li>
-              <li>Compliance &amp; documentation oversight</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUTCOME</h3>
-            <ul class="check-list">
-              <li>Controlled bulk shipment execution</li>
-              <li>Reduced counterparty risk</li>
-              <li>Entry into repeat trade discussions</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </article>
+    <!-- ================= CTA SECTION ================= -->
+    <section class="cta-section">
+      <h2>Want to Explore a Similar Engagement?</h2>
+      <p class="cta-email">hello@flairlist.com</p>
+      <p class="cta-website">FlairList.com</p>
+      <a href="#" class="cta-button">Start a Conversation</a>
+      <p class="cta-quote">
+        <em>Good execution doesn't look dramatic.<br />It looks repeatable.</em>
+      </p>
+    </section>
 
-    <!-- 04 -->
-    <article class="case-study bg-white">
-      <div class="case-inner">
-        <div class="case-header">
-          <span class="case-number">04</span>
-          <div>
-            <p class="case-tag">LOGISTICS &amp; FREIGHT</p>
-            <p class="case-region">India (Multi-Port Operations)</p>
-          </div>
-        </div>
-        <h2 class="case-title">Logistics &amp; Supply Chain Optimisation</h2>
-        <div class="case-columns">
-          <div class="case-col">
-            <h3>THE CHALLENGE</h3>
-            <p class="col-intro">A freight partner faced:</p>
-            <ul>
-              <li>Last-minute shipment chaos</li>
-              <li>Inaccurate cargo data</li>
-              <li>Blame pressure from exporters</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUR INTERVENTION</h3>
-            <ul class="check-list">
-              <li>Advance shipment planning with exporters</li>
-              <li>Documentation discipline before CHA filing</li>
-              <li>Coordinated freight-CHA-exporter workflows</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUTCOME</h3>
-            <ul class="check-list">
-              <li>Reduced rollovers &amp; rework</li>
-              <li>Better rate negotiation due to predictable volumes</li>
-              <li>Improved execution reputation with exporters</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- 05 -->
-    <article class="case-study bg-light">
-      <div class="case-inner">
-        <div class="case-header">
-          <span class="case-number">05</span>
-          <div>
-            <p class="case-tag">FMCG / FOOD &amp; BEVERAGE</p>
-            <p class="case-region">India → GCC</p>
-          </div>
-        </div>
-        <h2 class="case-title">FMCG &amp; Food Products (Domestic + Export)</h2>
-        <div class="case-columns">
-          <div class="case-col">
-            <h3>THE CHALLENGE</h3>
-            <p class="col-intro">An FMCG brand faced:</p>
-            <ul>
-              <li>Strong domestic sales but stalled international expansion</li>
-              <li>Labeling &amp; shelf-life compliance confusion</li>
-              <li>Distributor resistance</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUR INTERVENTION</h3>
-            <ul class="check-list">
-              <li>Export-ready product &amp; packaging alignment</li>
-              <li>Market-specific compliance mapping</li>
-              <li>Distributor onboarding support</li>
-              <li>Pricing &amp; positioning strategy</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUTCOME</h3>
-            <ul class="check-list">
-              <li>Successful export market entry</li>
-              <li>Stable repeat orders</li>
-              <li>Parallel domestic brand strengthening</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- 06 -->
-    <article class="case-study bg-white">
-      <div class="case-inner">
-        <div class="case-header">
-          <span class="case-number">06</span>
-          <div>
-            <p class="case-tag">IT &amp; SAAS</p>
-            <p class="case-region">USA &amp; Europe</p>
-          </div>
-        </div>
-        <h2 class="case-title">IT &amp; SaaS (Global Client Acquisition)</h2>
-        <div class="case-columns">
-          <div class="case-col">
-            <h3>THE CHALLENGE</h3>
-            <p class="col-intro">A SaaS company had:</p>
-            <ul>
-              <li>Good product but weak international sales traction</li>
-              <li>No clarity on buyer personas</li>
-              <li>Inefficient pricing narrative</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUR INTERVENTION</h3>
-            <ul class="check-list">
-              <li>Market positioning correction</li>
-              <li>ICP (Ideal Customer Profile) definition</li>
-              <li>Sales &amp; outreach structure</li>
-              <li>International client engagement guidance</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUTCOME</h3>
-            <ul class="check-list">
-              <li>Improved inbound quality</li>
-              <li>Shorter sales cycles</li>
-              <li>Higher-value contracts</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- 07 -->
-    <article class="case-study bg-light">
-      <div class="case-inner">
-        <div class="case-header">
-          <span class="case-number">07</span>
-          <div>
-            <p class="case-tag">EDUCATION, TRADE &amp; LOGISTICS</p>
-            <p class="case-region">India → Overseas Trade Hubs</p>
-          </div>
-        </div>
-        <h2 class="case-title">Workforce Mobility (Trade Operations Talent)</h2>
-        <div class="case-columns">
-          <div class="case-col">
-            <h3>THE CHALLENGE</h3>
-            <p class="col-intro">New entrants into trade lacked:</p>
-            <ul>
-              <li>Practical execution exposure</li>
-              <li>Role clarity</li>
-              <li>Employability confidence</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUR INTERVENTION</h3>
-            <ul class="check-list">
-              <li>End-to-end supply chain training</li>
-              <li>Role-specific execution exposure</li>
-              <li>Deployment readiness evaluation</li>
-              <li>Partner ecosystem coordination</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUTCOME</h3>
-            <ul class="check-list">
-              <li>Candidates absorbed into live trade operations</li>
-              <li>Reduced onboarding friction for employers</li>
-              <li>Sustainable career pathways created</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- 08 -->
-    <article class="case-study bg-white">
-      <div class="case-inner">
-        <div class="case-header">
-          <span class="case-number">08</span>
-          <div>
-            <p class="case-tag">IMPORT, DISTRIBUTION &amp; RETAIL</p>
-            <p class="case-region">Asia → Domestic Markets</p>
-          </div>
-        </div>
-        <h2 class="case-title">Importer–Distributor Alignment</h2>
-        <div class="case-columns">
-          <div class="case-col">
-            <h3>THE CHALLENGE</h3>
-            <p class="col-intro">An importer–distributor network faced:</p>
-            <ul>
-              <li>Supply unpredictability</li>
-              <li>Margin erosion</li>
-              <li>Inventory pile-ups</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUR INTERVENTION</h3>
-            <ul class="check-list">
-              <li>Import cycle planning</li>
-              <li>Distributor pricing discipline</li>
-              <li>Demand-aligned inventory planning</li>
-              <li>Upstream supply coordination</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUTCOME</h3>
-            <ul class="check-list">
-              <li>Improved stock rotation</li>
-              <li>Stable margins</li>
-              <li>Stronger retailer confidence</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- 09 -->
-    <article class="case-study bg-light">
-      <div class="case-inner">
-        <div class="case-header">
-          <span class="case-number">09</span>
-          <div>
-            <p class="case-tag">REAL ESTATE &amp; INFRASTRUCTURE</p>
-            <p class="case-region">India → NRI Capital</p>
-          </div>
-        </div>
-        <h2 class="case-title">Real Estate &amp; Infrastructure Advisory</h2>
-        <div class="case-columns">
-          <div class="case-col">
-            <h3>THE CHALLENGE</h3>
-            <p class="col-intro">A developer faced:</p>
-            <ul>
-              <li>Slow inventory movement</li>
-              <li>Weak investor confidence</li>
-              <li>Poor positioning</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUR INTERVENTION</h3>
-            <ul class="check-list">
-              <li>Market feasibility &amp; demand analysis</li>
-              <li>Project restructuring for investor clarity</li>
-              <li>Capital &amp; channel alignment</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUTCOME</h3>
-            <ul class="check-list">
-              <li>Renewed investor interest</li>
-              <li>Improved sales traction</li>
-              <li>Better long-term project visibility</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- 10 -->
-    <article class="case-study bg-white">
-      <div class="case-inner">
-        <div class="case-header">
-          <span class="case-number">10</span>
-          <div>
-            <p class="case-tag">APPAREL &amp; TEXTILES</p>
-            <p class="case-region">India → Europe</p>
-          </div>
-        </div>
-        <h2 class="case-title">Apparel &amp; Textiles (Export Expansion)</h2>
-        <div class="case-columns">
-          <div class="case-col">
-            <h3>THE CHALLENGE</h3>
-            <p class="col-intro">An apparel exporter faced:</p>
-            <ul>
-              <li>Price pressure</li>
-              <li>Quality compliance issues</li>
-              <li>One-time buyers only</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUR INTERVENTION</h3>
-            <ul class="check-list">
-              <li>Buyer-product-price alignment</li>
-              <li>Quality &amp; inspection discipline</li>
-              <li>Repeat-order strategy design</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h3>OUTCOME</h3>
-            <ul class="check-list">
-              <li>Higher buyer retention</li>
-              <li>Predictable export cycles</li>
-              <li>Improved production planning</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </article>
-
-  </main>
-
-  <!-- ================= REFLECT SECTION ================= -->
-  <section class="reflect-section">
-    <h2>What These Case Studies Reflect</h2>
-    <p class="reflect-sub">Across industries, the pattern is consistent:</p>
-    <div class="reflect-cards">
-      <div class="reflect-card">Problems are structural, not effort-based</div>
-      <div class="reflect-card">Execution clarity beats random expansion</div>
-      <div class="reflect-card">Ecosystems outperform isolated actions</div>
-    </div>
-    <p class="reflect-quote"><em>This is how FlairList Global operates—quietly, systematically, and long-term.</em></p>
-  </section>
-
-  <!-- ================= CTA SECTION ================= -->
-  <section class="cta-section">
-    <h2>Want to Explore a Similar Engagement?</h2>
-    <p class="cta-email">hello@flairlist.com</p>
-    <p class="cta-website">FlairList.com</p>
-    <a href="#" class="cta-button">Start a Conversation</a>
-    <p class="cta-quote"><em>Good execution doesn't look dramatic.<br>It looks repeatable.</em></p>
-  </section>
-
-        <footer class="site-footer">
-        <div class="footer-container">
-          <!-- =================================
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================
              COLUMN 1
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Who We Are</h3>
+        <div class="footer-column">
+          <h3>Who We Are</h3>
 
-            <a href="./mission.html">Mission</a>
-            <a href="./vision.html">Vision</a>
-            <a href="./values.html">Values</a>
-            <a href="./founder.html">Founder &amp; CEO</a>
-            <a href="./team.html">Leadership &amp; Team</a>
-            <a href="./press_room.html">Press Room</a>
-          </div>
+          <a href="./mission.html">Mission</a>
+          <a href="./vision.html">Vision</a>
+          <a href="./values.html">Values</a>
+          <a href="./founder.html">Founder &amp; CEO</a>
+          <a href="./team.html">Leadership &amp; Team</a>
+          <a href="./press_room.html">Press Room</a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 2
         ================================== -->
 
-          <div class="footer-column">
-            <h3>What We Do</h3>
+        <div class="footer-column">
+          <h3>What We Do</h3>
 
-            <a href="#" class="footer-bold"> Services </a>
+          <span class="footer-bold footer-label"> Services </span>
 
-            <a href="./expert-business-consultancy.html"> Expert Business Consultation </a>
+          <a href="./expert-business-consultancy.html">
+            Expert Business Consultation
+          </a>
 
-            <a href="./export-consultation.html"> Export Consultation </a>
+          <a href="./export-consultation.html"> Export Consultation </a>
 
-            <a href="./export-mentorship.html"> Export Mentorship </a>
+          <a href="./export-mentorship.html"> Export Mentorship </a>
 
-            <a href="./exclusive-business-growth-partnership.html"> Exclusive Partnership </a>
+          <a href="./exclusive-business-growth-partnership.html">
+            Exclusive Partnership
+          </a>
 
-            <a href="#" class="footer-bold"> Global Import-Export </a>
+          <a href="#" class="footer-bold"> Global Import-Export </a>
 
-            <a href="./countries.html"> Countries </a>
+          <a href="./countries.html"> Countries </a>
 
-            <a href="./products.html"> Products </a>
+          <a href="./products.html"> Products </a>
 
-            <a href="./partners.html"> Partner With Us </a>
-          </div>
+          <a href="./partners.html"> Partner With Us </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 3
         ================================== -->
 
-          <div class="footer-column">
-            <h3>More</h3>
+        <div class="footer-column">
+          <h3>More</h3>
 
-            <a href="#" class="footer-bold"> Supply Chain &amp; Workforce </a>
+          <span class="footer-bold footer-label">
+            Supply Chain &amp; Workforce
+          </span>
 
-            <a href="#"> Supply Chain &amp; Distribution </a>
+          <a href="#"> Supply Chain &amp; Distribution </a>
 
-            <a href="./workforce-mobility.html"> Workforce Programs </a>
+          <a href="./workforce-mobility.html"> Workforce Programs </a>
 
-            <a href="./deployment.html"> Deployment </a>
+          <a href="./deployment.html"> Deployment </a>
 
-            <a href="#" class="footer-bold"> Explore </a>
+          <a href="#" class="footer-bold"> Explore </a>
 
-            <a href="#"> Industries </a>
+          <a href="./industries.html"> Industries </a>
 
-            <a href="./case-studies.html"> Case Studies </a>
-          </div>
+          <a href="./case-studies.html"> Case Studies </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 4
         ================================== -->
 
-          <div class="footer-column">
-            <h3>Opportunities</h3>
+        <div class="footer-column">
+          <h3>Opportunities</h3>
 
-            <a href="./career.html"> Careers </a>
+          <a href="./career.html"> Careers </a>
 
-            <a href="./investor.html"> Investors </a>
+          <a href="./investor.html"> Investors </a>
 
-            <a href="./contact.html"> Contact Us </a>
+          <a href="./contact.html"> Contact Us </a>
 
-            <h4 class="footer-follow-title">Follow Us</h4>
+          <h4 class="footer-follow-title">Follow Us</h4>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a
+            href="https://www.instagram.com/theshubhambibave/"
+            class="social-link"
+          >
+            <span class="social-icon"> ◎ </span>
 
-              @theshubhambibave
-            </a>
+            @theshubhambibave
+          </a>
 
-            <a href="#" class="social-link">
-              <span class="social-icon"> ◎ </span>
+          <a href="#" class="social-link">
+            <span class="social-icon"> ◎ </span>
 
-              @flairlist
-            </a>
-          </div>
+            @flairlist
+          </a>
+        </div>
 
-          <!-- =================================
+        <!-- =================================
              COLUMN 5
         ================================== -->
 
-          <div class="footer-column footer-connect">
-            <h3>Let's Connect</h3>
+        <div class="footer-column footer-connect">
+          <h3>Let's Connect</h3>
 
-            <div class="footer-contact">
-              <strong> ✉ Email: </strong>
+          <div class="footer-contact">
+            <strong> ✉ Email: </strong>
 
-              <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
-            </div>
-
-            <div class="footer-contact">
-              <strong> ◎ Website: </strong>
-
-              <a href="https://www.flairlist.com/"> FlairList.com </a>
-            </div>
-
-            <a href="./contact.html" class="footer-button"> Get in Touch </a>
+            <a href="mailto:hello@flairlist.com"> hello@flairlist.com </a>
           </div>
-        </div>
 
-        <!-- =====================================
+          <div class="footer-contact">
+            <strong> ◎ Website: </strong>
+
+            <a href="https://www.flairlist.com/"> FlairList.com </a>
+          </div>
+
+          <a href="./contact.html" class="footer-button"> Get in Touch </a>
+        </div>
+      </div>
+
+      <!-- =====================================
          FOOTER BOTTOM
     ====================================== -->
 
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p>2026 FlairList Global. All rights reserved.</p>
-
-            <p class="footer-tagline">
-              "Building what global business runs on."
-            </p>
-          </div>
-
-          <nav class="footer-legal">
-            <a href="#"> Terms of Use </a>
-
-            <a href="#"> Privacy Policy </a>
-
-            <a href="#"> Refund Policy </a>
-
-            <a href="#"> Cancellation Policy </a>
-
-            <a href="#"> Cookies </a>
-          </nav>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>2026 FlairList Global. All rights reserved.</p>
         </div>
-      </footer>
 
+        <nav class="footer-legal">
+          <a href="./terms-and-conditions.html"> Terms of Use </a>
 
-<script src="./Assets/js/script.js?v=3.0"></script>
+          <a href="./privacy-policy.html"> Privacy Policy </a>
 
-</body>
+          <a href="./refund-policy.html"> Refund Policy </a>
+
+          <a href="./cancellation-policy.html"> Cancellation Policy </a>
+
+          <a href="./privacy-policy.html"> Cookies </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./Assets/js/script.js?v=3.8"></script>
+  </body>
 </html>
