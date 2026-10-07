@@ -39,7 +39,7 @@ img {
 /* ============ HERO ============ */
 .hero-career {
   position: relative;
-  height: 620px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,21 +56,21 @@ img {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 680px;
+  max-width: 780px;
   padding: 70px 60px;
   color: #ffffff;
 }
 
 .hero-label {
-  font-size: 18px;
+  font-size: 13px;
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 500;
   color: #00E676;
   margin-bottom: 16px;
 }
 
 .hero-title {
-  font-size: 58px;
+  font-size: 64px;
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 18px;
@@ -78,14 +78,14 @@ img {
 }
 
 .hero-desc {
-  font-size: 18px;
+  font-size: 20px;
   color: #a7f3d0;
   margin-bottom: 24px;
 }
 
 .hero-italic {
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   color: #a7f3d0;
   margin-top: 22px;
 }
@@ -105,10 +105,9 @@ img {
 .pill {
   background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
   padding: 8px 16px;
-  border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
@@ -131,15 +130,15 @@ img {
 }
 
 .eyebrow {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1.5px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--text-body);
   margin-bottom: 10px;
 }
 
 .section-title {
-  font-size: 34px;
+  font-size: 42px;
   font-weight: 700;
   color: var(--text-heading);
   max-width: 1180px;
@@ -151,7 +150,7 @@ img {
 }
 
 .section-sub {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--text-body);
   max-width: 1180px;
   margin: 0 auto 20px auto;
@@ -163,7 +162,7 @@ img {
 }
 
 .col-heading {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--text-heading);
   margin: 18px 0 12px 0;
@@ -173,7 +172,7 @@ img {
   text-align: center;
   font-style: italic;
   color: var(--text-body);
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 30px;
 }
 
@@ -185,7 +184,7 @@ img {
 /* ============ LISTS ============ */
 .dash-list li {
   position: relative;
-  font-size: 20px;
+  font-size: 17px;
   color: var(--text-body);
   padding-left: 16px;
   margin-bottom: 10px;
@@ -215,7 +214,7 @@ img {
 
 .check-list li {
   position: relative;
-  font-size: 18px;
+  font-size: 15px;
   color: var(--text-body);
   padding-left: 24px;
   margin-bottom: 12px;
@@ -246,7 +245,7 @@ img {
 
 /* ============ WHY FLAIRLIST ============ */
 .why-grid {
-  max-width: 1180px;
+  max-width: 1380px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
@@ -288,19 +287,36 @@ img {
 }
 
 .icon-card p {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--text-heading);
 }
 
 .icon-badge {
-  font-size: 18px;
+  width: 32px;
+  height: 32px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   flex-shrink: 0;
+
+  color: var(--primary-blue);
+}
+
+.icon-badge svg {
+  width: 26px;
+  height: 26px;
+
+  display: block;
+
+  color: currentColor;
 }
 
 /* ============ WHO WE'RE LOOKING FOR ============ */
 .looking-for-grid {
-  max-width: 1180px;
+  max-width: 1340px;
   margin: 0 auto 40px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -311,24 +327,45 @@ img {
   background: var(--surface-white);
   border: 1px solid var(--border-grid);
   border-radius: var(--radius-md);
-  padding: 26px;
+  padding: 26px 15px;
 }
 
 .looking-card .icon-badge {
-  display: inline-block;
-  margin-bottom: 14px;
-  font-size: 20px;
+  width: 34px;
+  height: 34px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 16px;
+
+  color: var(--primary-blue);
+
+  flex-shrink: 0;
+}
+
+.looking-card .icon-badge svg {
+  width: 27px;
+  height: 27px;
+
+  display: block;
+
+  color: currentColor;
+
+  fill: currentColor;
 }
 
 .looking-card h3 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   color: var(--text-heading);
   margin-bottom: 8px;
 }
 
 .looking-card p {
-  font-size: 18px;
+  font-size: 15px;
   color: var(--text-body);
 }
 
@@ -354,7 +391,7 @@ img {
 
 /* ============ CAREER TRACKS ============ */
 .tracks-grid {
-  max-width: 1180px;
+  max-width: 1380px;
   margin: 0 auto 30px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -370,15 +407,15 @@ img {
 
 .track-number {
   display: block;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   color: var(--text-body);
   margin-bottom: 10px;
 }
 
 .track-card p {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   color: var(--text-heading);
 }
 
@@ -403,7 +440,7 @@ img {
 
 /* ============ GROWTH ============ */
 .growth-grid {
-  max-width: 1180px;
+  max-width: 1480px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
@@ -415,11 +452,11 @@ img {
   background: var(--surface-soft);
   border-left: 4px solid #00E676;
   border-radius: var(--radius-md);
-  padding: 34px 30px;
+  padding: 34px 36px;
 }
 
 .quote-card p {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   font-style: italic;
   color: var(--text-heading);
@@ -435,7 +472,7 @@ img {
 }
 
 .note-heading {
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 1px;
   font-weight: 700;
   margin-bottom: 16px;
@@ -455,6 +492,7 @@ img {
   color: #ffffff;
   text-align: center;
   padding: 90px 60px;
+  margin-bottom: 70px;
 }
 
 .cta-title {
