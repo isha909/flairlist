@@ -193,7 +193,7 @@ img {
 }
 
 .body-text {
-  font-size: 17px;
+  font-size: 18px;
   color: var(--text-body);
   margin-bottom: 16px;
 }
@@ -217,11 +217,11 @@ img {
 
 /* ============ CORE SERVICES ============ */
 .services-grid {
-  max-width: 1180px;
+  max-width: 1380px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 28px;
 }
 
 .service-card {
@@ -254,7 +254,7 @@ img {
 }
 
 .service-head p {
-  font-size: 18px;
+  font-size: 15px;
   color: var(--text-body);
 }
 
@@ -264,7 +264,7 @@ img {
 }
 
 .service-item-label {
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 0.5px;
   font-weight: 700;
   color: var(--primary-green-hover);
@@ -272,13 +272,13 @@ img {
 }
 
 .service-item-desc {
-  font-size: 18px;
+  font-size: 13px;
   color: var(--text-body);
 }
 
 /* ============ OUR PROMISE ============ */
 .promise-grid {
-  max-width: 1180px;
+  max-width: 1380px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -295,9 +295,27 @@ img {
 }
 
 .promise-icon {
-  display: inline-block;
-  font-size: 22px;
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   margin-bottom: 14px;
+
+  color: var(--text-heading);
+}
+
+.promise-icon svg {
+  width: 36px;
+  height: 36px;
+
+  display: block;
+
+  color: var(--text-heading);
+
+  flex-shrink: 0;
 }
 
 .promise-card h3 {
@@ -308,13 +326,13 @@ img {
 }
 
 .promise-card p {
-  font-size: 18px;
+  font-size: 15px;
   color: var(--text-body);
 }
 
 /* ============ TESTIMONIAL ============ */
 .testimonial-card {
-  max-width: 780px;
+  max-width: 680px;
   margin: 0 auto;
   background: var(--surface-white);
   border-radius: var(--radius-md);
@@ -325,14 +343,15 @@ img {
 
 .quote-mark {
   font-family: var(--font-heading);
-  font-size: 40px;
+  font-size: 60px;
+  font-weight: 800;
   color: var(--border-grid);
   display: block;
   margin-bottom: 6px;
 }
 
 .testimonial-text {
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
   color: var(--text-heading);
   margin-bottom: 20px;
@@ -347,40 +366,288 @@ img {
 }
 
 /* ============ FINAL CTA ============ */
+
+/* ==========================================================
+   FINAL CTA SECTION
+   ========================================================== */
+
 .final-cta {
+  width: 100%;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  /* Reduced height */
+  min-height: 500px;
+
+  /* Only bottom spacing */
+  margin: 0 0 60px;
+
+  overflow: hidden;
+}
+
+
+/* ==========================================================
+   LEFT IMAGE
+   ========================================================== */
+
+.final-cta-image {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
 }
 
 .final-cta-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 500px;
+
   display: block;
-  min-height: 320px;
+
+  object-fit: cover;
+  object-position: center;
+
+  filter: brightness(0.82);
+
+  transition: transform 0.5s ease;
 }
 
+
+/* Optional subtle hover */
+
+.final-cta:hover .final-cta-image img {
+  transform: scale(1.02);
+}
+
+
+/* ==========================================================
+   RIGHT CONTENT
+   ========================================================== */
+
 .final-cta-content {
-  background: linear-gradient(120deg, #04261D 0%, #08382B 60%, #0C4D3B 100%);
-  color: var(--text-primary);
-  padding: 70px 60px;
+  height: 500px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+
+  padding: 55px 80px;
+
+  background:
+    linear-gradient(
+      120deg,
+      #04261D 0%,
+      #08382B 60%,
+      #0C4D3B 100%
+    );
+
+  color: var(--text-primary);
 }
+
+
+/* ==========================================================
+   EYEBROW
+   ========================================================== */
+
+.final-cta-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--text-mint-on-dark);
+
+  font-family: var(--font-heading);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 1.6px;
+
+  line-height: 1.3;
+
+  text-transform: uppercase;
+}
+
+
+/* ==========================================================
+   TITLE
+   ========================================================== */
 
 .final-cta-title {
-  font-size: 32px;
+  max-width: 650px;
+
+  margin: 0 0 20px;
+
+  color: #FFFFFF;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(34px, 3vw, 50px);
+
   font-weight: 700;
-  margin-bottom: 18px;
-  line-height: 1.35;
+
+  line-height: 1.18;
+
+  letter-spacing: -1px;
 }
 
+
+/* ==========================================================
+   DESCRIPTION
+   ========================================================== */
+
 .final-cta-desc {
-  font-size: 18px;
-  color: #d6e9e0;
-  margin-bottom: 30px;
-  max-width: 460px;
+  max-width: 600px;
+
+  margin: 0 0 28px;
+
+  color: #D6E9E0;
+
+  font-family: var(--font-body);
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   CONTACT BUTTON
+   ========================================================== */
+
+.final-cta-button {
+  min-width: 190px;
+  min-height: 58px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 32px;
+
+  background: #FFFFFF;
+
+  color: var(--navy);
+
+  border-radius: var(--radius-sm);
+
+  font-family: var(--font-heading);
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    background 200ms ease;
+}
+
+
+.final-cta-button:hover {
+  background: #F7FFFB;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 230, 118, 0.20);
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 1000px) {
+
+  .final-cta {
+    min-height: 450px;
+    margin-bottom: 50px;
+  }
+
+  .final-cta-image {
+    height: 450px;
+    min-height: 450px;
+  }
+
+  .final-cta-image img {
+    height: 450px;
+    min-height: 450px;
+  }
+
+  .final-cta-content {
+    height: 450px;
+    padding: 45px 45px;
+  }
+
+  .final-cta-title {
+    font-size: 34px;
+  }
+
+  .final-cta-desc {
+    font-size: 15px;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 700px) {
+
+  .final-cta {
+    width: 100%;
+
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    margin-bottom: 40px;
+  }
+
+  .final-cta-image {
+    height: 280px;
+    min-height: 280px;
+  }
+
+  .final-cta-image img {
+    height: 280px;
+    min-height: 280px;
+  }
+
+  .final-cta-content {
+    height: auto;
+    min-height: 420px;
+
+    padding: 45px 28px;
+  }
+
+  .final-cta-eyebrow {
+    font-size: 11px;
+    margin-bottom: 16px;
+  }
+
+  .final-cta-title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .final-cta-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+  }
+
+  .final-cta-button {
+    width: 100%;
+    min-height: 54px;
+  }
+
 }
 
 /* ============ RESPONSIVE ============ */
@@ -418,3 +685,5 @@ img {
     padding: 50px 24px;
   }
 }
+
+

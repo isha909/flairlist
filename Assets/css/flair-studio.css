@@ -82,21 +82,21 @@ img {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 680px;
+  max-width: 880px;
   padding: 80px 60px;
   color: var(--text-primary);
 }
 
 .hero-label {
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text-mint-on-dark);
   margin-bottom: 16px;
 }
 
 .hero-title {
-  font-size: 58px;
+  font-size: 75px;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 18px;
@@ -104,7 +104,7 @@ img {
 }
 
 .hero-desc {
-  font-size: 18px;
+  font-size: 20px;
   color: #d6e9e0;
 }
 
@@ -155,10 +155,10 @@ img {
 }
 
 .section-title {
-  font-size: 34px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--text-heading);
-  max-width: 1180px;
+  max-width: 1250px;
   margin: 0 auto 16px auto;
 }
 
@@ -178,17 +178,17 @@ img {
 }
 
 .body-text {
-  font-size: 18px;
-  color: var(--text-body);
+  font-size: 16px;
+  color: black;
 }
 
 /* ============ WHAT WE DO ============ */
 .about-grid {
-  max-width: 1180px;
+  max-width: 1350px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.1fr;
-  gap: 50px;
+  gap: 60px;
   align-items: center;
 }
 
@@ -200,37 +200,144 @@ img {
 }
 
 /* ============ CORE EXPERTISE ============ */
-.expertise-grid {
+.expertise-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.expertise-section .section-title {
   max-width: 1180px;
+
+  margin-bottom: 18px;
+
+  font-size: 48px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  color: var(--text-heading);
+}
+
+
+.expertise-section .section-sub {
+  max-width: 720px;
+
+  margin: 0 auto 58px;
+
+  font-size: 20px;
+
+  line-height: 1.65;
+
+  color: var(--text-body);
+
+  text-align: center;
+}
+
+.expertise-grid {
+
+  width: min(1600px, calc(100% - 80px));
+
   margin: 0 auto;
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+
+  column-gap: 28px;
+
+  row-gap: 30px;
 }
 
 .expertise-card {
+
+  grid-column: span 2;
+
+  min-height: 244px;
+
   background: var(--surface-white);
+
   border: 1px solid var(--border-subtle);
+
   border-radius: var(--radius-md);
-  padding: 30px 26px;
+
+  padding: 40px 36px 34px;
+
   box-shadow: var(--shadow-card);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.expertise-card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.expertise-card:nth-child(5) {
+  grid-column: 4 / span 2;
 }
 
 .expertise-icon {
-  display: inline-block;
-  font-size: 20px;
-  margin-bottom: 16px;
+
+  width: 36px;
+
+  height: 36px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  color: var(--text-heading);
+}
+
+
+.expertise-icon svg {
+
+  width: 32px;
+
+  height: 32px;
+
+  display: block;
+
+  color: currentColor;
+
+  fill: currentColor;
+
+  flex-shrink: 0;
 }
 
 .expertise-card h3 {
-  font-size: 22px;
-  font-weight: 700;
+
+  margin: 0 0 12px;
+
+  font-size: 18px;
+
+  line-height: 1.35;
+
+  font-weight: 600;
+
   color: var(--text-heading);
-  margin-bottom: 10px;
 }
 
+
 .expertise-card p {
-  font-size: 20px;
+
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.65;
+
   color: var(--text-body);
 }
 
@@ -257,20 +364,20 @@ img {
 }
 
 .why-card h3 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 19px;
+  font-weight: 600;
   color: var(--text-heading);
   margin-bottom: 10px;
 }
 
 .why-card p {
-  font-size: 22px;
+  font-size: 15px;
   color: var(--text-body);
 }
 
 /* ============ PROCESS ============ */
 .process-row {
-  max-width: 1180px;
+  max-width: 980px;
   margin: 0 auto;
   display: flex;
   align-items: stretch;
@@ -282,7 +389,7 @@ img {
   background: var(--surface-white);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 26px 24px;
+  padding: 30px 10px;
   box-shadow: var(--shadow-card);
 }
 
@@ -290,8 +397,8 @@ img {
   display: inline-block;
   background: var(--surface-soft);
   color: var(--text-heading);
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
   letter-spacing: 0.5px;
   padding: 5px 12px;
   border-radius: 20px;
@@ -299,14 +406,14 @@ img {
 }
 
 .process-card h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--text-heading);
   margin-bottom: 8px;
 }
 
 .process-card p {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--text-body);
 }
 
@@ -323,6 +430,7 @@ img {
   color: var(--text-primary);
   text-align: center;
   padding: 90px 60px;
+  margin-bottom: 70px;
 }
 
 .cta-eyebrow {

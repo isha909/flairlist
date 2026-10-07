@@ -67,7 +67,7 @@ img {
 /* ============ HERO ============ */
 .hero-fj {
   position: relative;
-  min-height: 650px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,7 +173,7 @@ img {
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 700;
   color: var(--text-heading);
   max-width: 1180px;
@@ -196,13 +196,13 @@ img {
 }
 
 .body-text {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--text-body);
 }
 
 /* ============ ABOUT ============ */
 .about-grid {
-  max-width: 1180px;
+  max-width: 1380px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -218,43 +218,138 @@ img {
 }
 
 /* ============ FEATURE CARDS ============ */
+
+.feature-section {
+  padding-top: 115px;
+  padding-bottom: 112px;
+}
+
+
+.feature-section-title {
+  max-width: 1300px;
+
+  margin: 0 auto 62px;
+
+  font-family: var(--font-heading);
+
+  font-size: 48px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  letter-spacing: -1px;
+
+  color: var(--text-heading);
+
+  text-align: center;
+}
+
 .feature-grid {
-  max-width: 1180px;
+
+  width: min(1660px, calc(100% - 120px));
+
   margin: 0 auto;
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
 
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 32px;
+
+  align-items: stretch;
+}
 .feature-card {
+
+  min-height: 354px;
+
   background: var(--surface-white);
+
   border: 1px solid var(--border-subtle);
+
   border-radius: var(--radius-md);
-  padding: 30px 26px;
+
+  padding: 46px 38px 38px;
+
   box-shadow: var(--shadow-card);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+.feature-icon {
+
+  width: 42px;
+
+  height: 42px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  color: var(--text-heading);
 }
 
-.feature-icon {
-  display: inline-block;
-  font-size: 22px;
-  margin-bottom: 16px;
+
+.feature-icon svg {
+
+  width: 34px;
+
+  height: 34px;
+
+  display: block;
+
+  fill: currentColor;
+
+  color: currentColor;
+
+  flex-shrink: 0;
 }
 
 .feature-card h3 {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--text-heading);
-  margin-bottom: 10px;
-}
 
+  margin: 0 0 14px;
+
+  font-family: var(--font-heading);
+
+  font-size: 19px;
+
+  font-weight: 600;
+
+  line-height: 1.35;
+
+  letter-spacing: -0.25px;
+
+  color: var(--text-heading);
+}
 .feature-card p {
-  font-size: 20px;
+
+  margin: 0;
+
+  font-family: var(--font-body);
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 1.9;
+
   color: var(--text-body);
 }
-
 /* ============ TRUSTED BY THE BEST ============ */
 .trust-grid {
-  max-width: 1180px;
+  max-width: 1380px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -285,7 +380,7 @@ img {
 }
 
 .testimonial p {
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   color: var(--text-heading);
   margin-bottom: 14px;
@@ -328,6 +423,7 @@ img {
   color: var(--text-primary);
   text-align: center;
   padding: 90px 60px;
+  margin-bottom: 70px;
 }
 
 .cta-title {
