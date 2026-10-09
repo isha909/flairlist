@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,434 +34,660 @@
          NAVBAR
     ========================================================== -->
 
-    <header class="navbar" id="siteNavbar">
+        <header class="navbar" id="siteNavbar">
+      <div class="navbar-container">
+        <div class="nav-left">
+          <!-- LOGO -->
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="FlairList Global Home"
+          >
+            <img src="./Assets/img/flairlist_logo.png" alt="FlairList Global" />
+          </a>
 
-        <div class="navbar-container">
-
-            <!-- LEFT -->
-            <div class="nav-left">
-
-                <!-- LOGO -->
-                <a
-                    href="./index.html"
-                    class="logo"
-                    aria-label="FlairList Global Home"
-                >
-                    <img
-                        src="./Assets/img/flairlist_logo.png"
-                        alt="FlairList Global"
-                    >
-                </a>
-
-                <!-- NAVIGATION -->
-                <nav class="nav-links" aria-label="Main Navigation">
-
-                    <div class="nav-dropdown" data-menu="who">
-
-                        <button
-                            type="button"
-                            class="nav-link dropdown-trigger"
-                            aria-expanded="false"
-                        >
-                            <span>Who We Are</span>
-                            <span class="dropdown-arrow">▼</span>
-                        </button>
-
-                    </div>
-
-                    <div class="nav-dropdown" data-menu="what">
-
-                        <button
-                            type="button"
-                            class="nav-link dropdown-trigger"
-                            aria-expanded="false"
-                        >
-                            <span>What We Do</span>
-                            <span class="dropdown-arrow">▼</span>
-                        </button>
-
-                    </div>
-
-                    <a href="./career.html" class="nav-link">
-                        Careers
-                    </a>
-
-                    <a href="./investor.html" class="nav-link">
-                        Investors
-                    </a>
-
-                </nav>
-
+          <!-- MAIN NAVIGATION -->
+          <nav class="nav-links" aria-label="Main Navigation">
+            <div class="nav-dropdown" data-menu="who">
+              <button
+                type="button"
+                class="nav-link dropdown-trigger"
+                aria-expanded="false"
+              >
+                <span>Who We Are</span>
+                <span class="dropdown-arrow">▼</span>
+              </button>
             </div>
 
-
-            <!-- RIGHT -->
-            <div class="nav-right">
-
-                <!-- SEARCH -->
-                <form class="search-box" id="navbarSearch">
-
-                    <input
-                        type="search"
-                        placeholder="Search..."
-                        aria-label="Search"
-                    >
-
-                    <button
-                        type="submit"
-                        class="search-button"
-                        aria-label="Search"
-                    >
-                        ⌕
-                    </button>
-
-                </form>
-
-
-                <!-- COUNTRY -->
-                <div class="country-selector">
-
-                    <button
-                        class="country-btn"
-                        type="button"
-                        aria-expanded="false"
-                    >
-                        <span id="selectedCountry">
-                            India
-                        </span>
-
-                        <svg
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="app-icon"
-                            width="24"
-                            height="24"
-                        >
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
-                                fill="#E4E3DE"
-                            >
-                            </path>
-                        </svg>
-
-                    </button>
-
-                    <div
-                        class="country-dropdown"
-                        id="countryDropdown"
-                    >
-
-                        <button
-                            type="button"
-                            data-lang="en"
-                            data-country="India"
-                        >
-                            India
-                        </button>
-
-                        <button
-                            type="button"
-                            data-lang="ar"
-                            data-country="United Arab Emirates"
-                        >
-                            United Arab Emirates
-                        </button>
-
-                        <button
-                            type="button"
-                            data-lang="en"
-                            data-country="United States"
-                        >
-                            United States
-                        </button>
-
-                        <button
-                            type="button"
-                            data-lang="zh-CN"
-                            data-country="China"
-                        >
-                            China
-                        </button>
-
-                        <button
-                            type="button"
-                            data-lang="en"
-                            data-country="United Kingdom"
-                        >
-                            United Kingdom
-                        </button>
-
-                        <button
-                            type="button"
-                            data-lang="en"
-                            data-country="Singapore"
-                        >
-                            Singapore
-                        </button>
-
-                        <button
-                            type="button"
-                            data-lang="de"
-                            data-country="Germany"
-                        >
-                            Germany
-                        </button>
-
-                        <button
-                            type="button"
-                            data-lang="it"
-                            data-country="Italy"
-                        >
-                            Italy
-                        </button>
-
-                        <button
-                            type="button"
-                            data-lang="ja"
-                            data-country="Japan"
-                        >
-                            Japan
-                        </button>
-
-                        <button
-                            type="button"
-                            data-lang="ko"
-                            data-country="South Korea"
-                        >
-                            South Korea
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-                <!-- MAGIC FORM -->
-                <a
-                    href="./contact.html"
-                    class="magic-button"
-                >
-                    Magic Form
-                </a>
-
+            <div class="nav-dropdown" data-menu="what">
+              <button
+                type="button"
+                class="nav-link dropdown-trigger"
+                aria-expanded="false"
+              >
+                <span>What We Do</span>
+                <span class="dropdown-arrow">▼</span>
+              </button>
             </div>
 
+            <a href="./career.html" class="nav-link">Careers</a>
+            <a href="./investor.html" class="nav-link">Investors</a>
+          </nav>
         </div>
 
+        <!-- RIGHT SIDE -->
+        <div class="nav-right">
+          <form class="search-box" id="navbarSearch">
+            <input type="search" placeholder="Search..." aria-label="Search" />
+            <button type="submit" class="search-button" aria-label="Search">
+              ⌕
+            </button>
+          </form>
 
-        <!-- =====================================================
-             MEGA MENU
-        ====================================================== -->
+          <!-- COUNTRY / LANGUAGE SELECTOR -->
+          <div class="country-selector">
+            <button class="country-btn" type="button" aria-expanded="false">
+              <span id="selectedCountry">India</span>
+              <svg
+                _ngcontent-ng-c1672362817=""
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="app-icon"
+                width="24"
+                height="24"
+              >
+                <path
+                  _ngcontent-ng-c1672362817=""
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  fill="#E4E3DE"
+                  stroke="none"
+                  stroke-width="0"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+              </svg>
+            </button>
 
-        <div
-            class="mega-menu"
-            id="megaMenu"
-            aria-hidden="true"
-        >
+            <div class="country-dropdown" id="countryDropdown">
+              <button type="button" data-lang="en" data-country="India">
+                India
+              </button>
 
-            <!-- WHO WE ARE -->
+              <button
+                type="button"
+                data-lang="ar"
+                data-country="United Arab Emirates"
+              >
+                United Arab Emirates
+              </button>
 
-            <section
-                class="mega-content"
-                id="whoMenu"
-            >
+              <button type="button" data-lang="en" data-country="United States">
+                United States
+              </button>
 
-                <aside class="mega-sidebar">
+              <button type="button" data-lang="zh-CN" data-country="China">
+                China
+              </button>
 
-                    <button
-                        type="button"
-                        class="mega-side-item active"
-                        data-content="purpose"
-                    >
-                        <span>
-                            Purpose &amp; Values
-                        </span>
-                    </button>
+              <button type="button" data-lang="nl" data-country="Netherlands">
+                Netherlands
+              </button>
 
-                    <button
-                        type="button"
-                        class="mega-side-item"
-                        data-content="leadership"
-                    >
-                        <span>
-                            Leadership &amp; Team
-                        </span>
-                    </button>
+              <button
+                type="button"
+                data-lang="en"
+                data-country="United Kingdom"
+              >
+                United Kingdom
+              </button>
 
-                    <button
-                        type="button"
-                        class="mega-side-item"
-                        data-content="press"
-                    >
-                        <span>
-                            Press Room
-                        </span>
-                    </button>
+              <button type="button" data-lang="en" data-country="Singapore">
+                Singapore
+              </button>
 
-                    <button
-                        type="button"
-                        class="mega-side-item"
-                        data-content="contact"
-                    >
-                        <span>
-                            Contact Us
-                        </span>
-                    </button>
+              <button type="button" data-lang="ar" data-country="Saudi Arabia">
+                Saudi Arabia
+              </button>
 
-                </aside>
+              <button type="button" data-lang="bn" data-country="Bangladesh">
+                Bangladesh
+              </button>
 
+              <button type="button" data-lang="de" data-country="Germany">
+                Germany
+              </button>
 
-                <div class="mega-main">
+              <button type="button" data-lang="it" data-country="Italy">
+                Italy
+              </button>
 
-                    <div
-                        class="mega-panel active"
-                        data-panel="purpose"
-                    >
+              <button type="button" data-lang="ja" data-country="Japan">
+                Japan
+              </button>
 
-                        <h3>
-                            Purpose &amp; Values
-                        </h3>
+              <button type="button" data-lang="ko" data-country="South Korea">
+                South Korea
+              </button>
 
-                        <a href="./mission.html">
-                            Mission
-                        </a>
+              <button type="button" data-lang="ms" data-country="Malaysia">
+                Malaysia
+              </button>
 
-                        <a href="./vision.html">
-                            Vision
-                        </a>
+              <button type="button" data-lang="th" data-country="Thailand">
+                Thailand
+              </button>
 
-                        <a href="./values.html">
-                            Values
-                        </a>
+              <button type="button" data-lang="id" data-country="Indonesia">
+                Indonesia
+              </button>
 
-                    </div>
+              <button type="button" data-lang="vi" data-country="Vietnam">
+                Vietnam
+              </button>
 
+              <button type="button" data-lang="en" data-country="Philippines">
+                Philippines
+              </button>
 
-                    <div
-                        class="mega-panel"
-                        data-panel="leadership"
-                    >
+              <button type="button" data-lang="en" data-country="Australia">
+                Australia
+              </button>
 
-                        <h3>
-                            Leadership &amp; Team
-                        </h3>
+              <button type="button" data-lang="en" data-country="New Zealand">
+                New Zealand
+              </button>
 
-                        <a href="./founder.html">
-                            Founder
-                        </a>
+              <button type="button" data-lang="fr" data-country="France">
+                France
+              </button>
 
-                        <a href="./team.html">
-                            Executive Team
-                        </a>
+              <button type="button" data-lang="es" data-country="Spain">
+                Spain
+              </button>
 
-                    </div>
+              <button type="button" data-lang="fr" data-country="Belgium">
+                Belgium
+              </button>
 
+              <button type="button" data-lang="de" data-country="Switzerland">
+                Switzerland
+              </button>
 
-                    <div
-                        class="mega-panel"
-                        data-panel="press"
-                    >
+              <button type="button" data-lang="pl" data-country="Poland">
+                Poland
+              </button>
 
-                        <h3>
-                            Press Room
-                        </h3>
+              <button type="button" data-lang="de" data-country="Austria">
+                Austria
+              </button>
 
-                        <a href="./press_room.html">
-                            Press Room
-                        </a>
+              <button type="button" data-lang="en" data-country="Ireland">
+                Ireland
+              </button>
 
-                    </div>
+              <button type="button" data-lang="ar" data-country="Qatar">
+                Qatar
+              </button>
 
+              <button type="button" data-lang="ar" data-country="Kuwait">
+                Kuwait
+              </button>
 
-                    <div
-                        class="mega-panel"
-                        data-panel="contact"
-                    >
+              <button type="button" data-lang="ar" data-country="Oman">
+                Oman
+              </button>
 
-                        <h3>
-                            Contact Us
-                        </h3>
+              <button type="button" data-lang="ar" data-country="Bahrain">
+                Bahrain
+              </button>
 
-                        <a href="./contact.html">
-                            Contact Us
-                        </a>
+              <button type="button" data-lang="he" data-country="Israel">
+                Israel
+              </button>
 
-                    </div>
+              <button type="button" data-lang="tr" data-country="Turkey">
+                Turkey
+              </button>
 
-                </div>
+              <button type="button" data-lang="ar" data-country="Iraq">
+                Iraq
+              </button>
 
-            </section>
+              <button type="button" data-lang="en" data-country="South Africa">
+                South Africa
+              </button>
 
+              <button type="button" data-lang="ar" data-country="Egypt">
+                Egypt
+              </button>
 
-            <!-- WHAT WE DO -->
+              <button type="button" data-lang="en" data-country="Nigeria">
+                Nigeria
+              </button>
 
-            <section
-                class="mega-content"
-                id="whatMenu"
-            >
+              <button type="button" data-lang="en" data-country="Kenya">
+                Kenya
+              </button>
 
-                <aside class="mega-sidebar">
+              <button type="button" data-lang="ar" data-country="Morocco">
+                Morocco
+              </button>
 
-                    <button
-                        type="button"
-                        class="mega-side-item active"
-                        data-content="services"
-                    >
-                        <span>
-                            Services
-                        </span>
-                    </button>
+              <button type="button" data-lang="en" data-country="Canada">
+                Canada
+              </button>
 
-                </aside>
+              <button type="button" data-lang="pt" data-country="Brazil">
+                Brazil
+              </button>
 
+              <button type="button" data-lang="es" data-country="Argentina">
+                Argentina
+              </button>
 
-                <div class="mega-main">
+              <button type="button" data-lang="es" data-country="Chile">
+                Chile
+              </button>
 
-                    <div
-                        class="mega-panel active"
-                        data-panel="services"
-                    >
+              <button type="button" data-lang="es" data-country="Colombia">
+                Colombia
+              </button>
 
-                        <h3>
-                            Services
-                        </h3>
+              <button type="button" data-lang="es" data-country="Peru">
+                Peru
+              </button>
 
-                        <a href="./expert-business-consultancy.html">
-                            Expert Business Consultation
-                        </a>
+              <button type="button" data-lang="ne" data-country="Nepal">
+                Nepal
+              </button>
 
-                        <a href="./export-consultation.html">
-                            Export Consultation
-                        </a>
+              <button type="button" data-lang="si" data-country="Sri Lanka">
+                Sri Lanka
+              </button>
 
-                        <a href="./export-mentorship.html">
-                            Export Mentorship
-                        </a>
+              <button type="button" data-lang="ur" data-country="Pakistan">
+                Pakistan
+              </button>
+            </div>
+          </div>
 
-                        <a href="./exclusive-business-growth-partnership.html">
-                            Exclusive Partnership
-                        </a>
-
-                        <a href="./countries.html">
-                            Countries
-                        </a>
-
-                        <a href="./products.html">
-                            Products
-                        </a>
-
-                        <a href="./partners.html">
-                            Partner With Us
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </section>
-
+          <a href="./contact.html" class="magic-button">Magic Form</a>
         </div>
+      </div>
 
+      <!-- ==========================================================
+       MEGA MENU
+       Top navigation opens on CLICK.
+       Sidebar content changes on HOVER.
+      =========================================================== -->
+
+      <div class="mega-menu" id="megaMenu" aria-hidden="true">
+        <!-- ===================== WHO WE ARE ===================== -->
+        <section class="mega-content" id="whoMenu">
+          <aside class="mega-sidebar">
+            <button
+              type="button"
+              class="mega-side-item active"
+              data-content="purpose"
+            >
+              <span>Purpose &amp; Values</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="leadership"
+            >
+              <span>Leadership &amp; Team</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="press">
+              <span>Press Room</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="contact">
+              <span>Contact Us</span>
+            </button>
+          </aside>
+
+          <div class="mega-main">
+            <div class="mega-panel active" data-panel="purpose">
+              <h3>Purpose &amp; Values</h3>
+              <a href="./mission.html">Mission</a>
+              <a href="./vision.html">Vision</a>
+              <a href="./values.html">Values</a>
+            </div>
+
+            <div class="mega-panel" data-panel="leadership">
+              <h3>Leadership &amp; Team</h3>
+              <a href="./founder.html">Founder</a>
+              <a href="./team.html">Executive Team</a>
+            </div>
+
+            <div class="mega-panel" data-panel="press">
+              <h3>Press Room</h3>
+              <a href="./press_room.html">Zee Business</a>
+              <a href="./press_room.html">Business Standard</a>
+              <a href="./press_room.html">Republic News</a>
+              <a href="./press_room.html">ANI News</a>
+              <a href="./press_room.html">ABP Live</a>
+            </div>
+
+            <div class="mega-panel" data-panel="contact">
+              <h3>Contact Us</h3>
+              <a href="./contact.html">Contact Us</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================== WHAT WE DO ===================== -->
+        <section class="mega-content" id="whatMenu">
+          <!-- LEVEL 1 -->
+          <aside class="mega-sidebar">
+            <button
+              type="button"
+              class="mega-side-item active"
+              data-content="services"
+            >
+              <span>Services</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item has-arrow"
+              data-content="import"
+            >
+              <span>Global Import-Export</span>
+              <span class="side-arrow">›</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="supply">
+              <span>Supply Chain &amp;<br />Distribution</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item has-arrow"
+              data-content="workforce"
+            >
+              <span>Workforce Mobility</span>
+              <span class="side-arrow">›</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="industries"
+            >
+              <span>Industries</span>
+            </button>
+
+            <button
+              type="button"
+              class="mega-side-item"
+              data-content="subsidiaries"
+            >
+              <span>Subsidiaries</span>
+            </button>
+
+            <button type="button" class="mega-side-item" data-content="cases">
+              <span>Case Studies</span>
+            </button>
+          </aside>
+
+          <!-- LEVEL 2 / CONTENT -->
+          <div class="mega-main">
+            <!-- SERVICES -->
+            <div class="mega-panel active" data-panel="services">
+              <h3>Services</h3>
+              <a href="./expert-business-consultancy.html"
+                >Expert Business Consultation</a
+              >
+              <a href="./export-consultation.html">Export Consultation</a>
+              <a href="./export-mentorship.html">Export Mentorship</a>
+              <a href="./exclusive-business-growth-partnership.html"
+                >Exclusive Partnership</a
+              >
+            </div>
+
+            <!-- GLOBAL IMPORT-EXPORT -->
+            <div class="mega-panel nested-panel" data-panel="import">
+              <div class="nested-sidebar">
+                <button
+                  type="button"
+                  class="nested-side-item active"
+                  data-nested="countries"
+                >
+                  <span>Countries</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="products"
+                >
+                  <span>Products</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="partners"
+                >
+                  <span>Partners</span>
+                  <span>›</span>
+                </button>
+              </div>
+
+              <div class="nested-main">
+                <div class="nested-panel active" data-nested-panel="countries">
+                  <h3>Countries</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="./countries.html#India">India</a>
+                      <a href="./countries.html#UAE">UAE</a>
+                      <a href="./countries.html#Vietnam">Vietnam</a>
+                      <a href="./countries.html#UK">UK</a>
+                      <a href="./countries.html#Netherlands">Netherlands</a>
+                    </div>
+                    <div>
+                      <a href="./countries.html#USA">USA</a>
+                      <a href="./countries.html#Russia">Russia</a>
+                      <a href="./countries.html#Kenya">Kenya</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="products">
+                  <h3>Products</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="./AgriCommodities-products.html#agricommodities"
+                        >Agri Commodities</a
+                      >
+                      <a href="./products.html#petrochemicals"
+                        >Petrochemicals &amp; Energy Products</a
+                      >
+                      <a href="./products.html#metals">Metals &amp; Minerals</a>
+                      <a href="./products.html#fmcg"
+                        >FMCG &amp; Food Products</a
+                      >
+                      <a href="./products.html#raw-materials"
+                        >Industrial Raw Materials</a
+                      >
+                    </div>
+                    <div>
+                      <a href="./products.html#apparel"
+                        >Apparel &amp; Textiles</a
+                      >
+                      <a href="./products.html#gems">Gems &amp; Jewellery</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="partners">
+                  <h3>Partners</h3>
+                  <a href="./partners.html">Partner With Us</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUPPLY CHAIN -->
+            <div class="mega-panel" data-panel="supply">
+              <h3>Supply Chain &amp; Distribution</h3>
+
+              <div class="mega-columns two">
+                <div>
+                  <a href="./farmer.html">Farmer / Manufacturer</a>
+                  <a href="./local-trader.html">Local Trader</a>
+                  <a href="./exporter.html">Exporter</a>
+                  <a href="./cha.html">CHA</a>
+                  <a href="./freight-forwarders.html">Freight Forwarder</a>
+                </div>
+                <div>
+                  <a href="./importers.html">Importer</a>
+                  <a href="./distributor.html">Distributor</a>
+                  <a href="./retailer.html">Retailer</a>
+                  <a href="./buyer.html">Buyer</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- WORKFORCE MOBILITY -->
+            <div class="mega-panel nested-panel" data-panel="workforce">
+              <div class="nested-sidebar">
+                <button
+                  type="button"
+                  class="nested-side-item active"
+                  data-nested="programs"
+                >
+                  <span>Programs</span>
+                  <span>›</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="deployment"
+                >
+                  <span>Deployment</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="nested-side-item"
+                  data-nested="partner-workforce"
+                >
+                  <span>Partner With Us</span>
+                </button>
+              </div>
+
+              <div class="nested-main">
+                <div class="nested-panel active" data-nested-panel="programs">
+                  <h3>Programs</h3>
+                  <div class="mega-columns two">
+                    <div>
+                      <a href="./workforce-mobility.html#farmer"
+                        >Farmer / Manufacturer</a
+                      >
+                      <a href="./workforce-mobility.html#local-trader"
+                        >Local Trader</a
+                      >
+                      <a href="./workforce-mobility.html#exporter">Exporter</a>
+                      <a href="./workforce-mobility.html#cha">CHA</a>
+                      <a href="./workforce-mobility.html#freight-forwarder"
+                        >Freight Forwarder</a
+                      >
+                    </div>
+                    <div>
+                      <a href="./workforce-mobility.html#importer">Importer</a>
+                      <a href="./workforce-mobility.html#distributor"
+                        >Distributor</a
+                      >
+                      <a href="./workforce-mobility.html#retailer">Retailer</a>
+                      <a href="./workforce-mobility.html#buyer">Buyer</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="deployment">
+                  <h3>Deployment</h3>
+                  <a href="./deployment.html">Deployment</a>
+                </div>
+
+                <div class="nested-panel" data-nested-panel="partner-workforce">
+                  <h3>Partner With Us</h3>
+                  <a href="./partner-with-us.html">Partner With Us</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- INDUSTRIES -->
+            <div class="mega-panel" data-panel="industries">
+              <h3>Industries</h3>
+
+              <div class="industries-grid">
+                <div>
+                  <a href="./finance.html">Finance</a>
+                  <a href="./real-estate.html"
+                    >Real Estate &amp; Infrastructure</a
+                  >
+                  <a href="./energy-power.html"
+                    >Energy, Power &amp; Sustainability</a
+                  >
+                  <a href="./petrochemicals.html">Petrochemicals &amp; Oil</a>
+                  <a href="./manufacturing.html">Manufacturing</a>
+                </div>
+
+                <div>
+                  <a href="./logistics.html">Logistics &amp; Supply Chain</a>
+                  <a href="./it-saas.html">IT &amp; SaaS</a>
+                  <a href="./e-commerce.html">E-Commerce</a>
+                  <a href="./media-entertainment.html"
+                    >Media &amp; Entertainment</a
+                  >
+                  <a href="./education-consulting.html"
+                    >Education &amp; Consulting</a
+                  >
+                </div>
+
+                <div>
+                  <a href="./health.html">Health &amp; Wellness</a>
+                  <a href="./hospitality.html">Hospitality</a>
+                  <a href="./aviation.html">Aviation</a>
+                  <a href="./agriculture.html">Agriculture</a>
+                  <a href="./gems-jewellery.html">Gems &amp; Jewellery</a>
+                </div>
+
+                <div>
+                  <a href="./apparel.html">Apparel</a>
+                  <a href="./food-beverage.html"
+                    >F&amp;B (Food &amp; Beverage)</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- SUBSIDIARIES -->
+            <div class="mega-panel" data-panel="subsidiaries">
+              <h3>Subsidiaries</h3>
+              <a href="./flair-capital.html">Flair Capital</a>
+              <a href="./flair-living.html">Flair Living</a>
+              <a href="./flair-nutrition.html">Flair Nutrition</a>
+              <a href="./flair-studio.html">Flair Studio</a>
+              <a href="./flairjets.html">Flair Jets</a>
+            </div>
+
+            <!-- CASE STUDIES -->
+            <div class="mega-panel" data-panel="cases">
+              <h3>Case Studies</h3>
+              <a href="./case-studies.html">Case Studies</a>
+            </div>
+          </div>
+        </section>
+      </div>
     </header>
 
 
