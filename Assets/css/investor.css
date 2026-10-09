@@ -33,7 +33,7 @@ a {
 /* ============ HERO ============ */
 .hero-invest {
   position: relative;
-  height: 580px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,15 +47,15 @@ a {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 720px;
+  max-width: 770px;
   padding: 80px 60px;
   color: #ffffff;
 }
 
 .hero-label {
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 500;
   color: #00E676;
   margin-bottom: 16px;
 }
@@ -68,21 +68,21 @@ a {
 }
 
 .hero-desc {
-  font-size: 20px;
+  font-size: 16px;
   color: #a7f3d0;
   margin-bottom: 16px;
 }
 
 .hero-italic {
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   color: #a7f3d0;
   margin-top: 10px;
 }
 
 .hero-bold {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   margin-top: 4px;
 }
@@ -101,7 +101,7 @@ a {
 }
 
 .eyebrow {
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 1.5px;
   font-weight: 700;
   color: var(--text-body);
@@ -113,7 +113,7 @@ a {
 }
 
 .section-title {
-  font-size: 34px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--text-heading);
   max-width: 1180px;
@@ -125,7 +125,7 @@ a {
 }
 
 .section-sub {
-  font-size: 20px;
+  font-size: 15px;
   color: var(--text-body);
   max-width: 700px;
   margin: 0 auto 40px auto;
@@ -139,15 +139,15 @@ a {
   text-align: center;
   font-style: italic;
   color: var(--text-body);
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 14px;
 }
 
 .center-bold {
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text-heading);
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 30px;
 }
 
@@ -158,7 +158,7 @@ a {
 
 /* ============ DARK NUMBERED CARDS ============ */
 .dark-card-grid {
-  max-width: 1180px;
+  max-width: 1480px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -174,13 +174,13 @@ a {
 
 .dark-card-number {
   display: block;
-  font-size: 22px;
+  font-size: 18px;
   color: #00E676;
   margin-bottom: 12px;
 }
 
 .dark-card p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -192,6 +192,7 @@ a {
 
 .dash-line-list li {
   position: relative;
+  text-align: justify;
   font-size: 18px;
   color: var(--text-heading);
   font-weight: 500;
@@ -221,7 +222,7 @@ a {
 
 /* ============ DIFFERENTIATION CARDS ============ */
 .diff-grid {
-  max-width: 1180px;
+  max-width: 1380px;
   margin: 0 auto 30px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -236,14 +237,14 @@ a {
 }
 
 .diff-card h3 {
-  font-size: 23.5px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   color: var(--text-heading);
   margin-bottom: 10px;
 }
 
 .diff-card p {
-  font-size: 17.5px;
+  font-size: 15px;
   color: var(--text-body);
 }
 
@@ -299,7 +300,7 @@ a {
 
 .dot-list li {
   position: relative;
-  font-size: 18px;
+  font-size: 15px;
   color: var(--text-body);
   padding-left: 18px;
   margin-bottom: 16px;
@@ -336,7 +337,7 @@ a {
 .talk-card {
   max-width: 700px;
   width: 100%;
-  border: 1px solid var(--border-grid);
+  border: 2px solid var(--border-grid);
   border-radius: var(--radius-md);
   padding: 50px;
   text-align: center;
